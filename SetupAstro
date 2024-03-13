@@ -2,7 +2,7 @@
 ####################################################
 
 versao() {
-echo -e "\e[97mComunidade: https://chat.whatsapp.com/Ky7uW2hUIf7DfPbIDugKS5                \e[97mVersão do Setup \e[32mv.2.3.5\e[0m"
+echo -e "\e[97mComunidade: https://chat.whatsapp.com/Ky7uW2hUIf7DfPbIDugKS5                \e[97mVersão do Setup \e[32mv.0.0.1\e[0m"
 }
 
 ####################################################
@@ -64,14 +64,11 @@ creditos_msg() {
     echo ""
     echo -e "$amarelo===================================================================================================\e[0m"
     echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
-    echo -e "$amarelo=          $branco  Gostaria de contribuir para continuarmos o desenvolvimento deste projeto?            $amarelo=\e[0m"
-    echo -e "$amarelo=          $branco                    Você pode fazer uma doação via PIX:                                $amarelo=\e[0m"
-    echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
-    echo -e "$amarelo=                                      pix@oriondesign.art.br                                     $amarelo=\e[0m"
-    echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
+    echo -e "$amarelo=          $branco                 Gostaria de solicitar suporte?                                 $amarelo=\e[0m"
+    echo -e "$amarelo=          $branco                                                                                $amarelo=\e[0m"
     echo -e "$amarelo=          $branco         Se precisar de ajuda/mentoria ou quiser deixar seu feedback                   $amarelo=\e[0m"
-    echo -e "$amarelo=          $branco               Nossa comunidade:$amarelo em breve                         $amarelo=\e[0m"
-    echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
+    echo -e "$amarelo=          $branco               Nossa comunidade:                                                $amarelo=\e[0m"
+    echo -e "$amarelo=                                                      ,                                           $amarelo=\e[0m"
     echo -e "$amarelo=          $branco                    ou via WhatsApp (comunidade SetupAstro)                            $amarelo=\e[0m"
     echo -e "$amarelo=          $amarelo               em breve                        $amarelo=\e[0m"
     echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
