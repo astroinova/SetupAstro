@@ -1,10 +1,9 @@
 
 <img src="https://i.postimg.cc/JnN8zFPH/Capa-facebook-marketing-digital-minimalista-preto-roxo-azul.png"> 
 
-## ⚠️ Pré-requisitos
 
 <h1></h1>
-<h3>📌 Observações e Recomendações</h3>
+## 📌 Observações e Recomendações</h3>
 
 - Recomendo usar a VPS da Contabo, Hetzner, Digital Ocean ou AWS. Não recomendamos e nem encorajamos usar outras VPS.
 - O Servidor precisa estar "zerado" para efetuar a instalação das ferramentas. Executar o Setup com outras ferramentas em andamento pode acarretar na perca de dados.
