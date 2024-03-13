@@ -24,7 +24,7 @@ bash <(curl -sSL https://raw.githubusercontent.com/astroinova/desktop-tutorial/m
 <p>OrionDesign pois copiei e modelo do seu README.md e Instalador 😎 <a href="https://github.com/oriondesign2015/SetupOrion">Oriondesign2015</a> </p>
 <br><br><br>
 
-> Convido você a conhecer nosso pack com vários modelos de fluxo de automação usando Typebot
+> Convido você a conhecer nosso curso
 [clicando aqui](https:/embreve)
 
 <p>✅ Instalação de várias ferramentas</p>
