@@ -22,7 +22,7 @@ bash <(curl -sSL https://raw.githubusercontent.com/astroinova/desktop-tutorial/m
 
 <p>Creditos do arquivo docker-compose.yml <a href="https://www.youtube.com/@astrogestor">Eduardo Rodrigues</a></p>
 <p>OrionDesign pois copiei e modelo do seu README.md e Instalador 😎 <a href="https://github.com/oriondesign2015/SetupOrion">Oriondesign2015</a> </p>
-<br><br>
+
 
 ## 📖 Curso
 <p>🎓 Aulas explicativas
