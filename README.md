@@ -33,8 +33,7 @@ bash <(curl -sSL https://raw.githubusercontent.com/astroinova/desktop-tutorial/m
 <p>🌐 Diversos fluxos de diferentes nichos
 <p>🔐 Acesso vitalício
 <p>👨‍👩‍👧‍👦 Grupo para alunos
-<p>🎁 Na compra do curso, ganhe um código-fonte do WhaTicket, que inclui integrações com o Typebot,N8n,DialogFlow.
-<p>Você também pode usar nosso pack usando a versão Free do Typebot</p>
+<p>🎁 Na compra do curso, ganhe um código-fonte do WhaTicket, que inclui integrações com o Typebot,N8n,DialogFlow. Você também pode usar nosso pack usando a versão Free do Typebot</p>
 
 <p>https://typebot.io</p>
 
