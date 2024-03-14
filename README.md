@@ -29,14 +29,19 @@ bash <(curl -sSL https://raw.githubusercontent.com/astroinova/desktop-tutorial/m
 > Convido você a conhecer nosso curso
 [clicando aqui](https:/embreve)
 
-<p>✅ Instalação de várias ferramentas</p>
-<p>✅ Área de Membros</p>
-<p>✅ Atualizações frequentes</p>
-<p>✅ Acesso Vitalício </p>
-<p>✅ Grupo de Network</p>
-<p>✅ Template Website Typebot (HTML5, CSS e JS)</p>
 
+<p>🎓 Aulas explicativas
+<p>🧩 Área de membros organizada
+<p>💬 Aulas de Typebot, Chatwoot, EvolutionAPI, etc.
+<p>🔄 Conteúdo atualizado com mudanças
+<p>📱 Diversos templates (WhatsApp Dark, Play Pix)
+<p>🌐 Diversos fluxos de diferentes nichos
+<p>🔐 Acesso vitalício
+<p>👨‍👩‍👧‍👦 Grupo para alunos
 
+## 🥳 Bonus por tempo limitado
+
+<p>🎁 Na compra do curso, ganhe um código-fonte do WhaTicket, que inclui integrações com o Typebot,N8n,DialogFlow.
 <p>Você também pode usar nosso pack usando a versão Free do Typebot</p>
 <p>https://typebot.io</p>
 
