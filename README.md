@@ -33,7 +33,7 @@ bash <(curl -sSL https://raw.githubusercontent.com/astroinova/desktop-tutorial/m
 <p>🔐 Acesso vitalício
 <p>👨‍👩‍👧‍👦 Grupo para alunos</p>
 
-<p>🛒 COMPRE AGORA!</p>
+## 🛒 COMPRE AGORA!</p>
 <p>em breve</p>
 
 <p>Dúvidas e Suporte:</p>
