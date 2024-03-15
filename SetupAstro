@@ -45,7 +45,7 @@ direitos_instalador() {
     echo -e "$amarelo===================================================================================================\e[0m"
     echo ""
     echo ""
-    read -p "Ao digitar S você aceita e concorda com as orientações passadas acima (Y/N): " choice
+    read -p "Ao digitar S você aceita e concorda com as orientações passadas acima (S/N): " choice
     if [ "$choice" = "S" ] || [ "$choice" = "y" ]; then
         return
     else
