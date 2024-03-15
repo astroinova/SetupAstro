@@ -33,9 +33,6 @@ bash <(curl -sSL https://raw.githubusercontent.com/astroinova/desktop-tutorial/m
 <p>🔐 Acesso vitalício
 <p>👨‍👩‍👧‍👦 Grupo para alunos</p>
 
-## 🎁 Bonus Limitado
-<p>🎁 Na compra do curso, ganhe um código-fonte do WhaTicket, que inclui integrações com o Typebot,N8n,DialogFlow.</p>
-
 <p>🛒 COMPRE AGORA!</p>
 <p>em breve</p>
 
