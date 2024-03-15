@@ -35,7 +35,7 @@ dados() {
 direitos_instalador() {
     echo -e "$amarelo===================================================================================================\e[0m"
     echo -e "$amarelo=                                                                                                 =\e[0m"
-    echo -e "$amarelo=  $branco Este auto instalador foi desenvolvido para auxiliar na instalação das principais aplicações $amarelo  =\e[0m"
+    echo -e "$amarelo=  $branco Este auto instalador foi desenvolvido para auxiliar nas instalações das ferramentas $amarelo  =\e[0m"
     echo -e "$amarelo=  $branco  disponiveis no curso da Astro Inova . Já deixo todos os créditos as desenvolvedores de cada  $amarelo  =\e[0m"
     echo -e "$amarelo=  $branco aplicação disponiveis aqui. Este Setup é licenciazdo sob a Licença MIT (MIT). Você pode usar,$amarelo =\e[0m"
     echo -e "$amarelo=  $branco  copiar, modificar, integrar, publicar, distribuir e/ou vender cópias dos produtos finais,  $amarelo  =\e[0m"
@@ -45,8 +45,8 @@ direitos_instalador() {
     echo -e "$amarelo===================================================================================================\e[0m"
     echo ""
     echo ""
-    read -p "Ao digitar Y você aceita e concorda com as orientações passadas acima (Y/N): " choice
-    if [ "$choice" = "Y" ] || [ "$choice" = "y" ]; then
+    read -p "Ao digitar S você aceita e concorda com as orientações passadas acima (Y/N): " choice
+    if [ "$choice" = "S" ] || [ "$choice" = "y" ]; then
         return
     else
         clear
