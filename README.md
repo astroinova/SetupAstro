@@ -1,5 +1,5 @@
 
-<img src="https://i.postimg.cc/JnN8zFPH/Capa-facebook-marketing-digital-minimalista-preto-roxo-azul.png"> 
+<img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png"> 
 
 
 <h1></h1>
