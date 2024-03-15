@@ -5,10 +5,9 @@
 <h1></h1>
 <h3>📌 Observações e Recomendações</h3>
 
-- Recomendo usar a VPS da Contabo, Hetzner, Digital Ocean, Hostinger ou AWS. Não recomendamos e nem encorajamos usar outras VPS.
-- O Servidor precisa estar "zerado" para efetuar a instalação das ferramentas. Executar o Setup com outras ferramentas em andamento pode acarretar na perca de dados.
-- Recomenda-se utilizar Ubuntu 20.04, com minimo de 4Gb e 2vCPU. Sendo o recomendado 16Gb+, e 6vCPU+.
-- Antes de tentar efetuar a instalação de novas ferramentas, ou até mesmo atualizar algo, é extremamente recomendado.
+- Recomendo usar uma VPS da Contabo, Hetzner, Digital Ocean, Hostinger ou AWS. Não recomendamos e nem encorajamos usar outras VPS.
+- ⚠️ O Servidor precisa estar "zerado" para efetuar a instalação das ferramentas. Executar o Setup com outras ferramentas em andamento pode acarretar na perca de dados.
+- 🚩 Recomenda-se utilizar Ubuntu 20.04, com minimo de 4Gb e 2vCPU. Sendo o recomendado 16Gb+, e 6vCPU+.
 
 ## 💽 Instalação
 
