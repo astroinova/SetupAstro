@@ -27,7 +27,7 @@ bash <(curl -sSL https://raw.githubusercontent.com/astroinova/desktop-tutorial/m
 <p>🎓 Aulas explicativas
 <p>🧩 Área de membros organizada
 <p>💬 Aulas de Typebot, Chatwoot, EvolutionAPI, etc.
-<p>🔄 Conteúdo atualizado com mudanças
+<p>🔄 Conteúdo atualizado
 <p>📱 Diversos templates (WhatsApp Dark, Play Pix)
 <p>🌐 Diversos fluxos de diferentes nichos
 <p>🔐 Acesso vitalício
@@ -36,5 +36,5 @@ bash <(curl -sSL https://raw.githubusercontent.com/astroinova/desktop-tutorial/m
 ## 🛒 COMPRE AGORA!</p>
 <p>em breve</p>
 
-<p>Dúvidas e Suporte:</p>
+## <p>Dúvidas e Suporte:</p>
 <p>https://wa.me/message/MFXREOR2NXE6N1</p>
