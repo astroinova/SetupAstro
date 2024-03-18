@@ -2,7 +2,11 @@
 ####################################################
 
 versao() {
-echo -e "\e[97mComunidade: https://chat.whatsapp.com/Ky7uW2hUIf7DfPbIDugKS5                \e[97mVersão do Setup \e[32mv.0.0.1\e[0m"
+#echo -e "\e[: https://chat.whatsapp.com/Ky7uW2hUIf7DfPbIDugKS5                \e[97mVersão do Setup \e[32mv.0.0.1\e[0m"
+    echo -e "$amarelo=  $branco Versão do Instalador: 0.$verde1 $amarelo  =\e[0m"
+    echo -e "$amarelo=  $branco em breve mais atualizações! $amarelo  =\e[0m"
+    echo -e "$amarelo=  $branco Tem alguma dica ou sugestão? Entre em contato: (88) 996228075,$amarelo =\e[0m"
+    echo -e "$amarelo=  $branco  Grupo de alunos: em breve  $amarelo  =\e[0m"
 }
 
 ####################################################
