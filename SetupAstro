@@ -3,10 +3,10 @@
 
 versao() {
 #echo -e "\e[: https://chat.whatsapp.com/Ky7uW2hUIf7DfPbIDugKS5                \e[97mVersão do Setup \e[32mv.0.0.1\e[0m"
-    echo -e "$amarelo=  $branco Versão do Instalador: 0.$verde=1 $amarelo  =\e[0m"
-    echo -e "$amarelo=  $branco em breve mais atualizações! $amarelo  =\e[0m"
-    echo -e "$amarelo=  $branco Tem alguma dica ou sugestão? Entre em contato: (88) 996228075$amarelo =\e[0m"
-    echo -e "$amarelo=  $branco  Grupo de alunos: em breve  $amarelo  =\e[0m"
+    echo -e "$verde=  $branco Versão do Instalador: 0.1 $verde  =\e[0m"
+    echo -e "$verde=  $branco em breve mais atualizações! $verde  =\e[0m"
+    echo -e "$verde=  $branco Tem alguma dica ou sugestão? Entre em contato: (88) 996228075$amarelo =\e[0m"
+    echo -e "$verde=  $branco  Grupo de alunos: em breve  $verde  =\e[0m"
 }
 
 ####################################################
@@ -211,7 +211,7 @@ nome_instalador() {
     #echo -e "$branco                              ╚════╝    ╚██╗ ██╔╝  ██╔═══╝     ╚════╝                       \e[0m"
     #echo -e "$branco                                         ╚████╔╝██╗███████╗                                 \e[0m"
     #echo -e "$branco                                          ╚═══╝ ╚═╝╚══════╝                                 \e[0m"
-    "echo "echo -e "$branco                                          SETUP EM DESENVOLVIMENTO EM BREVE MAIS ATUALIZAÇÕES                               \e[0m"
+    "echo "echo -e "$branco       SETUP EM DESENVOLVIMENTO EM BREVE MAIS ATUALIZAÇÕES                               \e[0m"
 
 }
 
