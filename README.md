@@ -36,5 +36,5 @@ bash <(curl -sSL https://raw.githubusercontent.com/astroinova/desktop-tutorial/m
 ## 🛒 COMPRE AGORA!</p>
 <p>em breve</p>
 
-## <p>☎️ Dúvidas e Suporte:</p>
+## ☎️ Dúvidas e Suporte:</p>
 <p>https://wa.me/message/MFXREOR2NXE6N1</p>
