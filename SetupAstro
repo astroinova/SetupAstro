@@ -2,11 +2,7 @@
 ####################################################
 
 versao() {
-#echo -e "\e[: https://chat.whatsapp.com/Ky7uW2hUIf7DfPbIDugKS5                \e[97mVersão do Setup \e[32mv.0.0.1\e[0m"
-    echo -e "$verde=  $branco Versão do Instalador: 0.1 $verde  =\e[0m"
-    echo -e "$verde=  $branco em breve mais atualizações! $verde  =\e[0m"
-    echo -e "$verde=  $branco Tem alguma dica ou sugestão? Entre em contato: (88) 996228075$amarelo =\e[0m"
-    echo -e "$verde=  $branco  Grupo de alunos: em breve  $verde  =\e[0m"
+echo -e "\e[97mComunidade: https://chat.whatsapp.com/Ky7uW2hUIf7DfPbIDugKS5                \e[97mVersão do Setup \e[32mv.2.3.9\e[0m"
 }
 
 ####################################################
@@ -39,8 +35,8 @@ dados() {
 direitos_instalador() {
     echo -e "$amarelo===================================================================================================\e[0m"
     echo -e "$amarelo=                                                                                                 =\e[0m"
-    echo -e "$amarelo=  $branco Este auto instalador foi desenvolvido para auxiliar nas instalações das ferramentas $amarelo  =\e[0m"
-    echo -e "$amarelo=  $branco  disponiveis no curso da Astro Inova . Já deixo todos os créditos as desenvolvedores de cada  $amarelo  =\e[0m"
+    echo -e "$amarelo=  $branco Este auto instalador foi desenvolvido para auxiliar na instalação das principais aplicações $amarelo  =\e[0m"
+    echo -e "$amarelo=  $branco  disponiveis no mercado open source. Já deixo todos os créditos as desenvolvedores de cada  $amarelo  =\e[0m"
     echo -e "$amarelo=  $branco aplicação disponiveis aqui. Este Setup é licenciazdo sob a Licença MIT (MIT). Você pode usar,$amarelo =\e[0m"
     echo -e "$amarelo=  $branco  copiar, modificar, integrar, publicar, distribuir e/ou vender cópias dos produtos finais,  $amarelo  =\e[0m"
     echo -e "$amarelo=  $branco   mas deve sempre declarar que OrionDesign (contato@oriondesign.art.br) é o autor original  $amarelo  =\e[0m"
@@ -49,8 +45,8 @@ direitos_instalador() {
     echo -e "$amarelo===================================================================================================\e[0m"
     echo ""
     echo ""
-    read -p "Ao digitar S você aceita e concorda com as orientações passadas acima (S/N): " choice
-    if [ "$choice" = "S" ] || [ "$choice" = "y" ]; then
+    read -p "Ao digitar Y você aceita e concorda com as orientações passadas acima (Y/N): " choice
+    if [ "$choice" = "Y" ] || [ "$choice" = "y" ]; then
         return
     else
         clear
@@ -68,13 +64,16 @@ creditos_msg() {
     echo ""
     echo -e "$amarelo===================================================================================================\e[0m"
     echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
-    echo -e "$amarelo=          $branco                 Gostaria de solicitar suporte?                                 $amarelo=\e[0m"
-    echo -e "$amarelo=          $branco                                                                                $amarelo=\e[0m"
+    echo -e "$amarelo=          $branco  Gostaria de contribuir para continuarmos o desenvolvimento deste projeto?            $amarelo=\e[0m"
+    echo -e "$amarelo=          $branco                    Você pode fazer uma doação via PIX:                                $amarelo=\e[0m"
+    echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
+    echo -e "$amarelo=                                      pix@oriondesign.art.br                                     $amarelo=\e[0m"
+    echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
     echo -e "$amarelo=          $branco         Se precisar de ajuda/mentoria ou quiser deixar seu feedback                   $amarelo=\e[0m"
-    echo -e "$amarelo=          $branco               Nossa comunidade:                                                $amarelo=\e[0m"
-    echo -e "$amarelo=                                                      ,                                           $amarelo=\e[0m"
-    echo -e "$amarelo=          $branco                    ou via WhatsApp (comunidade SetupAstro)                            $amarelo=\e[0m"
-    echo -e "$amarelo=          $amarelo               em breve                        $amarelo=\e[0m"
+    echo -e "$amarelo=          $branco               Nossa comunidade:$amarelo https://discord.gg/ZvtmFtMt82                         $amarelo=\e[0m"
+    echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
+    echo -e "$amarelo=          $branco                    ou via WhatsApp (comunidade SetupOrion)                            $amarelo=\e[0m"
+    echo -e "$amarelo=          $amarelo               https://chat.whatsapp.com/LvqP8e7lNPn9Y3QMbbnhfB                        $amarelo=\e[0m"
     echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
     echo -e "$amarelo===================================================================================================\e[0m"
     echo ""
@@ -198,20 +197,20 @@ nome_testando() {
 nome_instalador() {
     clear
     echo ""
-    #echo -e "$branco       ███████╗███████╗████████╗██╗   ██╗██████╗      ██████╗ ██████╗ ██╗ ██████╗ ███╗   ██╗\e[0m"
-    #echo -e "$branco       ██╔════╝██╔════╝╚══██╔══╝██║   ██║██╔══██╗    ██╔═══██╗██╔══██╗██║██╔═══██╗████╗  ██║\e[0m"
-    #echo -e "$branco       ███████╗█████╗     ██║   ██║   ██║██████╔╝    ██║   ██║██████╔╝██║██║   ██║██╔██╗ ██║\e[0m"
-    #echo -e "$branco       ╚════██║██╔══╝     ██║   ██║   ██║██╔═══╝     ██║   ██║██╔══██╗██║██║   ██║██║╚██╗██║\e[0m"
-    #echo -e "$branco       ███████║███████╗   ██║   ╚██████╔╝██║         ╚██████╔╝██║  ██║██║╚██████╔╝██║ ╚████║\e[0m"
-    #echo -e "$branco       ╚══════╝╚══════╝   ╚═╝    ╚═════╝ ╚═╝          ╚═════╝ ╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝\e[0m"
-    #echo -e "$branco                                                                                            \e[0m"
-    #echo -e "$branco                                        ██╗   ██╗  ██████╗                                  \e[0m"
-    #echo -e "$branco                                        ██║   ██║  ╚════██╗                                 \e[0m"
-    #echo -e "$branco                              █████╗    ██║   ██║   █████╔╝    █████╗                       \e[0m"
-    #echo -e "$branco                              ╚════╝    ╚██╗ ██╔╝  ██╔═══╝     ╚════╝                       \e[0m"
-    #echo -e "$branco                                         ╚████╔╝██╗███████╗                                 \e[0m"
-    #echo -e "$branco                                          ╚═══╝ ╚═╝╚══════╝                                 \e[0m"
-    "echo "echo -e "$branco       SETUP EM DESENVOLVIMENTO EM BREVE MAIS ATUALIZAÇÕES                               \e[0m"
+    echo -e "$branco       ███████╗███████╗████████╗██╗   ██╗██████╗      ██████╗ ██████╗ ██╗ ██████╗ ███╗   ██╗\e[0m"
+    echo -e "$branco       ██╔════╝██╔════╝╚══██╔══╝██║   ██║██╔══██╗    ██╔═══██╗██╔══██╗██║██╔═══██╗████╗  ██║\e[0m"
+    echo -e "$branco       ███████╗█████╗     ██║   ██║   ██║██████╔╝    ██║   ██║██████╔╝██║██║   ██║██╔██╗ ██║\e[0m"
+    echo -e "$branco       ╚════██║██╔══╝     ██║   ██║   ██║██╔═══╝     ██║   ██║██╔══██╗██║██║   ██║██║╚██╗██║\e[0m"
+    echo -e "$branco       ███████║███████╗   ██║   ╚██████╔╝██║         ╚██████╔╝██║  ██║██║╚██████╔╝██║ ╚████║\e[0m"
+    echo -e "$branco       ╚══════╝╚══════╝   ╚═╝    ╚═════╝ ╚═╝          ╚═════╝ ╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝\e[0m"
+    echo -e "$branco                                                                                            \e[0m"
+    echo -e "$branco                                        ██╗   ██╗  ██████╗                                  \e[0m"
+    echo -e "$branco                                        ██║   ██║  ╚════██╗                                 \e[0m"
+    echo -e "$branco                              █████╗    ██║   ██║   █████╔╝    █████╗                       \e[0m"
+    echo -e "$branco                              ╚════╝    ╚██╗ ██╔╝  ██╔═══╝     ╚════╝                       \e[0m"
+    echo -e "$branco                                         ╚████╔╝██╗███████╗                                 \e[0m"
+    echo -e "$branco                                          ╚═══╝ ╚═╝╚══════╝                                 \e[0m"
+    echo ""
 
 }
 
@@ -723,6 +722,59 @@ nome_affine(){
     echo ""
     echo ""
 }
+
+nome_docuseal(){
+    clear
+    echo ""
+    echo -e "$branco                ██████╗  ██████╗  ██████╗██╗   ██╗███████╗███████╗ █████╗ ██╗     \e[0m"
+    echo -e "$branco                ██╔══██╗██╔═══██╗██╔════╝██║   ██║██╔════╝██╔════╝██╔══██╗██║     \e[0m"
+    echo -e "$branco                ██║  ██║██║   ██║██║     ██║   ██║███████╗█████╗  ███████║██║     \e[0m"
+    echo -e "$branco                ██║  ██║██║   ██║██║     ██║   ██║╚════██║██╔══╝  ██╔══██║██║     \e[0m"
+    echo -e "$branco                ██████╔╝╚██████╔╝╚██████╗╚██████╔╝███████║███████╗██║  ██║███████╗\e[0m"
+    echo -e "$branco                ╚═════╝  ╚═════╝  ╚═════╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝╚══════╝\e[0m"
+    echo ""
+    echo ""
+}
+
+nome_directus(){
+clear
+echo ""
+echo -e "$branco                   ██████╗ ██╗██████╗ ███████╗ ██████╗████████╗██╗   ██╗███████╗\e[0m"
+echo -e "$branco                   ██╔══██╗██║██╔══██╗██╔════╝██╔════╝╚══██╔══╝██║   ██║██╔════╝\e[0m"
+echo -e "$branco                   ██║  ██║██║██████╔╝█████╗  ██║        ██║   ██║   ██║███████╗\e[0m"
+echo -e "$branco                   ██║  ██║██║██╔══██╗██╔══╝  ██║        ██║   ██║   ██║╚════██║\e[0m"
+echo -e "$branco                   ██████╔╝██║██║  ██║███████╗╚██████╗   ██║   ╚██████╔╝███████║\e[0m"
+echo -e "$branco                   ╚═════╝ ╚═╝╚═╝  ╚═╝╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚══════╝\e[0m"
+echo ""
+echo ""
+}
+
+nome_vaultwarden() {
+    clear
+    echo ""
+    echo -e "$branco   ██╗   ██╗ █████╗ ██╗   ██╗██╗  ████████╗██╗    ██╗ █████╗ ██████╗ ██████╗ ███████╗███╗   ██╗\e[0m"
+    echo -e "$branco   ██║   ██║██╔══██╗██║   ██║██║  ╚══██╔══╝██║    ██║██╔══██╗██╔══██╗██╔══██╗██╔════╝████╗  ██║\e[0m"
+    echo -e "$branco   ██║   ██║███████║██║   ██║██║     ██║   ██║ █╗ ██║███████║██████╔╝██║  ██║█████╗  ██╔██╗ ██║\e[0m"
+    echo -e "$branco   ╚██╗ ██╔╝██╔══██║██║   ██║██║     ██║   ██║███╗██║██╔══██║██╔══██╗██║  ██║██╔══╝  ██║╚██╗██║\e[0m"
+    echo -e "$branco    ╚████╔╝ ██║  ██║╚██████╔╝███████╗██║   ╚███╔███╔╝██║  ██║██║  ██║██████╔╝███████╗██║ ╚████║\e[0m"
+    echo -e "$branco     ╚═══╝  ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝    ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═══╝\e[0m"
+    echo ""
+    echo ""
+}
+
+nome_monitor() {
+    clear
+    echo ""
+    echo -e "$branco                     ██████╗ ██████╗  █████╗ ███████╗ █████╗ ███╗   ██╗ █████╗ \e[0m"
+    echo -e "$branco                    ██╔════╝ ██╔══██╗██╔══██╗██╔════╝██╔══██╗████╗  ██║██╔══██╗\e[0m"
+    echo -e "$branco                    ██║  ███╗██████╔╝███████║█████╗  ███████║██╔██╗ ██║███████║\e[0m"
+    echo -e "$branco                    ██║   ██║██╔══██╗██╔══██║██╔══╝  ██╔══██║██║╚██╗██║██╔══██║\e[0m"
+    echo -e "$branco                    ╚██████╔╝██║  ██║██║  ██║██║     ██║  ██║██║ ╚████║██║  ██║\e[0m"
+    echo -e "$branco                     ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝\e[0m"
+    echo ""
+    echo ""
+}
+
 nome_saindo() {
     clear
     echo ""
@@ -816,24 +868,24 @@ nome_finalizado() {
 menu_instalador(){
     echo ""
     echo -e "${amarelo}[ 0 ]${reset} -  ${branco}Testar SMTP                             ${verde}| ${reset}  ${amarelo}[ 21 ]${reset} - ${branco}Formbricks${reset}"
-    echo -e "${amarelo}[ 1 ]${reset} -  ${branco}Traefik & Portainer                     ${verde}| ${reset}  ${amarelo}[ 22 ]${reset} - ${branco}NocoDB ${verde}[NOVO]${reset}"
-    echo -e "${amarelo}[ 2 ]${reset} -  ${branco}Chatwoot                                ${verde}| ${reset}  ${amarelo}[ 23 ]${reset} - ${branco}Langfuse ${verde}[NOVO]${reset}"
-    echo -e "${branco}  '-->${amarelo}[ 2.1 ]${reset} - ${branco}Chatwoot (ARM)                   ${verde}| ${reset}  ${amarelo}[ 24 ]${reset} - ${branco}Metabase ${verde}[NOVO]${reset}"
-    echo -e "${amarelo}[ 3 ]${reset} -  ${branco}Evolution API                           ${verde}| ${reset}  ${amarelo}[ 25 ]${reset} - ${branco}Odoo ${verde}[NOVO]${reset}"
-    echo -e "${branco}  '-->${amarelo}[ 3.1 ]${reset} - ${branco}Evolution API (ARM)              ${verde}| ${reset}  ${amarelo}[ 26 ]${reset} - ${branco}Chatwoot Nestor (ft. Francis) ${verde}[NOVO]${reset}"
-    echo -e "${amarelo}[ 4 ]${reset} -  ${branco}MinIO                                   ${verde}| ${reset}  ${amarelo}[ 27 ]${reset} - ${branco}Uno API ${verde}[NOVO]${reset}"
-    echo -e "${amarelo}[ 5 ]${reset} -  ${branco}Typebot                                 ${verde}| ${reset}  ${amarelo}[ 28 ]${reset} - ${branco}N8N + Nodes Quepasa ${verde}[NOVO]${reset}"
-    echo -e "${amarelo}[ 6 ]${reset} -  ${branco}N8N                                     ${verde}| ${reset}  ${amarelo}[ 29 ]${reset} - ${branco}Quepasa API ${verde}[NOVO]${reset}"
-    echo -e "${amarelo}[ 7 ]${reset} -  ${branco}Flowise                                 ${verde}| ${reset}  ${amarelo}[ 30 ]${reset} - ${branco}Docuseal ${vermelho}[OFF]${reset}"
-    echo -e "${amarelo}[ 8 ]${reset} -  ${branco}PgAdmin 4                               ${verde}| ${reset}  ${amarelo}[ 31 ]${reset} - ${branco}Grafana + Prometheus +cAdvisor ${vermelho}[OFF]${reset}"
-    echo -e "${amarelo}[ 9 ]${reset} -  ${branco}Nocobase                                ${verde}| ${reset}  ${amarelo}[ 32 ]${reset} - ${branco}Dify AI ${verde}[NOVO]${reset}"
-    echo -e "${amarelo}[ 10 ]${reset} - ${branco}Botpress                                ${verde}| ${reset}  ${amarelo}[ 33 ]${reset} - ${branco}Ollama ${verde}[NOVO]${reset}"
-    echo -e "${amarelo}[ 13 ]${reset} - ${branco}MongoDB                                 ${verde}| ${reset}  ${amarelo}[ 34 ]${reset} - ${branco}Affine ${vermelho}[TESTANDO]${reset}"
-    echo -e "${amarelo}[ 11 ]${reset} - ${branco}Wordpress                               ${verde}| ${reset}  ${amarelo}[ 35 ]${reset} - ${branco}REMOVER STACK${reset}"
-    echo -e "${amarelo}[ 12 ]${reset} - ${branco}Baserow                                 ${verde}| ${reset}  ${amarelo}[ 36 ]${reset} - ${branco}Sair do instalador${reset}"
-    echo -e "${amarelo}[ 14 ]${reset} - ${branco}RabbitMQ                                ${verde}| ${reset}" # ${amarelo}[ 37 ]${reset} - ${branco}Ainda Vazio${reset}"
-    echo -e "${amarelo}[ 15 ]${reset} - ${branco}Uptime Kuma                             ${verde}| ${reset}" # ${amarelo}[ 38 ]${reset} - ${branco}Ainda Vazio${reset}"
-    echo -e "${amarelo}[ 16 ]${reset} - ${branco}Cal.com                                 ${verde}| ${reset}" # ${amarelo}[ 39 ]${reset} - ${branco}Ainda Vazio${reset}"
+    echo -e "${amarelo}[ 1 ]${reset} -  ${branco}Traefik & Portainer                     ${verde}| ${reset}  ${amarelo}[ 22 ]${reset} - ${branco}NocoDB${reset}"
+    echo -e "${amarelo}[ 2 ]${reset} -  ${branco}Chatwoot                                ${verde}| ${reset}  ${amarelo}[ 23 ]${reset} - ${branco}Langfuse${reset}"
+    echo -e "${branco}  '-->${amarelo}[ 2.1 ]${reset} - ${branco}Chatwoot (ARM)                   ${verde}| ${reset}  ${amarelo}[ 24 ]${reset} - ${branco}Metabase${reset}"
+    echo -e "${amarelo}[ 3 ]${reset} -  ${branco}Evolution API                           ${verde}| ${reset}  ${amarelo}[ 25 ]${reset} - ${branco}Odoo${reset}"
+    echo -e "${branco}  '-->${amarelo}[ 3.1 ]${reset} - ${branco}Evolution API (ARM)              ${verde}| ${reset}  ${amarelo}[ 26 ]${reset} - ${branco}Chatwoot Nestor (ft. Francis)${reset}"
+    echo -e "${amarelo}[ 4 ]${reset} -  ${branco}MinIO                                   ${verde}| ${reset}  ${amarelo}[ 27 ]${reset} - ${branco}Uno API${reset}"
+    echo -e "${amarelo}[ 5 ]${reset} -  ${branco}Typebot                                 ${verde}| ${reset}  ${amarelo}[ 28 ]${reset} - ${branco}N8N + Nodes Quepasa${reset}"
+    echo -e "${amarelo}[ 6 ]${reset} -  ${branco}N8N                                     ${verde}| ${reset}  ${amarelo}[ 29 ]${reset} - ${branco}Quepasa API${reset}"
+    echo -e "${amarelo}[ 7 ]${reset} -  ${branco}Flowise                                 ${verde}| ${reset}  ${amarelo}[ 30 ]${reset} - ${branco}Docuseal${reset}"
+    echo -e "${amarelo}[ 8 ]${reset} -  ${branco}PgAdmin 4                               ${verde}| ${reset}  ${amarelo}[ 31 ]${reset} - ${branco}Grafana + Prometheus + cAdvisor ${verde}[NOVO]${reset}"
+    echo -e "${amarelo}[ 9 ]${reset} -  ${branco}Nocobase                                ${verde}| ${reset}  ${amarelo}[ 32 ]${reset} - ${branco}Dify AI${reset}"
+    echo -e "${amarelo}[ 10 ]${reset} - ${branco}Botpress                                ${verde}| ${reset}  ${amarelo}[ 33 ]${reset} - ${branco}Ollama${reset}"
+    echo -e "${amarelo}[ 11 ]${reset} - ${branco}Wordpress                               ${verde}| ${reset}  ${amarelo}[ 34 ]${reset} - ${branco}Affine${reset}"
+    echo -e "${amarelo}[ 12 ]${reset} - ${branco}Baserow                                 ${verde}| ${reset}  ${amarelo}[ 35 ]${reset} - ${branco}Directus${reset}"
+    echo -e "${amarelo}[ 13 ]${reset} - ${branco}MongoDB                                 ${verde}| ${reset}  ${amarelo}[ 36 ]${reset} - ${branco}VaultWarden ${verde}[NOVO]${reset}"
+    echo -e "${amarelo}[ 14 ]${reset} - ${branco}RabbitMQ                                ${verde}| ${reset}  ${amarelo}[ 37 ]${reset} - ${branco}REMOVER STACK${reset}"
+    echo -e "${amarelo}[ 15 ]${reset} - ${branco}Uptime Kuma                             ${verde}| ${reset}  ${amarelo}[ 38 ]${reset} - ${branco}Sair do instalador${reset}"
+    echo -e "${amarelo}[ 16 ]${reset} - ${branco}Cal.com                                 ${verde}| ${reset}" # ${amarelo}[ 39 ]${reset} - ${branco}Sair do instalador${reset}"
     echo -e "${amarelo}[ 17 ]${reset} - ${branco}Mautic                                  ${verde}| ${reset}" # ${amarelo}[ 40 ]${reset} - ${branco}Ainda Vazio${reset}"
     echo -e "${amarelo}[ 18 ]${reset} - ${branco}Appsmith                                ${verde}| ${reset}" # ${amarelo}[ 31 ]${reset} - ${branco}Ainda Vazio${reset}"
     echo -e "${amarelo}[ 19 ]${reset} - ${branco}Qdrant                                  ${verde}| ${reset}" # ${amarelo}[ 32 ]${reset} - ${branco}Ainda Vazio${reset}"
@@ -1566,6 +1618,57 @@ wait_affine(){
     done
 }
 
+wait_docuseal(){
+    echo "Este processo pode demorar um pouco, se passar de 5 minutos cancele... por que deu ruim..."
+    while true; do
+        # Verifica se o serviço chatwoot está ativo
+        if docker service ls --filter "name=docuseal" | grep "1/1"; then
+            sleep 10
+            break
+        fi
+    
+        sleep 5
+    done
+}
+
+wait_directus(){
+    echo "Este processo pode demorar um pouco, se passar de 5 minutos cancele... por que deu ruim..."
+    while true; do
+        # Verifica se o serviço chatwoot está ativo
+        if docker service ls --filter "name=directus" | grep "1/1"; then
+            sleep 10
+            break
+        fi
+    
+        sleep 5
+    done
+}
+
+wait_vaultwarden(){
+    echo "Este processo pode demorar um pouco, se passar de 10 minutos cancele... por que deu ruim..."
+    while true; do
+        # Verifica se o serviço chatwoot está ativo
+        if docker service ls --filter "name=vaultwarden" | grep "1/1"; then
+            sleep 30
+            break
+        fi
+    
+        sleep 5
+    done
+}
+
+wait_monitor(){
+    echo "Este processo pode demorar um pouco, se passar de 5 minutos cancele... por que deu ruim..."
+    while true; do
+        # Verifica se o serviço chatwoot está ativo
+        if docker service ls --filter "name=monitor" | grep "1/1"; then
+            sleep 10
+            break
+        fi
+    
+        sleep 5
+    done
+}
 ####################################################
 
 ## Pegar informações
@@ -2404,6 +2507,96 @@ criar_banco_postgres_affine() {
 
                 if [ $? -eq 0 ]; then
                     echo "Banco de dados affine criado com sucesso."
+                    break
+                else
+                    echo "Erro ao criar o banco de dados. Tentando novamente..."
+                fi
+            fi
+        else
+            sleep 5
+        fi
+    done
+}
+
+criar_banco_postgres_docuseal() {
+    while :; do
+        if docker ps -q --filter "name=postgres" | grep -q .; then
+            CONTAINER_ID=$(docker ps -q --filter "name=postgres")
+
+            # Verificar se o banco de dados já existe
+            docker exec "$CONTAINER_ID" psql -U postgres -lqt | cut -d \| -f 1 | grep -qw "docuseal"
+
+            if [ $? -eq 0 ]; then
+                echo "O banco de dados docuseal já existe."
+
+                read -p "Deseja apagar e criar um novo banco de dados? (Y/N): " resposta
+                if [ "$resposta" == "Y" ] || [ "$resposta" == "y" ]; then
+                    # Apagar o banco de dados
+                    docker exec "$CONTAINER_ID" psql -U postgres -c "DROP DATABASE IF EXISTS docuseal;"
+                    echo "Banco de dados docuseal apagado com sucesso."
+                    
+                    # Criar o banco de dados novamente
+                    docker exec "$CONTAINER_ID" psql -U postgres -c "CREATE DATABASE docuseal;"
+                    
+                    echo "Banco de dados docuseal criado com sucesso."
+                else
+                    echo "Usando o banco de dados existente."
+                fi
+                break
+            else
+                # Criar o banco de dados
+                docker exec "$CONTAINER_ID" psql -U postgres -c "CREATE DATABASE docuseal;"
+                
+                # Verificar novamente se o banco de dados foi criado com sucesso
+                docker exec "$CONTAINER_ID" psql -U postgres -lqt | cut -d \| -f 1 | grep -qw "docuseal"
+
+                if [ $? -eq 0 ]; then
+                    echo "Banco de dados docuseal criado com sucesso."
+                    break
+                else
+                    echo "Erro ao criar o banco de dados. Tentando novamente..."
+                fi
+            fi
+        else
+            sleep 5
+        fi
+    done
+}
+
+criar_banco_postgres_directus() {
+    while :; do
+        if docker ps -q --filter "name=postgres" | grep -q .; then
+            CONTAINER_ID=$(docker ps -q --filter "name=postgres")
+
+            # Verificar se o banco de dados já existe
+            docker exec "$CONTAINER_ID" psql -U postgres -lqt | cut -d \| -f 1 | grep -qw "directus"
+
+            if [ $? -eq 0 ]; then
+                echo "O banco de dados directus já existe."
+
+                read -p "Deseja apagar e criar um novo banco de dados? (Y/N): " resposta
+                if [ "$resposta" == "Y" ] || [ "$resposta" == "y" ]; then
+                    # Apagar o banco de dados
+                    docker exec "$CONTAINER_ID" psql -U postgres -c "DROP DATABASE IF EXISTS directus;"
+                    echo "Banco de dados directus apagado com sucesso."
+                    
+                    # Criar o banco de dados novamente
+                    docker exec "$CONTAINER_ID" psql -U postgres -c "CREATE DATABASE directus;"
+                    
+                    echo "Banco de dados directus criado com sucesso."
+                else
+                    echo "Usando o banco de dados existente."
+                fi
+                break
+            else
+                # Criar o banco de dados
+                docker exec "$CONTAINER_ID" psql -U postgres -c "CREATE DATABASE directus;"
+                
+                # Verificar novamente se o banco de dados foi criado com sucesso
+                docker exec "$CONTAINER_ID" psql -U postgres -lqt | cut -d \| -f 1 | grep -qw "directus"
+
+                if [ $? -eq 0 ]; then
+                    echo "Banco de dados directus criado com sucesso."
                     break
                 else
                     echo "Erro ao criar o banco de dados. Tentando novamente..."
@@ -5100,8 +5293,6 @@ ferramenta_typebot() {
 ## Limpa o terminal
 clear
 
-verificar_antes_se_tem_minio
-
 ## Ativa a função dados para pegar os dados da vps
 dados
 
@@ -7288,7 +7479,7 @@ version: '3.7'
 
 services:
   baserow:
-    image: baserow/baserow:latest ## Versão do Baserow
+    image: baserow/baserow:1.22.2 ## Versão do Baserow
     volumes:
       - baserow_data:/baserow/data
 
@@ -11578,8 +11769,6 @@ ferramenta_unoapi() {
 ## Limpa o terminal
 clear
 
-verificar_antes_se_tem_minio_e_rabbitmq_e_chatwoot
-
 ## Ativa a função dados para pegar os dados da vps
 dados
 
@@ -12481,7 +12670,7 @@ version: "3.7"
 
 services:
   quepasa:
-    image: oriondesign/quepasa:latest
+    image: codeleaks/quepasa:latest
     volumes:
       - quepasa_data:/opt/quepasa
       - quepasa_migration:/opt/quepasa/migrations
@@ -12515,6 +12704,7 @@ services:
       - DEBUGREQUESTS=false
       - READRECEIPTS=false
       - SYNOPSISLENGTH=500
+      - MIGRATIONS=/builder/migrations
 
     deploy:
       mode: replicated
@@ -12638,8 +12828,6 @@ ferramenta_dify() {
 
 ## Limpa o terminal
 clear
-
-verificar_antes_se_tem_minio_e_qdrant
 
 ## Ativa a função dados para pegar os dados da vps
 dados
@@ -12820,7 +13008,7 @@ cd
 cd
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[33m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -12837,6 +13025,14 @@ if [ $? -eq 0 ]; then
         pegar_senha_postgres > /dev/null 2>&1
         criar_banco_postgres_dify #> /dev/null 2>&1
 fi
+
+verificar_container_redis
+    if [ $? -eq 0 ]; then
+        sleep 1
+    else
+        ferramenta_redis  > /dev/null 2>&1
+    fi
+
 
 ## Mensagem de Passo
 echo -e "\e[97m• PEGANDO DADOS MINIO \e[33m[3/4]\e[0m"
@@ -13451,18 +13647,40 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 1/3\e[0m"
+    echo -e "\e[97mPasso$amarelo 1/7\e[0m"
     echo -en "\e[33mDigite o dominio para o Affine (ex: affine.oriondesign.art.br): \e[0m" && read -r url_affine
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 2/3\e[0m"
+    echo -e "\e[97mPasso$amarelo 2/7\e[0m"
     echo -en "\e[33mDigite o Email de Admin (ex: contato@oriondesign.art.br): \e[0m" && read -r email_affine
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 3/3\e[0m"
+    echo -e "\e[97mPasso$amarelo 3/7\e[0m"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$"
     echo -en "\e[33mDigite a Senha de Admin (ex: @Senha123_): \e[0m" && read -r senha_affine
+    echo ""
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 4/7\e[0m"
+    echo -en "\e[33mDigite a Email SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_affine
+    echo ""
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 5/7\e[0m"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+    echo -en "\e[33mDigite a Senha SMTP (ex: @Senha123_): \e[0m" && read -r senha_smtp_affine
+    echo ""
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 6/7\e[0m"
+    echo -en "\e[33mDigite o Host SMTP (ex: smtp.hostinger.com): \e[0m" && read -r host_smtp_affine
+    echo ""
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 7/7\e[0m"
+    echo -en "\e[33mDigite a Porta SMTP (ex: 465): \e[0m" && read -r porta_smtp_affine
     echo ""
     
     ## Limpa o terminal
@@ -13484,6 +13702,22 @@ while true; do
 
     ## Informação sobre URL do affine
     echo -e "\e[33mSenha de Admin:\e[97m $senha_affine\e[0m"
+    echo ""
+
+    ## Informação sobre URL do affine
+    echo -e "\e[33mEmail SMTP:\e[97m $email_smtp_affine\e[0m"
+    echo ""
+
+    ## Informação sobre URL do affine
+    echo -e "\e[33mSenha SMTP:\e[97m $senha_smtp_affine\e[0m"
+    echo ""
+
+    ## Informação sobre URL do affine
+    echo -e "\e[33mHost SMTP:\e[97m $host_smtp_affine\e[0m"
+    echo ""
+
+    ## Informação sobre URL do affine
+    echo -e "\e[33mPorta SMTP:\e[97m $porta_smtp_affine\e[0m"
     echo ""
     
     ## Pergunta se as respostas estão corretas
@@ -13560,7 +13794,7 @@ version: '3.7'
  
 services:
   affine:
-    image: ghcr.io/toeverything/affine-graphql:stable
+    image: ghcr.io/toeverything/affine-graphql:stable-39476d1
     networks:
       - $nome_rede_interna
     command:
@@ -13582,6 +13816,12 @@ services:
       - AFFINE_ADMIN_PASSWORD=$senha_affine
       - AFFINE_SERVER_HOST=$url_affine
 
+      ## Dados do SMTP
+      - MAILER_USER=$email_smtp_affine
+      - MAILER_PASSWORD=$senha_smtp_affine
+      - MAILER_HOST=$host_smtp_affine
+      - MAILER_PORT=$porta_smtp_affine
+
       ## Dados do Postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=$senha_postgres
@@ -13592,18 +13832,25 @@ services:
       ## Outras configurações
       - NODE_OPTIONS="--import=./scripts/register.js"
       - AFFINE_CONFIG_PATH=/root/.affine/config
-      - REDIS_SERVER_HOST=redis://redis:6379
+      - REDIS_SERVER_HOST=redis
       - NODE_ENV=production
-    labels:
-      - traefik.enable=true
-      - traefik.http.routers.affine.rule=Host(\`$url_affine\`)
-      - traefik.http.services.affine.loadbalancer.server.port=3010
-      - traefik.http.routers.affine.service=affine
-      - traefik.http.routers.affine.tls.certresolver=letsencryptresolver
-      - traefik.http.routers.affine.entrypoints=websecure
-      - traefik.http.routers.affine.tls=true
-      - traefik.frontend.headers.STSPreload=true
-      - traefik.frontend.headers.STSSeconds=31536000
+      
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.affine.rule=Host(\`$url_affine\`)
+        - traefik.http.services.affine.loadbalancer.server.port=3010
+        - traefik.http.routers.affine.service=affine
+        - traefik.http.routers.affine.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.affine.entrypoints=websecure
+        - traefik.http.routers.affine.tls=true
+        - traefik.frontend.headers.STSPreload=true
+        - traefik.frontend.headers.STSSeconds=31536000
         
 volumes:
   affine_config:
@@ -13694,9 +13941,1368 @@ read -p "Deseja instalar outra aplicação? (Y/N): " choice
     fi
 }
 
+## ██████╗  ██████╗  ██████╗██╗   ██╗███████╗███████╗ █████╗ ██╗     
+## ██╔══██╗██╔═══██╗██╔════╝██║   ██║██╔════╝██╔════╝██╔══██╗██║     
+## ██║  ██║██║   ██║██║     ██║   ██║███████╗█████╗  ███████║██║     
+## ██║  ██║██║   ██║██║     ██║   ██║╚════██║██╔══╝  ██╔══██║██║     
+## ██████╔╝╚██████╔╝╚██████╗╚██████╔╝███████║███████╗██║  ██║███████╗
+## ╚═════╝  ╚═════╝  ╚═════╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝╚══════╝
+                                                                  
+ferramenta_docuseal() {
+
+## Limpa o terminal
+clear
+
+## Ativa a função dados para pegar os dados da vps
+dados
+
+## Mostra o nome da aplicação
+nome_docuseal
+
+## Mostra mensagem para preencher informações
+preencha_as_info
+
+## Inicia um Loop até os dados estarem certos
+while true; do
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 1/5\e[0m"
+    echo -en "\e[33mDigite o dominio para o Docuseal (ex: docuseal.oriondesign.art.br): \e[0m" && read -r url_docuseal
+    echo ""
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 2/5\e[0m"
+    echo -en "\e[33mDigite a Email SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_docuseal
+    echo ""
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 3/5\e[0m"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+    echo -en "\e[33mDigite a Senha SMTP (ex: @Senha123_): \e[0m" && read -r senha_smtp_docuseal
+    echo ""
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 4/5\e[0m"
+    echo -en "\e[33mDigite o Host SMTP (ex: smtp.hostinger.com): \e[0m" && read -r host_smtp_docuseal
+    echo ""
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 5/5\e[0m"
+    echo -en "\e[33mDigite a Porta SMTP (ex: 465): \e[0m" && read -r porta_smtp_docuseal
+    echo ""
+    
+    ## Limpa o terminal
+    clear
+    
+    ## Mostra o nome da aplicação
+    nome_docuseal
+    
+    ## Mostra mensagem para verificar as informações
+    conferindo_as_info
+    
+    ## Informação sobre URL do docuseal
+    echo -e "\e[33mDominio do docuseal:\e[97m $url_docuseal\e[0m"
+    echo ""
+
+    ## Informação sobre URL do docuseal
+    echo -e "\e[33mEmail SMTP:\e[97m $email_smtp_docuseal\e[0m"
+    echo ""
+
+    ## Informação sobre URL do docuseal
+    echo -e "\e[33mSenha SMTP:\e[97m $senha_smtp_docuseal\e[0m"
+    echo ""
+
+    ## Informação sobre URL do docuseal
+    echo -e "\e[33mHost SMTP:\e[97m $host_smtp_docuseal\e[0m"
+    echo ""
+
+    ## Informação sobre URL do docuseal
+    echo -e "\e[33mPorta SMTP:\e[97m $porta_smtp_docuseal\e[0m"
+    echo ""
+    
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
+    if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
+
+        ## Digitou Y para confirmar que as informações estão corretas
+
+        ## Limpar o terminal
+        clear
+
+        ## Mostrar mensagem de Instalando
+        instalando_msg
+
+        ## Sai do Loop
+        break
+    else
+
+        ## Digitou N para dizer que as informações não estão corretas.
+
+        ## Limpar o terminal
+        clear
+
+        ## Mostra o nome da ferramenta
+        nome_docuseal
+
+        ## Mostra mensagem para preencher informações
+        preencha_as_info
+
+    ## Volta para o inicio do loop com as perguntas
+    fi
+done
+
+## Mensagem de Passo
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO DOCUSEAL \e[33m[1/4]\e[0m"
+echo ""
+sleep 1
+
+## Nadaaaaa
+
+## Mensagem de Passo
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[33m[2/4]\e[0m"
+echo ""
+sleep 1
+
+## Cansei já de explicar o que isso faz kkkk
+verificar_container_postgres
+if [ $? -eq 0 ]; then
+        sleep 1
+        pegar_senha_postgres > /dev/null 2>&1
+        criar_banco_postgres_docuseal #> /dev/null 2>&1
+
+    else
+        ferramenta_postgres > /dev/null 2>&1
+        pegar_senha_postgres > /dev/null 2>&1
+        criar_banco_postgres_docuseal #> /dev/null 2>&1
+fi
+
+## Mensagem de Passo
+echo -e "\e[97m• INSTALANDO DOCUSEAL \e[33m[3/4]\e[0m"
+echo ""
+sleep 1
+
+## Pegar o dominio do email
+dominio_smtp_docuseal="${email_smtp_docuseal##*@}"
+
+key_docuseal=$(openssl rand -hex 16)
+key_docuseal2=$(openssl rand -hex 16)
 
 
+## Criando a stack
+cat > docuseal.yaml <<EOL
+version: '3.7'
 
+services:
+  docuseal:
+    image: docuseal/docuseal:latest
+    volumes:
+      - docuseal_data:/data
+    networks:
+      - $nome_rede_interna
+    environment:
+
+      ## Dados de Acesso
+      - HOST=$url_docuseal
+      - FORCE_SSL=true
+
+      ## Secret Key
+      - SECRET_KEY_BASE=$key_docuseal
+
+      ## Dados do Postgres
+      - DATABASE_URL=postgresql://postgres:$senha_postgres@postgres:5432/docuseal
+
+      ## Dados SMTP
+      - SMTP_USERNAME=$email_smtp_docuseal
+      - SMTP_PASSWORD=$senha_smtp_docuseal
+      - SMTP_ADDRESS=$host_smtp_docuseal
+      - SMTP_PORT=$porta_smtp_docuseal
+      - SMTP_FROM=$email_smtp_docuseal
+      - SMTP_DOMAIN=$dominio_smtp_docuseal
+      - SMTP_AUTHENTICATION=login
+
+      ## Dados do S3
+      ##- AWS_ACCESS_KEY_ID=
+      ##- AWS_SECRET_ACCESS_KEY=
+      ##- S3_ATTACHMENTS_BUCKET=
+      
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.docuseal.rule=Host(\`$url_docuseal\`)
+        - traefik.http.services.docuseal.loadbalancer.server.port=3000
+        - traefik.http.routers.docuseal.service=docuseal
+        - traefik.http.routers.docuseal.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.docuseal.entrypoints=websecure
+        - traefik.http.routers.docuseal.tls=true
+
+networks:
+  $nome_rede_interna:
+    external: true
+    name: $nome_rede_interna
+    
+volumes:
+  docuseal_data:
+    external: true
+EOL
+if [ $? -eq 0 ]; then
+    echo "1/2 - [ OK ]"
+else
+    echo "1/2 - [ OFF ]"
+    echo "Não foi possivel criar a stack do docuseal"
+fi
+
+docker stack deploy --prune --resolve-image always -c docuseal.yaml docuseal > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+    echo "2/2 - [ OK ]"
+else
+    echo "2/2 - [ OFF ]"
+    echo "Não foi possivel Subir a stack do docuseal"
+fi
+
+## Mensagem de Passo
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo ""
+sleep 1
+
+## Usa o serviço wait_docuseal para verificar se o serviço esta online
+wait_docuseal
+
+cd dados_vps
+
+cat > dados_docuseal <<EOL
+[ DOCUSEAL ]
+
+Dominio do docuseal: https://$url_docuseal
+
+Usuario: Precisa de criar ao fazer o primeiro login
+
+Senha: Precisa de criar ao fazer o primeiro login
+
+EOL
+
+cd
+cd
+
+## Espera 30 segundos
+wait_30_sec
+
+## Mensagem de finalizado
+instalado_msg
+
+## Mensagem de Guarde os Dados
+guarde_os_dados_msg
+
+## Dados da Aplicação:
+echo -e "\e[32m[ DOCUSEAL ]\e[0m"
+echo ""
+
+echo -e "\e[33mDominio:\e[97m https://$url_docuseal\e[0m"
+echo ""
+
+echo -e "\e[33mUsuario:\e[97m Precisa de criar ao fazer o primeiro login\e[0m"
+echo ""
+
+echo -e "\e[33mSenha:\e[97m Precisa de criar ao fazer o primeiro login\e[0m"
+echo ""
+
+## Creditos do instalador
+creditos_msg
+
+## Pergunta se deseja instalar outra aplicação
+read -p "Deseja instalar outra aplicação? (Y/N): " choice
+    if [ "$choice" = "Y" ] || [ "$choice" = "y" ]; then
+        return
+    else
+        cd
+        cd
+        clear
+        exit 1
+    fi
+}
+
+## ██████╗ ██╗██████╗ ███████╗ ██████╗████████╗██╗   ██╗███████╗
+## ██╔══██╗██║██╔══██╗██╔════╝██╔════╝╚══██╔══╝██║   ██║██╔════╝
+## ██║  ██║██║██████╔╝█████╗  ██║        ██║   ██║   ██║███████╗
+## ██║  ██║██║██╔══██╗██╔══╝  ██║        ██║   ██║   ██║╚════██║
+## ██████╔╝██║██║  ██║███████╗╚██████╗   ██║   ╚██████╔╝███████║
+## ╚═════╝ ╚═╝╚═╝  ╚═╝╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚══════╝
+                                                                  
+ferramenta_directus() {
+
+## Limpa o terminal
+clear
+
+## Ativa a função dados para pegar os dados da vps
+dados
+
+## Mostra o nome da aplicação
+nome_directus
+
+## Mostra mensagem para preencher informações
+preencha_as_info
+
+## Inicia um Loop até os dados estarem certos
+while true; do
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 1/9\e[0m"
+    echo -en "\e[33mDigite o dominio para o Directus (ex: directus.oriondesign.art.br): \e[0m" && read -r url_directus
+    echo ""
+
+     ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 2/9\e[0m"
+    echo -en "\e[33mDigite a Email de Admin (ex: contato@oriondesign.art.br): \e[0m" && read -r email_directus
+    echo ""
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 3/9\e[0m"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$"
+    echo -en "\e[33mDigite a Senha SMTP (ex: @Senha123_): \e[0m" && read -r senha_directus
+    echo ""
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 4/9\e[0m"
+    echo -en "\e[33mDigite a Email SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_directus
+    echo ""
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 5/9\e[0m"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+    echo -en "\e[33mDigite a Senha SMTP (ex: @Senha123_): \e[0m" && read -r senha_smtp_directus
+    echo ""
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 6/9\e[0m"
+    echo -en "\e[33mDigite o Host SMTP (ex: smtp.hostinger.com): \e[0m" && read -r host_smtp_directus
+    echo ""
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 7/9\e[0m"
+    echo -en "\e[33mDigite a Porta SMTP (ex: 465): \e[0m" && read -r porta_smtp_directus
+    echo ""
+
+    ## Pergunta qual é o Access Key do minio
+    echo -e "\e[97mPasso$amarelo 8/9\e[0m"
+    echo -en "\e[33mAccess Key Minio: \e[0m" && read -r S3_ACCESS_KEY
+    echo ""
+
+    ## Pergunta qual é a Secret Key do minio
+    echo -e "\e[97mPasso$amarelo 9/9\e[0m"
+    echo -en "\e[33mSecret Key Minio: \e[0m" && read -r S3_SECRET_KEY
+    echo ""
+
+    pegar_senha_minio
+    if [ $? -eq 0 ]; then
+        echo "1/2 - [ OK ]"
+    else
+        echo "1/2 - [ OFF ]"
+        echo "Não foi possivel pegar a senha do minio"
+    fi
+    pegar_link_s3
+    if [ $? -eq 0 ]; then
+        echo "2/2 - [ OK ]"
+    else
+        echo "2/2 - [ OFF ]"
+        echo "Não foi possivel pegar o link do S3"
+    fi
+    
+    ## Limpa o terminal
+    clear
+    
+    ## Mostra o nome da aplicação
+    nome_directus
+    
+    ## Mostra mensagem para verificar as informações
+    conferindo_as_info
+    
+    ## Informação sobre URL do directus
+    echo -e "\e[33mDominio do Directus:\e[97m $url_directus\e[0m"
+    echo ""
+
+    ## Informação sobre URL do directus
+    echo -e "\e[33mEmail de Admin:\e[97m $email_directus\e[0m"
+    echo ""
+
+    ## Informação sobre URL do directus
+    echo -e "\e[33mSenha de Admin:\e[97m $senha_directus\e[0m"
+    echo ""
+
+    ## Informação sobre URL do directus
+    echo -e "\e[33mEmail SMTP:\e[97m $email_smtp_directus\e[0m"
+    echo ""
+
+    ## Informação sobre URL do directus
+    echo -e "\e[33mSenha SMTP:\e[97m $senha_smtp_directus\e[0m"
+    echo ""
+
+    ## Informação sobre URL do directus
+    echo -e "\e[33mHost SMTP:\e[97m $host_smtp_directus\e[0m"
+    echo ""
+
+    ## Informação sobre URL do directus
+    echo -e "\e[33mPorta SMTP:\e[97m $porta_smtp_directus\e[0m"
+    echo ""
+
+    ## Informação sobre URL do directus
+    echo -e "\e[33mAccess Key Minio:\e[97m $S3_ACCESS_KEY\e[0m"
+    echo ""
+
+    ## Informação sobre URL do directus
+    echo -e "\e[33mSecret Key Minio:\e[97m $S3_SECRET_KEY\e[0m"
+    echo ""
+
+    ## Verifica se a porta é 465, se sim deixa o ssl true, se não, deixa false 
+    if [ "$porta_smtp_directus" -eq 465 ]; then
+    ssl_smtp_directus=true
+    else
+    ssl_smtp_directus=false
+    fi
+    
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
+    if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
+
+        ## Digitou Y para confirmar que as informações estão corretas
+
+        ## Limpar o terminal
+        clear
+
+        ## Mostrar mensagem de Instalando
+        instalando_msg
+
+        ## Sai do Loop
+        break
+    else
+
+        ## Digitou N para dizer que as informações não estão corretas.
+
+        ## Limpar o terminal
+        clear
+
+        ## Mostra o nome da ferramenta
+        nome_directus
+
+        ## Mostra mensagem para preencher informações
+        preencha_as_info
+
+    ## Volta para o inicio do loop com as perguntas
+    fi
+done
+
+## Mensagem de Passo
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO DIRECTUS \e[33m[1/4]\e[0m"
+echo ""
+sleep 1
+
+## Nadaaaaa
+
+## Mensagem de Passo
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[33m[2/4]\e[0m"
+echo ""
+sleep 1
+
+## Cansei já de explicar o que isso faz kkkk
+verificar_container_postgres
+if [ $? -eq 0 ]; then
+        sleep 1
+        pegar_senha_postgres > /dev/null 2>&1
+        criar_banco_postgres_directus #> /dev/null 2>&1
+
+    else
+        ferramenta_postgres > /dev/null 2>&1
+        pegar_senha_postgres > /dev/null 2>&1
+        criar_banco_postgres_directus #> /dev/null 2>&1
+fi
+if [ $? -eq 0 ]; then
+    echo "1/2 - [ OK ]"
+else
+    echo "1/2 - [ OFF ]"
+fi
+
+## Verifica container redis
+verificar_container_redis
+if [ $? -eq 0 ]; then
+    echo ""
+else
+    ferramenta_redis > /dev/null 2>&1
+fi
+if [ $? -eq 0 ]; then
+    echo "2/2 - [ OK ]"
+else
+    echo "2/2 - [ OFF ]"
+fi
+
+## Mensagem de Passo
+echo -e "\e[97m• INSTALANDO DIRECTUS \e[33m[3/4]\e[0m"
+echo ""
+sleep 1
+
+## Gerar Secret Key
+key_directus=$(openssl rand -hex 16)
+key_directus2=$(openssl rand -hex 16)
+
+## Criando a stack
+cat > directus.yaml <<EOL
+version: '3.8'
+
+services:
+  directus:
+    image: directus/directus:latest
+    networks:
+      - $nome_rede_interna
+    volumes:
+      - directus_uploads:/directus/uploads
+      - directus_data:/directus/database
+    environment:
+
+      ## Dados de acesso
+      - ADMIN_EMAIL=$email_directus
+      - ADMIN_PASSWORD=$senha_directus
+      - PUBLIC_URL=https://$url_directus
+
+      ## Dados SMTP
+      - EMAIL_SMTP_USER=$email_smtp_directus
+      - EMAIL_SMTP_PASSWORD=$senha_smtp_directus
+      - EMAIL_SMTP_HOST=$host_smtp_directus
+      - EMAIL_SMTP_PORT=$porta_smtp_directus
+      - EMAIL_SMTP_SECURE=$ssl_smtp_directus
+
+      ## Dados MinIO
+      - STORAGE_s3_KEY=$S3_ACCESS_KEY
+      - STORAGE_s3_SECRET=$S3_SECRET_KEY
+      - STORAGE_s3_BUCKET=directus
+      - STORAGE_s3_REGION=us-west-rack-2
+      - STORAGE_s3_ENDPOINT=$url_s3
+
+      ## Redis
+      - REDIS=redis://redis:6379/4
+
+      ## Secret Keys & Env
+      - KEY=$key_directus
+      - SECRET=$key_directus2
+      - APP_ENV=production
+
+      ## Dados Postgres
+      - DB_CLIENT=postgres
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_DATABASE=directus
+      - DB_USER=postgres
+      - DB_PASSWORD=$senha_postgres
+      - DB_CONNECTION_STRING=postgresql://postgres:$senha_postgres@postgres:5432/directus
+      - DB_PREFIX=drcts_
+
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.directus.rule=Host(\`$url_directus\`)
+        - traefik.http.routers.directus.entrypoints=web,websecure
+        - traefik.http.routers.directus.tls=true
+        - traefik.http.services.directus.loadbalancer.server.port=8055
+        - traefik.docker.network=proxy
+    
+volumes:
+  directus_uploads:
+    external: true
+    name: directus_uploads
+  directus_data:
+    external: true
+    name: directus_data
+
+networks:
+  $nome_rede_interna:
+    external: true
+    attachable: true
+    name: $nome_rede_interna
+
+EOL
+if [ $? -eq 0 ]; then
+    echo "1/2 - [ OK ]"
+else
+    echo "1/2 - [ OFF ]"
+    echo "Não foi possivel criar a stack do directus"
+fi
+
+docker stack deploy --prune --resolve-image always -c directus.yaml directus > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+    echo "2/2 - [ OK ]"
+else
+    echo "2/2 - [ OFF ]"
+    echo "Não foi possivel Subir a stack do directus"
+fi
+
+## Mensagem de Passo
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo ""
+sleep 1
+
+## Usa o serviço wait_directus para verificar se o serviço esta online
+wait_directus
+
+cd dados_vps
+
+cat > dados_directus <<EOL
+[ DIRECTUS ]
+
+Dominio do directus: https://$url_directus
+
+Usuario: $email_directus
+
+Senha: $senha_directus
+
+EOL
+
+cd
+cd
+
+## Espera 30 segundos
+wait_30_sec
+
+## Mensagem de finalizado
+instalado_msg
+
+## Mensagem de Guarde os Dados
+guarde_os_dados_msg
+
+## Dados da Aplicação:
+echo -e "\e[32m[ DIRECTUS ]\e[0m"
+echo ""
+
+echo -e "\e[33mDominio:\e[97m https://$url_directus\e[0m"
+echo ""
+
+echo -e "\e[33mUsuario:\e[97m $email_directus\e[0m"
+echo ""
+
+echo -e "\e[33mSenha:\e[97m $senha_directus\e[0m"
+echo ""
+
+## Creditos do instalador
+creditos_msg
+
+## Pergunta se deseja instalar outra aplicação
+read -p "Deseja instalar outra aplicação? (Y/N): " choice
+    if [ "$choice" = "Y" ] || [ "$choice" = "y" ]; then
+        return
+    else
+        cd
+        cd
+        clear
+        exit 1
+    fi
+}
+
+## ██╗   ██╗ █████╗ ██╗   ██╗██╗  ████████╗██╗    ██╗ █████╗ ██████╗ ██████╗ ███████╗███╗   ██╗
+## ██║   ██║██╔══██╗██║   ██║██║  ╚══██╔══╝██║    ██║██╔══██╗██╔══██╗██╔══██╗██╔════╝████╗  ██║
+## ██║   ██║███████║██║   ██║██║     ██║   ██║ █╗ ██║███████║██████╔╝██║  ██║█████╗  ██╔██╗ ██║
+## ╚██╗ ██╔╝██╔══██║██║   ██║██║     ██║   ██║███╗██║██╔══██║██╔══██╗██║  ██║██╔══╝  ██║╚██╗██║
+##  ╚████╔╝ ██║  ██║╚██████╔╝███████╗██║   ╚███╔███╔╝██║  ██║██║  ██║██████╔╝███████╗██║ ╚████║
+##   ╚═══╝  ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝    ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═══╝                                                                                    
+
+ferramenta_vaultwarden() {
+
+# Limpa o terminal
+clear
+
+## Ativa a função dados para pegar os dados da vps
+dados
+
+## Mostra o nome da aplicação
+nome_vaultwarden
+
+## Mostra mensagem para preencher informações
+preencha_as_info
+
+## Inicia um Loop até os dados estarem certos
+while true; do
+
+    ## Pergunta o Dominio da ferramenta
+    echo -e "\e[97mPasso$amarelo 1/5\e[0m"
+    echo -en "\e[33mDigite o Dominio para o VaultWarden (ex: vaultwarden.oriondesign.art.br): \e[0m" && read -r url_vaultwarden
+    echo ""
+    
+    ## Pergunta o Email SMTP
+    echo -e "\e[97mPasso$amarelo 2/5\e[0m"
+    echo -en "\e[33mDigite um Email para o SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_vaultwarden
+    echo ""
+    
+    ## Pergunta a Senha SMTP
+    echo -e "\e[97mPasso$amarelo 3/5\e[0m"
+    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+    echo -en "\e[33mDigite a Senha SMTP do email (ex: @Senha123_): \e[0m" && read -r senha_vaultwarden
+    echo ""
+    
+    ## Pergunta o Host SMTP
+    echo -e "\e[97mPasso$amarelo 4/5\e[0m"
+    echo -en "\e[33mDigite o Host SMTP do email (ex: smtp.hostinger.com): \e[0m" && read -r host_vaultwarden
+    echo ""
+    
+    ## Pergunta a Porta SMTP 
+    echo -e "\e[97mPasso$amarelo 5/5\e[0m"
+    echo -en "\e[33mDigite a Porta SMTP do email (ex: 465): \e[0m" && read -r porta_vaultwarden
+    echo ""
+    
+    if [ "$porta_vaultwarden" -eq 465 ] || [ "$porta_vaultwarden" -eq 25 ]; then
+        ssl_vaultwarden=force_tls
+    else
+        ssl_vaultwarden=starttls
+    fi
+    
+    ## Limpa o terminal
+    clear
+    
+    ## Mostra o nome da aplicação
+    nome_vaultwarden
+    
+    ## Mostra mensagem para verificar as informações
+    conferindo_as_info
+    
+    ## Informação sobre URL
+    echo -e "\e[33mDominio:\e[97m $url_vaultwarden\e[0m"
+    echo ""
+    
+    ## Informação sobre Email
+    echo -e "\e[33mEmail SMTP:\e[97m $email_vaultwarden\e[0m"
+    echo ""
+    
+    ## Informação sobre Senha
+    echo -e "\e[33mSenha SMTP:\e[97m $senha_vaultwarden\e[0m"
+    echo ""
+    
+    ## Informação sobre Host
+    echo -e "\e[33mHost SMTP:\e[97m $host_vaultwarden\e[0m"
+    echo ""
+    
+    ## Informação sobre Porta
+    echo -e "\e[33mPorta SMTP:\e[97m $porta_vaultwarden\e[0m"
+    echo ""
+    
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
+    if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
+
+        ## Digitou Y para confirmar que as informações estão corretas
+
+        ## Limpar o terminal
+        clear
+
+        ## Mostrar mensagem de Instalando
+        instalando_msg
+
+        ## Sai do Loop
+        break
+    else
+
+        ## Digitou N para dizer que as informações não estão corretas.
+
+        ## Limpar o terminal
+        clear
+
+        ## Mostra o nome da ferramenta
+        nome_vaultwarden
+
+        ## Mostra mensagem para preencher informações
+        preencha_as_info
+
+    ## Volta para o inicio do loop com as perguntas
+    fi
+done
+
+## Mensagem de Passo
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO VAULTWARDEN \e[33m[1/3]\e[0m"
+echo ""
+sleep 1
+
+## Nada nada nada.. só para aparecer a mensagem de passo.
+
+## Mensagem de Passo
+echo -e "\e[97m• INSTALANDO VAULTWARDEN \e[33m[2/3]\e[0m"
+echo ""
+sleep 1
+
+## Criando a stack
+cat > vaultwarden.yaml <<-EOF
+version: "3.7"
+services:
+
+## --------------------------- ORION --------------------------- ##
+
+  vaultwarden:
+    image: vaultwarden/server:latest
+    networks:
+      - $nome_rede_interna
+    #ports:
+    #  - 1973:80
+    volumes:
+      - vaultwarden-data:/data
+    environment:
+
+      ## Dominio do Dashboard
+      - DOMAIN:https://$url_vaultwarden
+
+      ## Permitir novos registros
+      - SIGNUPS_ALLOWED=true
+
+      ## Dados do SMTP
+      - SMTP_FROM=$email_vaultwarden
+      - SMTP_USERNAME=$email_vaultwarden
+      - SMTP_PASSWORD=$senha_vaultwarden
+      - SMTP_HOST=$host_vaultwarden
+      - SMTP_PORT=$porta_vaultwarden
+      - SMTP_SECURITY=$ssl_vaultwarden
+
+      ## Configuração do Websocket
+      - WEBSOCKET_ENABLED=true
+
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+        - node.role == manager
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.vaultwarden.rule=Host(\`$url_vaultwarden\`)"
+        - "traefik.http.routers.vaultwarden.service=vaultwarden"
+        - "traefik.http.routers.vaultwarden.entrypoints=websecure"
+        - "traefik.http.services.vaultwarden.loadbalancer.server.port=80"
+        - "traefik.http.routers.vaultwarden.tls=true"
+        - "traefik.http.routers.vaultwarden.tls.certresolver=letsencryptresolver"
+        - "traefik.http.services.vaultwarden.loadbalancer.passhostheader=true"
+        - "traefik.http.routers.vaultwarden.middlewares=compresstraefik"
+        - "traefik.http.middlewares.compresstraefik.compress=true"
+        - "traefik.docker.network=$nome_rede_interna"
+
+## --------------------------- ORION --------------------------- ##
+
+volumes:
+  vaultwarden-data:
+    external: true
+    name: vaultwarden-data
+
+networks:
+  $nome_rede_interna:
+    external: true
+    name: $nome_rede_interna
+EOF
+if [ $? -eq 0 ]; then
+    echo "1/2 - [ OK ]"
+else
+    echo "1/2 - [ OFF ]"
+    echo "Não foi possivel criar a stack do vaultwarden"
+fi
+
+docker stack deploy --prune --resolve-image always -c vaultwarden.yaml vaultwarden > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+    echo "2/2 - [ OK ]"
+else
+    echo "2/2 - [ OFF ]"
+    echo "Não foi possivel subir a stack do vaultwarden"
+fi
+
+## Mensagem de Passo
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[3/3]\e[0m"
+echo ""
+sleep 1
+
+## Usa o serviço wait_vaultwarden para verificar se o serviço esta online
+wait_vaultwarden
+
+cd dados_vps
+
+cat > dados_vaultwarden <<EOL
+[ VAULTWARDEN ]
+
+Dominio do vaultwarden: https://$url_vaultwarden
+
+Email: Precisa de criar dentro do vaultwarden
+
+Senha: Precisa de criar dentro do vaultwarden
+EOL
+
+cd
+cd
+
+## Espera 30 segundos
+wait_30_sec
+
+## Mensagem de finalizado
+instalado_msg
+
+## Mensagem de Guarde os Dados
+guarde_os_dados_msg
+
+## Dados da Aplicação:
+echo -e "\e[32m[ VAULTWARDEN ]\e[0m"
+echo ""
+
+echo -e "\e[33mDominio:\e[97m https://$url_vaultwarden\e[0m"
+echo ""
+
+echo -e "\e[33mEmail:\e[97m Precisa de criar dentro do VaultWarden\e[0m"
+echo ""
+
+echo -e "\e[33mSenha:\e[97m Precisa de criar dentro do VaultWarden\e[0m"
+echo ""
+
+## Creditos do instalador
+creditos_msg
+
+## Pergunta se deseja instalar outra aplicação
+read -p "Deseja instalar outra aplicação? (Y/N): " choice
+    if [ "$choice" = "Y" ] || [ "$choice" = "y" ]; then
+        return
+    else
+        cd
+        cd
+        clear
+        exit 1
+    fi
+}
+
+##  ██████╗ ██████╗  █████╗ ███████╗ █████╗ ███╗   ██╗ █████╗ 
+## ██╔════╝ ██╔══██╗██╔══██╗██╔════╝██╔══██╗████╗  ██║██╔══██╗
+## ██║  ███╗██████╔╝███████║█████╗  ███████║██╔██╗ ██║███████║
+## ██║   ██║██╔══██╗██╔══██║██╔══╝  ██╔══██║██║╚██╗██║██╔══██║
+## ╚██████╔╝██║  ██║██║  ██║██║     ██║  ██║██║ ╚████║██║  ██║
+##  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝
+
+ferramenta_monitor() {
+
+## Limpa o terminal
+clear
+
+## Ativa a função dados para pegar os dados da vps
+dados
+
+## Mostra o nome da aplicação
+nome_monitor
+
+## Mostra mensagem para preencher informações
+preencha_as_info
+
+## Inicia um Loop até os dados estarem certos
+while true; do
+
+    ##Pergunta o Dominio para aplicação
+    echo -e "\e[97mPasso$amarelo 1/4\e[0m"
+    echo -en "\e[33mDigite o Dominio para o Grafana (ex: grafana.oriondesign.art.br): \e[0m" && read -r url_grafana
+    echo ""
+
+    ##Pergunta o Dominio para aplicação
+    echo -e "\e[97mPasso$amarelo 2/4\e[0m"
+    echo -en "\e[33mDigite o Dominio para o Prometheus (ex: prometheus.oriondesign.art.br): \e[0m" && read -r url_prometheus
+    echo ""
+
+    ##Pergunta o Dominio para aplicação
+    echo -e "\e[97mPasso$amarelo 3/4\e[0m"
+    echo -en "\e[33mDigite o Dominio para o cAdvisor (ex: cadvisor.oriondesign.art.br): \e[0m" && read -r url_cadvisor
+    echo ""
+
+    ##Pergunta o Dominio para aplicação
+    echo -e "\e[97mPasso$amarelo 4/4\e[0m"
+    echo -en "\e[33mDigite o Dominio para o NodeExporter (ex: node.oriondesign.art.br): \e[0m" && read -r url_nodeexporter
+    echo ""
+
+    ## Limpa o terminal
+    clear
+    
+    ## Mostra o nome da aplicação
+    nome_monitor
+    
+    ## Mostra mensagem para verificar as informações
+    conferindo_as_info
+
+    ## Informação sobre URL
+    echo -e "\e[33mDominio do Grafana:\e[97m $url_grafana\e[0m"
+    echo ""
+
+    ## Informação sobre URL
+    echo -e "\e[33mDominio do Prometheus:\e[97m $url_prometheus\e[0m"
+    echo ""
+
+    ## Informação sobre URL
+    echo -e "\e[33mDominio do Cadvisor:\e[97m $url_cadvisor\e[0m"
+    echo ""
+
+    ## Informação sobre URL
+    echo -e "\e[33mDominio do NodeExporter:\e[97m $url_nodeexporter\e[0m"
+    echo ""
+
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
+    if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
+
+        ## Digitou Y para confirmar que as informações estão corretas
+
+        ## Limpar o terminal
+        clear
+
+        ## Mostrar mensagem de Instalando
+        instalando_msg
+
+        ## Sai do Loop
+        break
+    else
+
+        ## Digitou N para dizer que as informações não estão corretas.
+
+        ## Limpar o terminal
+        clear
+
+        ## Mostra o nome da ferramenta
+        nome_monitor
+
+        ## Mostra mensagem para preencher informações
+        preencha_as_info
+
+    ## Volta para o inicio do loop com as perguntas
+    fi
+done
+
+## Mensagem de Passo
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO GRAFANA + PROMETHEUS + CADVISOR \e[33m[1/3]\e[0m"
+echo ""
+sleep 1
+
+## Literalmente nada, apenas um espaço vazio caso precisar de adicionar alguma coisa antes..
+## E claro, para aparecer a mensagem do passo..
+
+## Mensagem de Passo
+echo -e "\e[97m• BAIXANDO RECURSOS \e[33m[2/3]\e[0m"
+echo ""
+sleep 1
+
+mkdir blablabla
+cd blablabla
+
+git clone https://github.com/oriondesign2015/SetupOrion.git > /dev/null 2>&1
+
+sudo mv /root/blablabla/SetupOrion/Extras/Grafana/monitor-orion /opt
+
+cd
+
+rm -r blablabla
+
+cd
+
+cd
+
+## Criando arquivo datasource
+cat > datasource.yml <<EOL
+apiVersion: 1
+datasources:
+- name: Prometheus
+  type: prometheus
+  url: https://$url_prometheus
+  isDefault: true
+  access: proxy
+  editable: true
+EOL
+if [ $? -eq 0 ]; then
+    echo "1/4 - [ OK ]"
+else
+    echo "1/4 - [ OFF ]"
+    echo "Não foi possivel criar o datasource"
+fi
+
+
+cp /root/datasource.yml /opt/monitor-orion/grafana/
+if [ $? -eq 0 ]; then
+    echo "2/6 - [ OK ]"
+else
+    echo "2/6 - [ OFF ]"
+    echo "Não foi possivel copiar o datasource para o diretório opt"
+fi
+
+cp /root/datasource.yml /opt/monitor-orion/grafana/provisioning/datasources/
+if [ $? -eq 0 ]; then
+    echo "3/6 - [ OK ]"
+else
+    echo "3/6 - [ OFF ]"
+    echo "Não foi possivel copiar o datasource para o diretório opt"
+fi
+
+rm /root/datasource.yml
+if [ $? -eq 0 ]; then
+    echo "4/6 - [ OK ]"
+else
+    echo "4/6 - [ OFF ]"
+    echo "Não foi possivel deletar o datasource para o diretório opt"
+fi
+
+cd
+
+## Criando arquivo prometheus yml
+cat > prometheus.yml <<EOL
+global:
+  scrape_interval: 15s
+  scrape_timeout: 10s
+  evaluation_interval: 15s
+alerting:
+  alertmanagers:
+  - static_configs:
+    - targets: []
+    scheme: http
+    timeout: 10s
+    api_version: v1
+scrape_configs:
+- job_name: prometheus
+  honor_timestamps: true
+  scrape_interval: 15s
+  scrape_timeout: 10s
+  metrics_path: /metrics
+  scheme: http
+  static_configs:
+  - targets: ['$url_prometheus','$url_cadvisor','$url_nodeexporter']
+
+EOL
+if [ $? -eq 0 ]; then
+    echo "5/6 - [ OK ]"
+else
+    echo "5/6 - [ OFF ]"
+    echo "Não foi possivel criar o prometheus"
+fi
+
+mv /root/prometheus.yml /opt/monitor-orion/prometheus/
+if [ $? -eq 0 ]; then
+    echo "6/6 - [ OK ]"
+else
+    echo "6/6 - [ OFF ]"
+    echo "Não foi possivel copiar o datasource para o diretório opt"
+fi
+
+cd
+cd
+echo ""
+
+## Mensagem de Passo
+echo -e "\e[97m• INSTALANDO GRAFANA + PROMETHEUS + CADVISOR \e[33m[3/3]\e[0m"
+echo ""
+sleep 1
+
+## Aqui de fato vamos iniciar a instalação das ferramentas
+
+## Criando a stack
+cat > monitor.yaml <<EOL
+version: '3.7'
+services:
+
+## --------------------------- ORION --------------------------- ##
+
+  prometheus:
+    image: prom/prometheus:latest
+    networks:
+      - $nome_rede_interna
+    ports:
+      - "9191:9090"
+    volumes:
+      - /opt/monitor-orion/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.prometheus.rule=Host(\`$url_prometheus\`)
+        - traefik.http.services.prometheus.loadbalancer.server.port=9090
+        - traefik.http.routers.prometheus.service=prometheus
+        - traefik.http.routers.prometheus.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.prometheus.entrypoints=websecure
+        - traefik.http.routers.prometheus.tls=true
+
+## --------------------------- ORION --------------------------- ##
+
+  grafana:
+    image: grafana/grafana:latest
+    networks:
+      - $nome_rede_interna
+    ports:
+      - "3111:3000"
+    volumes:
+      - /opt/monitor-orion/grafana/grafana.ini:/etc/grafana/grafana.ini
+      - /opt/monitor-orion/grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
+      - /opt/monitor-orion/grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards
+      - /opt/monitor-orion/grafana/dashboards:/etc/grafana/dashboards
+    links:
+      - prometheus
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.grafana.rule=Host(\`$url_grafana\`)
+        - traefik.http.services.grafana.loadbalancer.server.port=3000
+        - traefik.http.routers.grafana.service=grafana
+        - traefik.http.routers.grafana.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.grafana.entrypoints=websecure
+        - traefik.http.routers.grafana.tls=true
+
+## --------------------------- ORION --------------------------- ##
+
+  node-exporter:
+    image: prom/node-exporter:latest
+    networks:
+      - $nome_rede_interna
+    ports:
+      - "9100:9100"
+    restart: unless-stopped
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.node-exporter.rule=Host(\`$url_nodeexporter\`)
+        - traefik.http.services.node-exporter.loadbalancer.server.port=9100
+        - traefik.http.routers.node-exporter.service=node-exporter
+        - traefik.http.routers.node-exporter.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.node-exporter.entrypoints=websecure
+        - traefik.http.routers.node-exporter.tls=true
+
+## --------------------------- ORION --------------------------- ##
+
+  cadvisor:
+    image: google/cadvisor:latest
+    networks:
+      - $nome_rede_interna
+    ports:
+      - "8181:8080"
+    restart: unless-stopped
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.cadvisor.rule=Host(\`$url_cadvisor\`)
+        - traefik.http.services.cadvisor.loadbalancer.server.port=8080
+        - traefik.http.routers.cadvisor.service=cadvisor
+        - traefik.http.routers.cadvisor.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.cadvisor.entrypoints=websecure
+        - traefik.http.routers.cadvisor.tls=true
+
+## --------------------------- ORION --------------------------- ##
+
+networks:
+  $nome_rede_interna:
+    name: $nome_rede_interna
+    external: true
+EOL
+if [ $? -eq 0 ]; then
+    echo "1/2 - [ OK ]"
+else
+    echo "1/2 - [ OFF ]"
+    echo "Não foi possivel criar a stack do Monitor"
+fi
+
+docker stack deploy --prune --resolve-image always -c monitor.yaml monitor > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+    echo "2/2 - [ OK ]"
+else
+    echo "2/2 - [ OFF ]"
+    echo "Não foi possivel subir a stack do Monitor"
+fi
+
+echo ""
+sleep 10
+
+## Mensagem de Passo
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/3]\e[0m"
+echo ""
+sleep 1
+
+## Usa o serviço wait_monitor para verificar se o serviço esta online
+wait_monitor
+
+cd dados_vps
+
+cat > dados_monitor <<EOL
+[ MONITOR ]
+
+Dominio Grafana: https://$url_grafana
+
+Dominio Prometheus: https://$url_prometheus
+
+Dominio cAdvisor: https://$url_cadvisor
+
+Dominio NodeExporter: https://$url_nodeexporter
+
+EOL
+
+cd
+cd
+
+## Espera 30 segundos
+wait_30_sec
+
+## Mensagem de finalizado
+instalado_msg
+
+## Mensagem de Guarde os Dados
+guarde_os_dados_msg
+
+## Dados da Aplicação:
+echo -e "\e[32m[ GRAFANA + PROMETHEUS + CADVISOR ]\e[0m"
+echo ""
+
+echo -e "\e[97mDominio Grafana:\e[33m https://$url_grafana\e[0m"
+echo ""
+
+echo -e "\e[97mUsuario Grafana:\e[33m admin\e[0m"
+echo ""
+
+echo -e "\e[97mSenha Grafana:\e[33m admin\e[0m"
+echo -e "\e[97mDepois do primeiro login, será solicitado que você altere a senha.\e[0m"
+echo ""
+
+echo -e "\e[97mDominio Prometheus:\e[33m https://$url_prometheus\e[0m"
+echo ""
+
+echo -e "\e[97mDominio cAdvisor:\e[33m https://$url_cadvisor\e[0m"
+echo ""
+
+echo -e "\e[97mDominio NodeExporter:\e[33m https://$url_nodeexporter\e[0m"
+echo ""
+
+## Creditos do instalador
+creditos_msg
+
+## Pergunta se deseja instalar outra aplicação
+read -p "Deseja instalar outra aplicação? (Y/N): " choice
+    if [ "$choice" = "Y" ] || [ "$choice" = "y" ]; then
+        return
+    else
+        cd
+        cd
+        clear
+        exit 1
+    fi
+}
 
 ####################################################
 
@@ -13993,7 +15599,7 @@ while true; do
             fi
             ;;
         5)
-            if verificar_docker_e_portainer_traefik; then
+            if verificar_docker_e_portainer_traefik && verificar_antes_se_tem_minio; then
             ferramenta_typebot
             fi
             ;;
@@ -14103,7 +15709,7 @@ while true; do
             fi
             ;;
         27)
-            if verificar_docker_e_portainer_traefik; then
+            if verificar_docker_e_portainer_traefik && verificar_antes_se_tem_minio_e_rabbitmq_e_chatwoot; then
             ferramenta_unoapi
             fi
             ;;
@@ -14119,16 +15725,16 @@ while true; do
             ;;
         30)
             if verificar_docker_e_portainer_traefik; then
-            ferramenta_
+            ferramenta_docuseal
             fi
             ;;
         31)
             if verificar_docker_e_portainer_traefik; then
-            ferramenta_
+            ferramenta_monitor
             fi
             ;;
         32)
-            if verificar_docker_e_portainer_traefik; then
+            if verificar_docker_e_portainer_traefik && verificar_antes_se_tem_minio_e_qdrant; then
             ferramenta_dify
             fi
             ;;
@@ -14140,29 +15746,29 @@ while true; do
         34)
             if verificar_docker_e_portainer_traefik; then
             ferramenta_affine
+            
             fi
             ;;
         35)
-            if verificar_docker_e_portainer_traefik; then
-            ferramenta_remover_stack 
+            if verificar_docker_e_portainer_traefik && verificar_antes_se_tem_minio; then
+            ferramenta_directus
             fi
-            break 
             ;;
         36)
-            clear
-            nome_saindo
-            echo ""
-
+            if verificar_docker_e_portainer_traefik; then
+            ferramenta_vaultwarden
+            fi
             ;;
         37)
             if verificar_docker_e_portainer_traefik; then
-            ferramenta_
+            ferramenta_remover_stack
             fi
             ;;
         38)
-            if verificar_docker_e_portainer_traefik; then
-            ferramenta_
-            fi
+            clear
+            nome_saindo
+            echo ""
+            break
             ;;
         39)
             if verificar_docker_e_portainer_traefik; then
