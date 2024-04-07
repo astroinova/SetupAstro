@@ -31,7 +31,7 @@ bash <(curl -sSL https://raw.githubusercontent.com/astroinova/desktop-tutorial/m
 <p>📱 Diversos templates (WhatsApp Dark, Play Pix)
 <p>🌐 Diversos fluxos de diferentes nichos
 <p>🔐 Acesso vitalício
-<p>👨‍👩‍👧‍👦 Grupo para alunos</p>
+<p>👨‍👩‍👧‍👦 Grupo de suporte exclusivo para alunos</p>
 <p>💰 Pack de Landing Pages</p>
 <p>🛠 Pagina de Vendas pronta para Typebot,Whaticket,Chatwoot</p>
 
