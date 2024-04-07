@@ -1,8 +1,6 @@
-
 <a href="https://wa.me/message/MFXREOR2NXE6N1" target="_blank"><img height="30" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.youtube.com/@aprendendoinovar" target="_blank"><img height="30" src="    https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png"> 
-
+<img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png">
 
 <h1></h1>
 <h3>📌 Observações e Recomendações</h3>
@@ -24,8 +22,8 @@ bash <(curl -sSL https://raw.githubusercontent.com/astroinova/desktop-tutorial/m
 <p>Creditos do arquivo docker-compose.yml <a href="https://www.youtube.com/@aprendendoinovar">Eduardo Rodrigues</a></p>
 <p>OrionDesign pois copiei e modelo do seu README.md e Instalador 😎 <a href="https://github.com/oriondesign2015/SetupOrion">Oriondesign2015</a> </p>
 
-
 ## 📖 Curso
+
 <p>🎓 Aulas explicativas
 <p>🧩 Área de membros organizada
 <p>💬 Aulas de Typebot, Chatwoot, EvolutionAPI,Whaticket,Google Sheets etc.
@@ -38,7 +36,9 @@ bash <(curl -sSL https://raw.githubusercontent.com/astroinova/desktop-tutorial/m
 <p>🛠 Pagina de Vendas pronta para Typebot,Whaticket,Chatwoot</p>
 
 ## 🛒 COMPRE AGORA!</p>
+
 <p>em breve</p>
 
 ## ☎️ Dúvidas e Suporte:</p>
+
 <p>https://wa.me/message/MFXREOR2NXE6N1</p>
