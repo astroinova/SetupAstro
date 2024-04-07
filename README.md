@@ -19,7 +19,7 @@ bash <(curl -sSL https://raw.githubusercontent.com/astroinova/desktop-tutorial/m
 
 ## ❤️ Creditos
 
-<p>Creditos do arquivo docker-compose.yml <a href="https://www.youtube.com/@astrogestor">Eduardo Rodrigues</a></p>
+<p>Creditos do arquivo docker-compose.yml <a href="https://www.youtube.com/@aprendendoinovar">Eduardo Rodrigues</a></p>
 <p>OrionDesign pois copiei e modelo do seu README.md e Instalador 😎 <a href="https://github.com/oriondesign2015/SetupOrion">Oriondesign2015</a> </p>
 
 
