@@ -40,3 +40,6 @@ bash <(curl -sSL https://raw.githubusercontent.com/astroinova/desktop-tutorial/m
 
 ## ☎️ Dúvidas e Suporte:</p>
 <p>https://wa.me/message/MFXREOR2NXE6N1</p>
+
+## Importante
+- [https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white] (https://wa.me)
