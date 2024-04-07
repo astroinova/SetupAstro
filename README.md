@@ -32,6 +32,8 @@ bash <(curl -sSL https://raw.githubusercontent.com/astroinova/desktop-tutorial/m
 <p>🌐 Diversos fluxos de diferentes nichos
 <p>🔐 Acesso vitalício
 <p>👨‍👩‍👧‍👦 Grupo para alunos</p>
+<p>💰 Pack de Landing Pages</p>
+<p>🛠 Pagina de Vendas pronta para Typebot,Whaticket,Chatwoot</p>
 
 ## 🛒 COMPRE AGORA!</p>
 <p>em breve</p>
