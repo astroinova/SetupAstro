@@ -1,5 +1,7 @@
-<a href="https://wa.me/message/MFXREOR2NXE6N1" target="_blank"><img height="30" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://www.youtube.com/@aprendendoinovar" target="_blank"><img height="30" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p align="center">
+  <a href="https://chat.whatsapp.com/Cb3Kw0YlCHIJJqS84eC6ie"><img src="https://img.shields.io/badge/Comunidade_do_Whatsapp-4EA94B?style=for-the-badge&labelColor=black&logo=whatsapp&logoColor=4EA94B" alt="Comunidade no Whatsapp"></a>    
+  <a href="https://youtube.com/oriondesign_oficial"><img src="https://img.shields.io/badge/Playlist_Aprendo_a_Inovar-FF0000?style=for-the-badge&labelColor=ffffff&logo=youtube&logoColor=FF0000" alt="Inscreva-se no meu canal"></a>
+</p>
 <img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png">
 
 <h1></h1>
@@ -16,6 +18,10 @@
 ```
 bash <(curl -sSL https://raw.githubusercontent.com/astroinova/desktop-tutorial/main/Setup)
 ```
+<h3 align="center"><b>Ferramentas disponiveis</b></h3>
+<p align="center">
+  Traefik 🔧, Portainer 🔍, Chatwoot 💬, Evolution API 🔄, MinIO 📁, Typebot 🤖, N8N ⚙️, Flowise 🌊, PgAdmin 4 🐘, Nocobase 🗃️, Botpress 🤖, Wordpress 📝, Baserow 📊, MongoDB 🍃, RabbitMQ 🐇, Uptime Kuma ⏰, Calcom 📊, Mautic 📧, Appsmith 🛠️, Qdrant 🔍, Woofed CRM 🐾, Formbricks 🧱, NocoDB 🗃️, Langfuse 🌐, Metabase 📊, Odoo 🛠️, Uno API 🔄, Quepasa API 🔄, Docuseal 📜, Grafana 📊, Prometheus 📈, cAdvisor 📊, Dify AI 🤖, Ollama 🦙, Affine 🔣, Directus 📁, VaultWarden 🗝️, NextCloud ☁️
+</p>
 
 ## ❤️ Creditos
 
@@ -37,8 +43,8 @@ bash <(curl -sSL https://raw.githubusercontent.com/astroinova/desktop-tutorial/m
 
 ## 🛒 COMPRE AGORA!</p>
 
-<p>em breve</p>
+<a href="https://pay.kiwify.com.br/PaXDCuc">🛒 Clique aqui</a>
+
 
 ## ☎️ Dúvidas e Suporte:</p>
-
-<p>https://wa.me/message/MFXREOR2NXE6N1</p>
+<a href="https://wa.me/message/MFXREOR2NXE6N1">👤 Suporte</a>
