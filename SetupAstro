@@ -2739,8 +2739,7 @@ echo ""
 sudo apt-get update > /dev/null 2>&1
 sudo apt-get install swaks -y > /dev/null 2>&1
 
-msg="Se você está lendo isso, o seu SMTP está funcionando =D.
-By: OrionDesign"
+msg="Se você está lendo isso, o seu SMTP está funcionando =D."
 
 if swaks --to "$email_teste" --from "$email_teste" --server "$host_teste" --port "$porta_teste" --auth LOGIN --auth-user "$email_teste" --auth-password "$senha_teste" --tls --body "$msg"; then
     sleep 2
