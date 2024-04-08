@@ -40,7 +40,7 @@ bash <(curl -sSL https://raw.githubusercontent.com/astroinova/desktop-tutorial/m
 <p>💰 Pack de Landing Pages</p>
 <p>🛠 Pagina de Vendas pronta para Typebot,Whaticket,Chatwoot</p>
 
-## 🛒 COMPRE AGORA!</p>
+## 🛒 COMPRE AGORA</p>
 
 <a href="https://pay.kiwify.com.br/PaXDCuc">🛒 Clique aqui</a>
 
