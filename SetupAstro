@@ -943,7 +943,7 @@ menu_instalador(){
     echo -e "${azul}[ 16 ]${reset} - ${branco}Cal.com                                 ${verde}| ${reset}  ${azul}[ 39 ]${reset} - ${branco}PhpMyAdmin ${verde}[NOVO]${reset}"
     echo -e "${azul}[ 17 ]${reset} - ${branco}Mautic                                  ${verde}| ${reset}  ${azul}[ 40 ]${reset} - ${branco}REMOVER STACK${reset}"
     echo -e "${azul}[ 18 ]${reset} - ${branco}Appsmith                                ${verde}| ${reset}  ${azul}[ 41 ]${reset} - ${branco}Sair do instalador${reset}"
-    echo -e "${azul}[ 19 ]${reset} - ${branco}Qdrant                                  ${verde}| ${reset}" # ${azul}[ 42 ]${reset} - ${branco}Ainda Vazio${reset}"
+    echo -e "${azul}[ 19 ]${reset} - ${branco}Qdrant                                  ${verde}| ${reset}  ${azul}[ 42 ]${reset} - ${branco}Perfex CRM${vermelho}[EM BREVE]${reset}"
     echo -e "${azul}[ 20 ]${reset} - ${branco}Woofed CRM                              ${verde}| ${reset}" # ${azul}[ 43 ]${reset} - ${branco}Ainda Vazio${reset}"
     echo""
 }
@@ -16925,6 +16925,12 @@ while true; do
             fi
             ;;
         41)
+            clear
+            nome_saindo
+            echo ""
+            break
+            ;;
+        42)
             clear
             nome_saindo
             echo ""
