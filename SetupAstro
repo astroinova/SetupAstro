@@ -47,6 +47,7 @@ direitos_instalador() {
     echo ""
     read -p "Ao digitar Y você aceita e concorda com as orientações passadas acima (Y/N): " choice
     if [ "$choice" = "Y" ] || [ "$choice" = "y" ]; then
+        clear
         return
     else
         clear
