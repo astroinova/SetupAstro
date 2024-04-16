@@ -2,7 +2,7 @@
 ####################################################
 
 versao() {
-echo -e "\e[97mComunidade: https://chat.whatsapp.com/Ky7uW2hUIf7DfPbIDugKS5                \e[97mVersão do Setup \e[32mv.2.3.9\e[0m"
+echo -e "\e[97mComunidade: \e[32mhttps://chat.whatsapp.com/Ky7uW2hUIf7DfPbIDugKS5                \e[97mVersão do Setup \e[32mv.2.4.4\e[0m"
 }
 
 ####################################################
@@ -70,10 +70,10 @@ creditos_msg() {
     echo -e "$amarelo=                                      pix@oriondesign.art.br                                     $amarelo=\e[0m"
     echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
     echo -e "$amarelo=          $branco         Se precisar de ajuda/mentoria ou quiser deixar seu feedback                   $amarelo=\e[0m"
-    echo -e "$amarelo=          $branco               Nossa comunidade:$amarelo https://discord.gg/ZvtmFtMt82                         $amarelo=\e[0m"
+    echo -e "$amarelo=          $branco               Nossa comunidade:$amarelo https://discord.gg/MD5dgNR8My                         $amarelo=\e[0m"
     echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
     echo -e "$amarelo=          $branco                    ou via WhatsApp (comunidade SetupOrion)                            $amarelo=\e[0m"
-    echo -e "$amarelo=          $amarelo               https://chat.whatsapp.com/LvqP8e7lNPn9Y3QMbbnhfB                        $amarelo=\e[0m"
+    echo -e "$amarelo=          $amarelo               https://chat.whatsapp.com/Ky7uW2hUIf7DfPbIDugKS5                        $amarelo=\e[0m"
     echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
     echo -e "$amarelo===================================================================================================\e[0m"
     echo ""
@@ -775,6 +775,32 @@ nome_monitor() {
     echo ""
 }
 
+nome_nextcloud() {
+    clear
+    echo ""
+    echo -e "$branco           ███╗   ██╗███████╗██╗  ██╗████████╗ ██████╗██╗      ██████╗ ██╗   ██╗██████╗ \e[0m"
+    echo -e "$branco           ████╗  ██║██╔════╝╚██╗██╔╝╚══██╔══╝██╔════╝██║     ██╔═══██╗██║   ██║██╔══██╗\e[0m"
+    echo -e "$branco           ██╔██╗ ██║█████╗   ╚███╔╝    ██║   ██║     ██║     ██║   ██║██║   ██║██║  ██║\e[0m"
+    echo -e "$branco           ██║╚██╗██║██╔══╝   ██╔██╗    ██║   ██║     ██║     ██║   ██║██║   ██║██║  ██║\e[0m"
+    echo -e "$branco           ██║ ╚████║███████╗██╔╝ ██╗   ██║   ╚██████╗███████╗╚██████╔╝╚██████╔╝██████╔╝\e[0m"
+    echo -e "$branco           ╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝ \e[0m"
+    echo ""
+    echo ""
+}
+
+nome_strapi() {
+    clear
+    echo ""
+    echo -e "$branco                         ███████╗████████╗██████╗  █████╗ ██████╗ ██╗\e[0m"
+    echo -e "$branco                         ██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗██║\e[0m"
+    echo -e "$branco                         ███████╗   ██║   ██████╔╝███████║██████╔╝██║\e[0m"
+    echo -e "$branco                         ╚════██║   ██║   ██╔══██╗██╔══██║██╔═══╝ ██║\e[0m"
+    echo -e "$branco                         ███████║   ██║   ██║  ██║██║  ██║██║     ██║\e[0m"
+    echo -e "$branco                         ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝\e[0m"
+    echo ""
+    echo ""
+}
+
 nome_saindo() {
     clear
     echo ""
@@ -795,7 +821,18 @@ nome_saindo() {
     echo "" 
 }
 
-
+nome_phpmyadmin(){
+    clear
+    echo "" 
+    echo -e "$branco    ██████╗ ██╗  ██╗██████╗     ███╗   ███╗██╗   ██╗     █████╗ ██████╗ ███╗   ███╗██╗███╗   ██╗\e[0m"
+    echo -e "$branco    ██╔══██╗██║  ██║██╔══██╗    ████╗ ████║╚██╗ ██╔╝    ██╔══██╗██╔══██╗████╗ ████║██║████╗  ██║\e[0m"
+    echo -e "$branco    ██████╔╝███████║██████╔╝    ██╔████╔██║ ╚████╔╝     ███████║██║  ██║██╔████╔██║██║██╔██╗ ██║\e[0m"
+    echo -e "$branco    ██╔═══╝ ██╔══██║██╔═══╝     ██║╚██╔╝██║  ╚██╔╝      ██╔══██║██║  ██║██║╚██╔╝██║██║██║╚██╗██║\e[0m"
+    echo -e "$branco    ██║     ██║  ██║██║         ██║ ╚═╝ ██║   ██║       ██║  ██║██████╔╝██║ ╚═╝ ██║██║██║ ╚████║\e[0m"
+    echo -e "$branco    ╚═╝     ╚═╝  ╚═╝╚═╝         ╚═╝     ╚═╝   ╚═╝       ╚═╝  ╚═╝╚═════╝ ╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝\e[0m"
+    echo "" 
+    echo "" 
+}
 
 # ===================================================================================================
 ## Titulo Remover Stack []
@@ -823,7 +860,25 @@ nome_remover_stack() {
     echo -e "$amarelo===================================================================================================\e[0m"
     echo""                                                                                             
 }
-
+nome_portainer.reset() {
+    echo ""
+    echo ""
+    echo -e "$branco           ██████╗ ███████╗███████╗███████╗████████╗ █████╗ ███╗   ██╗██████╗  ██████╗ \e[0m"
+    echo -e "$branco           ██╔══██╗██╔════╝██╔════╝██╔════╝╚══██╔══╝██╔══██╗████╗  ██║██╔══██╗██╔═══██╗\e[0m"
+    echo -e "$branco           ██████╔╝█████╗  ███████╗█████╗     ██║   ███████║██╔██╗ ██║██║  ██║██║   ██║\e[0m"
+    echo -e "$branco           ██╔══██╗██╔══╝  ╚════██║██╔══╝     ██║   ██╔══██║██║╚██╗██║██║  ██║██║   ██║\e[0m"
+    echo -e "$branco           ██║  ██║███████╗███████║███████╗   ██║   ██║  ██║██║ ╚████║██████╔╝╚██████╔╝\e[0m"
+    echo -e "$branco           ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝ \e[0m"
+    echo -e "$branco                                                                                       \e[0m"
+    echo -e "$branco                           ███████╗███████╗███╗   ██╗██╗  ██╗ █████╗                   \e[0m"
+    echo -e "$branco                           ██╔════╝██╔════╝████╗  ██║██║  ██║██╔══██╗                  \e[0m"
+    echo -e "$branco                           ███████╗█████╗  ██╔██╗ ██║███████║███████║                  \e[0m"
+    echo -e "$branco                           ╚════██║██╔══╝  ██║╚██╗██║██╔══██║██╔══██║                  \e[0m"
+    echo -e "$branco                           ███████║███████╗██║ ╚████║██║  ██║██║  ██║                  \e[0m"
+    echo -e "$branco                           ╚══════╝╚══════╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═╝                  \e[0m"
+    echo ""
+    echo ""
+}
 ####################################################
 
 ## Defasados
@@ -877,19 +932,19 @@ menu_instalador(){
     echo -e "${amarelo}[ 5 ]${reset} -  ${branco}Typebot                                 ${verde}| ${reset}  ${amarelo}[ 28 ]${reset} - ${branco}N8N + Nodes Quepasa${reset}"
     echo -e "${amarelo}[ 6 ]${reset} -  ${branco}N8N                                     ${verde}| ${reset}  ${amarelo}[ 29 ]${reset} - ${branco}Quepasa API${reset}"
     echo -e "${amarelo}[ 7 ]${reset} -  ${branco}Flowise                                 ${verde}| ${reset}  ${amarelo}[ 30 ]${reset} - ${branco}Docuseal${reset}"
-    echo -e "${amarelo}[ 8 ]${reset} -  ${branco}PgAdmin 4                               ${verde}| ${reset}  ${amarelo}[ 31 ]${reset} - ${branco}Grafana + Prometheus + cAdvisor ${verde}[NOVO]${reset}"
+    echo -e "${amarelo}[ 8 ]${reset} -  ${branco}PgAdmin 4                               ${verde}| ${reset}  ${amarelo}[ 31 ]${reset} - ${branco}Grafana + Prometheus + cAdvisor${reset}"
     echo -e "${amarelo}[ 9 ]${reset} -  ${branco}Nocobase                                ${verde}| ${reset}  ${amarelo}[ 32 ]${reset} - ${branco}Dify AI${reset}"
     echo -e "${amarelo}[ 10 ]${reset} - ${branco}Botpress                                ${verde}| ${reset}  ${amarelo}[ 33 ]${reset} - ${branco}Ollama${reset}"
     echo -e "${amarelo}[ 11 ]${reset} - ${branco}Wordpress                               ${verde}| ${reset}  ${amarelo}[ 34 ]${reset} - ${branco}Affine${reset}"
     echo -e "${amarelo}[ 12 ]${reset} - ${branco}Baserow                                 ${verde}| ${reset}  ${amarelo}[ 35 ]${reset} - ${branco}Directus${reset}"
-    echo -e "${amarelo}[ 13 ]${reset} - ${branco}MongoDB                                 ${verde}| ${reset}  ${amarelo}[ 36 ]${reset} - ${branco}VaultWarden ${verde}[NOVO]${reset}"
-    echo -e "${amarelo}[ 14 ]${reset} - ${branco}RabbitMQ                                ${verde}| ${reset}  ${amarelo}[ 37 ]${reset} - ${branco}REMOVER STACK${reset}"
-    echo -e "${amarelo}[ 15 ]${reset} - ${branco}Uptime Kuma                             ${verde}| ${reset}  ${amarelo}[ 38 ]${reset} - ${branco}Sair do instalador${reset}"
-    echo -e "${amarelo}[ 16 ]${reset} - ${branco}Cal.com                                 ${verde}| ${reset}" # ${amarelo}[ 39 ]${reset} - ${branco}Sair do instalador${reset}"
-    echo -e "${amarelo}[ 17 ]${reset} - ${branco}Mautic                                  ${verde}| ${reset}" # ${amarelo}[ 40 ]${reset} - ${branco}Ainda Vazio${reset}"
-    echo -e "${amarelo}[ 18 ]${reset} - ${branco}Appsmith                                ${verde}| ${reset}" # ${amarelo}[ 31 ]${reset} - ${branco}Ainda Vazio${reset}"
-    echo -e "${amarelo}[ 19 ]${reset} - ${branco}Qdrant                                  ${verde}| ${reset}" # ${amarelo}[ 32 ]${reset} - ${branco}Ainda Vazio${reset}"
-    echo -e "${amarelo}[ 20 ]${reset} - ${branco}Woofed CRM                              ${verde}| ${reset}" # ${amarelo}[ 33 ]${reset} - ${branco}Ainda Vazio${reset}"
+    echo -e "${amarelo}[ 13 ]${reset} - ${branco}MongoDB                                 ${verde}| ${reset}  ${amarelo}[ 36 ]${reset} - ${branco}VaultWarden${reset}"
+    echo -e "${amarelo}[ 14 ]${reset} - ${branco}RabbitMQ                                ${verde}| ${reset}  ${amarelo}[ 37 ]${reset} - ${branco}NextCloud${reset}"
+    echo -e "${amarelo}[ 15 ]${reset} - ${branco}Uptime Kuma                             ${verde}| ${reset}  ${amarelo}[ 38 ]${reset} - ${branco}Strapi ${verde}[NOVO]${reset}"
+    echo -e "${amarelo}[ 16 ]${reset} - ${branco}Cal.com                                 ${verde}| ${reset}  ${amarelo}[ 39 ]${reset} - ${branco}PhpMyAdmin ${verde}[NOVO]${reset}"
+    echo -e "${amarelo}[ 17 ]${reset} - ${branco}Mautic                                  ${verde}| ${reset}  ${amarelo}[ 40 ]${reset} - ${branco}REMOVER STACK${reset}"
+    echo -e "${amarelo}[ 18 ]${reset} - ${branco}Appsmith                                ${verde}| ${reset}  ${amarelo}[ 41 ]${reset} - ${branco}Sair do instalador${reset}"
+    echo -e "${amarelo}[ 19 ]${reset} - ${branco}Qdrant                                  ${verde}| ${reset}" # ${amarelo}[ 42 ]${reset} - ${branco}Ainda Vazio${reset}"
+    echo -e "${amarelo}[ 20 ]${reset} - ${branco}Woofed CRM                              ${verde}| ${reset}" # ${amarelo}[ 43 ]${reset} - ${branco}Ainda Vazio${reset}"
     echo""
 }
 
@@ -1108,8 +1163,6 @@ verificar_container_postgres() {
 ## Verificar Container Mysql
 
 verificar_container_mysql() {
-
-
     if docker ps -q --filter "name=mysql" | grep -q .; then
         return 0
     else
@@ -1424,7 +1477,7 @@ done
 }
 
 wait_calcom() {
-    echo "Este processo pode demorar um pouco, se passar de 5 minutos cancele... por que deu ruim..."
+    echo "Este processo pode demorar um pouco, se passar de 10 minutos cancele... por que deu ruim..."
 while true; do
     # Verifica se o serviço chatwoot está ativo
     if docker service ls --filter "name=calcom" | grep "1/1"; then
@@ -1662,6 +1715,45 @@ wait_monitor(){
     while true; do
         # Verifica se o serviço chatwoot está ativo
         if docker service ls --filter "name=monitor" | grep "1/1"; then
+            sleep 10
+            break
+        fi
+    
+        sleep 5
+    done
+}
+
+wait_nextcloud(){
+    echo "Este processo pode demorar um pouco, se passar de 5 minutos cancele... por que deu ruim..."
+    while true; do
+        # Verifica se o serviço chatwoot está ativo
+        if docker service ls --filter "name=nextcloud" | grep "1/1"; then
+            sleep 10
+            break
+        fi
+    
+        sleep 5
+    done
+}
+
+wait_strapi(){
+    echo "Este processo pode demorar um pouco, se passar de 5 minutos cancele... por que deu ruim..."
+    while true; do
+        # Verifica se o serviço chatwoot está ativo
+        if docker service ls --filter "name=strapi" | grep "1/1"; then
+            sleep 10
+            break
+        fi
+    
+        sleep 5
+    done
+}
+
+wait_phpmyadmin(){
+    echo "Este processo pode demorar um pouco, se passar de 5 minutos cancele... por que deu ruim..."
+    while true; do
+        # Verifica se o serviço chatwoot está ativo
+        if docker service ls --filter "name=phpmyadmin" | grep "1/1"; then
             sleep 10
             break
         fi
@@ -2608,6 +2700,51 @@ criar_banco_postgres_directus() {
     done
 }
 
+criar_banco_postgres_nextcloud() {
+    while :; do
+        if docker ps -q --filter "name=postgres" | grep -q .; then
+            CONTAINER_ID=$(docker ps -q --filter "name=postgres")
+
+            # Verificar se o banco de dados já existe
+            docker exec "$CONTAINER_ID" psql -U postgres -lqt | cut -d \| -f 1 | grep -qw "nextcloud"
+
+            if [ $? -eq 0 ]; then
+                echo "O banco de dados nextcloud já existe."
+
+                read -p "Deseja apagar e criar um novo banco de dados? (Y/N): " resposta
+                if [ "$resposta" == "Y" ] || [ "$resposta" == "y" ]; then
+                    # Apagar o banco de dados
+                    docker exec "$CONTAINER_ID" psql -U postgres -c "DROP DATABASE IF EXISTS nextcloud;"
+                    echo "Banco de dados nextcloud apagado com sucesso."
+                    
+                    # Criar o banco de dados novamente
+                    docker exec "$CONTAINER_ID" psql -U postgres -c "CREATE DATABASE nextcloud;"
+                    
+                    echo "Banco de dados nextcloud criado com sucesso."
+                else
+                    echo "Usando o banco de dados existente."
+                fi
+                break
+            else
+                # Criar o banco de dados
+                docker exec "$CONTAINER_ID" psql -U postgres -c "CREATE DATABASE nextcloud;"
+                
+                # Verificar novamente se o banco de dados foi criado com sucesso
+                docker exec "$CONTAINER_ID" psql -U postgres -lqt | cut -d \| -f 1 | grep -qw "nextcloud"
+
+                if [ $? -eq 0 ]; then
+                    echo "Banco de dados nextcloud criado com sucesso."
+                    break
+                else
+                    echo "Erro ao criar o banco de dados. Tentando novamente..."
+                fi
+            fi
+        else
+            sleep 5
+        fi
+    done
+}
+
 
 ####################################################
 
@@ -2668,6 +2805,33 @@ criar_banco_mysql_wordpress() {
     done
 }
 
+criar_banco_mysql_strapi() {
+    dados
+    pegar_senha_mysql
+    while :; do
+        if CONTAINER_ID=$(docker ps -q --filter "name=mysql"); then
+            if docker exec "$CONTAINER_ID" mysql -u root -p"$senha_mysql" -e "SHOW DATABASES LIKE 'strapi';" | grep -qw "strapi"; then
+                echo "O banco de dados strapi já existe."
+
+                resposta="N"
+                if [ "$resposta" == "Y" ] || [ "$resposta" == "y" ]; then
+                    docker exec "$CONTAINER_ID" mysql -u root -p"$senha_mysql" -e "DROP DATABASE IF EXISTS strapi;"
+                    echo "Banco de dados strapi apagado com sucesso."
+                else
+                    echo "Usando o banco de dados existente."
+                    break
+                fi
+            else
+                docker exec "$CONTAINER_ID" mysql -u root -p"$senha_mysql" -e "CREATE DATABASE strapi;"
+                echo "Banco de dados strapi criado com sucesso."
+                break
+            fi
+        else
+            sleep 5
+        fi
+    done
+}
+
 
 ####################################################
 
@@ -2688,20 +2852,26 @@ preencha_as_info
 
 while true; do
 
-echo -e "\e[97mPasso$amarelo 1/4\e[0m"
-echo -en "\e[33mDigite o Email: \e[0m" && read -r email_teste
+echo -e "\e[97mPasso$amarelo 1/5\e[0m"
+echo -en "\e[33mDigite o endereço de Email (ex: contato@oriondesign.art.br): \e[0m" && read -r email_teste
 echo ""
 
-echo -e "\e[97mPasso$amarelo 2/4\e[0m"
-echo -en "\e[33mDigite a Senha do email: \e[0m" && read -r senha_teste
+echo -e "\e[97mPasso$amarelo 2/5\e[0m"
+echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
+echo -en "\e[33mDigite o usuário de Email (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r user_teste
 echo ""
 
-echo -e "\e[97mPasso$amarelo 3/4\e[0m"
-echo -en "\e[33mDigite o Host Smtp: \e[0m" && read -r host_teste
+echo -e "\e[97mPasso$amarelo 3/5\e[0m"
+echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+echo -en "\e[33mDigite a Senha do email (ex: @Senha123_): \e[0m" && read -r senha_teste
 echo ""
 
-echo -e "\e[97mPasso$amarelo 4/4\e[0m"
-echo -en "\e[33mDigite a Porta Smtp: \e[0m" && read -r porta_teste
+echo -e "\e[97mPasso$amarelo 4/5\e[0m"
+echo -en "\e[33mDigite o Host Smtp (ex: smtp.hostinger.com): \e[0m" && read -r host_teste
+echo ""
+
+echo -e "\e[97mPasso$amarelo 5/5\e[0m"
+echo -en "\e[33mDigite a Porta Smtp (ex: 465): \e[0m" && read -r porta_teste
 echo ""
 
 clear
@@ -2709,6 +2879,9 @@ nome_testeemail
 conferindo_as_info
 
 echo -e "\e[33mEmail:\e[97m $email_teste\e[0m"
+echo ""
+
+echo -e "\e[33mUsuário:\e[97m $user_teste\e[0m"
 echo ""
 
 echo -e "\e[33mSenha:\e[97m $senha_teste\e[0m"
@@ -2739,9 +2912,10 @@ echo ""
 sudo apt-get update > /dev/null 2>&1
 sudo apt-get install swaks -y > /dev/null 2>&1
 
-msg="Se você está lendo isso, o seu SMTP está funcionando =D."
+msg="Se você está lendo isso, o seu SMTP está funcionando =D.
+By: OrionDesign"
 
-if swaks --to "$email_teste" --from "$email_teste" --server "$host_teste" --port "$porta_teste" --auth LOGIN --auth-user "$email_teste" --auth-password "$senha_teste" --tls --body "$msg"; then
+if swaks --to "$email_teste" --from "$email_teste" --server "$host_teste" --port "$porta_teste" --auth LOGIN --auth-user "$user_teste" --auth-password "$senha_teste" --tls --body "$msg"; then
     sleep 2
     clear
     nome_testeemail
@@ -3058,6 +3232,8 @@ version: "3.7"
 
 services:
 
+## --------------------------- ORION --------------------------- ##
+
   traefik:
     image: traefik:latest
     command:
@@ -3105,8 +3281,9 @@ services:
     networks:
       - $nome_rede_interna ## Nome da rede interna
 
-volumes:
+## --------------------------- ORION --------------------------- ##
 
+volumes:
   vol_shared:
     external: true
     name: volume_swarm_shared
@@ -3115,7 +3292,6 @@ volumes:
     name: volume_swarm_certificates
 
 networks:
-
   $nome_rede_interna: ## Nome da rede interna
     external: true
     name: $nome_rede_interna ## Nome da rede interna
@@ -3161,6 +3337,9 @@ cat > portainer.yaml <<EOL
 version: "3.7"
 
 services:
+
+## --------------------------- ORION --------------------------- ##
+
   agent:
     image: portainer/agent:latest ## Versão do portainer
     volumes:
@@ -3172,6 +3351,8 @@ services:
       mode: global
       placement:
         constraints: [node.platform.os == linux]
+
+## --------------------------- ORION --------------------------- ##
 
   portainer:
     image: portainer/portainer-ce:latest
@@ -3194,6 +3375,8 @@ services:
         - "traefik.docker.network=$nome_rede_interna" ## Nome da rede interna
         - "traefik.http.routers.portainer.entrypoints=websecure"
         - "traefik.http.routers.portainer.priority=1"
+
+## --------------------------- ORION --------------------------- ##
 
 networks:
   $nome_rede_interna: ## Nome da rede interna
@@ -3307,6 +3490,9 @@ cat > postgres.yaml <<EOL
 version: "3.7"
 
 services:
+
+## --------------------------- ORION --------------------------- ##
+
   postgres:
     image: postgres:14 ## Versão do postgres
     environment:
@@ -3330,6 +3516,8 @@ services:
         limits:
           cpus: "0.5"
           memory: 1024M
+
+## --------------------------- ORION --------------------------- ##
 
 volumes:
   postgres_data:
@@ -3362,7 +3550,7 @@ cd dados_vps
 cat > dados_postgres <<EOL
 [ POSTGRES ]
 
-Dominio do portainer: postgres://postgres:5432
+Dominio do postgres: postgres://postgres:5432
 
 Usuario: postgres
 
@@ -3394,6 +3582,9 @@ cat > redis.yaml <<EOL
 version: "3.7"
 
 services:
+
+## --------------------------- ORION --------------------------- ##
+
   redis:
     image: redis:latest  ## Versão do Redis
     command: [
@@ -3415,6 +3606,8 @@ services:
         limits:
           cpus: "0.5"
           memory: 1024M
+
+## --------------------------- ORION --------------------------- ##
 
 volumes:
   redis_data:
@@ -3447,7 +3640,7 @@ cd dados_vps
 cat > dados_redis <<EOL
 [ REDIS ]
 
-Dominio do portainer: redis://redis:6379
+Dominio do Redis: redis://redis:6379
 
 Usuario: redis
 
@@ -3481,6 +3674,9 @@ cat > mysql.yaml <<EOL
 version: "3.7"
 
 services:
+
+## --------------------------- ORION --------------------------- ##
+
   mysql:
     image: percona/percona-server:8.0 ## Versão do Mysql
     environment:
@@ -3511,6 +3707,8 @@ services:
         "--default-authentication-plugin=mysql_native_password",
         "--max-allowed-packet=512MB",
       ]
+
+## --------------------------- ORION --------------------------- ##
 
 volumes:
   mysql_data:
@@ -3543,7 +3741,7 @@ cd dados_vps
 cat > dados_mysql <<EOL
 [ MYSQL ]
 
-Dominio do portainer: mysql
+Dominio do mysql: mysql
 
 Usuario: mysql ou root
 
@@ -3751,6 +3949,9 @@ cat > chatwoot.yaml <<EOL
 version: "3.7"
 
 services:
+
+## --------------------------- ORION --------------------------- ##
+
   chatwoot_app:
     image: chatwoot/chatwoot:latest ## Versão do Chatwoot
     command: bundle exec rails s -p 3000 -b 0.0.0.0
@@ -3761,24 +3962,42 @@ services:
     networks:
       - $nome_rede_interna ## Nome da rede interna
     environment:
+
+      ## URL Aleatória
       - CHATWOOT_HUB_URL=https://oriondesign.art.br/setup#
+
+      ## Nome da Empresa
       - INSTALLATION_NAME=$nome_empresa_chatwoot ## Nome da empresa
-      - NODE_ENV=production
-      - RAILS_ENV=production
-      - INSTALLATION_ENV=docker
-      - SECRET_KEY_BASE=$encryption_key ## Key aleatória gerada aleatóriamente
+
+      ## Secret key
+      - SECRET_KEY_BASE=$encryption_key
+
+      ## Url Chatwoot
       - FRONTEND_URL=https://$url_chatwoot ## Url do Chatwoot
-      - DEFAULT_LOCALE=pt_BR
       - FORCE_SSL=true
-      - ENABLE_ACCOUNT_SIGNUP=false ## false = Desativar novas inscrições no inicio | true = Ativar novas inscrições no inicio
+
+      ## Idioma padrão
+      - DEFAULT_LOCALE=pt_BR
+
+      ## Dados do Redis
       - REDIS_URL=redis://redis:6379
+
+      ## Dados do Postgres
       - POSTGRES_HOST=postgres
       - POSTGRES_USERNAME=postgres
       - POSTGRES_PASSWORD=$senha_postgres ## Senha do postgres
       - POSTGRES_DATABASE=chatwoot
-      - ACTIVE_STORAGE_SERVICE=local
-      - RAILS_LOG_TO_STDOUT=true
-      - USE_INBOX_AVATAR_FOR_BOT=true
+
+      ## Armazenamento
+      - ACTIVE_STORAGE_SERVICE=local ## use s3_compatible para MinIO
+      #- STORAGE_BUCKET_NAME=chatwoot
+      #- STORAGE_ACCESS_KEY_ID=ACCESS_KEY_MINIO
+      #- STORAGE_SECRET_ACCESS_KEY=SECRET_KEY_MINIO
+      #- STORAGE_REGION=us-east
+      #- STORAGE_ENDPOINT=https://s3.DOMINIO.COM
+      #- STORAGE_FORCE_PATH_STYLE=true
+
+      ## Dados do SMTP
       - MAILER_SENDER_EMAIL=$email_admin_chatwoot <$email_admin_chatwoot> ## Email SMTP
       - SMTP_DOMAIN=$dominio_smtp_chatwoot ## Dominio do email
       - SMTP_ADDRESS=$smtp_email_chatwoot ## Host SMTP
@@ -3790,6 +4009,15 @@ services:
       - SMTP_ENABLE_STARTTLS_AUTO=true
       - SMTP_OPENSSL_VERIFY_MODE=peer
       - MAILER_INBOUND_EMAIL_DOMAIN=$email_admin_chatwoot ## Email SMTP
+
+      ## Outras configurações
+      - NODE_ENV=production
+      - RAILS_ENV=production
+      - INSTALLATION_ENV=docker
+      - RAILS_LOG_TO_STDOUT=true
+      - USE_INBOX_AVATAR_FOR_BOT=true
+      - ENABLE_ACCOUNT_SIGNUP=false
+
     deploy:
       mode: replicated
       replicas: 1
@@ -3812,6 +4040,8 @@ services:
         - traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto=https
         - traefik.http.routers.chatwoot_app.middlewares=sslheader@docker
 
+## --------------------------- ORION --------------------------- ##
+
   chatwoot_sidekiq:
     image: chatwoot/chatwoot:latest
     command: bundle exec sidekiq -C config/sidekiq.yml
@@ -3821,24 +4051,42 @@ services:
     networks:
       - $nome_rede_interna ## Nome da rede interna
     environment:
-      - CHATWOOT_HUB_URL=https://oriondesign.art.br/setup
+
+      ## URL Aleatória
+      - CHATWOOT_HUB_URL=https://oriondesign.art.br/setup#
+
+      ## Nome da Empresa
       - INSTALLATION_NAME=$nome_empresa_chatwoot ## Nome da empresa
-      - NODE_ENV=production
-      - RAILS_ENV=production
-      - INSTALLATION_ENV=docker
-      - SECRET_KEY_BASE=$encryption_key ## Key aleatória gerada aleatóriamente
+
+      ## Secret key
+      - SECRET_KEY_BASE=$encryption_key
+
+      ## Url Chatwoot
       - FRONTEND_URL=https://$url_chatwoot ## Url do Chatwoot
-      - DEFAULT_LOCALE=pt_BR
       - FORCE_SSL=true
-      - ENABLE_ACCOUNT_SIGNUP=false ## false = Desativar novas inscrições no inicio | true = Ativar novas inscrições no inicio
+
+      ## Idioma padrão
+      - DEFAULT_LOCALE=pt_BR
+
+      ## Dados do Redis
       - REDIS_URL=redis://redis:6379
+
+      ## Dados do Postgres
       - POSTGRES_HOST=postgres
       - POSTGRES_USERNAME=postgres
       - POSTGRES_PASSWORD=$senha_postgres ## Senha do postgres
       - POSTGRES_DATABASE=chatwoot
-      - ACTIVE_STORAGE_SERVICE=local
-      - RAILS_LOG_TO_STDOUT=true
-      - USE_INBOX_AVATAR_FOR_BOT=true
+
+      ## Armazenamento
+      - ACTIVE_STORAGE_SERVICE=local ## use s3_compatible para MinIO
+      #- STORAGE_BUCKET_NAME=chatwoot
+      #- STORAGE_ACCESS_KEY_ID=ACCESS_KEY_MINIO
+      #- STORAGE_SECRET_ACCESS_KEY=SECRET_KEY_MINIO
+      #- STORAGE_REGION=us-east
+      #- STORAGE_ENDPOINT=https://s3.DOMINIO.COM
+      #- STORAGE_FORCE_PATH_STYLE=true
+
+      ## Dados do SMTP
       - MAILER_SENDER_EMAIL=$email_admin_chatwoot <$email_admin_chatwoot> ## Email SMTP
       - SMTP_DOMAIN=$dominio_smtp_chatwoot ## Dominio do email
       - SMTP_ADDRESS=$smtp_email_chatwoot ## Host SMTP
@@ -3850,6 +4098,15 @@ services:
       - SMTP_ENABLE_STARTTLS_AUTO=true
       - SMTP_OPENSSL_VERIFY_MODE=peer
       - MAILER_INBOUND_EMAIL_DOMAIN=$email_admin_chatwoot ## Email SMTP
+
+      ## Outras configurações
+      - NODE_ENV=production
+      - RAILS_ENV=production
+      - INSTALLATION_ENV=docker
+      - RAILS_LOG_TO_STDOUT=true
+      - USE_INBOX_AVATAR_FOR_BOT=true
+      - ENABLE_ACCOUNT_SIGNUP=false
+
     deploy:
       mode: replicated
       replicas: 1
@@ -3860,6 +4117,8 @@ services:
         limits:
           cpus: "1"
           memory: 1024M
+
+## --------------------------- ORION --------------------------- ##
 
 volumes:
   chatwoot_data:
@@ -5305,38 +5564,44 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio do Builder
-    echo -e "\e[97mPasso$amarelo 1/9\e[0m"
+    echo -e "\e[97mPasso$amarelo 1/10\e[0m"
     echo -en "\e[33mDigite o Dominio para o Builder do Typebot (ex: typebot.oriondesign.art.br): \e[0m" && read -r url_typebot
     echo ""
 
     ##Pergunta o Dominio do Viewer
-    echo -e "\e[97mPasso$amarelo 2/9\e[0m"
+    echo -e "\e[97mPasso$amarelo 2/10\e[0m"
     echo -en "\e[33mDigite o Dominio para o Viewer do Typebot (ex: bot.oriondesign.art.br): \e[0m" && read -r url_viewer
     echo ""
 
     ##Pergunta a versão da ferramenta
-    echo -e "\e[97mPasso$amarelo 3/9\e[0m"
+    echo -e "\e[97mPasso$amarelo 3/10\e[0m"
     echo -en "\e[33mDigite a versão que deseja do Typebot (ex: 2.21.3 ou latest): \e[0m" && read -r versao_typebot
     echo ""
 
     ##Pergunta o Email SMTP
-    echo -e "\e[97mPasso$amarelo 4/9\e[0m"
+    echo -e "\e[97mPasso$amarelo 4/109\e[0m"
     echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_typebot
+    echo ""
+
+    ##Pergunta o usuário do Email SMTP
+    echo -e "\e[97mPasso$amarelo 5/10\e[0m"
+    echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
+    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r usuario_email_typebot
     echo ""
     
     ## Pergunta a senha do SMTP
-    echo -e "\e[97mPasso$amarelo 5/9\e[0m"
+    echo -e "\e[97mPasso$amarelo 6/10\e[0m"
     echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_typebot
     echo ""
 
     ## Pergunta o Host SMTP do email
-    echo -e "\e[97mPasso$amarelo 6/9\e[0m"
+    echo -e "\e[97mPasso$amarelo 7/10\e[0m"
     echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_typebot
     echo ""
 
     ## Pergunta a porta SMTP do email
-    echo -e "\e[97mPasso$amarelo 7/9\e[0m"
+    echo -e "\e[97mPasso$amarelo 8/10\e[0m"
     echo -en "\e[33mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_typebot
     echo ""
 
@@ -5348,12 +5613,12 @@ while true; do
     fi
 
     ## Pergunta qual é o Access Key do minio
-    echo -e "\e[97mPasso$amarelo 8/9\e[0m"
+    echo -e "\e[97mPasso$amarelo 9/10\e[0m"
     echo -en "\e[33mAccess Key Minio: \e[0m" && read -r S3_ACCESS_KEY
     echo ""
 
     ## Pergunta qual é a Secret Key do minio
-    echo -e "\e[97mPasso$amarelo 9/9\e[0m"
+    echo -e "\e[97mPasso$amarelo 10/10\e[0m"
     echo -en "\e[33mSecret Key Minio: \e[0m" && read -r S3_SECRET_KEY
     echo ""
 
@@ -5380,6 +5645,10 @@ while true; do
 
     ## Informação sobre Email
     echo -e "\e[33mEmail do SMTP:\e[97m $email_typebot\e[0m"
+    echo ""
+
+    ## Informação sobre Email
+    echo -e "\e[33mUsuário do SMTP:\e[97m $usuario_email_typebot\e[0m"
     echo ""
 
     ## Informação sobre Senha do Email
@@ -5502,7 +5771,7 @@ services:
       - DATABASE_URL=postgresql://postgres:$senha_postgres@postgres:5432/typebot
 
       ## Encryption key
-      - ENCRYPTION_SECRET=2652c632beb3f7c3fa800ce3eb022ce4
+      - ENCRYPTION_SECRET=$key_typebot
 
       ## Plano Padrão (das novas contas)
       - DEFAULT_WORKSPACE_PLAN=UNLIMITED
@@ -5519,7 +5788,7 @@ services:
       - ADMIN_EMAIL=$email_typebot ## Email SMTP
       - NEXT_PUBLIC_SMTP_FROM='Suporte' <$email_typebot>
       - SMTP_AUTH_DISABLED=false
-      - SMTP_USERNAME=$email_typebot
+      - SMTP_USERNAME=$usuario_email_typebot
       - SMTP_PASSWORD=$senha_email_typebot
       - SMTP_HOST=$smtp_email_typebot
       - SMTP_PORT=$porta_smtp_typebot
@@ -5567,7 +5836,7 @@ services:
       - DATABASE_URL=postgresql://postgres:$senha_postgres@postgres:5432/typebot
 
       ## Encryption key
-      - ENCRYPTION_SECRET=2652c632beb3f7c3fa800ce3eb022ce4
+      - ENCRYPTION_SECRET=$key_typebot
 
       ## Plano Padrão (das novas contas)
       - DEFAULT_WORKSPACE_PLAN=UNLIMITED
@@ -5584,7 +5853,7 @@ services:
       - ADMIN_EMAIL=$email_typebot ## Email SMTP
       - NEXT_PUBLIC_SMTP_FROM='Suporte' <$email_typebot>
       - SMTP_AUTH_DISABLED=false
-      - SMTP_USERNAME=$email_typebot
+      - SMTP_USERNAME=$usuario_email_typebot
       - SMTP_PASSWORD=$senha_email_typebot
       - SMTP_HOST=$smtp_email_typebot
       - SMTP_PORT=$porta_smtp_typebot
@@ -6722,7 +6991,7 @@ version: "3.7"
 
 services:
   nocobase:
-    image: nocobase/nocobase:latest ## Versão do Nocobase
+    image: nocobase/nocobase:0.19.0-alpha.7 ## Versão do Nocobase
     volumes:
       - nocobase_storage:/app/nocobase/storage
     networks:
@@ -7566,7 +7835,7 @@ instalado_msg
 guarde_os_dados_msg
 
 ## Dados da Aplicação:
-echo -e "\e[32m[ Baserow ]\e[0m"
+echo -e "\e[32m[ BASEROW ]\e[0m"
 echo ""
 
 echo -e "\e[33mDominio:\e[97m https://$url_baserow\e[0m"
@@ -7760,7 +8029,7 @@ ip_vps=$(curl -s ifconfig.me)
 cat > dados_mongodb <<EOL
 [ MONGODB ]
 
-Dominio do Baserow: MongoDB://$user_mongo:$pass_mongo@$ip_vps:27017/?authSource=admin&readPreference=primary&ssl=false&directConnection=true
+Dominio do MongoDB: MongoDB://$user_mongo:$pass_mongo@$ip_vps:27017/?authSource=admin&readPreference=primary&ssl=false&directConnection=true
 
 Usuario: $user_mongo
 
@@ -7984,7 +8253,7 @@ ip_vps=$(curl -s ifconfig.me)
 cat > dados_rabbitmq <<EOL
 [ RABBITMQ ]
 
-Dominio do Baserow: $url_rabbitmq
+Dominio do RabbitMq: $url_rabbitmq
 
 Usuario: $user_rabbitmq
 
@@ -8507,7 +8776,7 @@ instalado_msg
 guarde_os_dados_msg
 
 ## Dados da Aplicação:
-echo -e "\e[32m[Cal.com]\e[0m"
+echo -e "\e[32m[ CAL.COM ]\e[0m"
 echo ""
 
 echo -e "\e[33mDominio:\e[97m https://$url_calcom\e[0m"
@@ -8900,6 +9169,8 @@ services:
       - appsmith_data:/appsmith-stacks
     environment:
       - APPSMITH_CUSTOM_DOMAIN=https://$url_appsmith
+      ## Ativar/Desativar Novas Inscrições
+      - APPSMITH_SIGNUP_DISABLED=false
     deploy:
       mode: replicated
       replicas: 1
@@ -9122,6 +9393,8 @@ do
     cat >> qdrant.yaml <<-EOF
   $SERVICE_NAME:
     image: qdrant/qdrant:latest
+    volumes:
+      - qdrant_data:/qdrant
     command: $COMMAND
     restart: always
     environment:
@@ -9140,6 +9413,14 @@ do
 
 EOF
 done
+
+cat >> qdrant.yaml <<-EOF
+volumes:
+  qdrant_data:
+    external: true
+    name: qdrant_data
+EOF
+
 if [ $? -eq 0 ]; then
     echo "1/2 - [ OK ]"
 else
@@ -9168,7 +9449,7 @@ cd dados_vps
 cat > dados_qdrant <<EOL
 [ QDRANT ]
 
-Dominio do qdrant: https://$ip_vps:6333/dashboard
+Dominio do Qdrant: https://$ip_vps:6333/dashboard
 
 Usuario: Não Tem
 
@@ -9549,13 +9830,13 @@ cd dados_vps
 cat > dados_woofedcrm <<EOL
 [ WOOFED CRM ]
 
-Dominio do Nocobase: https://$url_woofed
+Dominio do WoofedCRM: https://$url_woofed
 
 Email: Precisa criar dentro do WoofedCRM
 
 Senha: Precisa criar dentro do WoofedCRM
 
-Dominio do Nocobase: https://$url_woofed/motor_admin
+Dominio do WoofedCRM: https://$url_woofed/motor_admin
 
 Usuario do Motor: $email_admin_woofed
 
@@ -11518,7 +11799,7 @@ version: "3.7"
 
 services:
   chatwoot_nestor_app:
-    image: francisbreit/chatwoot-n:v3.6.7 ## Versão do Chatwoot NESTOR
+    image: francisbreit/chatwoot-n:v3.6.7-v2 ## Versão do Chatwoot NESTOR
     command: bundle exec rails s -p 3000 -b 0.0.0.0
     entrypoint: docker/entrypoints/rails.sh
     volumes:
@@ -11579,7 +11860,7 @@ services:
         - traefik.http.routers.chatwoot_nestor_app.middlewares=sslheader@docker
 
   chatwoot_nestor_sidekiq:
-    image: francisbreit/chatwoot-n:v3.6.7 ## Versão do Chatwoot NESTOR
+    image: francisbreit/chatwoot-n:v3.6.7-v2 ## Versão do Chatwoot NESTOR
     command: bundle exec sidekiq -C config/sidekiq.yml
     volumes:
       - chatwoot_nestor_data:/app/storage ## Diretório dos arquivos de conversa
@@ -12267,7 +12548,7 @@ version: "3.7"
 
 services:
   n8n_quepasa_editor:
-    image: oriondesign/n8n-quepasa:latest ## Versão do N8N
+    image: oriondesign/quepasa:8aca0a3031f0 ## Versão do N8N
     volumes:
       - n8n_quepasa_data:/home/node/.n8n/nodes
     command: start
@@ -14970,7 +15251,7 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO GRAFANA + PROMETHEUS + CADVISOR \e[33m[1/3]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO GRAFANA + PROMETHEUS + CADVISOR \e[33m[1/4]\e[0m"
 echo ""
 sleep 1
 
@@ -14978,7 +15259,7 @@ sleep 1
 ## E claro, para aparecer a mensagem do passo..
 
 ## Mensagem de Passo
-echo -e "\e[97m• BAIXANDO RECURSOS \e[33m[2/3]\e[0m"
+echo -e "\e[97m• BAIXANDO RECURSOS \e[33m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -15086,7 +15367,7 @@ cd
 echo ""
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO GRAFANA + PROMETHEUS + CADVISOR \e[33m[3/3]\e[0m"
+echo -e "\e[97m• INSTALANDO GRAFANA + PROMETHEUS + CADVISOR \e[33m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -15231,7 +15512,7 @@ echo ""
 sleep 10
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/3]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -15286,6 +15567,781 @@ echo -e "\e[97mDominio cAdvisor:\e[33m https://$url_cadvisor\e[0m"
 echo ""
 
 echo -e "\e[97mDominio NodeExporter:\e[33m https://$url_nodeexporter\e[0m"
+echo ""
+
+## Creditos do instalador
+creditos_msg
+
+## Pergunta se deseja instalar outra aplicação
+read -p "Deseja instalar outra aplicação? (Y/N): " choice
+    if [ "$choice" = "Y" ] || [ "$choice" = "y" ]; then
+        return
+    else
+        cd
+        cd
+        clear
+        exit 1
+    fi
+}
+
+## ███╗   ██╗███████╗██╗  ██╗████████╗ ██████╗██╗      ██████╗ ██╗   ██╗██████╗ 
+## ████╗  ██║██╔════╝╚██╗██╔╝╚══██╔══╝██╔════╝██║     ██╔═══██╗██║   ██║██╔══██╗
+## ██╔██╗ ██║█████╗   ╚███╔╝    ██║   ██║     ██║     ██║   ██║██║   ██║██║  ██║
+## ██║╚██╗██║██╔══╝   ██╔██╗    ██║   ██║     ██║     ██║   ██║██║   ██║██║  ██║
+## ██║ ╚████║███████╗██╔╝ ██╗   ██║   ╚██████╗███████╗╚██████╔╝╚██████╔╝██████╔╝
+## ╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝ 
+
+ferramenta_nextcloud() {
+
+## Limpa o terminal
+clear
+
+## Ativa a função dados para pegar os dados da vps
+dados
+
+## Mostra o nome da aplicação
+nome_nextcloud
+
+## Mostra mensagem para preencher informações
+preencha_as_info
+
+## Inicia um Loop até os dados estarem certos
+while true; do
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 1/3\e[0m"
+    echo -en "\e[33mDigite o dominio para o NextCloud (ex: nextcloud.oriondesign.art.br): \e[0m" && read -r url_nextcloud
+    echo ""
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 2/3\e[0m"
+    echo -en "\e[33mDigite o Usuario para o NextCloud (ex: orion): \e[0m" && read -r user_nextcloud
+    echo ""
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 3/3\e[0m"
+    echo -e "$amarelo--> Minimo 8 caracteres. Use Letras MAIUSCULAS e minusculas, numero e um caractere especial @ ou _"
+    echo -en "\e[33mDigite o Senha o Usuario (ex: @Senha123_): \e[0m" && read -r pass_nextcloud
+    echo ""
+
+
+    
+    ## Limpa o terminal
+    clear
+    
+    ## Mostra o nome da aplicação
+    nome_nextcloud
+    
+    ## Mostra mensagem para verificar as informações
+    conferindo_as_info
+    
+    ## Informação sobre URL do nextcloud
+    echo -e "\e[33mDominio do NextCloud:\e[97m $url_nextcloud\e[0m"
+    echo ""
+
+    ## Informação sobre URL do nextcloud
+    echo -e "\e[33mUsuario do NextCloud:\e[97m $user_nextcloud\e[0m"
+    echo ""
+
+    ## Informação sobre URL do nextcloud
+    echo -e "\e[33mSenha do NextCloud:\e[97m $pass_nextcloud\e[0m"
+    echo ""
+    
+    ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
+    if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
+
+        ## Digitou Y para confirmar que as informações estão corretas
+
+        ## Limpar o terminal
+        clear
+
+        ## Mostrar mensagem de Instalando
+        instalando_msg
+
+        ## Sai do Loop
+        break
+    else
+
+        ## Digitou N para dizer que as informações não estão corretas.
+
+        ## Limpar o terminal
+        clear
+
+        ## Mostra o nome da ferramenta
+        nome_minio
+
+        ## Mostra mensagem para preencher informações
+        preencha_as_info
+
+    ## Volta para o inicio do loop com as perguntas
+    fi
+done
+
+## Mensagem de Passo
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO NEXTCLOUD \e[33m[1/4]\e[0m"
+echo ""
+sleep 1
+
+## Nadaaaaa
+
+## Mensagem de Passo
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REIDS \e[33m[2/4]\e[0m"
+echo ""
+sleep 1
+
+## Cansei já de explicar o que isso faz kkkk
+verificar_container_postgres
+if [ $? -eq 0 ]; then
+        sleep 1
+        pegar_senha_postgres > /dev/null 2>&1
+        criar_banco_postgres_nextcloud #> /dev/null 2>&1
+
+    else
+        ferramenta_postgres > /dev/null 2>&1
+        pegar_senha_postgres > /dev/null 2>&1
+        criar_banco_postgres_nextcloud #> /dev/null 2>&1
+fi
+if [ $? -eq 0 ]; then
+    echo "1/2 - [ OK ]"
+else
+    echo "1/2 - [ OFF ]"
+fi
+
+verificar_container_redis
+if [ $? -eq 0 ]; then
+    sleep 1
+else
+    ferramenta_redis  > /dev/null 2>&1
+fi
+if [ $? -eq 0 ]; then
+    echo "2/2 - [ OK ]"
+else
+    echo "2/2 - [ OFF ]"
+fi
+
+echo ""
+## Mensagem de Passo
+echo -e "\e[97m• INSTALANDO NEXTCLOUD \e[33m[3/4]\e[0m"
+echo ""
+sleep 1
+
+## Criando a stack
+cat > nextcloud.yaml <<EOL
+version: '3.7'
+services:
+
+## --------------------------- ORION --------------------------- ##
+
+  nextcloud:
+    image: nextcloud:latest
+    networks:
+      - $nome_rede_interna
+    ports:
+      - 8282:80
+    volumes:
+      - nextcloud_data:/var/www/html
+    environment:
+
+      ## Dados de acesso:
+      - NEXTCLOUD_ADMIN_USER=$user_nextcloud
+      - NEXTCLOUD_ADMIN_PASSWORD=$pass_nextcloud
+
+
+      ## Dados do Postgres
+      - POSTGRES_HOST=postgres
+      - POSTGRES_DB=nextcloud
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=$senha_postgres
+
+      ## Dados do Redis
+      - REDIS_HOST=redis
+
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.nextcloud.rule=Host(\`$url_nextcloud\`)
+        - traefik.http.services.nextcloud.loadbalancer.server.port=80
+        - traefik.http.routers.nextcloud.service=nextcloud
+        - traefik.http.routers.nextcloud.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.nextcloud.entrypoints=web,websecure
+        - traefik.http.routers.nextcloud.tls=true
+
+## --------------------------- ORION --------------------------- ##
+
+  cron:
+    image: nextcloud:latest
+    volumes:
+      - nextcloud_data:/var/www/html
+    entrypoint: /cron.sh
+
+## --------------------------- ORION --------------------------- ##
+
+volumes:
+  nextcloud_data:
+    external: true
+
+networks:
+  $nome_rede_interna:
+    external: true
+    name: $nome_rede_interna
+EOL
+if [ $? -eq 0 ]; then
+    echo "1/2 - [ OK ]"
+else
+    echo "1/2 - [ OFF ]"
+    echo "Não foi possivel criar a stack do nextcloud"
+fi
+
+docker stack deploy --prune --resolve-image always -c nextcloud.yaml nextcloud > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+    echo "2/2 - [ OK ]"
+else
+    echo "2/2 - [ OFF ]"
+    echo "Não foi possivel Subir a stack do nextcloud"
+fi
+echo ""
+
+## Mensagem de Passo
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo ""
+sleep 1
+
+## Usa o serviço wait_nextcloud para verificar se o serviço esta online
+wait_nextcloud
+
+cd dados_vps
+
+cat > dados_nextcloud <<EOL
+[ NEXTCLOUD ]
+
+Dominio do NextCloud: https://$url_nextcloud
+
+Usuario: $user_nextcloud
+
+Senha: $pass_nextcloud
+
+EOL
+
+cd
+cd
+
+## Espera 30 segundos
+wait_30_sec
+
+## Mensagem de finalizado
+instalado_msg
+
+## Mensagem de Guarde os Dados
+guarde_os_dados_msg
+
+## Dados da Aplicação:
+echo -e "\e[32m[ NEXTCLOUD ]\e[0m"
+echo ""
+
+echo -e "\e[33mDominio:\e[97m https://$url_nextcloud\e[0m"
+echo ""
+
+echo -e "\e[33mUsuario:\e[97m $user_nextcloud\e[0m"
+echo ""
+
+echo -e "\e[33mSenha:\e[97m $pass_nextcloud\e[0m"
+echo ""
+
+## Creditos do instalador
+creditos_msg
+
+## Pergunta se deseja instalar outra aplicação
+read -p "Deseja instalar outra aplicação? (Y/N): " choice
+    if [ "$choice" = "Y" ] || [ "$choice" = "y" ]; then
+        return
+    else
+        cd
+        cd
+        clear
+        exit 1
+    fi
+}
+
+## ███████╗████████╗██████╗  █████╗ ██████╗ ██╗
+## ██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗██║
+## ███████╗   ██║   ██████╔╝███████║██████╔╝██║
+## ╚════██║   ██║   ██╔══██╗██╔══██║██╔═══╝ ██║
+## ███████║   ██║   ██║  ██║██║  ██║██║     ██║
+## ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝
+                                                           
+ferramenta_strapi() {
+
+## Limpa o terminal
+clear
+
+## Ativa a função dados para pegar os dados da vps
+dados
+
+## Mostra o nome da aplicação
+nome_strapi
+
+## Mostra mensagem para preencher informações
+preencha_as_info
+
+## Inicia um Loop até os dados estarem certos
+while true; do
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 1/1\e[0m"
+    echo -en "\e[33mDigite o dominio para o Strapi (ex: strapi.oriondesign.art.br): \e[0m" && read -r url_strapi
+    echo ""
+    
+    ## Limpa o terminal
+    clear
+    
+    ## Mostra o nome da aplicação
+    nome_strapi
+    
+    ## Mostra mensagem para verificar as informações
+    conferindo_as_info
+    
+    ##Informação do Dominio
+    echo -e "\e[33mDominio para o strapi:\e[97m $url_strapi\e[0m"
+    echo ""
+    
+     ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
+    if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
+
+        ## Digitou Y para confirmar que as informações estão corretas
+
+        ## Limpar o terminal
+        clear
+
+        ## Mostrar mensagem de Instalando
+        instalando_msg
+
+        ## Sai do Loop
+        break
+    else
+
+        ## Digitou N para dizer que as informações não estão corretas.
+
+        ## Limpar o terminal
+        clear
+
+        ## Mostra o nome da ferramenta
+        nome_strapi
+
+        ## Mostra mensagem para preencher informações
+        preencha_as_info
+
+    ## Volta para o inicio do loop com as perguntas
+    fi
+done
+
+## Mensagem de Passo
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO STRAPI \e[33m[1/4]\e[0m"
+echo ""
+sleep 1
+
+## NADA
+
+## Mensagem de Passo
+echo -e "\e[97m• VERIFICANDO/INSTALANDO MYSQL \e[33m[2/4]\e[0m"
+echo ""
+sleep 1
+
+verificar_container_mysql
+    if [ $? -eq 0 ]; then
+        pegar_senha_mysql > /dev/null 2>&1
+        criar_banco_mysql_strapi
+    else
+        ferramenta_mysql > /dev/null 2>&1
+        pegar_senha_mysql > /dev/null 2>&1
+        criar_banco_mysql_strapi
+    fi
+
+    if [ $? -eq 0 ]; then
+    echo "1/1 - [ OK ]"
+    else
+    echo "1/1 - [ OFF ]"
+    fi
+
+## Espera 30 segundos
+wait_30_sec
+
+## Mensagem de Passo
+echo -e "\e[97m• INSTALANDO STRAPI \e[33m[3/4]\e[0m"
+echo ""
+sleep 1
+
+jwt_secret=$(openssl rand -hex 16)
+
+admin_jwt=$(openssl rand -hex 16)
+
+app_key=$(openssl rand -hex 16)
+
+## Criando a stack
+cat > strapi.yaml <<EOL
+version: "3.7"
+
+services:
+
+## --------------------------- ORION --------------------------- ##
+
+  strapi:
+    image: strapi/strapi
+    volumes:
+      - strapi_data:/srv/app
+    networks:
+      - $nome_rede_interna
+    environment:
+
+      ## Dados MySQL
+      - DATABASE_CLIENT=mysql
+      - DATABASE_NAME=strapi
+      - DATABASE_HOST=mysql
+      - DATABASE_PORT=3306
+      - DATABASE_USERNAME=root
+      - DATABASE_PASSWORD=$senha_mysql
+
+      ## Secret Keys
+      - JWT_SECRET=$jwt_secret
+      - ADMIN_JWT_SECRET=$admin_jwt
+      - APP_KEYS=$app_key
+
+      ## Outros dados
+      - NODE_ENV=production
+      - STRAPI_TELEMETRY_DISABLED=true
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.strapi.rule=Host(\`$url_strapi\`)
+        - traefik.http.routers.strapi.entrypoints=web,websecure
+        - traefik.http.routers.strapi.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.strapi.service=strapi
+        - traefik.http.services.strapi.loadbalancer.server.port=1337
+        - traefik.http.services.strapi.loadbalancer.passHostHeader=true
+
+## --------------------------- ORION --------------------------- ##
+
+volumes:
+  strapi_data:
+    name: strapi_data
+    external: true
+
+networks:
+  $nome_rede_interna:
+    external: true
+    name: $nome_rede_interna
+EOL
+if [ $? -eq 0 ]; then
+    echo "1/2 - [ OK ]"
+else
+    echo "1/2 - [ OFF ]"
+    echo "Não foi possivel criar a stack do Strapi"
+fi
+
+docker stack deploy --prune --resolve-image always -c strapi.yaml strapi #> /dev/null 2>&1
+if [ $? -eq 0 ]; then
+    echo "2/2 - [ OK ]"
+else
+    echo "2/2 - [ OFF ]"
+    echo "Não foi possivel Subir a stack do Strapi"
+fi
+
+## Mensagem de Passo
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo ""
+sleep 1
+
+## Usa o serviço wait_strapi para verificar se o serviço esta online
+wait_strapi
+
+cd dados_vps
+
+cat > dados_strapi <<EOL
+[ STRAPI ]
+
+Dominio do Strapi: https://$url_strapi
+
+Usuario: Precisa criar no primeiro acesso do Strapi
+
+Senha: Precisa criar no primeiro acesso do Strapi
+
+EOL
+
+cd
+cd
+
+## Espera 30 segundos
+wait_30_sec
+
+## Mensagem de finalizado
+instalado_msg
+
+## Mensagem de Guarde os Dados
+guarde_os_dados_msg
+
+## Dados da Aplicação:
+echo -e "\e[32m[ STRAPI ]\e[0m"
+echo ""
+
+echo -e "\e[33mDominio:\e[97m https://$url_strapi\e[0m"
+echo ""
+
+echo -e "\e[33mUsuario:\e[97m Precisa criar no primeiro acesso do strapi\e[0m"
+echo ""
+
+echo -e "\e[33mSenha:\e[97m Precisa criar no primeiro acesso do strapi\e[0m"
+echo ""
+
+## Creditos do instalador
+creditos_msg
+
+## Pergunta se deseja instalar outra aplicação
+read -p "Deseja instalar outra aplicação? (Y/N): " choice
+    if [ "$choice" = "Y" ] || [ "$choice" = "y" ]; then
+        return
+    else
+        cd
+        cd
+        clear
+        exit 1
+    fi
+}
+
+## ██████╗ ██╗  ██╗██████╗     ███╗   ███╗██╗   ██╗     █████╗ ██████╗ ███╗   ███╗██╗███╗   ██╗
+## ██╔══██╗██║  ██║██╔══██╗    ████╗ ████║╚██╗ ██╔╝    ██╔══██╗██╔══██╗████╗ ████║██║████╗  ██║
+## ██████╔╝███████║██████╔╝    ██╔████╔██║ ╚████╔╝     ███████║██║  ██║██╔████╔██║██║██╔██╗ ██║
+## ██╔═══╝ ██╔══██║██╔═══╝     ██║╚██╔╝██║  ╚██╔╝      ██╔══██║██║  ██║██║╚██╔╝██║██║██║╚██╗██║
+## ██║     ██║  ██║██║         ██║ ╚═╝ ██║   ██║       ██║  ██║██████╔╝██║ ╚═╝ ██║██║██║ ╚████║
+## ╚═╝     ╚═╝  ╚═╝╚═╝         ╚═╝     ╚═╝   ╚═╝       ╚═╝  ╚═╝╚═════╝ ╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝
+                                                                                                                                               
+ferramenta_phpmyadmin() {
+
+## Limpa o terminal
+clear
+
+## Ativa a função dados para pegar os dados da vps
+dados
+
+## Mostra o nome da aplicação
+nome_phpmyadmin
+
+## Mostra mensagem para preencher informações
+preencha_as_info
+
+## Inicia um Loop até os dados estarem certos
+while true; do
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 1/2\e[0m"
+    echo -en "\e[33mDigite o dominio para o PhpMyAdmin (ex: phpmyadmin.oriondesign.art.br): \e[0m" && read -r url_phpmyadmin
+    echo ""
+
+    ##Pergunta o Dominio para a ferramenta
+    echo -e "\e[97mPasso$amarelo 2/2\e[0m"
+    echo -en "\e[33mDigite o Host MySQL (ex: mysql ou 1.111.111.11:3306): \e[0m" && read -r host_phpmyadmin
+    echo ""
+
+    ##Pergunta o Dominio para a ferramenta
+    #echo -e "\e[97mPasso$amarelo 4/4\e[0m"
+    #echo -en "\e[33mDigite o Usuario MySQL  (ex: oriondesign): \e[0m" && read -r user_phpmyadmin
+    #echo ""
+
+    ##Pergunta o Dominio para a ferramenta
+    #echo -e "\e[97mPasso$amarelo 4/4\e[0m"
+    #echo -e "$amarelo--> Sem caracteres especiais: \!#$"
+    #echo -en "\e[33mDigite a Senha MySQL (ex: @Senha123_): \e[0m" && read -r pass_phpmyadmin
+    #echo ""
+    
+    ## Limpa o terminal
+    clear
+    
+    ## Mostra o nome da aplicação
+    nome_phpmyadmin
+    
+    ## Mostra mensagem para verificar as informações
+    conferindo_as_info
+    
+    ##Informação do Dominio
+    echo -e "\e[33mDominio para o PhpMyAdmin:\e[97m $url_phpmyadmin\e[0m"
+    echo ""
+
+    ##Informação do Dominio
+    echo -e "\e[33mHost MySQL:\e[97m $host_phpmyadmin\e[0m"
+    echo ""
+
+    ###Informação do Dominio
+    #echo -e "\e[33mUsuario MySQL:\e[97m $user_phpmyadmin\e[0m"
+    #echo ""
+
+    ###Informação do Dominio
+    #echo -e "\e[33mSenha MYSQL:\e[97m $pass_phpmyadmin\e[0m"
+    #echo ""
+    
+     ## Pergunta se as respostas estão corretas
+    read -p "As respostas estão corretas? (Y/N): " confirmacao
+    if [ "$confirmacao" = "Y" ] || [ "$confirmacao" = "y" ]; then
+
+        ## Digitou Y para confirmar que as informações estão corretas
+
+        ## Limpar o terminal
+        clear
+
+        ## Mostrar mensagem de Instalando
+        instalando_msg
+
+        ## Sai do Loop
+        break
+    else
+
+        ## Digitou N para dizer que as informações não estão corretas.
+
+        ## Limpar o terminal
+        clear
+
+        ## Mostra o nome da ferramenta
+        nome_phpmyadmin
+
+        ## Mostra mensagem para preencher informações
+        preencha_as_info
+
+    ## Volta para o inicio do loop com as perguntas
+    fi
+done
+
+## Mensagem de Passo
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO PHPMYADMIN \e[33m[1/3]\e[0m"
+echo ""
+sleep 1
+
+## NADA
+
+## Mensagem de Passo
+echo -e "\e[97m• INSTALANDO PHPMYADMIN \e[33m[2/3]\e[0m"
+echo ""
+sleep 1
+
+## Criando a stack
+cat > phpmyadmin.yaml <<EOL
+version: "3.7"
+
+services:
+
+## --------------------------- ORION --------------------------- ##
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    command: ["apache2-foreground"]
+    networks:
+      - $nome_rede_interna
+    environment:
+
+      ## Dados do MySQL
+      - PMA_HOSTS=$host_phpmyadmin
+      - PMA_PORT=3306
+      
+      ## Dado de acesso
+      #- PMA_USER=
+      #- PMA_PASSWORD=
+      - PMA_ABSOLUTE_URI=https://$url_phpmyadmin
+      
+      ## Limite de Upload
+      - UPLOAD_LIMIT=10M
+
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.phpmyadmin.rule=Host(\`$url_phpmyadmin\`)
+        - traefik.http.routers.phpmyadmin.entrypoints=web,websecure
+        - traefik.http.routers.phpmyadmin.tls.certresolver=letsencryptresolver
+        - traefik.http.services.phpmyadmin.loadbalancer.server.port=80
+        - traefik.http.routers.phpmyadmin.service=phpmyadmin
+      resources:
+        limits:
+          cpus: "1"
+          memory: 2048M
+
+## --------------------------- ORION --------------------------- ##
+
+networks:
+  $nome_rede_interna:
+    external: true
+    name: $nome_rede_interna
+EOL
+if [ $? -eq 0 ]; then
+    echo "1/2 - [ OK ]"
+else
+    echo "1/2 - [ OFF ]"
+    echo "Não foi possivel criar a stack do phpmyadmin"
+fi
+
+docker stack deploy --prune --resolve-image always -c phpmyadmin.yaml phpmyadmin #> /dev/null 2>&1
+if [ $? -eq 0 ]; then
+    echo "2/2 - [ OK ]"
+else
+    echo "2/2 - [ OFF ]"
+    echo "Não foi possivel Subir a stack do phpmyadmin"
+fi
+
+## Mensagem de Passo
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[3/3]\e[0m"
+echo ""
+sleep 1
+
+## Usa o serviço wait_phpmyadmin para verificar se o serviço esta online
+wait_phpmyadmin
+
+cd dados_vps
+
+cat > dados_phpmyadmin <<EOL
+[ PHPMYADMIN ]
+
+Dominio do phpmyadmin: https://$url_phpmyadmin
+
+Usuario: Os mesmos do seu MySQL
+
+Senha: Os mesmos do seu MySQL
+
+EOL
+
+cd
+cd
+
+## Espera 30 segundos
+wait_30_sec
+
+## Mensagem de finalizado
+instalado_msg
+
+## Mensagem de Guarde os Dados
+guarde_os_dados_msg
+
+## Dados da Aplicação:
+echo -e "\e[32m[ PHPMYADMIN ]\e[0m"
+echo ""
+
+echo -e "\e[33mDominio:\e[97m https://$url_phpmyadmin\e[0m"
+echo ""
+
+echo -e "\e[33mUsuario:\e[97m Os mesmos do seu MySQL\e[0m"
+echo ""
+
+echo -e "\e[33mSenha:\e[97m Os mesmos do seu MySQL\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -15542,6 +16598,98 @@ done
 
 }
 
+portainer.reset() {
+    cd
+    clear
+    nome_portainer.reset
+    echo "Aguarde enquanto reseto a senha do portainer..."
+    echo ""
+
+    docker service scale portainer_portainer=0 > /dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        echo "1/7 - [ OK ]"
+    else
+        echo "1/7 - [ OFF ]"
+        echo "Ops, não foi possivel derrubar o serviço do portainer"
+    fi
+
+    docker pull portainer/helper-reset-password > /dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        echo "2/7 - [ OK ]"
+    else
+        echo "2/7 - [ OFF ]"
+        echo "Ops, não foi possivel super o serviço de reset password do portainer"
+    fi
+
+    script -c "docker run --rm -v /var/lib/docker/volumes/portainer_data/_data:/data portainer/helper-reset-password" output.txt > /dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        echo "3/7 - [ OK ]"
+    else
+        echo "3/7 - [ OFF ]"
+        echo "Ops, não foi possivel resetar a senha do portainer"
+    fi
+
+    cd
+
+    docker stack deploy --prune --resolve-image always -c portainer.yaml portainer > /dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        echo "4/7 - [ OK ]"
+    else
+        echo "4/7 - [ OFF ]"
+        echo "Ops, não foi possivel subir a stack do portainer"
+    fi
+
+    USER=$(grep -oP 'user: \K[^,]*' output.txt)
+    if [ $? -eq 0 ]; then
+        echo "5/7 - [ OK ]"
+    else
+        echo "5/7 - [ OFF ]"
+        echo "Ops, não foi possivel pegar o usuario do portainer"
+    fi
+
+    PASSWORD=$(grep -oP 'login: \K.*' output.txt)
+    if [ $? -eq 0 ]; then
+        echo "6/7 - [ OK ]"
+    else
+        echo "6/7 - [ OFF ]"
+        echo "Ops, não foi possivel pegar a senha do portainer"
+    fi
+
+    rm output.txt
+    if [ $? -eq 0 ]; then
+        echo "7/7 - [ OK ]"
+    else
+        echo "7/7 - [ OFF ]"
+        echo "Ops, não foi possivel remover o arquivo output. txt ou ele não existe"
+    fi
+
+    echo ""
+    sleep 3
+    clear
+    nome_portainer.reset
+    echo -e "\e[32m[ PORTAINER ]\e[0m"
+    echo ""
+    
+    echo -e "\e[97mUsuario:\e[33m $USER\e[0m"
+    echo ""
+    
+    echo -e "\e[97mNova Senha:\e[33m $PASSWORD\e[0m"
+    echo ""
+    
+    ## Creditos do instalador
+    creditos_msg
+
+    read -p "Deseja voltar ao menu principal? (Y/N): " choice
+    if [ "$choice" = "Y" ] || [ "$choice" = "y" ]; then
+        return
+    else
+        cd
+        cd
+        clear
+        exit 1
+    fi
+}
+
 ####################################################
 
 ## Iniciando instalador
@@ -15566,7 +16714,6 @@ while true; do
     case $opcao in
 
         0)
-            
             ferramenta_testeemail
             ;;
         1)
@@ -15745,7 +16892,6 @@ while true; do
         34)
             if verificar_docker_e_portainer_traefik; then
             ferramenta_affine
-            
             fi
             ;;
         35)
@@ -15760,41 +16906,39 @@ while true; do
             ;;
         37)
             if verificar_docker_e_portainer_traefik; then
-            ferramenta_remover_stack
+            ferramenta_nextcloud
             fi
             ;;
         38)
+            if verificar_docker_e_portainer_traefik; then
+            ferramenta_strapi
+            fi
+            ;;
+        39)
+            if verificar_docker_e_portainer_traefik; then
+            ferramenta_phpmyadmin
+            fi
+            ;;
+        40)
+            if verificar_docker_e_portainer_traefik; then
+            ferramenta_remover_stack
+            fi
+            ;;
+        41)
             clear
             nome_saindo
             echo ""
             break
             ;;
-        39)
-            if verificar_docker_e_portainer_traefik; then
-            ferramenta_
-            fi
-            ;;
-        40)
-            if verificar_docker_e_portainer_traefik; then
-            ferramenta_
-            fi
-            ;;
 
-
-
-
-        23a)
-            ferramenta_remover_stack
-            ;;
-        24a)
-            echo "Saindo..."
-            break
-            ;;
         n8n.workflows)
             n8n.workflows
             ;;
         portainer.restart)
             portainer.restart
+            ;;
+        portainer.reset)
+            portainer.reset
             ;;
         chatwoot.nulled)
             chatwoot.nulled
@@ -15805,6 +16949,7 @@ while true; do
         chatwoot.mail)
             chatwoot.mail
             ;;
+
 
         *)
 
