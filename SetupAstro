@@ -8,7 +8,6 @@ echo -e "\e[97mComunidade: \e[32mhttps://chat.whatsapp.com/Fd31cQxLWmpKNHRVErTgY
 ####################################################
 
 ## Cores do Setup
-
 azul="\e[36m"
 verde="\e[32m"
 branco="\e[97m"
