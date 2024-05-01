@@ -18,9 +18,12 @@
 ```
 bash <(curl -sSL https://raw.githubusercontent.com/astroinova/desktop-tutorial/main/Setup)
 ```
-<h3 align="center"><b>Ferramentas disponiveis</b></h3>
+<h3 align="center"><b></b></h3>
 <p align="center">
-  Traefik 🔧, Portainer 🔍, Chatwoot 💬, Evolution API 🔄, MinIO 📁, Typebot 🤖, N8N ⚙️, Flowise 🌊, PgAdmin 4 🐘, Nocobase 🗃️, Botpress 🤖, Wordpress 📝, Baserow 📊, MongoDB 🍃, RabbitMQ 🐇, Uptime Kuma ⏰, Calcom 📊, Mautic 📧, Appsmith 🛠️, Qdrant 🔍, Woofed CRM 🐾, Formbricks 🧱, NocoDB 🗃️, Langfuse 🌐, Metabase 📊, Odoo 🛠️, Uno API 🔄, Quepasa API 🔄, Docuseal 📜, Grafana 📊, Prometheus 📈, cAdvisor 📊, Dify AI 🤖, Ollama 🦙, Affine 🔣, Directus 📁, VaultWarden 🗝️, NextCloud ☁️
+  
+  ## 🛒 PRINCIPAL</p>
+
+  ## 🗂 BANCO DE DADOS</p>
 </p>
 
 ## ❤️ Creditos
