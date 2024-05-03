@@ -15,7 +15,7 @@ echo -e "\e[97mComunidade: \e[32mhttps://chat.whatsapp.com/EmmgJiSlpeFJd1PAFOS7x
 ## Cores do Setup
 
 azul="\e[36m"
-amarelo="\e[33m"
+amarelo="\e[36m"
 verde="\e[32m"
 branco="\e[97m"
 bege="\e[93m"
@@ -3242,44 +3242,44 @@ preencha_as_info
 while true; do
 
 echo -e "\e[97mPasso$azul 1/5\e[0m"
-echo -en "\e[33mDigite o endereço de Email (ex: contato@oriondesign.art.br): \e[0m" && read -r email_teste
+echo -en "\e[36mDigite o endereço de Email (ex: contato@oriondesign.art.br): \e[0m" && read -r email_teste
 echo ""
 
 echo -e "\e[97mPasso$azul 2/5\e[0m"
 echo -e "$azul--> Caso não tiver um usuario do email, use o proprio email abaixo"
-echo -en "\e[33mDigite o usuário de Email (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r user_teste
+echo -en "\e[36mDigite o usuário de Email (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r user_teste
 echo ""
 
 echo -e "\e[97mPasso$azul 3/5\e[0m"
 echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
-echo -en "\e[33mDigite a Senha do email (ex: @Senha123_): \e[0m" && read -r senha_teste
+echo -en "\e[36mDigite a Senha do email (ex: @Senha123_): \e[0m" && read -r senha_teste
 echo ""
 
 echo -e "\e[97mPasso$azul 4/5\e[0m"
-echo -en "\e[33mDigite o Host Smtp (ex: smtp.hostinger.com): \e[0m" && read -r host_teste
+echo -en "\e[36mDigite o Host Smtp (ex: smtp.hostinger.com): \e[0m" && read -r host_teste
 echo ""
 
 echo -e "\e[97mPasso$azul 5/5\e[0m"
-echo -en "\e[33mDigite a Porta Smtp (ex: 465): \e[0m" && read -r porta_teste
+echo -en "\e[36mDigite a Porta Smtp (ex: 465): \e[0m" && read -r porta_teste
 echo ""
 
 clear
 nome_testeemail
 conferindo_as_info
 
-echo -e "\e[33mEmail:\e[97m $email_teste\e[0m"
+echo -e "\e[36mEmail:\e[97m $email_teste\e[0m"
 echo ""
 
-echo -e "\e[33mUsuário:\e[97m $user_teste\e[0m"
+echo -e "\e[36mUsuário:\e[97m $user_teste\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m $senha_teste\e[0m"
+echo -e "\e[36mSenha:\e[97m $senha_teste\e[0m"
 echo ""
 
-echo -e "\e[33mHost:\e[97m $host_teste\e[0m"
+echo -e "\e[36mHost:\e[97m $host_teste\e[0m"
 echo ""
 
-echo -e "\e[33mPorta:\e[97m $porta_teste\e[0m"
+echo -e "\e[36mPorta:\e[97m $porta_teste\e[0m"
 echo ""
 
 read -p "As respostas estão corretas? (Y/N): " confirmacao
@@ -3295,7 +3295,7 @@ fi
 done
 
 #MENSAGEM DE INICIANDO (PASSOS)
-echo -e "\e[97m• INICIANDO VERIFICAÇÃO \e[33m[1/3]\e[0m"
+echo -e "\e[97m• INICIANDO VERIFICAÇÃO \e[36m[1/3]\e[0m"
 echo ""
 
 sudo apt-get update > /dev/null 2>&1
@@ -3310,14 +3310,14 @@ if swaks --to "$email_teste" --from "$email_teste" --server "$host_teste" --port
     nome_testeemail
     echo -e "\e[32m[Resultado do Teste SMTP]\e[0m"
     echo ""
-    echo -e "\e[33mOs dados informados\e[92m estão funcionando corretamente\e[33m.\e[0m"
+    echo -e "\e[36mOs dados informados\e[92m estão funcionando corretamente\e[36m.\e[0m"
 else
     sleep 2
     clear
     nome_testeemail
     echo -e "\e[32m[Resultado do Teste SMTP]\e[0m"
     echo ""
-    echo -e "\e[33mOs dados informados\e[91m NÃO estão funcionando corretamente.\e[33m Por favor, verifique os dados e tente novamente.\e[0m"
+    echo -e "\e[36mOs dados informados\e[91m NÃO estão funcionando corretamente.\e[36m Por favor, verifique os dados e tente novamente.\e[0m"
 fi
 
 creditos_msg
@@ -3363,24 +3363,24 @@ while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$azul 1/4\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Portainer (ex: portainer.oriondesign.art.br): \e[0m" && read -r url_portainer
+    echo -en "\e[36mDigite o Dominio para o Portainer (ex: portainer.oriondesign.art.br): \e[0m" && read -r url_portainer
     echo ""
 
     ## Pergunta o Nome do Servidor
     echo -e "\e[97mPasso$azul 2/4\e[0m"
     echo -e "$azul--> Não pode conter Espaços e/ou cartacteres especiais, exceto Underline_"
-    echo -en "\e[33mEscolha um nome para o seu servidor (ex: OrionDesign): \e[0m" && read -r nome_servidor
+    echo -en "\e[36mEscolha um nome para o seu servidor (ex: OrionDesign): \e[0m" && read -r nome_servidor
     echo ""
     
     ## Pergunta o nome da Rede Interna
     echo -e "\e[97mPasso$azul 3/4\e[0m"
     echo -e "$azul--> Não pode conter Espaços e/ou cartacteres especiais, exceto Underline_"
-    echo -en "\e[33mDigite um nome para sua rede interna (ex: OrionNet): \e[0m" && read -r nome_rede_interna
+    echo -en "\e[36mDigite um nome para sua rede interna (ex: OrionNet): \e[0m" && read -r nome_rede_interna
     echo ""
     
     ## Pergunta o Email para informações sobre o certificado
     echo -e "\e[97mPasso$azul 4/4\e[0m"
-    echo -en "\e[33mDigite um endereço de Email válido (ex: contato@oriondesign.art.br): \e[0m" && read -r email_ssl
+    echo -en "\e[36mDigite um endereço de Email válido (ex: contato@oriondesign.art.br): \e[0m" && read -r email_ssl
     echo ""
 
     ## Limpa o termianl
@@ -3393,19 +3393,19 @@ while true; do
     conferindo_as_info
 
     ## Informação sobre URL
-    echo -e "\e[33mLink do Portainer:\e[97m $url_portainer\e[0m"
+    echo -e "\e[36mLink do Portainer:\e[97m $url_portainer\e[0m"
     echo ""
 
     ## Informação sobre Nome do Servidor
-    echo -e "\e[33mNome do Servidor:\e[97m $nome_servidor\e[0m"
+    echo -e "\e[36mNome do Servidor:\e[97m $nome_servidor\e[0m"
     echo ""
 
     ## Informação sobre Nome da Rede interna
-    echo -e "\e[33mRede interna:\e[97m $nome_rede_interna\e[0m"
+    echo -e "\e[36mRede interna:\e[97m $nome_rede_interna\e[0m"
     echo ""
 
     ## Informação sobre Email
-    echo -e "\e[33mEmail:\e[97m $email_ssl\e[0m"
+    echo -e "\e[36mEmail:\e[97m $email_ssl\e[0m"
     echo ""
     echo ""
 
@@ -3441,7 +3441,7 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO TRAEFIK \e[33m[1/8]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO TRAEFIK \e[36m[1/8]\e[0m"
 echo ""
 sleep 1
 
@@ -3494,7 +3494,7 @@ cd
 dados
 
 ## Mensagem de Passo
-echo -e "\e[97m• ATUALIZANDO E CONFIGURANDO A VPS \e[33m[2/8]\e[0m"
+echo -e "\e[97m• ATUALIZANDO E CONFIGURANDO A VPS \e[36m[2/8]\e[0m"
 echo ""
 sleep 1
 
@@ -3563,7 +3563,7 @@ fi
 echo ""
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO DOCKER SWARM \e[33m[3/8]\e[0m"
+echo -e "\e[97m• INSTALANDO DOCKER SWARM \e[36m[3/8]\e[0m"
 echo ""
 sleep 1
 
@@ -3595,7 +3595,7 @@ fi
 echo ""
 
 ## Mensagem de Passo
-echo -e "\e[97m• CRIANDO REDE INTERNA \e[33m[4/8]\e[0m"
+echo -e "\e[97m• CRIANDO REDE INTERNA \e[36m[4/8]\e[0m"
 echo ""
 sleep 1
 
@@ -3610,7 +3610,7 @@ fi
 echo ""
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO TRAEFIK \e[33m[5/8]\e[0m"
+echo -e "\e[97m• INSTALANDO TRAEFIK \e[36m[5/8]\e[0m"
 echo ""
 sleep 1
 
@@ -3705,7 +3705,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• ESPERANDO O TRAEFIK ESTAR ONLINE \e[33m[6/8]\e[0m"
+echo -e "\e[97m• ESPERANDO O TRAEFIK ESTAR ONLINE \e[36m[6/8]\e[0m"
 echo ""
 sleep 1
 
@@ -3716,7 +3716,7 @@ wait_traefik
 wait_30_sec
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO PORTAINER \e[33m[7/8]\e[0m"
+echo -e "\e[97m• INSTALANDO PORTAINER \e[36m[7/8]\e[0m"
 echo ""
 sleep 1
 
@@ -3803,7 +3803,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• ESPERANDO O PORTAINER ESTAR ONLINE \e[33m[8/8]\e[0m"
+echo -e "\e[97m• ESPERANDO O PORTAINER ESTAR ONLINE \e[36m[8/8]\e[0m"
 echo ""
 sleep 1
 
@@ -3839,18 +3839,18 @@ guarde_os_dados_msg
 echo -e "\e[32m[ PORTAINER ]\e[0m"
 echo ""
 
-echo -e "\e[97mDominio do portainer:\e[33m https://$url_portainer\e[0m"
+echo -e "\e[97mDominio do portainer:\e[36m https://$url_portainer\e[0m"
 echo ""
 
-echo -e "\e[97mUsuario:\e[33m Precisa criar dentro do portainer\e[0m"
+echo -e "\e[97mUsuario:\e[36m Precisa criar dentro do portainer\e[0m"
 echo ""
 
-echo -e "\e[97mSenha:\e[33m Precisa criar dentro do portainer\e[0m"
+echo -e "\e[97mSenha:\e[36m Precisa criar dentro do portainer\e[0m"
 echo ""
 
-echo -e "\e[97mObservação:\e[33m Você tem menos de 5 minutos para criar uma conta no Portainer, caso\e[0m"
-echo -e "\e[33mcaso exceda esse tempo, você precisara de voltar no menu anterior (digitando: Y)\e[0m"
-echo -e "\e[33me no menu de ferramentas digitar: \e[97mportainer.restart\e[0m"
+echo -e "\e[97mObservação:\e[36m Você tem menos de 5 minutos para criar uma conta no Portainer, caso\e[0m"
+echo -e "\e[36mcaso exceda esse tempo, você precisara de voltar no menu anterior (digitando: Y)\e[0m"
+echo -e "\e[36me no menu de ferramentas digitar: \e[97mportainer.restart\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -4189,7 +4189,7 @@ while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$azul 1/5\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Chatwoot (ex: chatwoot.oriondesign.art.br): \e[0m" && read -r url_chatwoot
+    echo -en "\e[36mDigite o Dominio para o Chatwoot (ex: chatwoot.oriondesign.art.br): \e[0m" && read -r url_chatwoot
     echo ""
     
     ## Pega o nome do dominio para ser o nome da empresa
@@ -4197,7 +4197,7 @@ while true; do
     
     ## Pergunta o email SMTP
     echo -e "\e[97mPasso$azul 2/5\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_admin_chatwoot
+    echo -en "\e[36mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_admin_chatwoot
     echo ""
     
     ## Define o dominio SMTP com o dominio do email
@@ -4206,17 +4206,17 @@ while true; do
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$azul 3/5\e[0m"
     echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
-    echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_chatwoot
+    echo -en "\e[36mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_chatwoot
     echo ""
     
     ## Pergunta o Host SMTP do email
     echo -e "\e[97mPasso$azul 4/5\e[0m"
-    echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_chatwoot
+    echo -en "\e[36mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_chatwoot
     echo ""
     
     ## Pergunta a porta SMTP do email
     echo -e "\e[97mPasso$azul 5/5\e[0m"
-    echo -en "\e[33mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_chatwoot
+    echo -en "\e[36mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_chatwoot
     
     
     ## Verifica se a porta é 465, se sim deixa o ssl true, se não, deixa false 
@@ -4236,27 +4236,27 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL
-    echo -e "\e[33mDominio do Chatwoot:\e[97m $url_chatwoot\e[0m"
+    echo -e "\e[36mDominio do Chatwoot:\e[97m $url_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Nome da Empresa
-    echo -e "\e[33mNome da Empresa:\e[97m $nome_empresa_chatwoot\e[0m"
+    echo -e "\e[36mNome da Empresa:\e[97m $nome_empresa_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Email de SMTP
-    echo -e "\e[33mEmail do SMTP:\e[97m $email_admin_chatwoot\e[0m"
+    echo -e "\e[36mEmail do SMTP:\e[97m $email_admin_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Senha de SMTP
-    echo -e "\e[33mSenha do SMTP:\e[97m $senha_email_chatwoot\e[0m"
+    echo -e "\e[36mSenha do SMTP:\e[97m $senha_email_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Host SMTP
-    echo -e "\e[33mHost SMTP:\e[97m $smtp_email_chatwoot\e[0m"
+    echo -e "\e[36mHost SMTP:\e[97m $smtp_email_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Porta SMTP
-    echo -e "\e[33mPorta SMTP:\e[97m $porta_smtp_chatwoot\e[0m"
+    echo -e "\e[36mPorta SMTP:\e[97m $porta_smtp_chatwoot\e[0m"
     echo ""
     echo ""
 
@@ -4293,7 +4293,7 @@ done
 
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO CHATWOOT \e[33m[1/6]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO CHATWOOT \e[36m[1/6]\e[0m"
 echo ""
 sleep 1
 
@@ -4301,7 +4301,7 @@ sleep 1
 dados
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[33m[2/6]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[36m[2/6]\e[0m"
 echo ""
 sleep 1
 
@@ -4338,7 +4338,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO CHATWOOT \e[33m[3/6]\e[0m"
+echo -e "\e[97m• INSTALANDO CHATWOOT \e[36m[3/6]\e[0m"
 echo ""
 sleep 1
 
@@ -4579,7 +4579,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• ESPERANDO SERVIÇO DO CHATWOOT ESTAR PRONTO \e[33m[4/6]\e[0m"
+echo -e "\e[97m• ESPERANDO SERVIÇO DO CHATWOOT ESTAR PRONTO \e[36m[4/6]\e[0m"
 echo ""
 sleep 1
 
@@ -4587,7 +4587,7 @@ sleep 1
 wait_chatwoot
 
 ## Mensagem de Passo
-echo -e "\e[97m• MIGRANDO BANCO DE DADOS \e[33m[5/6]\e[0m"
+echo -e "\e[97m• MIGRANDO BANCO DE DADOS \e[36m[5/6]\e[0m"
 echo ""
 sleep 1
 
@@ -4625,7 +4625,7 @@ else
     echo "Não foi possivel migrar o banco de dados"
 fi
 ## Mensagem de Passo
-echo -e "\e[97m• ATIVANDO FUNÇÕES DO SUPER ADMIN \e[33m[6/6]\e[0m"
+echo -e "\e[97m• ATIVANDO FUNÇÕES DO SUPER ADMIN \e[36m[6/6]\e[0m"
 echo ""
 sleep 1
 
@@ -4674,13 +4674,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ Chatwoot ]\e[0m"
 echo ""
 
-echo -e "\e[97mDominio:\e[33m https://$url_chatwoot\e[0m"
+echo -e "\e[97mDominio:\e[36m https://$url_chatwoot\e[0m"
 echo ""
 
-echo -e "\e[97mUsuario:\e[33m Precisa criar dentro do Chatwoot\e[0m"
+echo -e "\e[97mUsuario:\e[36m Precisa criar dentro do Chatwoot\e[0m"
 echo ""
 
-echo -e "\e[97mSenha:\e[33m Precisa criar dentro do Chatwoot\e[0m"
+echo -e "\e[97mSenha:\e[36m Precisa criar dentro do Chatwoot\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -4731,7 +4731,7 @@ while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$azul 1/5\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Chatwoot (ex: chatwoot.oriondesign.art.br): \e[0m" && read -r url_chatwoot
+    echo -en "\e[36mDigite o Dominio para o Chatwoot (ex: chatwoot.oriondesign.art.br): \e[0m" && read -r url_chatwoot
     echo ""
     
     ## Pega o nome do dominio para ser o nome da empresa
@@ -4739,7 +4739,7 @@ while true; do
     
     ## Pergunta o email SMTP
     echo -e "\e[97mPasso$azul 2/5\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_admin_chatwoot
+    echo -en "\e[36mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_admin_chatwoot
     echo ""
     
     ## Define o dominio SMTP com o dominio do email
@@ -4748,17 +4748,17 @@ while true; do
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$azul 3/5\e[0m"
     echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
-    echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_chatwoot
+    echo -en "\e[36mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_chatwoot
     echo ""
     
     ## Pergunta o Host SMTP do email
     echo -e "\e[97mPasso$azul 4/5\e[0m"
-    echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_chatwoot
+    echo -en "\e[36mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_chatwoot
     echo ""
     
     ## Pergunta a porta SMTP do email
     echo -e "\e[97mPasso$azul 5/5\e[0m"
-    echo -en "\e[33mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_chatwoot
+    echo -en "\e[36mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_chatwoot
     
     
     ## Verifica se a porta é 465, se sim deixa o ssl true, se não, deixa false 
@@ -4778,27 +4778,27 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL
-    echo -e "\e[33mDominio do Chatwoot:\e[97m $url_chatwoot\e[0m"
+    echo -e "\e[36mDominio do Chatwoot:\e[97m $url_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Nome da Empresa
-    echo -e "\e[33mNome da Empresa:\e[97m $nome_empresa_chatwoot\e[0m"
+    echo -e "\e[36mNome da Empresa:\e[97m $nome_empresa_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Email de SMTP
-    echo -e "\e[33mEmail do SMTP:\e[97m $email_admin_chatwoot\e[0m"
+    echo -e "\e[36mEmail do SMTP:\e[97m $email_admin_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Senha de SMTP
-    echo -e "\e[33mSenha do SMTP:\e[97m $senha_email_chatwoot\e[0m"
+    echo -e "\e[36mSenha do SMTP:\e[97m $senha_email_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Host SMTP
-    echo -e "\e[33mHost SMTP:\e[97m $smtp_email_chatwoot\e[0m"
+    echo -e "\e[36mHost SMTP:\e[97m $smtp_email_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Porta SMTP
-    echo -e "\e[33mPorta SMTP:\e[97m $porta_smtp_chatwoot\e[0m"
+    echo -e "\e[36mPorta SMTP:\e[97m $porta_smtp_chatwoot\e[0m"
     echo ""
     echo ""
 
@@ -4835,7 +4835,7 @@ done
 
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO CHATWOOT ARM \e[33m[1/6]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO CHATWOOT ARM \e[36m[1/6]\e[0m"
 echo ""
 sleep 1
 
@@ -4843,7 +4843,7 @@ sleep 1
 dados
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[33m[2/6]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[36m[2/6]\e[0m"
 echo ""
 sleep 1
 
@@ -4880,7 +4880,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO CHATWOOT \e[33m[3/6]\e[0m"
+echo -e "\e[97m• INSTALANDO CHATWOOT \e[36m[3/6]\e[0m"
 echo ""
 sleep 1
 
@@ -5121,7 +5121,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• ESPERANDO SERVIÇO DO CHATWOOT ESTAR PRONTO \e[33m[4/6]\e[0m"
+echo -e "\e[97m• ESPERANDO SERVIÇO DO CHATWOOT ESTAR PRONTO \e[36m[4/6]\e[0m"
 echo ""
 sleep 1
 
@@ -5129,7 +5129,7 @@ sleep 1
 wait_chatwoot
 
 ## Mensagem de Passo
-echo -e "\e[97m• MIGRANDO BANCO DE DADOS \e[33m[5/6]\e[0m"
+echo -e "\e[97m• MIGRANDO BANCO DE DADOS \e[36m[5/6]\e[0m"
 echo ""
 sleep 1
 
@@ -5167,7 +5167,7 @@ else
     echo "Não foi possivel migrar o banco de dados"
 fi
 ## Mensagem de Passo
-echo -e "\e[97m• ATIVANDO FUNÇÕES DO SUPER ADMIN \e[33m[6/6]\e[0m"
+echo -e "\e[97m• ATIVANDO FUNÇÕES DO SUPER ADMIN \e[36m[6/6]\e[0m"
 echo ""
 sleep 1
 
@@ -5216,13 +5216,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ CHATWOOT ARM ]\e[0m"
 echo ""
 
-echo -e "\e[97mDominio:\e[33m https://$url_chatwoot\e[0m"
+echo -e "\e[97mDominio:\e[36m https://$url_chatwoot\e[0m"
 echo ""
 
-echo -e "\e[97mUsuario:\e[33m Precisa criar dentro do Chatwoot\e[0m"
+echo -e "\e[97mUsuario:\e[36m Precisa criar dentro do Chatwoot\e[0m"
 echo ""
 
-echo -e "\e[97mSenha:\e[33m Precisa criar dentro do Chatwoot\e[0m"
+echo -e "\e[97mSenha:\e[36m Precisa criar dentro do Chatwoot\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -5266,7 +5266,7 @@ while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$azul 1/1\e[0m"
-    echo -en "\e[33mDigite o Dominio para a Evolution API (ex: api.oriondesign.art.br): \e[0m" && read -r url_evolution
+    echo -en "\e[36mDigite o Dominio para a Evolution API (ex: api.oriondesign.art.br): \e[0m" && read -r url_evolution
     echo ""
 
     ## Limpa o terminal
@@ -5279,7 +5279,7 @@ while true; do
     conferindo_as_info
 
     ## Informação sobre URL
-    echo -e "\e[33mDominio da Evolution API:\e[97m $url_evolution\e[0m"
+    echo -e "\e[36mDominio da Evolution API:\e[97m $url_evolution\e[0m"
     echo ""
 
     ## Pergunta se as respostas estão corretas
@@ -5314,7 +5314,7 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DA EVOLUTION API \e[33m[1/3]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DA EVOLUTION API \e[36m[1/3]\e[0m"
 echo ""
 sleep 1
 
@@ -5323,7 +5323,7 @@ sleep 1
 ## E claro, para aparecer a mensagem do passo..
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO A EVOLUTION API \e[33m[2/3]\e[0m"
+echo -e "\e[97m• INSTALANDO A EVOLUTION API \e[36m[2/3]\e[0m"
 echo ""
 sleep 1
 
@@ -5495,7 +5495,7 @@ fi
 sleep 10
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[3/3]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[3/3]\e[0m"
 echo ""
 sleep 1
 
@@ -5530,13 +5530,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ Evolution API ]\e[0m"
 echo ""
 
-echo -e "\e[97mLink do Manager:\e[33m https://$url_evolution/manager\e[0m"
+echo -e "\e[97mLink do Manager:\e[36m https://$url_evolution/manager\e[0m"
 echo ""
 
-echo -e "\e[97mAPI URL:\e[33m https://$url_evolution\e[0m"
+echo -e "\e[97mAPI URL:\e[36m https://$url_evolution\e[0m"
 echo ""
 
-echo -e "\e[97mGLOBAL API KEY:\e[33m $apikeyglobal\e[0m"
+echo -e "\e[97mGLOBAL API KEY:\e[36m $apikeyglobal\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -5580,7 +5580,7 @@ while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$azul 1/1\e[0m"
-    echo -en "\e[33mDigite o Dominio para a Evolution API (ex: api.oriondesign.art.br): \e[0m" && read -r url_evolution
+    echo -en "\e[36mDigite o Dominio para a Evolution API (ex: api.oriondesign.art.br): \e[0m" && read -r url_evolution
     echo ""
 
     ## Limpa o terminal
@@ -5593,7 +5593,7 @@ while true; do
     conferindo_as_info
 
     ## Informação sobre URL
-    echo -e "\e[33mDominio da Evolution API:\e[97m $url_evolution\e[0m"
+    echo -e "\e[36mDominio da Evolution API:\e[97m $url_evolution\e[0m"
     echo ""
 
     ## Pergunta se as respostas estão corretas
@@ -5628,7 +5628,7 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DA EVOLUTION API ARM \e[33m[1/3]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DA EVOLUTION API ARM \e[36m[1/3]\e[0m"
 echo ""
 sleep 1
 
@@ -5637,7 +5637,7 @@ sleep 1
 ## E claro, para aparecer a mensagem do passo..
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO A EVOLUTION API \e[33m[2/3]\e[0m"
+echo -e "\e[97m• INSTALANDO A EVOLUTION API \e[36m[2/3]\e[0m"
 echo ""
 sleep 1
 
@@ -5808,7 +5808,7 @@ fi
 sleep 10
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[3/3]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[3/3]\e[0m"
 echo ""
 sleep 1
 
@@ -5843,13 +5843,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ Evolution API ]\e[0m"
 echo ""
 
-echo -e "\e[97mLink do Manager:\e[33m https://$url_evolution/manager\e[0m"
+echo -e "\e[97mLink do Manager:\e[36m https://$url_evolution/manager\e[0m"
 echo ""
 
-echo -e "\e[97mAPI URL:\e[33m https://$url_evolution\e[0m"
+echo -e "\e[97mAPI URL:\e[36m https://$url_evolution\e[0m"
 echo ""
 
-echo -e "\e[97mGLOBAL API KEY:\e[33m $apikeyglobal\e[0m"
+echo -e "\e[97mGLOBAL API KEY:\e[36m $apikeyglobal\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -5892,25 +5892,25 @@ while true; do
     
     ##Pergunta o Dominio do Minio
     echo -e "\e[97mPasso$azul 1/4\e[0m"
-    echo -en "\e[33mDigite o Dominio para o MinIO (ex: minio.oriondesign.art.br): \e[0m" && read -r url_minio
+    echo -en "\e[36mDigite o Dominio para o MinIO (ex: minio.oriondesign.art.br): \e[0m" && read -r url_minio
     echo ""
     
     ##Pergunta o Dominio para o S3 do Minio
     echo -e "\e[97mPasso$azul 2/4\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Minio S3 (ex: s3.oriondesign.art.br): \e[0m" && read -r url_s3
+    echo -en "\e[36mDigite o Dominio para o Minio S3 (ex: s3.oriondesign.art.br): \e[0m" && read -r url_s3
     echo ""
     
     ##Pergunta o Usuario para o Minio
     echo -e "\e[97mPasso$azul 3/4\e[0m"
     echo -e "$azul--> Evite os caracteres especiais: \!#$ e/ou espaço"
-    echo -en "\e[33mDigite um usuario para o MinIO (ex: OrionDesign): \e[0m" && read -r user_minio
+    echo -en "\e[36mDigite um usuario para o MinIO (ex: OrionDesign): \e[0m" && read -r user_minio
     echo ""
     
     ##Pergunta a Senha para o Minio
     echo -e "\e[97mPasso$azul 4/4\e[0m"
     echo -e "$azul--> Minimo 8 caracteres. Use Letras MAIUSCULAS e minusculas, numero e um caractere especial @ ou _"
     echo -e "$azul--> Evite os caracteres especiais: \!#$"
-    echo -en "\e[33mDigite uma senha para o MinIO (ex: @Senha123_): \e[0m" && read -r senha_minio
+    echo -en "\e[36mDigite uma senha para o MinIO (ex: @Senha123_): \e[0m" && read -r senha_minio
     echo ""
     
     ## Limpa o terminal
@@ -5923,19 +5923,19 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL do Minio 
-    echo -e "\e[33mDominio do MinIO:\e[97m $url_minio\e[0m"
+    echo -e "\e[36mDominio do MinIO:\e[97m $url_minio\e[0m"
     echo ""
     
     ## Informação sobre URL para o S# do Minio 
-    echo -e "\e[33mDominio do S3:\e[97m $url_s3\e[0m"
+    echo -e "\e[36mDominio do S3:\e[97m $url_s3\e[0m"
     echo ""
     
     ## Informação sobre Usuario do Minio
-    echo -e "\e[33mUsuario do MinIO:\e[97m $user_minio\e[0m"
+    echo -e "\e[36mUsuario do MinIO:\e[97m $user_minio\e[0m"
     echo ""    
     
     ## Informação sobre Senha do Minio
-    echo -e "\e[33mSenha do MinIO:\e[97m $senha_minio\e[0m"
+    echo -e "\e[36mSenha do MinIO:\e[97m $senha_minio\e[0m"
     echo ""
     
     ## Pergunta se as respostas estão corretas
@@ -5970,14 +5970,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO MINIO \e[33m[1/3]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO MINIO \e[36m[1/3]\e[0m"
 echo ""
 sleep 1
 
 ## NADA
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO MINIO \e[33m[2/3]\e[0m"
+echo -e "\e[97m• INSTALANDO MINIO \e[36m[2/3]\e[0m"
 echo ""
 sleep 1
 
@@ -6057,7 +6057,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[3/3]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[3/3]\e[0m"
 echo ""
 sleep 1
 
@@ -6095,16 +6095,16 @@ guarde_os_dados_msg
 echo -e "\e[32m[ MinIO ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio MinIO:\e[97m https://$url_minio\e[0m"
+echo -e "\e[36mDominio MinIO:\e[97m https://$url_minio\e[0m"
 echo ""
 
-echo -e "\e[33mDominio S3:\e[97m https://$url_s3\e[0m"
+echo -e "\e[36mDominio S3:\e[97m https://$url_s3\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m $user_minio\e[0m"
+echo -e "\e[36mUsuario:\e[97m $user_minio\e[0m"
 echo ""  
 
-echo -e "\e[33mSenha:\e[97m $senha_minio\e[0m"
+echo -e "\e[36mSenha:\e[97m $senha_minio\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -6149,44 +6149,44 @@ while true; do
 
     ##Pergunta o Dominio do Builder
     echo -e "\e[97mPasso$azul 1/10\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Builder do Typebot (ex: typebot.oriondesign.art.br): \e[0m" && read -r url_typebot
+    echo -en "\e[36mDigite o Dominio para o Builder do Typebot (ex: typebot.oriondesign.art.br): \e[0m" && read -r url_typebot
     echo ""
 
     ##Pergunta o Dominio do Viewer
     echo -e "\e[97mPasso$azul 2/10\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Viewer do Typebot (ex: bot.oriondesign.art.br): \e[0m" && read -r url_viewer
+    echo -en "\e[36mDigite o Dominio para o Viewer do Typebot (ex: bot.oriondesign.art.br): \e[0m" && read -r url_viewer
     echo ""
 
     ##Pergunta a versão da ferramenta
     echo -e "\e[97mPasso$azul 3/10\e[0m"
-    echo -en "\e[33mDigite a versão que deseja do Typebot (ex: 2.21.3 ou latest): \e[0m" && read -r versao_typebot
+    echo -en "\e[36mDigite a versão que deseja do Typebot (ex: 2.21.3 ou latest): \e[0m" && read -r versao_typebot
     echo ""
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$azul 4/109\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_typebot
+    echo -en "\e[36mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_typebot
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$azul 5/10\e[0m"
     echo -e "$azul--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r usuario_email_typebot
+    echo -en "\e[36mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r usuario_email_typebot
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$azul 6/10\e[0m"
     echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
-    echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_typebot
+    echo -en "\e[36mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_typebot
     echo ""
 
     ## Pergunta o Host SMTP do email
     echo -e "\e[97mPasso$azul 7/10\e[0m"
-    echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_typebot
+    echo -en "\e[36mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_typebot
     echo ""
 
     ## Pergunta a porta SMTP do email
     echo -e "\e[97mPasso$azul 8/10\e[0m"
-    echo -en "\e[33mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_typebot
+    echo -en "\e[36mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_typebot
     echo ""
 
     ## Verifica se a porta é 465, se sim deixa o ssl true, se não, deixa false 
@@ -6198,12 +6198,12 @@ while true; do
 
     ## Pergunta qual é o Access Key do minio
     echo -e "\e[97mPasso$azul 9/10\e[0m"
-    echo -en "\e[33mAccess Key Minio: \e[0m" && read -r S3_ACCESS_KEY
+    echo -en "\e[36mAccess Key Minio: \e[0m" && read -r S3_ACCESS_KEY
     echo ""
 
     ## Pergunta qual é a Secret Key do minio
     echo -e "\e[97mPasso$azul 10/10\e[0m"
-    echo -en "\e[33mSecret Key Minio: \e[0m" && read -r S3_SECRET_KEY
+    echo -en "\e[36mSecret Key Minio: \e[0m" && read -r S3_SECRET_KEY
     echo ""
 
     ## Limpa o terminal
@@ -6216,47 +6216,47 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL do Builder
-    echo -e "\e[33mDominio do Typebot Builder:\e[97m $url_typebot\e[0m"
+    echo -e "\e[36mDominio do Typebot Builder:\e[97m $url_typebot\e[0m"
     echo ""
 
     ## Informação sobre URL do Viewer
-    echo -e "\e[33mDominio do Typebot Viewer:\e[97m $url_viewer\e[0m"
+    echo -e "\e[36mDominio do Typebot Viewer:\e[97m $url_viewer\e[0m"
     echo ""
 
     ## Informação sobre a versão da ferramenta
-    echo -e "\e[33mVersão do Typebot:\e[97m $versao_typebot\e[0m"
+    echo -e "\e[36mVersão do Typebot:\e[97m $versao_typebot\e[0m"
     echo ""    
 
     ## Informação sobre Email
-    echo -e "\e[33mEmail do SMTP:\e[97m $email_typebot\e[0m"
+    echo -e "\e[36mEmail do SMTP:\e[97m $email_typebot\e[0m"
     echo ""
 
     ## Informação sobre Email
-    echo -e "\e[33mUsuário do SMTP:\e[97m $usuario_email_typebot\e[0m"
+    echo -e "\e[36mUsuário do SMTP:\e[97m $usuario_email_typebot\e[0m"
     echo ""
 
     ## Informação sobre Senha do Email
-    echo -e "\e[33mSenha do Email:\e[97m $senha_email_typebot\e[0m"
+    echo -e "\e[36mSenha do Email:\e[97m $senha_email_typebot\e[0m"
     echo ""
 
     ## Informação sobre Host SMTP
-    echo -e "\e[33mHost SMTP do Email:\e[97m $smtp_email_typebot\e[0m"
+    echo -e "\e[36mHost SMTP do Email:\e[97m $smtp_email_typebot\e[0m"
     echo ""
 
     ## Informação sobre Porta SMTP
-    echo -e "\e[33mPorta SMTP do Email:\e[97m $porta_smtp_typebot\e[0m"
+    echo -e "\e[36mPorta SMTP do Email:\e[97m $porta_smtp_typebot\e[0m"
     echo ""
 
     ## Informação sobre Secure SMTP
-    echo -e "\e[33mSecure SMTP do Email:\e[97m $smtp_secure_typebot\e[0m"
+    echo -e "\e[36mSecure SMTP do Email:\e[97m $smtp_secure_typebot\e[0m"
     echo ""
 
     ## Informação sobre Access Key
-    echo -e "\e[33mAccess Key Minio:\e[97m $S3_ACCESS_KEY\e[0m"
+    echo -e "\e[36mAccess Key Minio:\e[97m $S3_ACCESS_KEY\e[0m"
     echo ""
 
     ## Informação sobre Secret Key
-    echo -e "\e[33mSecret Key Minio:\e[97m $S3_SECRET_KEY\e[0m"
+    echo -e "\e[36mSecret Key Minio:\e[97m $S3_SECRET_KEY\e[0m"
     echo ""
 
     ## Pergunta se as respostas estão corretas
@@ -6292,14 +6292,14 @@ done
 
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO TYPEBOT \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO TYPEBOT \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
 ## Nada nada nada.. só para aparecer a mensagem de passo..
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -6333,7 +6333,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO TYPEBOT \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO TYPEBOT \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -6503,7 +6503,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -6538,13 +6538,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ Typebot ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_typebot\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_typebot\e[0m"
 echo ""
 
-echo -e "\e[33mEmail:\e[97m Qualquer um (não precisa ser o mesmo que usou na instalação)\e[0m"
+echo -e "\e[36mEmail:\e[97m Qualquer um (não precisa ser o mesmo que usou na instalação)\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m Não tem senha, chega no seu email um link magico de acesso.\e[0m"
+echo -e "\e[36mSenha:\e[97m Não tem senha, chega no seu email um link magico de acesso.\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -6588,12 +6588,12 @@ while true; do
 
     ##Pergunta o Dominio do N8N
     echo -e "\e[97mPasso$azul 1/2\e[0m"
-    echo -en "\e[33mDigite o dominio para o N8N (ex: n8n.oriondesign.art.br): \e[0m" && read -r url_editorn8n
+    echo -en "\e[36mDigite o dominio para o N8N (ex: n8n.oriondesign.art.br): \e[0m" && read -r url_editorn8n
     echo ""
     
     ##Pergunta o Dominio do Webhook
     echo -e "\e[97mPasso$azul 2/2\e[0m"
-    echo -en "\e[33mDigite o dominio para o Webhook do N8N (ex: webhook.oriondesign.art.br): \e[0m" && read -r url_webhookn8n
+    echo -en "\e[36mDigite o dominio para o Webhook do N8N (ex: webhook.oriondesign.art.br): \e[0m" && read -r url_webhookn8n
     echo ""
         
     ## Limpa o terminal
@@ -6606,11 +6606,11 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL do N8N
-    echo -e "\e[33mDominio do N8N:\e[97m $url_editorn8n\e[0m"
+    echo -e "\e[36mDominio do N8N:\e[97m $url_editorn8n\e[0m"
     echo ""
     
     ## Informação sobre URL do Webhook
-    echo -e "\e[33mDominio para o Webhook:\e[97m $url_webhookn8n\e[0m"
+    echo -e "\e[36mDominio para o Webhook:\e[97m $url_webhookn8n\e[0m"
     echo ""
     
     read -p "As respostas estão corretas? (Y/N): " confirmacao
@@ -6644,14 +6644,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO N8N \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO N8N \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
 ## NADA
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -6677,7 +6677,7 @@ verificar_container_redis
     fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO N8N \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO N8N \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -6909,7 +6909,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -6947,13 +6947,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ N8N ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_editorn8n\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_editorn8n\e[0m"
 echo ""
 
-echo -e "\e[33mEmail:\e[97m Precisa criar no primeiro acesso do N8N\e[0m"
+echo -e "\e[36mEmail:\e[97m Precisa criar no primeiro acesso do N8N\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m Precisa criar no primeiro acesso do N8N\e[0m"
+echo -e "\e[36mSenha:\e[97m Precisa criar no primeiro acesso do N8N\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -6997,20 +6997,20 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 1/3\e[0m"
-    echo -en "\e[33mDigite o dominio para o Flowise (ex: flowise.oriondesign.art.br): \e[0m" && read -r url_flowise
+    echo -en "\e[36mDigite o dominio para o Flowise (ex: flowise.oriondesign.art.br): \e[0m" && read -r url_flowise
     echo ""
     
     ##Pergunta o Usuario para a ferramenta
     echo -e "\e[97mPasso$azul 2/3\e[0m"
     echo -e "$azul--> Minimo 5 caracteres. Evite os caracteres especiais: \!#$ e/ou espaço"
-    echo -en "\e[33mDigite um usuario para o Flowise (ex: admin): \e[0m" && read -r user_flowise
+    echo -en "\e[36mDigite um usuario para o Flowise (ex: admin): \e[0m" && read -r user_flowise
     echo ""
     
     ##Pergunta a Senha para a ferramenta
     echo -e "\e[97mPasso$azul 3/3\e[0m"
     echo -e "$azul--> Minimo 8 caracteres. Use Letras MAIUSCULAS e minusculas, numero e um caractere especial @ ou _"
     echo -e "$azul--> Evite os caracteres especiais: \!#$"
-    echo -en "\e[33mDigite uma senha para o usuario (ex: @Senha123_): \e[0m" && read -r pass_flowise
+    echo -en "\e[36mDigite uma senha para o usuario (ex: @Senha123_): \e[0m" && read -r pass_flowise
     echo ""
     
     ## Limpa o terminal
@@ -7023,15 +7023,15 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL do Flowise
-    echo -e "\e[33mDominio do Flowise\e[97m $url_flowise\e[0m"
+    echo -e "\e[36mDominio do Flowise\e[97m $url_flowise\e[0m"
     echo ""
     
     ## Informação sobre Usuario do Flowise
-    echo -e "\e[33mUsuario:\e[97m $user_flowise\e[0m"
+    echo -e "\e[36mUsuario:\e[97m $user_flowise\e[0m"
     echo ""
     
     ## Informação sobre a Senha do Usuario do Flowise
-    echo -e "\e[33mSenha:\e[97m $pass_flowise\e[0m"
+    echo -e "\e[36mSenha:\e[97m $pass_flowise\e[0m"
     echo ""
     
     ## Pergunta se as respostas estão corretas
@@ -7066,12 +7066,12 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO FLOWISE \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO FLOWISE \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -7089,7 +7089,7 @@ if [ $? -eq 0 ]; then
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO FLOWISE \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO FLOWISE \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -7175,7 +7175,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -7209,11 +7209,11 @@ guarde_os_dados_msg
 ## Dados da Aplicação:
 echo -e "\e[32m[ Flowise ]\e[0m"
 echo ""
-echo -e "\e[33mDominio:\e[97m https://$url_flowise\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_flowise\e[0m"
 echo ""
-echo -e "\e[33mUsuario:\e[97m $user_flowise\e[0m"
+echo -e "\e[36mUsuario:\e[97m $user_flowise\e[0m"
 echo ""
-echo -e "\e[33mSenha:\e[97m $pass_flowise\e[0m"
+echo -e "\e[36mSenha:\e[97m $pass_flowise\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -7257,19 +7257,19 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 1/3\e[0m"
-    echo -en "\e[33mDigite o dominio para o PgAdmin 4 (ex: pgadmin.oriondesign.art.br): \e[0m" && read -r url_PgAdmin_4
+    echo -en "\e[36mDigite o dominio para o PgAdmin 4 (ex: pgadmin.oriondesign.art.br): \e[0m" && read -r url_PgAdmin_4
     echo ""
     
     ##Pergunta o Email para a ferramenta
     echo -e "\e[97mPasso$azul 2/3\e[0m"
-    echo -en "\e[33mDigite um email para o PgAdmin 4 (ex: contato@oriondesign.art.br): \e[0m" && read -r user_PgAdmin_4
+    echo -en "\e[36mDigite um email para o PgAdmin 4 (ex: contato@oriondesign.art.br): \e[0m" && read -r user_PgAdmin_4
     echo ""
     
     ##Pergunta a Senha para a ferramenta
     echo -e "\e[97mPasso$azul 3/3\e[0m"
     echo -e "$azul--> Minimo 8 caracteres. Use Letras MAIUSCULAS e minusculas, numero e um caractere especial @ ou _"
     echo -e "$azul--> Evite os caracteres especiais: \!#$"
-    echo -en "\e[33mDigite uma senha para o usuario (ex: @Senha123_): \e[0m" && read -r pass_PgAdmin_4
+    echo -en "\e[36mDigite uma senha para o usuario (ex: @Senha123_): \e[0m" && read -r pass_PgAdmin_4
     echo ""
     
     ## Limpa o terminal
@@ -7282,15 +7282,15 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL do PgAdmin
-    echo -e "\e[33mDominio do PgAdmin 4\e[97m $url_PgAdmin_4\e[0m"
+    echo -e "\e[36mDominio do PgAdmin 4\e[97m $url_PgAdmin_4\e[0m"
     echo ""
     
     ## Informação sobre email do PgAdmin
-    echo -e "\e[33mEmail:\e[97m $user_PgAdmin_4\e[0m"
+    echo -e "\e[36mEmail:\e[97m $user_PgAdmin_4\e[0m"
     echo ""
     
     ## Informação sobre a senha do PgAdmin
-    echo -e "\e[33mSenha:\e[97m $pass_PgAdmin_4\e[0m"
+    echo -e "\e[36mSenha:\e[97m $pass_PgAdmin_4\e[0m"
     echo ""
     
     ## Pergunta se as respostas estão corretas
@@ -7325,14 +7325,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO PGADMIN4 \e[33m[1/3]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO PGADMIN4 \e[36m[1/3]\e[0m"
 echo ""
 sleep 1
 
 ## NADA
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO PGADMIN4 \e[33m[2/3]\e[0m"
+echo -e "\e[97m• INSTALANDO PGADMIN4 \e[36m[2/3]\e[0m"
 echo ""
 sleep 1
 
@@ -7404,7 +7404,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[3/3]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[3/3]\e[0m"
 echo ""
 sleep 1
 
@@ -7439,13 +7439,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ PgAdmin 4 ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_PgAdmin_4\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_PgAdmin_4\e[0m"
 echo ""
 
-echo -e "\e[33mEmail:\e[97m $user_PgAdmin_4\e[0m"
+echo -e "\e[36mEmail:\e[97m $user_PgAdmin_4\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m $pass_PgAdmin_4\e[0m"
+echo -e "\e[36mSenha:\e[97m $pass_PgAdmin_4\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -7488,24 +7488,24 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 1/4\e[0m"
-    echo -en "\e[33mDigite o dominio para o Nocobase (ex: nocobase.oriondesign.art.br): \e[0m" && read -r url_nocobase
+    echo -en "\e[36mDigite o dominio para o Nocobase (ex: nocobase.oriondesign.art.br): \e[0m" && read -r url_nocobase
     echo ""
     
     ##Pergunta o Email para a ferramenta
     echo -e "\e[97mPasso$azul 2/4\e[0m"
-    echo -en "\e[33mDigite um email para o Nocobase (ex: contato@oriondesign.art.br): \e[0m" && read -r mail_nocobase
+    echo -en "\e[36mDigite um email para o Nocobase (ex: contato@oriondesign.art.br): \e[0m" && read -r mail_nocobase
     echo ""
     
     ##Pergunta um Usuario para a ferramenta
     echo -e "\e[97mPasso$azul 3/4\e[0m"
-    echo -en "\e[33mDigite um nome de usuario para o Nocobase (ex: OrionDesign): \e[0m" && read -r user_nocobase
+    echo -en "\e[36mDigite um nome de usuario para o Nocobase (ex: OrionDesign): \e[0m" && read -r user_nocobase
     echo ""
     
     ##Pergunta a Senha para a ferramenta
     echo -e "\e[97mPasso$azul 4/4\e[0m"
     echo -e "$azul--> Minimo 8 caracteres. Use Letras MAIUSCULAS e minusculas, numero e um caractere especial @ ou _"
     echo -e "$azul--> Evite os caracteres especiais: \!#$"
-    echo -en "\e[33mDigite uma senha para o usuario (ex: @Senha123_): \e[0m" && read -r pass_nocobase
+    echo -en "\e[36mDigite uma senha para o usuario (ex: @Senha123_): \e[0m" && read -r pass_nocobase
     echo ""
     
     ## Limpa o terminal
@@ -7518,19 +7518,19 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL do Nocobase
-    echo -e "\e[33mDominio do Nocobase:\e[97m $url_nocobase\e[0m"
+    echo -e "\e[36mDominio do Nocobase:\e[97m $url_nocobase\e[0m"
     echo ""
     
     ## Informação sobre Email do Nocobase
-    echo -e "\e[33mEmail:\e[97m $mail_nocobase\e[0m"
+    echo -e "\e[36mEmail:\e[97m $mail_nocobase\e[0m"
     echo ""
     
     ## Informação sobre Usuario do Nocobase
-    echo -e "\e[33mUsuario:\e[97m $user_nocobase\e[0m"
+    echo -e "\e[36mUsuario:\e[97m $user_nocobase\e[0m"
     echo ""
     
     ## Informação sobre Senha do Nocobase
-    echo -e "\e[33mSenha:\e[97m $pass_nocobase\e[0m"
+    echo -e "\e[36mSenha:\e[97m $pass_nocobase\e[0m"
     echo ""
     
     ## Pergunta se as respostas estão corretas
@@ -7565,14 +7565,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO NOCOBASE \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO NOCOBASE \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
 ## NADA
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -7590,7 +7590,7 @@ if [ $? -eq 0 ]; then
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO NOCOBASE \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO NOCOBASE \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -7685,7 +7685,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -7721,13 +7721,13 @@ guarde_os_dados_msg
 ## Dados da Aplicação:
 echo -e "\e[32m[ Nocobase ]\e[0m"
 echo ""
-echo -e "\e[33mDominio:\e[97m https://$url_nocobase\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_nocobase\e[0m"
 echo ""
-echo -e "\e[33mEmail:\e[97m $mail_nocobase\e[0m"
+echo -e "\e[36mEmail:\e[97m $mail_nocobase\e[0m"
 echo ""
-echo -e "\e[33mUsuario:\e[97m $user_nocobase\e[0m"
+echo -e "\e[36mUsuario:\e[97m $user_nocobase\e[0m"
 echo ""
-echo -e "\e[33mSenha:\e[97m $pass_nocobase\e[0m"
+echo -e "\e[36mSenha:\e[97m $pass_nocobase\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -7771,7 +7771,7 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Botpress (ex: botpress.oriondesign.art.br): \e[0m" && read -r url_botpress
+    echo -en "\e[36mDigite o dominio para o Botpress (ex: botpress.oriondesign.art.br): \e[0m" && read -r url_botpress
     echo ""
     
     ## Limpa o terminal
@@ -7784,7 +7784,7 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL do Botpress
-    echo -e "\e[33mDominio do Botpress:\e[97m $url_botpress\e[0m"
+    echo -e "\e[36mDominio do Botpress:\e[97m $url_botpress\e[0m"
     echo ""
     
     ## Pergunta se as respostas estão corretas
@@ -7819,14 +7819,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO BOTPRESS \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO BOTPRESS \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
 ## Nadaaaaa
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -7851,7 +7851,7 @@ verificar_container_redis
     fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO BOTPRESS \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO BOTPRESS \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -7931,7 +7931,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -7967,13 +7967,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ Botpress ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_botpress\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_botpress\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m Precisa criar no primeiro acesso do Botpress\e[0m"
+echo -e "\e[36mUsuario:\e[97m Precisa criar no primeiro acesso do Botpress\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m Precisa criar no primeiro acesso do Botpress\e[0m"
+echo -e "\e[36mSenha:\e[97m Precisa criar no primeiro acesso do Botpress\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -8018,13 +8018,13 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 1/2\e[0m"
-    echo -en "\e[33mDigite o dominio para o Wordpress (ex: oriondesign.art.br ou loja.oriondesign.art.br): \e[0m" && read -r url_wordpress
+    echo -en "\e[36mDigite o dominio para o Wordpress (ex: oriondesign.art.br ou loja.oriondesign.art.br): \e[0m" && read -r url_wordpress
     echo ""
     
     ##Pergunta o nome do site
     echo -e "\e[97mPasso$azul 2/2\e[0m"
     echo -e "$azul--> Use apenas letras minusculas, sem espaço ou caracteres especiais"
-    echo -en "\e[33mDigite o nome do Site (ex: lojaorion): \e[0m" && read -r nome_site_wordpress
+    echo -en "\e[36mDigite o nome do Site (ex: lojaorion): \e[0m" && read -r nome_site_wordpress
     echo ""
     
     ##Trata informações
@@ -8054,11 +8054,11 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL do Wordpress
-    echo -e "\e[33mDominio do Wordpress:\e[97m $url_wordpress\e[0m"
+    echo -e "\e[36mDominio do Wordpress:\e[97m $url_wordpress\e[0m"
     echo ""
     
     ## Informação sobre Nome do site
-    echo -e "\e[33mNome do Site:\e[97m $nome_site_wordpress\e[0m"
+    echo -e "\e[36mNome do Site:\e[97m $nome_site_wordpress\e[0m"
     echo ""
     
 
@@ -8094,14 +8094,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO WORDPRESS \e[33m[1/7]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO WORDPRESS \e[36m[1/7]\e[0m"
 echo ""
 sleep 1
 
 ## NADA
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO REDIS \e[33m[2/7]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO REDIS \e[36m[2/7]\e[0m"
 echo ""
 sleep 1
 
@@ -8116,7 +8116,7 @@ verificar_container_redis
 sleep 3
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO MYSQL \e[33m[3/7]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO MYSQL \e[36m[3/7]\e[0m"
 echo ""
 sleep 1
 
@@ -8137,7 +8137,7 @@ dados
 criar_banco_mysql_wordpress
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO WORDPRESS \e[33m[4/7]\e[0m"
+echo -e "\e[97m• INSTALANDO WORDPRESS \e[36m[4/7]\e[0m"
 echo ""
 sleep 1
 
@@ -8223,7 +8223,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[5/7]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[5/7]\e[0m"
 echo ""
 sleep 1
 
@@ -8231,7 +8231,7 @@ sleep 1
 wait_wordpress
 
 ## Mensagem de Passo
-echo -e "\e[97m• EDITANDO PHP.INI \e[33m[6/7]\e[0m"
+echo -e "\e[97m• EDITANDO PHP.INI \e[36m[6/7]\e[0m"
 echo ""
 sleep 1
 
@@ -8253,7 +8253,7 @@ stack_editavel > /dev/null 2>&1
 #docker stack deploy --prune --resolve-image always -c $nome_da_stack_wordpress $nome_da_stack_wordpress_subir
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[7/7]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[7/7]\e[0m"
 echo ""
 sleep 1
 
@@ -8285,7 +8285,7 @@ guarde_os_dados_msg
 echo -e "\e[32m[Wordpress]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_wordpress\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_wordpress\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -8329,34 +8329,34 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 1/6\e[0m"
-    echo -en "\e[33mDigite o dominio para o Baserow (ex: baserow.oriondesign.art.br): \e[0m" && read -r url_baserow
+    echo -en "\e[36mDigite o dominio para o Baserow (ex: baserow.oriondesign.art.br): \e[0m" && read -r url_baserow
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 2/6\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r mail_baserow
+    echo -en "\e[36mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r mail_baserow
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 3/6\e[0m"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r user_baserow
+    echo -en "\e[36mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r user_baserow
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 4/6\e[0m"
     echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
-    echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r pass_baserow
+    echo -en "\e[36mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r pass_baserow
     echo ""
 
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 5/6\e[0m"
-    echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r host_baserow
+    echo -en "\e[36mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r host_baserow
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 6/6\e[0m"
-    echo -en "\e[33mDigite a Porta SMTP do Email (ex: 465): \e[0m" && read -r porta_baserow
+    echo -en "\e[36mDigite a Porta SMTP do Email (ex: 465): \e[0m" && read -r porta_baserow
     echo ""
 
 
@@ -8379,27 +8379,27 @@ while true; do
     conferindo_as_info
     
     ##Informação do Dominio
-    echo -e "\e[33mDominio para o Baserow:\e[97m $url_baserow\e[0m"
+    echo -e "\e[36mDominio para o Baserow:\e[97m $url_baserow\e[0m"
     echo ""
 
     ##Informação do Dominio
-    echo -e "\e[33mEmail do SMTP:\e[97m $mail_baserow\e[0m"
+    echo -e "\e[36mEmail do SMTP:\e[97m $mail_baserow\e[0m"
     echo ""
 
     ##Informação do Dominio
-    echo -e "\e[33mUsuário do SMTP:\e[97m $user_baserow\e[0m"
+    echo -e "\e[36mUsuário do SMTP:\e[97m $user_baserow\e[0m"
     echo ""
 
     ##Informação do Dominio
-    echo -e "\e[33mSenha do SMTP:\e[97m $pass_baserow\e[0m"
+    echo -e "\e[36mSenha do SMTP:\e[97m $pass_baserow\e[0m"
     echo ""
 
     ##Informação do Dominio
-    echo -e "\e[33mHost do SMTP:\e[97m $host_baserow\e[0m"
+    echo -e "\e[36mHost do SMTP:\e[97m $host_baserow\e[0m"
     echo ""
 
     ##Informação do Dominio
-    echo -e "\e[33mPorta do SMTP:\e[97m $porta_baserow\e[0m"
+    echo -e "\e[36mPorta do SMTP:\e[97m $porta_baserow\e[0m"
     echo ""
     
      ## Pergunta se as respostas estão corretas
@@ -8434,14 +8434,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO BASEROW \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO BASEROW \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
 ## NADA
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -8474,7 +8474,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO BASEROW \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO BASEROW \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -8561,7 +8561,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[3/3]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[3/3]\e[0m"
 echo ""
 sleep 1
 
@@ -8597,13 +8597,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ BASEROW ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_baserow\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_baserow\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m Precisa criar no primeiro acesso do Baserow\e[0m"
+echo -e "\e[36mUsuario:\e[97m Precisa criar no primeiro acesso do Baserow\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m Precisa criar no primeiro acesso do Baserow\e[0m"
+echo -e "\e[36mSenha:\e[97m Precisa criar no primeiro acesso do Baserow\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -8648,7 +8648,7 @@ while true; do
     ## Pergunta o nome de usuario
     echo -e "\e[97mPasso$azul 1/1\e[0m"
     echo -e "$azul--> Evite os caracteres especiais: @\!#$ e/ou espaço"
-    echo -en "\e[33mDigite o nome de usuario (ex: oriondesign): \e[0m" && read -r user_mongo
+    echo -en "\e[36mDigite o nome de usuario (ex: oriondesign): \e[0m" && read -r user_mongo
     echo ""
     
     ## Gera a senha aleatória
@@ -8664,11 +8664,11 @@ while true; do
     conferindo_as_info
     
     ## Informação do Usuario
-    echo -e "\e[33mUsuario:\e[97m $user_mongo\e[0m"
+    echo -e "\e[36mUsuario:\e[97m $user_mongo\e[0m"
     echo ""
     
     ## Informação da Senha gerada
-    echo -e "\e[33mSenha gerada:\e[97m $pass_mongo\e[0m"
+    echo -e "\e[36mSenha gerada:\e[97m $pass_mongo\e[0m"
     echo ""
     
     ## Pergunta se as respostas estão corretas
@@ -8703,14 +8703,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO MONGO DB \e[33m[1/3]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO MONGO DB \e[36m[1/3]\e[0m"
 echo ""
 sleep 1
 
 ## NADA NADA NADA
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO MONGO DB \e[33m[2/3]\e[0m"
+echo -e "\e[97m• INSTALANDO MONGO DB \e[36m[2/3]\e[0m"
 echo ""
 sleep 1
 
@@ -8785,7 +8785,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[3/3]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[3/3]\e[0m"
 echo ""
 sleep 1
 
@@ -8823,13 +8823,13 @@ guarde_os_dados_msg
 ## Dados da Aplicação:
 echo -e "\e[32m[MongoDB]\e[0m"
 echo ""
-echo -e "\e[33mUsuario:\e[97m $user_mongo\e[0m"
+echo -e "\e[36mUsuario:\e[97m $user_mongo\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m $pass_mongo\e[0m"
+echo -e "\e[36mSenha:\e[97m $pass_mongo\e[0m"
 echo ""
 
-echo -e "\e[33mUrl Database:\e[97m mongodb://$user_mongo:$pass_mongo@$ip_vps:27017/?authSource=admin&readPreference=primary&ssl=false&directConnection=true\e[0m"
+echo -e "\e[36mUrl Database:\e[97m mongodb://$user_mongo:$pass_mongo@$ip_vps:27017/?authSource=admin&readPreference=primary&ssl=false&directConnection=true\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -8873,12 +8873,12 @@ while true; do
 
     ## Pergunta o Dominio do RabbitMq
     echo -e "\e[97mPasso$azul 1/2\e[0m"
-    echo -en "\e[33mDigite o dominio para o RabbitMQ (ex: rabbitmq.oriondesign.art.br): \e[0m" && read -r url_rabbitmq
+    echo -en "\e[36mDigite o dominio para o RabbitMQ (ex: rabbitmq.oriondesign.art.br): \e[0m" && read -r url_rabbitmq
     echo ""
     
     echo -e "\e[97mPasso$azul 2/2\e[0m"
     echo -e "$azul--> Evite os caracteres especiais: @\!#$ e/ou espaço"
-    echo -en "\e[33mDigite o nome de usuario (ex: OrionDesign): \e[0m" && read -r user_rabbitmq
+    echo -en "\e[36mDigite o nome de usuario (ex: OrionDesign): \e[0m" && read -r user_rabbitmq
     echo ""
     
     ## Gera a senha aleatória
@@ -8894,15 +8894,15 @@ while true; do
     conferindo_as_info
     
     ## Informação do Dominio do RabbitMQ
-    echo -e "\e[33mDominio do RabbitMQ:\e[97m $url_rabbitmq\e[0m"
+    echo -e "\e[36mDominio do RabbitMQ:\e[97m $url_rabbitmq\e[0m"
     echo ""
     
     ## Informação do Usuario do RabbitMQ
-    echo -e "\e[33mUsario:\e[97m $user_rabbitmq\e[0m"
+    echo -e "\e[36mUsario:\e[97m $user_rabbitmq\e[0m"
     echo ""
     
     ## Informação da Senha do RabbitMQ
-    echo -e "\e[33mSenha:\e[97m $pass_rabbitmq\e[0m"
+    echo -e "\e[36mSenha:\e[97m $pass_rabbitmq\e[0m"
     echo ""
     
     ## Pergunta se as respostas estão corretas
@@ -8936,12 +8936,12 @@ while true; do
     fi
 done
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO RABBITMQ \e[33m[1/3]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO RABBITMQ \e[36m[1/3]\e[0m"
 echo ""
 sleep 1
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO RABBITMQ \e[33m[2/3]\e[0m"
+echo -e "\e[97m• INSTALANDO RABBITMQ \e[36m[2/3]\e[0m"
 echo ""
 sleep 1
 
@@ -9020,7 +9020,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[3/3]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[3/3]\e[0m"
 echo ""
 sleep 1
 
@@ -9058,16 +9058,16 @@ guarde_os_dados_msg
 ## Dados da Aplicação:
 echo -e "\e[32m[RabbitMQ]\e[0m"
 echo ""
-echo -e "\e[33mDominio:\e[97m https://$url_rabbitmq\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_rabbitmq\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m $user_rabbitmq\e[0m"
+echo -e "\e[36mUsuario:\e[97m $user_rabbitmq\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m $pass_rabbitmq\e[0m"
+echo -e "\e[36mSenha:\e[97m $pass_rabbitmq\e[0m"
 echo ""
 
-echo -e "\e[33mURL:\e[97m amqp://$user_rabbitmq:$pass_rabbitmq@rabbitmq:5672\e[0m"
+echo -e "\e[36mURL:\e[97m amqp://$user_rabbitmq:$pass_rabbitmq@rabbitmq:5672\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -9111,7 +9111,7 @@ while true; do
 
     ## Pergunta o Dominio do uptime kuma
     echo -e "\e[97mPasso$azul 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Uptime Kuma (ex: uptimekuma.oriondesign.art.br): \e[0m" && read -r url_uptimekuma
+    echo -en "\e[36mDigite o dominio para o Uptime Kuma (ex: uptimekuma.oriondesign.art.br): \e[0m" && read -r url_uptimekuma
     echo ""
     
     ## Limpa o terminal
@@ -9124,7 +9124,7 @@ while true; do
     conferindo_as_info
     
     ## Informação do Dominio do uptimekuma
-    echo -e "\e[33mDominio do Uptime Kuma:\e[97m $url_uptimekuma\e[0m"
+    echo -e "\e[36mDominio do Uptime Kuma:\e[97m $url_uptimekuma\e[0m"
     echo ""
     
     ## Pergunta se as respostas estão corretas
@@ -9159,12 +9159,12 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO UPTIME KUMA \e[33m[1/3]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO UPTIME KUMA \e[36m[1/3]\e[0m"
 echo ""
 sleep 1
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO UPTIME KUMA \e[33m[2/3]\e[0m"
+echo -e "\e[97m• INSTALANDO UPTIME KUMA \e[36m[2/3]\e[0m"
 echo ""
 sleep 1
 
@@ -9232,7 +9232,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[3/3]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[3/3]\e[0m"
 echo ""
 sleep 1
 
@@ -9270,13 +9270,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ UPTIME KUMA ] \e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_uptimekuma\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_uptimekuma\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m Precisa criar dentro do Uptime Kuma\e[0m"
+echo -e "\e[36mUsuario:\e[97m Precisa criar dentro do Uptime Kuma\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m Precisa criar dentro do Uptime Kuma\e[0m"
+echo -e "\e[36mSenha:\e[97m Precisa criar dentro do Uptime Kuma\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -9320,28 +9320,28 @@ while true; do
 
     ## Pergunta o Dominio da ferramenta
     echo -e "\e[97mPasso$azul 1/5\e[0m"
-    echo -en "\e[33mDigite o dominio para o Cal (ex: calcom.oriondesign.art.br): \e[0m" && read -r url_calcom
+    echo -en "\e[36mDigite o dominio para o Cal (ex: calcom.oriondesign.art.br): \e[0m" && read -r url_calcom
     echo ""
     
     ## Pergunta o email SMTP
     echo -e "\e[97mPasso$azul 2/5\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_calcom
+    echo -en "\e[36mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_calcom
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$azul 3/5\e[0m"
     echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
-    echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_calcom
+    echo -en "\e[36mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_calcom
     echo ""
     
     ## Pergunta o Host SMTP do email
     echo -e "\e[97mPasso$azul 4/5\e[0m"
-    echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_calcom
+    echo -en "\e[36mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_calcom
     echo ""
     
     ## Pergunta a porta SMTP do email
     echo -e "\e[97mPasso$azul 5/5\e[0m"
-    echo -en "\e[33mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_calcom
+    echo -en "\e[36mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_calcom
     echo ""
     
     ## Limpa o terminal
@@ -9354,23 +9354,23 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL
-    echo -e "\e[33mDominio do Cal.com\e[97m $url_calcom\e[0m"
+    echo -e "\e[36mDominio do Cal.com\e[97m $url_calcom\e[0m"
     echo ""
     
     ## Informação sobre Email SMTP
-    echo -e "\e[33mEmail SMTP:\e[97m $email_calcom\e[0m"
+    echo -e "\e[36mEmail SMTP:\e[97m $email_calcom\e[0m"
     echo ""
     
     ## Informação sobre Senha SMTP
-    echo -e "\e[33mSenha SMTP:\e[97m $senha_email_calcom\e[0m"
+    echo -e "\e[36mSenha SMTP:\e[97m $senha_email_calcom\e[0m"
     echo ""
     
     ## Informação sobre Host SMTP
-    echo -e "\e[33mHost SMTP:\e[97m $smtp_email_calcom\e[0m"
+    echo -e "\e[36mHost SMTP:\e[97m $smtp_email_calcom\e[0m"
     echo ""
     
     ## Informação sobre Porta SMTP
-    echo -e "\e[33mPorta SMTP:\e[97m $porta_smtp_calcom\e[0m"
+    echo -e "\e[36mPorta SMTP:\e[97m $porta_smtp_calcom\e[0m"
     echo ""
     
     ## Pergunta se as respostas estão corretas
@@ -9405,12 +9405,12 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO CALCOM \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO CALCOM \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -9427,7 +9427,7 @@ if [ $? -eq 0 ]; then
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO CAL.COM \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO CAL.COM \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -9534,7 +9534,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -9570,13 +9570,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ CAL.COM ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_calcom\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_calcom\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m Precisa criar dentro do Calcom\e[0m"
+echo -e "\e[36mUsuario:\e[97m Precisa criar dentro do Calcom\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m Precisa criar dentro do Calcom\e[0m"
+echo -e "\e[36mSenha:\e[97m Precisa criar dentro do Calcom\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -9620,24 +9620,24 @@ while true; do
 
     ## Pergunta o Dominio da ferramenta
     echo -e "\e[97mPasso$azul 1/4\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Mautic (ex: mautic.oriondesign.art.br): \e[0m" && read -r url_mautic
+    echo -en "\e[36mDigite o Dominio para o Mautic (ex: mautic.oriondesign.art.br): \e[0m" && read -r url_mautic
     echo ""
 
     ## Pergunta o usuario da ferramenta
     echo -e "\e[97mPasso$azul 2/4\e[0m"
     echo -e "$azul--> Sem caracteres especiais: \!#$ e/ou espaços"
-    echo -en "\e[33mDigite um usuario (ex: OrionDesign): \e[0m" && read -r user_mautic
+    echo -en "\e[36mDigite um usuario (ex: OrionDesign): \e[0m" && read -r user_mautic
     echo ""
 
     ## Pergunta o email da ferramenta
     echo -e "\e[97mPasso$azul 3/4\e[0m"
-    echo -en "\e[33mDigite o Email de admin: (ex: contato@oriondesign.art.br): \e[0m" && read -r email_mautic
+    echo -en "\e[36mDigite o Email de admin: (ex: contato@oriondesign.art.br): \e[0m" && read -r email_mautic
     echo ""
     
     ## Pergunta o senha da ferramenta
     echo -e "\e[97mPasso$azul 4/4\e[0m"
     echo -e "$azul--> Sem caracteres especiais: \!#$"
-    echo -en "\e[33mDigite uma Senha (ex: @Senha123_): \e[0m" && read -r senha_email_mautic
+    echo -en "\e[36mDigite uma Senha (ex: @Senha123_): \e[0m" && read -r senha_email_mautic
     echo ""
     
     ## Limpa o terminal
@@ -9650,19 +9650,19 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL
-    echo -e "\e[33mDominio do Mautic:\e[97m $url_mautic\e[0m"
+    echo -e "\e[36mDominio do Mautic:\e[97m $url_mautic\e[0m"
     echo ""
 
     ## Informação sobre Usuario Admin
-    echo -e "\e[33mUsuario admin:\e[97m $user_mautic\e[0m"
+    echo -e "\e[36mUsuario admin:\e[97m $user_mautic\e[0m"
     echo ""
 
     ## Informação sobre Email Admin
-    echo -e "\e[33mEmail do admin:\e[97m $email_mautic\e[0m"
+    echo -e "\e[36mEmail do admin:\e[97m $email_mautic\e[0m"
     echo ""    
 
     ## Informação sobre Senha Admin
-    echo -e "\e[33mSenha do Admin:\e[97m $senha_email_mautic\e[0m"
+    echo -e "\e[36mSenha do Admin:\e[97m $senha_email_mautic\e[0m"
     echo ""
 
     ## Pergunta se as respostas estão corretas
@@ -9697,12 +9697,12 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO MAUTIC \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO MAUTIC \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
 ## Mensagem de Passo
-echo -e "\e[97m• ERIFICANDO/INSTALANDO MYSQL \e[33m[2/4]\e[0m"
+echo -e "\e[97m• ERIFICANDO/INSTALANDO MYSQL \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -9722,7 +9722,7 @@ verificar_container_mysql
 wait_30_sec
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO MAUTIC \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO MAUTIC \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -9919,7 +9919,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -9957,16 +9957,16 @@ guarde_os_dados_msg
 echo -e "\e[32m[ MAUTIC ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_mautic\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_mautic\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m $user_mautic\e[0m"
+echo -e "\e[36mUsuario:\e[97m $user_mautic\e[0m"
 echo ""
 
-echo -e "\e[33mEmail:\e[97m $email_mautic\e[0m"
+echo -e "\e[36mEmail:\e[97m $email_mautic\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m $senha_email_mautic\e[0m"
+echo -e "\e[36mSenha:\e[97m $senha_email_mautic\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -10010,7 +10010,7 @@ while true; do
 
     ## Pergunta o Dominio da ferramenta
     echo -e "\e[97mPasso$azul 1/3\e[0m"
-    echo -en "\e[33mDigite o dominio para o Appsmith (ex: appsmith.oriondesign.art.br): \e[0m" && read -r url_appsmith
+    echo -en "\e[36mDigite o dominio para o Appsmith (ex: appsmith.oriondesign.art.br): \e[0m" && read -r url_appsmith
     echo ""
     
     ## Limpa o terminal
@@ -10023,7 +10023,7 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL
-    echo -e "\e[33mDominio do Appsmith\e[97m $url_appsmith\e[0m"
+    echo -e "\e[36mDominio do Appsmith\e[97m $url_appsmith\e[0m"
     echo ""
     
     ## Pergunta se as respostas estão corretas
@@ -10058,13 +10058,13 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO APPSMITH \e[33m[1/3]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO APPSMITH \e[36m[1/3]\e[0m"
 echo ""
 sleep 1
 
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO APPSMITH \e[33m[2/3]\e[0m"
+echo -e "\e[97m• INSTALANDO APPSMITH \e[36m[2/3]\e[0m"
 echo ""
 sleep 1
 
@@ -10144,7 +10144,7 @@ fi
 
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[3/3]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[3/3]\e[0m"
 echo ""
 sleep 1
 
@@ -10179,13 +10179,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[Appsmith]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_appsmith\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_appsmith\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m Precisa criar no primeiro acesso do Appsmith\e[0m"
+echo -e "\e[36mUsuario:\e[97m Precisa criar no primeiro acesso do Appsmith\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m Precisa criar no primeiro acesso do Appsmith\e[0m"
+echo -e "\e[36mSenha:\e[97m Precisa criar no primeiro acesso do Appsmith\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -10229,12 +10229,12 @@ while true; do
 
     ## Pergunta o Dominio da ferramenta
     echo -e "\e[97mPasso$azul 1/2\e[0m"
-    echo -en "\e[33mDigite o ip da vps (ex: 123.45.678.99) ou dominio para Qdrant (ex: qdrant.oriondesign.art.br): \e[0m" && read -r ip_vps
+    echo -en "\e[36mDigite o ip da vps (ex: 123.45.678.99) ou dominio para Qdrant (ex: qdrant.oriondesign.art.br): \e[0m" && read -r ip_vps
     echo ""
     
     ## Pergunta quandos nodes deseja
     echo -e "\e[97mPasso$azul 2/2\e[0m"
-    echo -en "\e[33mDigite quantos Nodes você deseja (recomendado: 5): \e[0m" && read -r nodes_qdrant
+    echo -en "\e[36mDigite quantos Nodes você deseja (recomendado: 5): \e[0m" && read -r nodes_qdrant
     echo ""
     
     ## Limpa o terminal
@@ -10247,11 +10247,11 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL
-    echo -e "\e[33mIp da VPS ou Dominio:\e[97m $ip_vps\e[0m"
+    echo -e "\e[36mIp da VPS ou Dominio:\e[97m $ip_vps\e[0m"
     echo ""
     
     ## Informação sobre quantidade de nodes
-    echo -e "\e[33mQuantidade de Nodes:\e[97m $nodes_qdrant\e[0m"
+    echo -e "\e[36mQuantidade de Nodes:\e[97m $nodes_qdrant\e[0m"
     echo ""
     
     ## Pergunta se as respostas estão corretas
@@ -10286,12 +10286,12 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO QDRANT \e[33m[1/3]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO QDRANT \e[36m[1/3]\e[0m"
 echo ""
 sleep 1
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO QDRANT \e[33m[2/3]\e[0m"
+echo -e "\e[97m• INSTALANDO QDRANT \e[36m[2/3]\e[0m"
 echo ""
 sleep 1
 
@@ -10377,7 +10377,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[3/3]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[3/3]\e[0m"
 echo ""
 sleep 1
 
@@ -10412,13 +10412,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[QDrant]\e[0m"
 echo ""
 
-echo -e "\e[33mDashboard:\e[97m http://$ip_vps:6333/dashboard\e[0m"
+echo -e "\e[36mDashboard:\e[97m http://$ip_vps:6333/dashboard\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m Não Tem\e[0m"
+echo -e "\e[36mUsuario:\e[97m Não Tem\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m Não Tem\e[0m"
+echo -e "\e[36mSenha:\e[97m Não Tem\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -10462,25 +10462,25 @@ while true; do
 
     ## Pergunta o Dominio da ferramenta
     echo -e "\e[97mPasso$azul 1/4\e[0m"
-    echo -en "\e[33mDigite o Dominio para o WoofedCRM (ex: woofedcrm.oriondesign.art.br): \e[0m" && read -r url_woofed
+    echo -en "\e[36mDigite o Dominio para o WoofedCRM (ex: woofedcrm.oriondesign.art.br): \e[0m" && read -r url_woofed
     echo ""
 
     ## Pergunta a versão do WoofedCRM
     echo -e "\e[97mPasso$azul 2/4\e[0m"
     echo -e "\e[97mEncontre a versão em:$azul https://hub.docker.com/r/douglara/woofedcrm/tags\e[0m"
-    echo -en "\e[33mDigite a versão desejada: \e[0m" && read -r v_woofed
+    echo -en "\e[36mDigite a versão desejada: \e[0m" && read -r v_woofed
     echo ""
 
     ## Pergunta o nome do Usuario do Motor
     echo -e "\e[97mPasso$azul 3/4\e[0m"
     echo -e "$azul--> Evite os caracteres especiais: @\!#$ e/ou espaço"
-    echo -en "\e[33mDigite o User do MOTOR (ex: oriondesign): \e[0m" && read -r email_admin_woofed
+    echo -en "\e[36mDigite o User do MOTOR (ex: oriondesign): \e[0m" && read -r email_admin_woofed
     echo ""
 
     ## Pergunta o nome do Senha do Motor
     echo -e "\e[97mPasso$azul 4/4\e[0m"
     echo -e "$azul--> Evite os caracteres especiais: \!#$ e/ou espaço"
-    echo -en "\e[33mDigite a Senha do MOTOR (ex: @Senha123_): \e[0m" && read -r senha_email_woofed
+    echo -en "\e[36mDigite a Senha do MOTOR (ex: @Senha123_): \e[0m" && read -r senha_email_woofed
     echo ""
     
     ## Limpa o terminal
@@ -10493,19 +10493,19 @@ while true; do
     conferindo_as_info
 
     ## Informação sobre o dominio
-    echo -e "\e[33mDominio:\e[97m $url_woofed\e[0m"
+    echo -e "\e[36mDominio:\e[97m $url_woofed\e[0m"
     echo ""
 
     ## Informação sobre a versão
-    echo -e "\e[33mVersão:\e[97m $v_woofed\e[0m"
+    echo -e "\e[36mVersão:\e[97m $v_woofed\e[0m"
     echo ""
 
     ## Informação sobre o usuario
-    echo -e "\e[33mUser MOTOR:\e[97m $email_admin_woofed\e[0m"
+    echo -e "\e[36mUser MOTOR:\e[97m $email_admin_woofed\e[0m"
     echo ""
 
     ## Informação sobre a senha
-    echo -e "\e[33mSenha MOTOR:\e[97m $senha_email_woofed\e[0m"
+    echo -e "\e[36mSenha MOTOR:\e[97m $senha_email_woofed\e[0m"
     echo ""
 
     ## Pergunta se as respostas estão corretas
@@ -10540,12 +10540,12 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO WOOFED CRM \e[33m[1/7]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO WOOFED CRM \e[36m[1/7]\e[0m"
 echo ""
 sleep 1
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[33m[2/7]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[36m[2/7]\e[0m"
 echo ""
 sleep 1
 
@@ -10564,7 +10564,7 @@ fi
 sleep 5
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO REDIS \e[33m[3/7]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO REDIS \e[36m[3/7]\e[0m"
 echo ""
 
     verificar_container_redis
@@ -10575,7 +10575,7 @@ echo ""
     fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO WOOFED CRM \e[33m[4/7]\e[0m"
+echo -e "\e[97m• INSTALANDO WOOFED CRM \e[36m[4/7]\e[0m"
 echo ""
 sleep 1
 
@@ -10805,7 +10805,7 @@ fi
 
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[5/7]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[5/7]\e[0m"
 wait_30_sec
 echo ""
 sleep 1
@@ -10813,7 +10813,7 @@ sleep 1
 wait_woofedcrm
 
 ## Mensagem de Passo
-echo -e "\e[97m• CONFIGURANDO E MIGRANDO BANCO DE DADOS \e[33m[6/7]\e[0m"
+echo -e "\e[97m• CONFIGURANDO E MIGRANDO BANCO DE DADOS \e[36m[6/7]\e[0m"
 echo ""
 sleep 1
 
@@ -10844,7 +10844,7 @@ docker exec -it "$CONTAINER_ID" bundle exec rails db:create
 docker exec -it "$CONTAINER_ID" bundle exec rails db:migrate
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[7/7]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[7/7]\e[0m"
 echo ""
 sleep 1
 
@@ -10886,22 +10886,22 @@ guarde_os_dados_msg
 echo -e "\e[32m[ WOOFED CRM ]\e[0m"
 echo ""
 
-echo -e "\e[97mDominio:\e[33m https://$url_woofed\e[0m"
+echo -e "\e[97mDominio:\e[36m https://$url_woofed\e[0m"
 echo ""
 
-echo -e "\e[97mEmail:\e[33m Precisa criar dentro do WoofedCRM\e[0m"
+echo -e "\e[97mEmail:\e[36m Precisa criar dentro do WoofedCRM\e[0m"
 echo ""
 
-echo -e "\e[97mSenha:\e[33m Precisa criar dentro do WoofedCRM\e[0m"
+echo -e "\e[97mSenha:\e[36m Precisa criar dentro do WoofedCRM\e[0m"
 echo ""
 
-echo -e "\e[97mURL MOTOR:\e[33m https://$url_woofed/motor_admin\e[0m"
+echo -e "\e[97mURL MOTOR:\e[36m https://$url_woofed/motor_admin\e[0m"
 echo ""
 
-echo -e "\e[97mUser MOTOR:\e[33m $email_admin_woofed\e[0m"
+echo -e "\e[97mUser MOTOR:\e[36m $email_admin_woofed\e[0m"
 echo ""
 
-echo -e "\e[97mSenha MOTOR:\e[33m $senha_email_woofed\e[0m"
+echo -e "\e[97mSenha MOTOR:\e[36m $senha_email_woofed\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -10945,28 +10945,28 @@ while true; do
 
     ## Pergunta o Dominio da ferramenta
     echo -e "\e[97mPasso$azul 1/5\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Formbricks (ex: formbricks.oriondesign.art.br): \e[0m" && read -r url_formbricks
+    echo -en "\e[36mDigite o Dominio para o Formbricks (ex: formbricks.oriondesign.art.br): \e[0m" && read -r url_formbricks
     echo ""
     
     ## Pergunta o Email SMTP
     echo -e "\e[97mPasso$azul 2/5\e[0m"
-    echo -en "\e[33mDigite um Email para o SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_formbricks
+    echo -en "\e[36mDigite um Email para o SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_formbricks
     echo ""
     
     ## Pergunta a Senha SMTP
     echo -e "\e[97mPasso$azul 3/5\e[0m"
     echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
-    echo -en "\e[33mDigite a Senha SMTP do email (ex: @Senha123_): \e[0m" && read -r senha_formbricks
+    echo -en "\e[36mDigite a Senha SMTP do email (ex: @Senha123_): \e[0m" && read -r senha_formbricks
     echo ""
     
     ## Pergunta o Host SMTP
     echo -e "\e[97mPasso$azul 4/5\e[0m"
-    echo -en "\e[33mDigite o Host SMTP do email (ex: smtp.hostinger.com): \e[0m" && read -r host_formbricks
+    echo -en "\e[36mDigite o Host SMTP do email (ex: smtp.hostinger.com): \e[0m" && read -r host_formbricks
     echo ""
     
     ## Pergunta a Porta SMTP 
     echo -e "\e[97mPasso$azul 5/5\e[0m"
-    echo -en "\e[33mDigite a Porta SMTP do email (ex: 465): \e[0m" && read -r porta_formbricks
+    echo -en "\e[36mDigite a Porta SMTP do email (ex: 465): \e[0m" && read -r porta_formbricks
     echo ""
     
     if [ "$porta_formbricks" -eq 465 ] || [ "$porta_formbricks" -eq 25 ]; then
@@ -10985,23 +10985,23 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL
-    echo -e "\e[33mDominio:\e[97m $url_formbricks\e[0m"
+    echo -e "\e[36mDominio:\e[97m $url_formbricks\e[0m"
     echo ""
     
     ## Informação sobre Email
-    echo -e "\e[33mEmail SMTP:\e[97m $email_formbricks\e[0m"
+    echo -e "\e[36mEmail SMTP:\e[97m $email_formbricks\e[0m"
     echo ""
     
     ## Informação sobre Senha
-    echo -e "\e[33mSenha SMTP:\e[97m $senha_formbricks\e[0m"
+    echo -e "\e[36mSenha SMTP:\e[97m $senha_formbricks\e[0m"
     echo ""
     
     ## Informação sobre Host
-    echo -e "\e[33mHost SMTP:\e[97m $host_formbricks\e[0m"
+    echo -e "\e[36mHost SMTP:\e[97m $host_formbricks\e[0m"
     echo ""
     
     ## Informação sobre Porta
-    echo -e "\e[33mPorta SMTP:\e[97m $porta_formbricks\e[0m"
+    echo -e "\e[36mPorta SMTP:\e[97m $porta_formbricks\e[0m"
     echo ""
     
     ## Pergunta se as respostas estão corretas
@@ -11036,14 +11036,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO FORMBRICKS \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO FORMBRICKS \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
 ## Nada nada nada.. só para aparecer a mensagem de passo..
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -11060,7 +11060,7 @@ if [ $? -eq 0 ]; then
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO FORMBRICKS \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO FORMBRICKS \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -11195,7 +11195,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -11230,13 +11230,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ FORMBRICKS ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_formbricks\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_formbricks\e[0m"
 echo ""
 
-echo -e "\e[33mEmail:\e[97m Precisa de criar dentro do Formbricks\e[0m"
+echo -e "\e[36mEmail:\e[97m Precisa de criar dentro do Formbricks\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m Precisa de criar dentro do Formbricks\e[0m"
+echo -e "\e[36mSenha:\e[97m Precisa de criar dentro do Formbricks\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -11280,7 +11280,7 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o NocoDB (ex: nocodb.oriondesign.art.br): \e[0m" && read -r url_nocodb
+    echo -en "\e[36mDigite o dominio para o NocoDB (ex: nocodb.oriondesign.art.br): \e[0m" && read -r url_nocodb
     echo ""
     
     ## Limpa o terminal
@@ -11293,7 +11293,7 @@ while true; do
     conferindo_as_info
     
     ##Informação do Dominio
-    echo -e "\e[33mDominio para o NocoDB:\e[97m $url_nocodb\e[0m"
+    echo -e "\e[36mDominio para o NocoDB:\e[97m $url_nocodb\e[0m"
     echo ""
     
      ## Pergunta se as respostas estão corretas
@@ -11328,14 +11328,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO NOCODB \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO NOCODB \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
 ## NADA
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -11353,7 +11353,7 @@ if [ $? -eq 0 ]; then
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO NOCODB \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO NOCODB \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -11431,7 +11431,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -11467,13 +11467,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ NocoDB ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_nocodb\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_nocodb\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m Precisa criar no primeiro acesso do NocoDB\e[0m"
+echo -e "\e[36mUsuario:\e[97m Precisa criar no primeiro acesso do NocoDB\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m Precisa criar no primeiro acesso do NocoDB\e[0m"
+echo -e "\e[36mSenha:\e[97m Precisa criar no primeiro acesso do NocoDB\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -11517,7 +11517,7 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Langfuse (ex: langfuse.oriondesign.art.br): \e[0m" && read -r url_langfuse
+    echo -en "\e[36mDigite o dominio para o Langfuse (ex: langfuse.oriondesign.art.br): \e[0m" && read -r url_langfuse
     echo ""
     
     ## Limpa o terminal
@@ -11530,7 +11530,7 @@ while true; do
     conferindo_as_info
     
     ##Informação do Dominio
-    echo -e "\e[33mDominio para o langfuse:\e[97m $url_langfuse\e[0m"
+    echo -e "\e[36mDominio para o langfuse:\e[97m $url_langfuse\e[0m"
     echo ""
     
      ## Pergunta se as respostas estão corretas
@@ -11565,14 +11565,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO LANGFUSE \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO LANGFUSE \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
 ## NADA
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -11590,7 +11590,7 @@ if [ $? -eq 0 ]; then
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO LANGFUSE \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO LANGFUSE \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -11679,7 +11679,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -11715,13 +11715,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ LANGFUSE ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_langfuse\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_langfuse\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m Precisa criar no primeiro acesso do Langfuse\e[0m"
+echo -e "\e[36mUsuario:\e[97m Precisa criar no primeiro acesso do Langfuse\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m Precisa criar no primeiro acesso do Langfuse\e[0m"
+echo -e "\e[36mSenha:\e[97m Precisa criar no primeiro acesso do Langfuse\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -11765,7 +11765,7 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Metabase (ex: metabase.oriondesign.art.br): \e[0m" && read -r url_metabase
+    echo -en "\e[36mDigite o dominio para o Metabase (ex: metabase.oriondesign.art.br): \e[0m" && read -r url_metabase
     echo ""
     
     ## Limpa o terminal
@@ -11778,7 +11778,7 @@ while true; do
     conferindo_as_info
     
     ##Informação do Dominio
-    echo -e "\e[33mDominio para o metabase:\e[97m $url_metabase\e[0m"
+    echo -e "\e[36mDominio para o metabase:\e[97m $url_metabase\e[0m"
     echo ""
     
      ## Pergunta se as respostas estão corretas
@@ -11813,14 +11813,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO METABASE \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO METABASE \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
 ## NADA
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -11838,7 +11838,7 @@ if [ $? -eq 0 ]; then
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO METABASE \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO METABASE \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -11925,7 +11925,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -11961,13 +11961,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ METABASE ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_metabase\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_metabase\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m Precisa criar no primeiro acesso do metabase\e[0m"
+echo -e "\e[36mUsuario:\e[97m Precisa criar no primeiro acesso do metabase\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m Precisa criar no primeiro acesso do metabase\e[0m"
+echo -e "\e[36mSenha:\e[97m Precisa criar no primeiro acesso do metabase\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -12011,7 +12011,7 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Odoo (ex: odoo.oriondesign.art.br): \e[0m" && read -r url_odoo
+    echo -en "\e[36mDigite o dominio para o Odoo (ex: odoo.oriondesign.art.br): \e[0m" && read -r url_odoo
     echo ""
     
     ## Limpa o terminal
@@ -12024,7 +12024,7 @@ while true; do
     conferindo_as_info
     
     ##Informação do Dominio
-    echo -e "\e[33mDominio para o Odoo:\e[97m $url_odoo\e[0m"
+    echo -e "\e[36mDominio para o Odoo:\e[97m $url_odoo\e[0m"
     echo ""
     
      ## Pergunta se as respostas estão corretas
@@ -12059,14 +12059,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO ODOO \e[33m[1/3]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO ODOO \e[36m[1/3]\e[0m"
 echo ""
 sleep 1
 
 ## NADA
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO ODOO \e[33m[2/3]\e[0m"
+echo -e "\e[97m• INSTALANDO ODOO \e[36m[2/3]\e[0m"
 echo ""
 sleep 1
 
@@ -12172,7 +12172,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[3/3]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[3/3]\e[0m"
 echo ""
 sleep 1
 
@@ -12208,13 +12208,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ ODOO ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m http://$url_odoo\e[0m"
+echo -e "\e[36mDominio:\e[97m http://$url_odoo\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m Precisa criar no primeiro acesso do Odoo\e[0m"
+echo -e "\e[36mUsuario:\e[97m Precisa criar no primeiro acesso do Odoo\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m Precisa criar no primeiro acesso do Odoo\e[0m"
+echo -e "\e[36mSenha:\e[97m Precisa criar no primeiro acesso do Odoo\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -12265,7 +12265,7 @@ while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$azul 1/5\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Chatwoot (ex: chatwoot.oriondesign.art.br): \e[0m" && read -r url_chatwoot
+    echo -en "\e[36mDigite o Dominio para o Chatwoot (ex: chatwoot.oriondesign.art.br): \e[0m" && read -r url_chatwoot
     echo ""
     
     ## Pega o nome do dominio para ser o nome da empresa
@@ -12273,7 +12273,7 @@ while true; do
     
     ## Pergunta o email SMTP
     echo -e "\e[97mPasso$azul 2/5\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_admin_chatwoot
+    echo -en "\e[36mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_admin_chatwoot
     echo ""
     
     ## Define o dominio SMTP com o dominio do email
@@ -12282,17 +12282,17 @@ while true; do
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$azul 3/5\e[0m"
     echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
-    echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_chatwoot
+    echo -en "\e[36mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_chatwoot
     echo ""
     
     ## Pergunta o Host SMTP do email
     echo -e "\e[97mPasso$azul 4/5\e[0m"
-    echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_chatwoot
+    echo -en "\e[36mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_chatwoot
     echo ""
     
     ## Pergunta a porta SMTP do email
     echo -e "\e[97mPasso$azul 5/5\e[0m"
-    echo -en "\e[33mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_chatwoot
+    echo -en "\e[36mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_chatwoot
     
     
     ## Verifica se a porta é 465, se sim deixa o ssl true, se não, deixa false 
@@ -12312,27 +12312,27 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL
-    echo -e "\e[33mDominio do Chatwoot:\e[97m $url_chatwoot\e[0m"
+    echo -e "\e[36mDominio do Chatwoot:\e[97m $url_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Nome da Empresa
-    echo -e "\e[33mNome da Empresa:\e[97m $nome_empresa_chatwoot\e[0m"
+    echo -e "\e[36mNome da Empresa:\e[97m $nome_empresa_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Email de SMTP
-    echo -e "\e[33mEmail do SMTP:\e[97m $email_admin_chatwoot\e[0m"
+    echo -e "\e[36mEmail do SMTP:\e[97m $email_admin_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Senha de SMTP
-    echo -e "\e[33mSenha do SMTP:\e[97m $senha_email_chatwoot\e[0m"
+    echo -e "\e[36mSenha do SMTP:\e[97m $senha_email_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Host SMTP
-    echo -e "\e[33mHost SMTP:\e[97m $smtp_email_chatwoot\e[0m"
+    echo -e "\e[36mHost SMTP:\e[97m $smtp_email_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Porta SMTP
-    echo -e "\e[33mPorta SMTP:\e[97m $porta_smtp_chatwoot\e[0m"
+    echo -e "\e[36mPorta SMTP:\e[97m $porta_smtp_chatwoot\e[0m"
     echo ""
     echo ""
 
@@ -12369,7 +12369,7 @@ done
 
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO CHATWOOT CLAIRTON \e[33m[1/6]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO CHATWOOT CLAIRTON \e[36m[1/6]\e[0m"
 echo ""
 sleep 1
 
@@ -12377,7 +12377,7 @@ sleep 1
 dados
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[33m[2/6]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[36m[2/6]\e[0m"
 echo ""
 sleep 1
 
@@ -12414,7 +12414,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO CHATWOOT CLAIRTON \e[33m[3/6]\e[0m"
+echo -e "\e[97m• INSTALANDO CHATWOOT CLAIRTON \e[36m[3/6]\e[0m"
 echo ""
 sleep 1
 
@@ -12570,7 +12570,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• ESPERANDO SERVIÇO DO CHATWOOT ESTAR PRONTO \e[33m[4/6]\e[0m"
+echo -e "\e[97m• ESPERANDO SERVIÇO DO CHATWOOT ESTAR PRONTO \e[36m[4/6]\e[0m"
 echo ""
 sleep 1
 
@@ -12578,7 +12578,7 @@ sleep 1
 wait_chatwoot_uno
 
 ## Mensagem de Passo
-echo -e "\e[97m• REINICIANDO CHATWOOT \e[33m[5/6]\e[0m"
+echo -e "\e[97m• REINICIANDO CHATWOOT \e[36m[5/6]\e[0m"
 echo ""
 sleep 1
 
@@ -12616,7 +12616,7 @@ else
     echo "Não foi possivel migrar o banco de dados"
 fi
 ## Mensagem de Passo
-echo -e "\e[97m• ATIVANDO FUNÇÕES DO SUPER ADMIN \e[33m[6/6]\e[0m"
+echo -e "\e[97m• ATIVANDO FUNÇÕES DO SUPER ADMIN \e[36m[6/6]\e[0m"
 echo ""
 sleep 1
 
@@ -12665,13 +12665,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ CHATWOOT CLAIRTON ]\e[0m"
 echo ""
 
-echo -e "\e[97mDominio:\e[33m https://$url_chatwoot\e[0m"
+echo -e "\e[97mDominio:\e[36m https://$url_chatwoot\e[0m"
 echo ""
 
-echo -e "\e[97mUsuario:\e[33m Precisa criar dentro do Chatwoot\e[0m"
+echo -e "\e[97mUsuario:\e[36m Precisa criar dentro do Chatwoot\e[0m"
 echo ""
 
-echo -e "\e[97mSenha:\e[33m Precisa criar dentro do Chatwoot\e[0m"
+echo -e "\e[97mSenha:\e[36m Precisa criar dentro do Chatwoot\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -12723,7 +12723,7 @@ while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$azul 1/5\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Chatwoot (ex: chatwoot.oriondesign.art.br): \e[0m" && read -r url_chatwoot
+    echo -en "\e[36mDigite o Dominio para o Chatwoot (ex: chatwoot.oriondesign.art.br): \e[0m" && read -r url_chatwoot
     echo ""
     
     ## Pega o nome do dominio para ser o nome da empresa
@@ -12731,7 +12731,7 @@ while true; do
     
     ## Pergunta o email SMTP
     echo -e "\e[97mPasso$azul 2/5\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_admin_chatwoot
+    echo -en "\e[36mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_admin_chatwoot
     echo ""
     
     ## Define o dominio SMTP com o dominio do email
@@ -12740,17 +12740,17 @@ while true; do
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$azul 3/5\e[0m"
     echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
-    echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_chatwoot
+    echo -en "\e[36mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_chatwoot
     echo ""
     
     ## Pergunta o Host SMTP do email
     echo -e "\e[97mPasso$azul 4/5\e[0m"
-    echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_chatwoot
+    echo -en "\e[36mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_chatwoot
     echo ""
     
     ## Pergunta a porta SMTP do email
     echo -e "\e[97mPasso$azul 5/5\e[0m"
-    echo -en "\e[33mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_chatwoot
+    echo -en "\e[36mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_chatwoot
     
     
     ## Verifica se a porta é 465, se sim deixa o ssl true, se não, deixa false 
@@ -12770,27 +12770,27 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL
-    echo -e "\e[33mDominio do Chatwoot:\e[97m $url_chatwoot\e[0m"
+    echo -e "\e[36mDominio do Chatwoot:\e[97m $url_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Nome da Empresa
-    echo -e "\e[33mNome da Empresa:\e[97m $nome_empresa_chatwoot\e[0m"
+    echo -e "\e[36mNome da Empresa:\e[97m $nome_empresa_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Email de SMTP
-    echo -e "\e[33mEmail do SMTP:\e[97m $email_admin_chatwoot\e[0m"
+    echo -e "\e[36mEmail do SMTP:\e[97m $email_admin_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Senha de SMTP
-    echo -e "\e[33mSenha do SMTP:\e[97m $senha_email_chatwoot\e[0m"
+    echo -e "\e[36mSenha do SMTP:\e[97m $senha_email_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Host SMTP
-    echo -e "\e[33mHost SMTP:\e[97m $smtp_email_chatwoot\e[0m"
+    echo -e "\e[36mHost SMTP:\e[97m $smtp_email_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre Porta SMTP
-    echo -e "\e[33mPorta SMTP:\e[97m $porta_smtp_chatwoot\e[0m"
+    echo -e "\e[36mPorta SMTP:\e[97m $porta_smtp_chatwoot\e[0m"
     echo ""
     echo ""
 
@@ -12827,7 +12827,7 @@ done
 
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO CHATWOOT NESTOR \e[33m[1/5]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO CHATWOOT NESTOR \e[36m[1/5]\e[0m"
 echo ""
 sleep 1
 
@@ -12835,7 +12835,7 @@ sleep 1
 dados
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[33m[2/5]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[36m[2/5]\e[0m"
 echo ""
 sleep 1
 
@@ -12872,7 +12872,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO CHATWOOT NESTOR \e[33m[3/5]\e[0m"
+echo -e "\e[97m• INSTALANDO CHATWOOT NESTOR \e[36m[3/5]\e[0m"
 echo ""
 sleep 1
 
@@ -13113,7 +13113,7 @@ fi
 #docker stack deploy --prune --resolve-image always -c chatwoot_nestor.yaml chatwoot_nestor > /dev/null 2>&1
 
 ## Mensagem de Passo
-echo -e "\e[97m• ESPERANDO SERVIÇO DO CHATWOOT ESTAR PRONTO \e[33m[4/5]\e[0m"
+echo -e "\e[97m• ESPERANDO SERVIÇO DO CHATWOOT ESTAR PRONTO \e[36m[4/5]\e[0m"
 echo ""
 sleep 1
 
@@ -13121,7 +13121,7 @@ sleep 1
 wait_chatwoot_nestor
 
 ## Mensagem de Passo
-echo -e "\e[97m• PREPARANDO BANCO DE DADOS  \e[33m[5/5]\e[0m"
+echo -e "\e[97m• PREPARANDO BANCO DE DADOS  \e[36m[5/5]\e[0m"
 echo ""
 sleep 1
 
@@ -13189,13 +13189,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ CHATWOOT NESTOR ]\e[0m"
 echo ""
 
-echo -e "\e[97mDominio:\e[33m https://$url_chatwoot\e[0m"
+echo -e "\e[97mDominio:\e[36m https://$url_chatwoot\e[0m"
 echo ""
 
-echo -e "\e[97mUsuario:\e[33m Precisa criar dentro do Chatwoot\e[0m"
+echo -e "\e[97mUsuario:\e[36m Precisa criar dentro do Chatwoot\e[0m"
 echo ""
 
-echo -e "\e[97mSenha:\e[33m Precisa criar dentro do Chatwoot\e[0m"
+echo -e "\e[97mSenha:\e[36m Precisa criar dentro do Chatwoot\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -13239,57 +13239,57 @@ while true; do
 
     ##Pergunta o Dominio da UnoApi
     echo -e "\e[97mPasso$azul 1/11\e[0m"
-    echo -en "\e[33mDigite o Dominio para a Uno API (ex: unoapi.oriondesign.art.br): \e[0m" && read -r url_unoapi
+    echo -en "\e[36mDigite o Dominio para a Uno API (ex: unoapi.oriondesign.art.br): \e[0m" && read -r url_unoapi
     echo ""
 
     ##Pergunta o Dominio do Chatwoot
     echo -e "\e[97mPasso$azul 2/11\e[0m"
-    echo -en "\e[33mDigite o Dominio do Chatwoot já instalado (ex: chatwoot.oriondesign.art.br): \e[0m" && read -r url_chatwoot_uno
+    echo -en "\e[36mDigite o Dominio do Chatwoot já instalado (ex: chatwoot.oriondesign.art.br): \e[0m" && read -r url_chatwoot_uno
     echo ""
 
     ##Pergunta o o token do usuario
     echo -e "\e[97mPasso$azul 3/11\e[0m"
-    echo -en "\e[33mDigite o token de usuario administrador do Chatwoot: \e[0m" && read -r token_chatwoot_uno
+    echo -en "\e[36mDigite o token de usuario administrador do Chatwoot: \e[0m" && read -r token_chatwoot_uno
     echo ""
 
     ##Pergunta se quer ignorar mensagens de grupos
     echo -e "\e[97mPasso$azul 4/11\e[0m"
-    echo -en "\e[33mIgnorar mensagens de grupos (true ou false): \e[0m" && read -r op_1
+    echo -en "\e[36mIgnorar mensagens de grupos (true ou false): \e[0m" && read -r op_1
     echo ""
     
     ## Pergunta se quer ignorar o stauts de transmissão
     echo -e "\e[97mPasso$azul 5/11\e[0m"
-    echo -en "\e[33mIgnorar Status de Transmissão (true ou false): \e[0m" && read -r op_2
+    echo -en "\e[36mIgnorar Status de Transmissão (true ou false): \e[0m" && read -r op_2
     echo ""
 
     ## Pergunta se quer ignorar mensagens de trasmissão
     echo -e "\e[97mPasso$azul 6/11\e[0m"
-    echo -en "\e[33mIgnorar Mensagens de Trasmissão (true ou false): \e[0m" && read -r op_3
+    echo -en "\e[36mIgnorar Mensagens de Trasmissão (true ou false): \e[0m" && read -r op_3
     echo ""
 
     ## Pergunta se quer ignorar mensagem de status
     echo -e "\e[97mPasso$azul 7/11\e[0m"
-    echo -en "\e[33mIgnorar Mensagem de Status (true ou false): \e[0m" && read -r op_4
+    echo -en "\e[36mIgnorar Mensagem de Status (true ou false): \e[0m" && read -r op_4
     echo ""
 
     ## Pergunta se quer ignorar as próprias mensagens
     echo -e "\e[97mPasso$azul 8/11\e[0m"
-    echo -en "\e[33mIgnorar Proprias Mensagens (true ou false): \e[0m" && read -r op_5
+    echo -en "\e[36mIgnorar Proprias Mensagens (true ou false): \e[0m" && read -r op_5
     echo ""
 
     ## Pergunta a porta SMTP do email
     echo -e "\e[97mPasso$azul 9/11\e[0m"
-    echo -en "\e[33mEnviar status de conexão (true ou false): \e[0m" && read -r op_6
+    echo -en "\e[36mEnviar status de conexão (true ou false): \e[0m" && read -r op_6
     echo ""
 
     ## Pergunta qual é o Access Key do minio
     echo -e "\e[97mPasso$azul 10/11\e[0m"
-    echo -en "\e[33mAccess Key Minio: \e[0m" && read -r S3_ACCESS_KEY
+    echo -en "\e[36mAccess Key Minio: \e[0m" && read -r S3_ACCESS_KEY
     echo ""
 
     ## Pergunta qual é a Secret Key do minio
     echo -e "\e[97mPasso$azul 11/11\e[0m"
-    echo -en "\e[33mSecret Key Minio: \e[0m" && read -r S3_SECRET_KEY
+    echo -en "\e[36mSecret Key Minio: \e[0m" && read -r S3_SECRET_KEY
     echo ""
 
     ## Pegando senha do rabbitMQ
@@ -13308,54 +13308,54 @@ while true; do
     conferindo_as_info
     
 
-    echo -e "\e[33mDominio da Uno API:\e[97m $url_unoapi\e[0m"
+    echo -e "\e[36mDominio da Uno API:\e[97m $url_unoapi\e[0m"
     echo ""
 
 
-    echo -e "\e[33mDominio do Chatwoot:\e[97m $url_chatwoot_uno\e[0m"
+    echo -e "\e[36mDominio do Chatwoot:\e[97m $url_chatwoot_uno\e[0m"
     echo ""
 
 
-    echo -e "\e[33mToken do Administrador:\e[97m $token_chatwoot_uno\e[0m"
+    echo -e "\e[36mToken do Administrador:\e[97m $token_chatwoot_uno\e[0m"
     echo ""    
 
 
-    echo -e "\e[33mIgnorar mensagens de grupos:\e[97m $op_1\e[0m"
+    echo -e "\e[36mIgnorar mensagens de grupos:\e[97m $op_1\e[0m"
     echo ""
 
 
-    echo -e "\e[33mIgnorar Status de Transmissão:\e[97m $op_2\e[0m"
+    echo -e "\e[36mIgnorar Status de Transmissão:\e[97m $op_2\e[0m"
     echo ""
 
-    echo -e "\e[33mIgnorar Mensagens de Trasmissão:\e[97m $op_3\e[0m"
-    echo ""
-
-
-    echo -e "\e[33mIgnorar Mensagem de Status:\e[97m $op_4\e[0m"
+    echo -e "\e[36mIgnorar Mensagens de Trasmissão:\e[97m $op_3\e[0m"
     echo ""
 
 
-    echo -e "\e[33mIgnorar Proprias mensagens:\e[97m $op_5\e[0m"
+    echo -e "\e[36mIgnorar Mensagem de Status:\e[97m $op_4\e[0m"
     echo ""
 
 
-    echo -e "\e[33mEnviar status de conexão:\e[97m $op_6\e[0m"
+    echo -e "\e[36mIgnorar Proprias mensagens:\e[97m $op_5\e[0m"
     echo ""
 
 
-    echo -e "\e[33mAccess Key Minio:\e[97m $S3_ACCESS_KEY\e[0m"
+    echo -e "\e[36mEnviar status de conexão:\e[97m $op_6\e[0m"
     echo ""
 
 
-    echo -e "\e[33mSecret Key Minio:\e[97m $S3_SECRET_KEY\e[0m"
+    echo -e "\e[36mAccess Key Minio:\e[97m $S3_ACCESS_KEY\e[0m"
     echo ""
 
 
-    echo -e "\e[33mUser RabbitMq:\e[97m $user_rabbit_mqs\e[0m"
+    echo -e "\e[36mSecret Key Minio:\e[97m $S3_SECRET_KEY\e[0m"
     echo ""
 
 
-    echo -e "\e[33mSenha RabbitMq:\e[97m $senha_rabbit_mqs\e[0m"
+    echo -e "\e[36mUser RabbitMq:\e[97m $user_rabbit_mqs\e[0m"
+    echo ""
+
+
+    echo -e "\e[36mSenha RabbitMq:\e[97m $senha_rabbit_mqs\e[0m"
     echo ""
 
     ## Pergunta se as respostas estão corretas
@@ -13391,14 +13391,14 @@ done
 
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DA UNOAPI \e[33m[1/3]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DA UNOAPI \e[36m[1/3]\e[0m"
 echo ""
 sleep 1
 
 ## Nada nada nada.. só para aparecer a mensagem de passo..
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO UNO API \e[33m[2/3]\e[0m"
+echo -e "\e[97m• INSTALANDO UNO API \e[36m[2/3]\e[0m"
 echo ""
 sleep 1
 
@@ -13511,7 +13511,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[3/3]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[3/3]\e[0m"
 echo ""
 sleep 1
 
@@ -13545,13 +13545,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ UNO API ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_unoapi\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_unoapi\e[0m"
 echo ""
 
-echo -e "\e[33mPing:\e[97m https://$url_unoapi/ping\e[0m"
+echo -e "\e[36mPing:\e[97m https://$url_unoapi/ping\e[0m"
 echo ""
 
-echo -e "\e[33mAuth Token:\e[97m any\e[0m"
+echo -e "\e[36mAuth Token:\e[97m any\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -13602,27 +13602,27 @@ while true; do
 
     ##Pergunta o Dominio do N8N
     echo -e "\e[97mPasso$azul 1/5\e[0m"
-    echo -en "\e[33mDigite o dominio para o N8N (ex: n8n.oriondesign.art.br): \e[0m" && read -r url_editorn8n
+    echo -en "\e[36mDigite o dominio para o N8N (ex: n8n.oriondesign.art.br): \e[0m" && read -r url_editorn8n
     echo ""
     
     ##Pergunta o Dominio do Webhook
     echo -e "\e[97mPasso$azul 2/5\e[0m"
-    echo -en "\e[33mDigite o dominio para o Webhook do N8N (ex: webhook.oriondesign.art.br): \e[0m" && read -r url_webhookn8n
+    echo -en "\e[36mDigite o dominio para o Webhook do N8N (ex: webhook.oriondesign.art.br): \e[0m" && read -r url_webhookn8n
     echo ""
 
     ##Pergunta Dominio do Chatwoot
     echo -e "\e[97mPasso$azul 3/5\e[0m"
-    echo -en "\e[33mDigite o dominio do Chatwoot (ex: chatwoot.oriondesign.art.br): \e[0m" && read -r dominio_chatwoot
+    echo -en "\e[36mDigite o dominio do Chatwoot (ex: chatwoot.oriondesign.art.br): \e[0m" && read -r dominio_chatwoot
     echo ""
 
     ##Pergunta Dominio do Quepasa
     echo -e "\e[97mPasso$azul 4/5\e[0m"
-    echo -en "\e[33mDigite o dominio do Quepasa (ex: quepasa.oriondesign.art.br): \e[0m" && read -r dominio_quepasa
+    echo -en "\e[36mDigite o dominio do Quepasa (ex: quepasa.oriondesign.art.br): \e[0m" && read -r dominio_quepasa
     echo ""
 
     ##Pergunta Email do Quepasa
     echo -e "\e[97mPasso$azul 5/5\e[0m"
-    echo -en "\e[33mDigite o email do Quepasa (ex: contato@oriondesign.art.br): \e[0m" && read -r email_quepasa
+    echo -en "\e[36mDigite o email do Quepasa (ex: contato@oriondesign.art.br): \e[0m" && read -r email_quepasa
     echo ""
     
     ## Limpa o terminal
@@ -13635,23 +13635,23 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL do N8N
-    echo -e "\e[33mDominio do N8N:\e[97m $url_editorn8n\e[0m"
+    echo -e "\e[36mDominio do N8N:\e[97m $url_editorn8n\e[0m"
     echo ""
     
     ## Informação sobre URL do Webhook
-    echo -e "\e[33mDominio para o Webhook:\e[97m $url_webhookn8n\e[0m"
+    echo -e "\e[36mDominio para o Webhook:\e[97m $url_webhookn8n\e[0m"
     echo ""
 
     ## Informação sobre URL do Chatwoot
-    echo -e "\e[33mDominio do Chatwoot:\e[97m $dominio_chatwoot\e[0m"
+    echo -e "\e[36mDominio do Chatwoot:\e[97m $dominio_chatwoot\e[0m"
     echo ""
 
     ## Informação sobre URL do Quepasa
-    echo -e "\e[33mDominio do Quepasa:\e[97m $dominio_quepasa\e[0m"
+    echo -e "\e[36mDominio do Quepasa:\e[97m $dominio_quepasa\e[0m"
     echo ""
 
     ## Informação Email do Quepasa
-    echo -e "\e[33mEmail do Quepasa:\e[97m $email_quepasa\e[0m"
+    echo -e "\e[36mEmail do Quepasa:\e[97m $email_quepasa\e[0m"
     echo ""
 
     read -p "As respostas estão corretas? (Y/N): " confirmacao
@@ -13685,14 +13685,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO N8N \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO N8N \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
 ## NADA
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -13718,7 +13718,7 @@ verificar_container_redis
     fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO N8N \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO N8N \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -13981,7 +13981,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -14019,13 +14019,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ N8N QUEPASA ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_editorn8n\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_editorn8n\e[0m"
 echo ""
 
-echo -e "\e[33mEmail:\e[97m Precisa criar no primeiro acesso do N8N\e[0m"
+echo -e "\e[36mEmail:\e[97m Precisa criar no primeiro acesso do N8N\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m Precisa criar no primeiro acesso do N8N\e[0m"
+echo -e "\e[36mSenha:\e[97m Precisa criar no primeiro acesso do N8N\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -14070,12 +14070,12 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 1/2\e[0m"
-    echo -en "\e[33mDigite o dominio para o Quepasa (ex: quepasa.oriondesign.art.br): \e[0m" && read -r url_quepasa
+    echo -en "\e[36mDigite o dominio para o Quepasa (ex: quepasa.oriondesign.art.br): \e[0m" && read -r url_quepasa
     echo ""
 
     ##Pergunta o email para a ferramenta
     echo -e "\e[97mPasso$azul 2/2\e[0m"
-    echo -en "\e[33mDigite o email para o Quepasa (ex: contato@oriondesign.art.br): \e[0m" && read -r email_quepasa
+    echo -en "\e[36mDigite o email para o Quepasa (ex: contato@oriondesign.art.br): \e[0m" && read -r email_quepasa
     echo ""
     
     ## Limpa o terminal
@@ -14088,11 +14088,11 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL do quepasa
-    echo -e "\e[33mDominio do Quepasa:\e[97m $url_quepasa\e[0m"
+    echo -e "\e[36mDominio do Quepasa:\e[97m $url_quepasa\e[0m"
     echo ""
 
     ## Informação sobre email do quepasa
-    echo -e "\e[33mEmail do Quepasa:\e[97m $email_quepasa\e[0m"
+    echo -e "\e[36mEmail do Quepasa:\e[97m $email_quepasa\e[0m"
     echo ""
     
     ## Pergunta se as respostas estão corretas
@@ -14127,14 +14127,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO QUEPASA \e[33m[1/3]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO QUEPASA \e[36m[1/3]\e[0m"
 echo ""
 sleep 1
 
 ## NADA
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO QUEPASA \e[33m[2/3]\e[0m"
+echo -e "\e[97m• INSTALANDO QUEPASA \e[36m[2/3]\e[0m"
 echo ""
 sleep 1
 
@@ -14236,7 +14236,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -14272,15 +14272,15 @@ guarde_os_dados_msg
 ## Dados da Aplicação:
 echo -e "\e[32m[ QUEPASA ]\e[0m"
 echo ""
-echo -e "\e[33mDominio:\e[97m https://$url_quepasa\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_quepasa\e[0m"
 echo ""
-echo -e "\e[33mEmail:\e[97m $email_quepasa\e[0m"
+echo -e "\e[36mEmail:\e[97m $email_quepasa\e[0m"
 echo ""
-echo -e "\e[33mUrl Setup:\e[97m https://$url_quepasa/setup\e[0m"
+echo -e "\e[36mUrl Setup:\e[97m https://$url_quepasa/setup\e[0m"
 echo ""
-echo -e "\e[33mUsuario:\e[97m Precisa de criar ao entrar no setup\e[0m"
+echo -e "\e[36mUsuario:\e[97m Precisa de criar ao entrar no setup\e[0m"
 echo ""
-echo -e "\e[33mSenha:\e[97m Precisa de criar ao entrar no setup\e[0m"
+echo -e "\e[36mSenha:\e[97m Precisa de criar ao entrar no setup\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -14324,48 +14324,48 @@ while true; do
 
     ##Pergunta o Dominio do Dify AI
     echo -e "\e[97mPasso$azul 1/9\e[0m"
-    echo -en "\e[33mDigite o dominio para o Dify AI (ex: dify.oriondesign.art.br): \e[0m" && read -r url_dify
+    echo -en "\e[36mDigite o dominio para o Dify AI (ex: dify.oriondesign.art.br): \e[0m" && read -r url_dify
     echo ""
 
     ##Pergunta o Dominio do Qdrant
     echo -e "\e[97mPasso$azul 2/9\e[0m"
-    echo -en "\e[33mDigite o dominio do Qdrant (ex: http://123.456.789.123:6333): \e[0m" && read -r url_quedrant
+    echo -en "\e[36mDigite o dominio do Qdrant (ex: http://123.456.789.123:6333): \e[0m" && read -r url_quedrant
     echo ""
 
     ##Pergunta a Api Key do Qdrant
     echo -e "\e[97mPasso$azul 3/9\e[0m"
-    echo -en "\e[33mDigite a Api Key do Qdrant (ex: 1234-5678-9123-4567-8912): \e[0m" && read -r apikey_qdrant
+    echo -en "\e[36mDigite a Api Key do Qdrant (ex: 1234-5678-9123-4567-8912): \e[0m" && read -r apikey_qdrant
     echo ""
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$azul 4/9\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_dify
+    echo -en "\e[36mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_dify
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$azul 5/9\e[0m"
     echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
-    echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_dify
+    echo -en "\e[36mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_dify
     echo ""
 
     ## Pergunta o Host SMTP do email
     echo -e "\e[97mPasso$azul 6/9\e[0m"
-    echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_dify
+    echo -en "\e[36mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_dify
     echo ""
 
     ## Pergunta a porta SMTP do email
     echo -e "\e[97mPasso$azul 7/9\e[0m"
-    echo -en "\e[33mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_dify
+    echo -en "\e[36mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_dify
     echo ""
 
     ## Pergunta qual é o Access Key do minio
     echo -e "\e[97mPasso$azul 8/9\e[0m"
-    echo -en "\e[33mAccess Key Minio: \e[0m" && read -r S3_ACCESS_KEY
+    echo -en "\e[36mAccess Key Minio: \e[0m" && read -r S3_ACCESS_KEY
     echo ""
 
     ## Pergunta qual é a Secret Key do minio
     echo -e "\e[97mPasso$azul 9/9\e[0m"
-    echo -en "\e[33mSecret Key Minio: \e[0m" && read -r S3_SECRET_KEY
+    echo -en "\e[36mSecret Key Minio: \e[0m" && read -r S3_SECRET_KEY
     echo ""
 
     ## Limpa o terminal
@@ -14378,39 +14378,39 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL do Builder
-    echo -e "\e[33mDominio do Dify AI:\e[97m $url_dify\e[0m"
+    echo -e "\e[36mDominio do Dify AI:\e[97m $url_dify\e[0m"
     echo ""
 
     ## Informação sobre URL do Viewer
-    echo -e "\e[33mDominio do Qdrant:\e[97m $url_quedrant\e[0m"
+    echo -e "\e[36mDominio do Qdrant:\e[97m $url_quedrant\e[0m"
     echo ""
 
     ## Informação sobre a versão da ferramenta
-    echo -e "\e[33mApi Key Qdrant:\e[97m $apikey_qdrant\e[0m"
+    echo -e "\e[36mApi Key Qdrant:\e[97m $apikey_qdrant\e[0m"
     echo ""    
 
     ## Informação sobre Email
-    echo -e "\e[33mEmail do SMTP:\e[97m $email_dify\e[0m"
+    echo -e "\e[36mEmail do SMTP:\e[97m $email_dify\e[0m"
     echo ""
 
     ## Informação sobre Senha do Email
-    echo -e "\e[33mSenha do Email:\e[97m $senha_email_dify\e[0m"
+    echo -e "\e[36mSenha do Email:\e[97m $senha_email_dify\e[0m"
     echo ""
 
     ## Informação sobre Host SMTP
-    echo -e "\e[33mHost SMTP do Email:\e[97m $smtp_email_dify\e[0m"
+    echo -e "\e[36mHost SMTP do Email:\e[97m $smtp_email_dify\e[0m"
     echo ""
 
     ## Informação sobre Porta SMTP
-    echo -e "\e[33mPorta SMTP do Email:\e[97m $porta_smtp_dify\e[0m"
+    echo -e "\e[36mPorta SMTP do Email:\e[97m $porta_smtp_dify\e[0m"
     echo ""
 
     ## Informação sobre Access Key
-    echo -e "\e[33mAccess Key Minio:\e[97m $S3_ACCESS_KEY\e[0m"
+    echo -e "\e[36mAccess Key Minio:\e[97m $S3_ACCESS_KEY\e[0m"
     echo ""
 
     ## Informação sobre Secret Key
-    echo -e "\e[33mSecret Key Minio:\e[97m $S3_SECRET_KEY\e[0m"
+    echo -e "\e[36mSecret Key Minio:\e[97m $S3_SECRET_KEY\e[0m"
     echo ""
 
     ## Pergunta se as respostas estão corretas
@@ -14446,7 +14446,7 @@ done
 
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO DIFY \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO DIFY \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
@@ -14489,7 +14489,7 @@ cd
 cd
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -14516,7 +14516,7 @@ verificar_container_redis
 
 
 ## Mensagem de Passo
-echo -e "\e[97m• PEGANDO DADOS MINIO \e[33m[3/4]\e[0m"
+echo -e "\e[97m• PEGANDO DADOS MINIO \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -14536,7 +14536,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO DIFY \e[33m[4/4]\e[0m"
+echo -e "\e[97m• INSTALANDO DIFY \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -14796,7 +14796,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -14831,13 +14831,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ DIFY AI ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_dify\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_dify\e[0m"
 echo ""
 
-echo -e "\e[33mEmail:\e[97m Precisa de criar na primeira vez que entrar no Dify AI.\e[0m"
+echo -e "\e[36mEmail:\e[97m Precisa de criar na primeira vez que entrar no Dify AI.\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m Precisa de criar na primeira vez que entrar no Dify AI.\e[0m"
+echo -e "\e[36mSenha:\e[97m Precisa de criar na primeira vez que entrar no Dify AI.\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -14881,12 +14881,12 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 1/2\e[0m"
-    echo -en "\e[33mDigite o dominio para o WebUI Ollama (ex: ollama.oriondesign.art.br): \e[0m" && read -r url_ollama
+    echo -en "\e[36mDigite o dominio para o WebUI Ollama (ex: ollama.oriondesign.art.br): \e[0m" && read -r url_ollama
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 2/2\e[0m"
-    echo -en "\e[33mDigite o dominio para a API Ollama (ex: apiollama.oriondesign.art.br): \e[0m" && read -r url_apiollama
+    echo -en "\e[36mDigite o dominio para a API Ollama (ex: apiollama.oriondesign.art.br): \e[0m" && read -r url_apiollama
     echo ""
     
     ## Limpa o terminal
@@ -14899,11 +14899,11 @@ while true; do
     conferindo_as_info
     
     ##Informação do Dominio
-    echo -e "\e[33mDominio para o WebUI Ollama:\e[97m $url_ollama\e[0m"
+    echo -e "\e[36mDominio para o WebUI Ollama:\e[97m $url_ollama\e[0m"
     echo ""
 
     ##Informação do Dominio
-    echo -e "\e[33mDominio para o API Ollama:\e[97m $url_apiollama\e[0m"
+    echo -e "\e[36mDominio para o API Ollama:\e[97m $url_apiollama\e[0m"
     echo ""
     
      ## Pergunta se as respostas estão corretas
@@ -14938,14 +14938,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO OLLAMA \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO OLLAMA \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
 ## NADA
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO OLLAMA \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO OLLAMA \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -15052,7 +15052,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -15088,11 +15088,11 @@ guarde_os_dados_msg
 echo -e "\e[32m[ Ollama ]\e[0m"
 echo ""
 
-echo -e "\e[33mOllama WebUI:\e[97m https://$url_ollama\e[0m"
+echo -e "\e[36mOllama WebUI:\e[97m https://$url_ollama\e[0m"
 echo ""
 
 
-echo -e "\e[33mOllama API:\e[97m https://$url_apiollama/api\e[0m"
+echo -e "\e[36mOllama API:\e[97m https://$url_apiollama/api\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -15168,39 +15168,39 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 1/7\e[0m"
-    echo -en "\e[33mDigite o dominio para o Affine (ex: affine.oriondesign.art.br): \e[0m" && read -r url_affine
+    echo -en "\e[36mDigite o dominio para o Affine (ex: affine.oriondesign.art.br): \e[0m" && read -r url_affine
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 2/7\e[0m"
-    echo -en "\e[33mDigite o Email de Admin (ex: contato@oriondesign.art.br): \e[0m" && read -r email_affine
+    echo -en "\e[36mDigite o Email de Admin (ex: contato@oriondesign.art.br): \e[0m" && read -r email_affine
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 3/7\e[0m"
     echo -e "$azul--> Sem caracteres especiais: \!#$"
-    echo -en "\e[33mDigite a Senha de Admin (ex: @Senha123_): \e[0m" && read -r senha_affine
+    echo -en "\e[36mDigite a Senha de Admin (ex: @Senha123_): \e[0m" && read -r senha_affine
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 4/7\e[0m"
-    echo -en "\e[33mDigite a Email SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_affine
+    echo -en "\e[36mDigite a Email SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_affine
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 5/7\e[0m"
     echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
-    echo -en "\e[33mDigite a Senha SMTP (ex: @Senha123_): \e[0m" && read -r senha_smtp_affine
+    echo -en "\e[36mDigite a Senha SMTP (ex: @Senha123_): \e[0m" && read -r senha_smtp_affine
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 6/7\e[0m"
-    echo -en "\e[33mDigite o Host SMTP (ex: smtp.hostinger.com): \e[0m" && read -r host_smtp_affine
+    echo -en "\e[36mDigite o Host SMTP (ex: smtp.hostinger.com): \e[0m" && read -r host_smtp_affine
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 7/7\e[0m"
-    echo -en "\e[33mDigite a Porta SMTP (ex: 465): \e[0m" && read -r porta_smtp_affine
+    echo -en "\e[36mDigite a Porta SMTP (ex: 465): \e[0m" && read -r porta_smtp_affine
     echo ""
     
     ## Limpa o terminal
@@ -15213,31 +15213,31 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL do affine
-    echo -e "\e[33mDominio do Affine:\e[97m $url_affine\e[0m"
+    echo -e "\e[36mDominio do Affine:\e[97m $url_affine\e[0m"
     echo ""
 
     ## Informação sobre URL do affine
-    echo -e "\e[33mEmail de Admin:\e[97m $email_affine\e[0m"
+    echo -e "\e[36mEmail de Admin:\e[97m $email_affine\e[0m"
     echo ""
 
     ## Informação sobre URL do affine
-    echo -e "\e[33mSenha de Admin:\e[97m $senha_affine\e[0m"
+    echo -e "\e[36mSenha de Admin:\e[97m $senha_affine\e[0m"
     echo ""
 
     ## Informação sobre URL do affine
-    echo -e "\e[33mEmail SMTP:\e[97m $email_smtp_affine\e[0m"
+    echo -e "\e[36mEmail SMTP:\e[97m $email_smtp_affine\e[0m"
     echo ""
 
     ## Informação sobre URL do affine
-    echo -e "\e[33mSenha SMTP:\e[97m $senha_smtp_affine\e[0m"
+    echo -e "\e[36mSenha SMTP:\e[97m $senha_smtp_affine\e[0m"
     echo ""
 
     ## Informação sobre URL do affine
-    echo -e "\e[33mHost SMTP:\e[97m $host_smtp_affine\e[0m"
+    echo -e "\e[36mHost SMTP:\e[97m $host_smtp_affine\e[0m"
     echo ""
 
     ## Informação sobre URL do affine
-    echo -e "\e[33mPorta SMTP:\e[97m $porta_smtp_affine\e[0m"
+    echo -e "\e[36mPorta SMTP:\e[97m $porta_smtp_affine\e[0m"
     echo ""
     
     ## Pergunta se as respostas estão corretas
@@ -15272,14 +15272,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO AFFINE \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO AFFINE \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
 ## Nadaaaaa
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -15304,7 +15304,7 @@ verificar_container_redis
     fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO AFFINE \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO AFFINE \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -15411,7 +15411,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -15447,13 +15447,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ AFFINE ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_affine\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_affine\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m $email_affine\e[0m"
+echo -e "\e[36mUsuario:\e[97m $email_affine\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m $senha_affine\e[0m"
+echo -e "\e[36mSenha:\e[97m $senha_affine\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -15497,28 +15497,28 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 1/5\e[0m"
-    echo -en "\e[33mDigite o dominio para o Docuseal (ex: docuseal.oriondesign.art.br): \e[0m" && read -r url_docuseal
+    echo -en "\e[36mDigite o dominio para o Docuseal (ex: docuseal.oriondesign.art.br): \e[0m" && read -r url_docuseal
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 2/5\e[0m"
-    echo -en "\e[33mDigite a Email SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_docuseal
+    echo -en "\e[36mDigite a Email SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_docuseal
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 3/5\e[0m"
     echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
-    echo -en "\e[33mDigite a Senha SMTP (ex: @Senha123_): \e[0m" && read -r senha_smtp_docuseal
+    echo -en "\e[36mDigite a Senha SMTP (ex: @Senha123_): \e[0m" && read -r senha_smtp_docuseal
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 4/5\e[0m"
-    echo -en "\e[33mDigite o Host SMTP (ex: smtp.hostinger.com): \e[0m" && read -r host_smtp_docuseal
+    echo -en "\e[36mDigite o Host SMTP (ex: smtp.hostinger.com): \e[0m" && read -r host_smtp_docuseal
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 5/5\e[0m"
-    echo -en "\e[33mDigite a Porta SMTP (ex: 465): \e[0m" && read -r porta_smtp_docuseal
+    echo -en "\e[36mDigite a Porta SMTP (ex: 465): \e[0m" && read -r porta_smtp_docuseal
     echo ""
     
     ## Limpa o terminal
@@ -15531,23 +15531,23 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL do docuseal
-    echo -e "\e[33mDominio do docuseal:\e[97m $url_docuseal\e[0m"
+    echo -e "\e[36mDominio do docuseal:\e[97m $url_docuseal\e[0m"
     echo ""
 
     ## Informação sobre URL do docuseal
-    echo -e "\e[33mEmail SMTP:\e[97m $email_smtp_docuseal\e[0m"
+    echo -e "\e[36mEmail SMTP:\e[97m $email_smtp_docuseal\e[0m"
     echo ""
 
     ## Informação sobre URL do docuseal
-    echo -e "\e[33mSenha SMTP:\e[97m $senha_smtp_docuseal\e[0m"
+    echo -e "\e[36mSenha SMTP:\e[97m $senha_smtp_docuseal\e[0m"
     echo ""
 
     ## Informação sobre URL do docuseal
-    echo -e "\e[33mHost SMTP:\e[97m $host_smtp_docuseal\e[0m"
+    echo -e "\e[36mHost SMTP:\e[97m $host_smtp_docuseal\e[0m"
     echo ""
 
     ## Informação sobre URL do docuseal
-    echo -e "\e[33mPorta SMTP:\e[97m $porta_smtp_docuseal\e[0m"
+    echo -e "\e[36mPorta SMTP:\e[97m $porta_smtp_docuseal\e[0m"
     echo ""
     
     ## Pergunta se as respostas estão corretas
@@ -15582,14 +15582,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO DOCUSEAL \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO DOCUSEAL \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
 ## Nadaaaaa
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -15607,7 +15607,7 @@ if [ $? -eq 0 ]; then
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO DOCUSEAL \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO DOCUSEAL \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -15702,7 +15702,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -15738,13 +15738,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ DOCUSEAL ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_docuseal\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_docuseal\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m Precisa de criar ao fazer o primeiro login\e[0m"
+echo -e "\e[36mUsuario:\e[97m Precisa de criar ao fazer o primeiro login\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m Precisa de criar ao fazer o primeiro login\e[0m"
+echo -e "\e[36mSenha:\e[97m Precisa de criar ao fazer o primeiro login\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -15788,49 +15788,49 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 1/9\e[0m"
-    echo -en "\e[33mDigite o dominio para o Directus (ex: directus.oriondesign.art.br): \e[0m" && read -r url_directus
+    echo -en "\e[36mDigite o dominio para o Directus (ex: directus.oriondesign.art.br): \e[0m" && read -r url_directus
     echo ""
 
      ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 2/9\e[0m"
-    echo -en "\e[33mDigite a Email de Admin (ex: contato@oriondesign.art.br): \e[0m" && read -r email_directus
+    echo -en "\e[36mDigite a Email de Admin (ex: contato@oriondesign.art.br): \e[0m" && read -r email_directus
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 3/9\e[0m"
     echo -e "$azul--> Sem caracteres especiais: \!#$"
-    echo -en "\e[33mDigite a Senha SMTP (ex: @Senha123_): \e[0m" && read -r senha_directus
+    echo -en "\e[36mDigite a Senha SMTP (ex: @Senha123_): \e[0m" && read -r senha_directus
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 4/9\e[0m"
-    echo -en "\e[33mDigite a Email SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_directus
+    echo -en "\e[36mDigite a Email SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_directus
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 5/9\e[0m"
     echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
-    echo -en "\e[33mDigite a Senha SMTP (ex: @Senha123_): \e[0m" && read -r senha_smtp_directus
+    echo -en "\e[36mDigite a Senha SMTP (ex: @Senha123_): \e[0m" && read -r senha_smtp_directus
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 6/9\e[0m"
-    echo -en "\e[33mDigite o Host SMTP (ex: smtp.hostinger.com): \e[0m" && read -r host_smtp_directus
+    echo -en "\e[36mDigite o Host SMTP (ex: smtp.hostinger.com): \e[0m" && read -r host_smtp_directus
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 7/9\e[0m"
-    echo -en "\e[33mDigite a Porta SMTP (ex: 465): \e[0m" && read -r porta_smtp_directus
+    echo -en "\e[36mDigite a Porta SMTP (ex: 465): \e[0m" && read -r porta_smtp_directus
     echo ""
 
     ## Pergunta qual é o Access Key do minio
     echo -e "\e[97mPasso$azul 8/9\e[0m"
-    echo -en "\e[33mAccess Key Minio: \e[0m" && read -r S3_ACCESS_KEY
+    echo -en "\e[36mAccess Key Minio: \e[0m" && read -r S3_ACCESS_KEY
     echo ""
 
     ## Pergunta qual é a Secret Key do minio
     echo -e "\e[97mPasso$azul 9/9\e[0m"
-    echo -en "\e[33mSecret Key Minio: \e[0m" && read -r S3_SECRET_KEY
+    echo -en "\e[36mSecret Key Minio: \e[0m" && read -r S3_SECRET_KEY
     echo ""
 
     pegar_senha_minio
@@ -15858,39 +15858,39 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL do directus
-    echo -e "\e[33mDominio do Directus:\e[97m $url_directus\e[0m"
+    echo -e "\e[36mDominio do Directus:\e[97m $url_directus\e[0m"
     echo ""
 
     ## Informação sobre URL do directus
-    echo -e "\e[33mEmail de Admin:\e[97m $email_directus\e[0m"
+    echo -e "\e[36mEmail de Admin:\e[97m $email_directus\e[0m"
     echo ""
 
     ## Informação sobre URL do directus
-    echo -e "\e[33mSenha de Admin:\e[97m $senha_directus\e[0m"
+    echo -e "\e[36mSenha de Admin:\e[97m $senha_directus\e[0m"
     echo ""
 
     ## Informação sobre URL do directus
-    echo -e "\e[33mEmail SMTP:\e[97m $email_smtp_directus\e[0m"
+    echo -e "\e[36mEmail SMTP:\e[97m $email_smtp_directus\e[0m"
     echo ""
 
     ## Informação sobre URL do directus
-    echo -e "\e[33mSenha SMTP:\e[97m $senha_smtp_directus\e[0m"
+    echo -e "\e[36mSenha SMTP:\e[97m $senha_smtp_directus\e[0m"
     echo ""
 
     ## Informação sobre URL do directus
-    echo -e "\e[33mHost SMTP:\e[97m $host_smtp_directus\e[0m"
+    echo -e "\e[36mHost SMTP:\e[97m $host_smtp_directus\e[0m"
     echo ""
 
     ## Informação sobre URL do directus
-    echo -e "\e[33mPorta SMTP:\e[97m $porta_smtp_directus\e[0m"
+    echo -e "\e[36mPorta SMTP:\e[97m $porta_smtp_directus\e[0m"
     echo ""
 
     ## Informação sobre URL do directus
-    echo -e "\e[33mAccess Key Minio:\e[97m $S3_ACCESS_KEY\e[0m"
+    echo -e "\e[36mAccess Key Minio:\e[97m $S3_ACCESS_KEY\e[0m"
     echo ""
 
     ## Informação sobre URL do directus
-    echo -e "\e[33mSecret Key Minio:\e[97m $S3_SECRET_KEY\e[0m"
+    echo -e "\e[36mSecret Key Minio:\e[97m $S3_SECRET_KEY\e[0m"
     echo ""
 
     ## Verifica se a porta é 465, se sim deixa o ssl true, se não, deixa false 
@@ -15932,14 +15932,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO DIRECTUS \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO DIRECTUS \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
 ## Nadaaaaa
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REDIS \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -15975,7 +15975,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO DIRECTUS \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO DIRECTUS \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -16085,7 +16085,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -16121,13 +16121,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ DIRECTUS ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_directus\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_directus\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m $email_directus\e[0m"
+echo -e "\e[36mUsuario:\e[97m $email_directus\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m $senha_directus\e[0m"
+echo -e "\e[36mSenha:\e[97m $senha_directus\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -16171,28 +16171,28 @@ while true; do
 
     ## Pergunta o Dominio da ferramenta
     echo -e "\e[97mPasso$azul 1/5\e[0m"
-    echo -en "\e[33mDigite o Dominio para o VaultWarden (ex: vaultwarden.oriondesign.art.br): \e[0m" && read -r url_vaultwarden
+    echo -en "\e[36mDigite o Dominio para o VaultWarden (ex: vaultwarden.oriondesign.art.br): \e[0m" && read -r url_vaultwarden
     echo ""
     
     ## Pergunta o Email SMTP
     echo -e "\e[97mPasso$azul 2/5\e[0m"
-    echo -en "\e[33mDigite um Email para o SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_vaultwarden
+    echo -en "\e[36mDigite um Email para o SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_vaultwarden
     echo ""
     
     ## Pergunta a Senha SMTP
     echo -e "\e[97mPasso$azul 3/5\e[0m"
     echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
-    echo -en "\e[33mDigite a Senha SMTP do email (ex: @Senha123_): \e[0m" && read -r senha_vaultwarden
+    echo -en "\e[36mDigite a Senha SMTP do email (ex: @Senha123_): \e[0m" && read -r senha_vaultwarden
     echo ""
     
     ## Pergunta o Host SMTP
     echo -e "\e[97mPasso$azul 4/5\e[0m"
-    echo -en "\e[33mDigite o Host SMTP do email (ex: smtp.hostinger.com): \e[0m" && read -r host_vaultwarden
+    echo -en "\e[36mDigite o Host SMTP do email (ex: smtp.hostinger.com): \e[0m" && read -r host_vaultwarden
     echo ""
     
     ## Pergunta a Porta SMTP 
     echo -e "\e[97mPasso$azul 5/5\e[0m"
-    echo -en "\e[33mDigite a Porta SMTP do email (ex: 465): \e[0m" && read -r porta_vaultwarden
+    echo -en "\e[36mDigite a Porta SMTP do email (ex: 465): \e[0m" && read -r porta_vaultwarden
     echo ""
     
     if [ "$porta_vaultwarden" -eq 465 ] || [ "$porta_vaultwarden" -eq 25 ]; then
@@ -16211,23 +16211,23 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL
-    echo -e "\e[33mDominio:\e[97m $url_vaultwarden\e[0m"
+    echo -e "\e[36mDominio:\e[97m $url_vaultwarden\e[0m"
     echo ""
     
     ## Informação sobre Email
-    echo -e "\e[33mEmail SMTP:\e[97m $email_vaultwarden\e[0m"
+    echo -e "\e[36mEmail SMTP:\e[97m $email_vaultwarden\e[0m"
     echo ""
     
     ## Informação sobre Senha
-    echo -e "\e[33mSenha SMTP:\e[97m $senha_vaultwarden\e[0m"
+    echo -e "\e[36mSenha SMTP:\e[97m $senha_vaultwarden\e[0m"
     echo ""
     
     ## Informação sobre Host
-    echo -e "\e[33mHost SMTP:\e[97m $host_vaultwarden\e[0m"
+    echo -e "\e[36mHost SMTP:\e[97m $host_vaultwarden\e[0m"
     echo ""
     
     ## Informação sobre Porta
-    echo -e "\e[33mPorta SMTP:\e[97m $porta_vaultwarden\e[0m"
+    echo -e "\e[36mPorta SMTP:\e[97m $porta_vaultwarden\e[0m"
     echo ""
     
     ## Pergunta se as respostas estão corretas
@@ -16262,14 +16262,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO VAULTWARDEN \e[33m[1/3]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO VAULTWARDEN \e[36m[1/3]\e[0m"
 echo ""
 sleep 1
 
 ## Nada nada nada.. só para aparecer a mensagem de passo.
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO VAULTWARDEN \e[33m[2/3]\e[0m"
+echo -e "\e[97m• INSTALANDO VAULTWARDEN \e[36m[2/3]\e[0m"
 echo ""
 sleep 1
 
@@ -16358,7 +16358,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[3/3]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[3/3]\e[0m"
 echo ""
 sleep 1
 
@@ -16393,13 +16393,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ VAULTWARDEN ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_vaultwarden\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_vaultwarden\e[0m"
 echo ""
 
-echo -e "\e[33mEmail:\e[97m Precisa de criar dentro do VaultWarden\e[0m"
+echo -e "\e[36mEmail:\e[97m Precisa de criar dentro do VaultWarden\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m Precisa de criar dentro do VaultWarden\e[0m"
+echo -e "\e[36mSenha:\e[97m Precisa de criar dentro do VaultWarden\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -16443,22 +16443,22 @@ while true; do
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$azul 1/4\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Grafana (ex: grafana.oriondesign.art.br): \e[0m" && read -r url_grafana
+    echo -en "\e[36mDigite o Dominio para o Grafana (ex: grafana.oriondesign.art.br): \e[0m" && read -r url_grafana
     echo ""
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$azul 2/4\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Prometheus (ex: prometheus.oriondesign.art.br): \e[0m" && read -r url_prometheus
+    echo -en "\e[36mDigite o Dominio para o Prometheus (ex: prometheus.oriondesign.art.br): \e[0m" && read -r url_prometheus
     echo ""
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$azul 3/4\e[0m"
-    echo -en "\e[33mDigite o Dominio para o cAdvisor (ex: cadvisor.oriondesign.art.br): \e[0m" && read -r url_cadvisor
+    echo -en "\e[36mDigite o Dominio para o cAdvisor (ex: cadvisor.oriondesign.art.br): \e[0m" && read -r url_cadvisor
     echo ""
 
     ##Pergunta o Dominio para aplicação
     echo -e "\e[97mPasso$azul 4/4\e[0m"
-    echo -en "\e[33mDigite o Dominio para o NodeExporter (ex: node.oriondesign.art.br): \e[0m" && read -r url_nodeexporter
+    echo -en "\e[36mDigite o Dominio para o NodeExporter (ex: node.oriondesign.art.br): \e[0m" && read -r url_nodeexporter
     echo ""
 
     ## Limpa o terminal
@@ -16471,19 +16471,19 @@ while true; do
     conferindo_as_info
 
     ## Informação sobre URL
-    echo -e "\e[33mDominio do Grafana:\e[97m $url_grafana\e[0m"
+    echo -e "\e[36mDominio do Grafana:\e[97m $url_grafana\e[0m"
     echo ""
 
     ## Informação sobre URL
-    echo -e "\e[33mDominio do Prometheus:\e[97m $url_prometheus\e[0m"
+    echo -e "\e[36mDominio do Prometheus:\e[97m $url_prometheus\e[0m"
     echo ""
 
     ## Informação sobre URL
-    echo -e "\e[33mDominio do Cadvisor:\e[97m $url_cadvisor\e[0m"
+    echo -e "\e[36mDominio do Cadvisor:\e[97m $url_cadvisor\e[0m"
     echo ""
 
     ## Informação sobre URL
-    echo -e "\e[33mDominio do NodeExporter:\e[97m $url_nodeexporter\e[0m"
+    echo -e "\e[36mDominio do NodeExporter:\e[97m $url_nodeexporter\e[0m"
     echo ""
 
     ## Pergunta se as respostas estão corretas
@@ -16518,7 +16518,7 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO GRAFANA + PROMETHEUS + CADVISOR \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO GRAFANA + PROMETHEUS + CADVISOR \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
@@ -16526,7 +16526,7 @@ sleep 1
 ## E claro, para aparecer a mensagem do passo..
 
 ## Mensagem de Passo
-echo -e "\e[97m• BAIXANDO RECURSOS \e[33m[2/4]\e[0m"
+echo -e "\e[97m• BAIXANDO RECURSOS \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -16634,7 +16634,7 @@ cd
 echo ""
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO GRAFANA + PROMETHEUS + CADVISOR \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO GRAFANA + PROMETHEUS + CADVISOR \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -16795,7 +16795,7 @@ echo ""
 sleep 10
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -16833,23 +16833,23 @@ guarde_os_dados_msg
 echo -e "\e[32m[ GRAFANA + PROMETHEUS + CADVISOR ]\e[0m"
 echo ""
 
-echo -e "\e[97mDominio Grafana:\e[33m https://$url_grafana\e[0m"
+echo -e "\e[97mDominio Grafana:\e[36m https://$url_grafana\e[0m"
 echo ""
 
-echo -e "\e[97mUsuario Grafana:\e[33m admin\e[0m"
+echo -e "\e[97mUsuario Grafana:\e[36m admin\e[0m"
 echo ""
 
-echo -e "\e[97mSenha Grafana:\e[33m admin\e[0m"
+echo -e "\e[97mSenha Grafana:\e[36m admin\e[0m"
 echo -e "\e[97mDepois do primeiro login, será solicitado que você altere a senha.\e[0m"
 echo ""
 
-echo -e "\e[97mDominio Prometheus:\e[33m https://$url_prometheus\e[0m"
+echo -e "\e[97mDominio Prometheus:\e[36m https://$url_prometheus\e[0m"
 echo ""
 
-echo -e "\e[97mDominio cAdvisor:\e[33m https://$url_cadvisor\e[0m"
+echo -e "\e[97mDominio cAdvisor:\e[36m https://$url_cadvisor\e[0m"
 echo ""
 
-echo -e "\e[97mDominio NodeExporter:\e[33m https://$url_nodeexporter\e[0m"
+echo -e "\e[97mDominio NodeExporter:\e[36m https://$url_nodeexporter\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -16893,18 +16893,18 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 1/3\e[0m"
-    echo -en "\e[33mDigite o dominio para o NextCloud (ex: nextcloud.oriondesign.art.br): \e[0m" && read -r url_nextcloud
+    echo -en "\e[36mDigite o dominio para o NextCloud (ex: nextcloud.oriondesign.art.br): \e[0m" && read -r url_nextcloud
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 2/3\e[0m"
-    echo -en "\e[33mDigite o Usuario para o NextCloud (ex: orion): \e[0m" && read -r user_nextcloud
+    echo -en "\e[36mDigite o Usuario para o NextCloud (ex: orion): \e[0m" && read -r user_nextcloud
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 3/3\e[0m"
     echo -e "$azul--> Minimo 8 caracteres. Use Letras MAIUSCULAS e minusculas, numero e um caractere especial @ ou _"
-    echo -en "\e[33mDigite o Senha o Usuario (ex: @Senha123_): \e[0m" && read -r pass_nextcloud
+    echo -en "\e[36mDigite o Senha o Usuario (ex: @Senha123_): \e[0m" && read -r pass_nextcloud
     echo ""
 
 
@@ -16919,15 +16919,15 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL do nextcloud
-    echo -e "\e[33mDominio do NextCloud:\e[97m $url_nextcloud\e[0m"
+    echo -e "\e[36mDominio do NextCloud:\e[97m $url_nextcloud\e[0m"
     echo ""
 
     ## Informação sobre URL do nextcloud
-    echo -e "\e[33mUsuario do NextCloud:\e[97m $user_nextcloud\e[0m"
+    echo -e "\e[36mUsuario do NextCloud:\e[97m $user_nextcloud\e[0m"
     echo ""
 
     ## Informação sobre URL do nextcloud
-    echo -e "\e[33mSenha do NextCloud:\e[97m $pass_nextcloud\e[0m"
+    echo -e "\e[36mSenha do NextCloud:\e[97m $pass_nextcloud\e[0m"
     echo ""
     
     ## Pergunta se as respostas estão corretas
@@ -16962,14 +16962,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO NEXTCLOUD \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO NEXTCLOUD \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
 ## Nadaaaaa
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REIDS \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO POSTGRES E REIDS \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -17005,7 +17005,7 @@ fi
 
 echo ""
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO NEXTCLOUD \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO NEXTCLOUD \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -17094,7 +17094,7 @@ fi
 echo ""
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -17130,13 +17130,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ NEXTCLOUD ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_nextcloud\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_nextcloud\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m $user_nextcloud\e[0m"
+echo -e "\e[36mUsuario:\e[97m $user_nextcloud\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m $pass_nextcloud\e[0m"
+echo -e "\e[36mSenha:\e[97m $pass_nextcloud\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -17180,7 +17180,7 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 1/1\e[0m"
-    echo -en "\e[33mDigite o dominio para o Strapi (ex: strapi.oriondesign.art.br): \e[0m" && read -r url_strapi
+    echo -en "\e[36mDigite o dominio para o Strapi (ex: strapi.oriondesign.art.br): \e[0m" && read -r url_strapi
     echo ""
     
     ## Limpa o terminal
@@ -17193,7 +17193,7 @@ while true; do
     conferindo_as_info
     
     ##Informação do Dominio
-    echo -e "\e[33mDominio para o strapi:\e[97m $url_strapi\e[0m"
+    echo -e "\e[36mDominio para o strapi:\e[97m $url_strapi\e[0m"
     echo ""
     
      ## Pergunta se as respostas estão corretas
@@ -17228,14 +17228,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO STRAPI \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO STRAPI \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
 ## NADA
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO/INSTALANDO MYSQL \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO/INSTALANDO MYSQL \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -17259,7 +17259,7 @@ verificar_container_mysql
 wait_30_sec
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO STRAPI \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO STRAPI \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -17347,7 +17347,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -17383,13 +17383,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ STRAPI ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_strapi\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_strapi\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m Precisa criar no primeiro acesso do strapi\e[0m"
+echo -e "\e[36mUsuario:\e[97m Precisa criar no primeiro acesso do strapi\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m Precisa criar no primeiro acesso do strapi\e[0m"
+echo -e "\e[36mSenha:\e[97m Precisa criar no primeiro acesso do strapi\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -17433,23 +17433,23 @@ while true; do
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 1/2\e[0m"
-    echo -en "\e[33mDigite o dominio para o PhpMyAdmin (ex: phpmyadmin.oriondesign.art.br): \e[0m" && read -r url_phpmyadmin
+    echo -en "\e[36mDigite o dominio para o PhpMyAdmin (ex: phpmyadmin.oriondesign.art.br): \e[0m" && read -r url_phpmyadmin
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     echo -e "\e[97mPasso$azul 2/2\e[0m"
-    echo -en "\e[33mDigite o Host MySQL (ex: mysql ou 1.111.111.11:3306): \e[0m" && read -r host_phpmyadmin
+    echo -en "\e[36mDigite o Host MySQL (ex: mysql ou 1.111.111.11:3306): \e[0m" && read -r host_phpmyadmin
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
     #echo -e "\e[97mPasso$azul 4/4\e[0m"
-    #echo -en "\e[33mDigite o Usuario MySQL  (ex: oriondesign): \e[0m" && read -r user_phpmyadmin
+    #echo -en "\e[36mDigite o Usuario MySQL  (ex: oriondesign): \e[0m" && read -r user_phpmyadmin
     #echo ""
 
     ##Pergunta o Dominio para a ferramenta
     #echo -e "\e[97mPasso$azul 4/4\e[0m"
     #echo -e "$azul--> Sem caracteres especiais: \!#$"
-    #echo -en "\e[33mDigite a Senha MySQL (ex: @Senha123_): \e[0m" && read -r pass_phpmyadmin
+    #echo -en "\e[36mDigite a Senha MySQL (ex: @Senha123_): \e[0m" && read -r pass_phpmyadmin
     #echo ""
     
     ## Limpa o terminal
@@ -17462,19 +17462,19 @@ while true; do
     conferindo_as_info
     
     ##Informação do Dominio
-    echo -e "\e[33mDominio para o PhpMyAdmin:\e[97m $url_phpmyadmin\e[0m"
+    echo -e "\e[36mDominio para o PhpMyAdmin:\e[97m $url_phpmyadmin\e[0m"
     echo ""
 
     ##Informação do Dominio
-    echo -e "\e[33mHost MySQL:\e[97m $host_phpmyadmin\e[0m"
+    echo -e "\e[36mHost MySQL:\e[97m $host_phpmyadmin\e[0m"
     echo ""
 
     ###Informação do Dominio
-    #echo -e "\e[33mUsuario MySQL:\e[97m $user_phpmyadmin\e[0m"
+    #echo -e "\e[36mUsuario MySQL:\e[97m $user_phpmyadmin\e[0m"
     #echo ""
 
     ###Informação do Dominio
-    #echo -e "\e[33mSenha MYSQL:\e[97m $pass_phpmyadmin\e[0m"
+    #echo -e "\e[36mSenha MYSQL:\e[97m $pass_phpmyadmin\e[0m"
     #echo ""
     
      ## Pergunta se as respostas estão corretas
@@ -17509,14 +17509,14 @@ while true; do
 done
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO PHPMYADMIN \e[33m[1/3]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO PHPMYADMIN \e[36m[1/3]\e[0m"
 echo ""
 sleep 1
 
 ## NADA
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO PHPMYADMIN \e[33m[2/3]\e[0m"
+echo -e "\e[97m• INSTALANDO PHPMYADMIN \e[36m[2/3]\e[0m"
 echo ""
 sleep 1
 
@@ -17589,7 +17589,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[3/3]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[3/3]\e[0m"
 echo ""
 sleep 1
 
@@ -17625,13 +17625,13 @@ guarde_os_dados_msg
 echo -e "\e[32m[ PHPMYADMIN ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_phpmyadmin\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_phpmyadmin\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m Os mesmos do seu MySQL\e[0m"
+echo -e "\e[36mUsuario:\e[97m Os mesmos do seu MySQL\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m Os mesmos do seu MySQL\e[0m"
+echo -e "\e[36mSenha:\e[97m Os mesmos do seu MySQL\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -17675,45 +17675,45 @@ while true; do
 
     ##Pergunta o Dominio do Builder
     echo -e "\e[97mPasso$azul 1/13\e[0m"
-    echo -en "\e[33mDigite o Dominio para o Supabase (ex: supabase.oriondesign.art.br): \e[0m" && read -r url_supabase
+    echo -en "\e[36mDigite o Dominio para o Supabase (ex: supabase.oriondesign.art.br): \e[0m" && read -r url_supabase
     echo ""
 
     ##Pergunta o Dominio do Viewer
     echo -e "\e[97mPasso$azul 2/13\e[0m"
-    echo -en "\e[33mDigite o Usuario para o Supabase (ex: OrionDesign): \e[0m" && read -r user_supabase
+    echo -en "\e[36mDigite o Usuario para o Supabase (ex: OrionDesign): \e[0m" && read -r user_supabase
     echo ""
 
     ##Pergunta a versão da ferramenta
     echo -e "\e[97mPasso$azul 3/13\e[0m"
     echo -e "$azul--> Sem caracteres especiais: @\!#$"
-    echo -en "\e[33mDigite a Senha do usuario para o Supabase (ex: Senha123_): \e[0m" && read -r pass_supabase
+    echo -en "\e[36mDigite a Senha do usuario para o Supabase (ex: Senha123_): \e[0m" && read -r pass_supabase
     echo ""
 
     ##Pergunta o Email SMTP
     echo -e "\e[97mPasso$azul 4/13\e[0m"
-    echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_supabase
+    echo -en "\e[36mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_supabase
     echo ""
 
     ##Pergunta o usuário do Email SMTP
     echo -e "\e[97mPasso$azul 5/13\e[0m"
     echo -e "$azul--> Caso não tiver um usuario do email, use o proprio email abaixo"
-    echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r usuario_email_supabase
+    echo -en "\e[36mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r usuario_email_supabase
     echo ""
     
     ## Pergunta a senha do SMTP
     echo -e "\e[97mPasso$azul 6/13\e[0m"
     echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
-    echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_supabase
+    echo -en "\e[36mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_supabase
     echo ""
 
     ## Pergunta o Host SMTP do email
     echo -e "\e[97mPasso$azul 7/13\e[0m"
-    echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_supabase
+    echo -en "\e[36mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_supabase
     echo ""
 
     ## Pergunta a porta SMTP do email
     echo -e "\e[97mPasso$azul 8/13\e[0m"
-    echo -en "\e[33mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_supabase
+    echo -en "\e[36mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_supabase
     echo ""
 
     ## Verifica se a porta é 465, se sim deixa o ssl true, se não, deixa false 
@@ -17726,29 +17726,29 @@ while true; do
     ## Pergunta qual é o JWT_Key
     echo -e "\e[97mPasso$azul 9/13\e[0m"
     echo -e "$azul--> Pegue em: https://supabase.com/docs/guides/self-hosting/docker"
-    echo -en "\e[33mDigite o JWT_Key do Supabase: \e[0m" && read -r JWT_Key
+    echo -en "\e[36mDigite o JWT_Key do Supabase: \e[0m" && read -r JWT_Key
     echo ""
 
     ## Pergunta qual é o ANON_KEY
     echo -e "\e[97mPasso$azul 10/13\e[0m"
     echo -e "$azul--> Gere em: https://supabase.com/docs/guides/self-hosting/docker"
-    echo -en "\e[33mDigite o ANON_KEY do Supabase: \e[0m" && read -r ANON_KEY
+    echo -en "\e[36mDigite o ANON_KEY do Supabase: \e[0m" && read -r ANON_KEY
     echo ""
 
     ## Pergunta qual é o SERVICE_KEY
     echo -e "\e[97mPasso$azul 11/13\e[0m"    
     echo -e "$azul--> Gere em: https://supabase.com/docs/guides/self-hosting/docker"
-    echo -en "\e[33mDigite o SERVICE_KEY do Supabase: \e[0m" && read -r SERVICE_KEY
+    echo -en "\e[36mDigite o SERVICE_KEY do Supabase: \e[0m" && read -r SERVICE_KEY
     echo ""
 
     ## Pergunta qual é o Access Key do minio
     echo -e "\e[97mPasso$azul 12/13\e[0m"
-    echo -en "\e[33mAccess Key Minio: \e[0m" && read -r S3_ACCESS_KEY
+    echo -en "\e[36mAccess Key Minio: \e[0m" && read -r S3_ACCESS_KEY
     echo ""
 
     ## Pergunta qual é a Secret Key do minio
     echo -e "\e[97mPasso$azul 13/13\e[0m"
-    echo -en "\e[33mSecret Key Minio: \e[0m" && read -r S3_SECRET_KEY
+    echo -en "\e[36mSecret Key Minio: \e[0m" && read -r S3_SECRET_KEY
     echo ""
 
     ## Limpa o terminal
@@ -17761,59 +17761,59 @@ while true; do
     conferindo_as_info
     
     ## Informação sobre URL do Builder
-    echo -e "\e[33mDominio do Supabase:\e[97m $url_supabase\e[0m"
+    echo -e "\e[36mDominio do Supabase:\e[97m $url_supabase\e[0m"
     echo ""
 
     ## Informação sobre URL do Viewer
-    echo -e "\e[33mUsuaraio:\e[97m $user_supabase\e[0m"
+    echo -e "\e[36mUsuaraio:\e[97m $user_supabase\e[0m"
     echo ""
 
     ## Informação sobre a versão da ferramenta
-    echo -e "\e[33mSenha:\e[97m $pass_supabase\e[0m"
+    echo -e "\e[36mSenha:\e[97m $pass_supabase\e[0m"
     echo ""    
 
     ## Informação sobre Email
-    echo -e "\e[33mEmail do SMTP:\e[97m $email_supabase\e[0m"
+    echo -e "\e[36mEmail do SMTP:\e[97m $email_supabase\e[0m"
     echo ""
 
     ## Informação sobre Email
-    echo -e "\e[33mUsuário do SMTP:\e[97m $usuario_email_supabase\e[0m"
+    echo -e "\e[36mUsuário do SMTP:\e[97m $usuario_email_supabase\e[0m"
     echo ""
 
     ## Informação sobre Senha do Email
-    echo -e "\e[33mSenha do Email:\e[97m $senha_email_supabase\e[0m"
+    echo -e "\e[36mSenha do Email:\e[97m $senha_email_supabase\e[0m"
     echo ""
 
     ## Informação sobre Host SMTP
-    echo -e "\e[33mHost SMTP do Email:\e[97m $smtp_email_supabase\e[0m"
+    echo -e "\e[36mHost SMTP do Email:\e[97m $smtp_email_supabase\e[0m"
     echo ""
 
     ## Informação sobre Porta SMTP
-    echo -e "\e[33mPorta SMTP do Email:\e[97m $porta_smtp_supabase\e[0m"
+    echo -e "\e[36mPorta SMTP do Email:\e[97m $porta_smtp_supabase\e[0m"
     echo ""
 
     ## Informação sobre Secure SMTP
-    echo -e "\e[33mSecure SMTP do Email:\e[97m $smtp_secure_supabase\e[0m"
+    echo -e "\e[36mSecure SMTP do Email:\e[97m $smtp_secure_supabase\e[0m"
     echo ""
 
     ## Informação sobre JWT_Key
-    echo -e "\e[33mJWT_Key:\e[97m $JWT_Key\e[0m"
+    echo -e "\e[36mJWT_Key:\e[97m $JWT_Key\e[0m"
     echo ""
 
     ## Informação sobre ANON_KEY
-    echo -e "\e[33mAnon Key:\e[97m $ANON_KEY\e[0m"
+    echo -e "\e[36mAnon Key:\e[97m $ANON_KEY\e[0m"
     echo ""
 
     ## Informação sobre SERVICE_KEY
-    echo -e "\e[33mService Key:\e[97m $SERVICE_KEY\e[0m"
+    echo -e "\e[36mService Key:\e[97m $SERVICE_KEY\e[0m"
     echo ""
 
     ## Informação sobre Access Key
-    echo -e "\e[33mAccess Key Minio:\e[97m $S3_ACCESS_KEY\e[0m"
+    echo -e "\e[36mAccess Key Minio:\e[97m $S3_ACCESS_KEY\e[0m"
     echo ""
 
     ## Informação sobre Secret Key
-    echo -e "\e[33mSecret Key Minio:\e[97m $S3_SECRET_KEY\e[0m"
+    echo -e "\e[36mSecret Key Minio:\e[97m $S3_SECRET_KEY\e[0m"
     echo ""
 
     ## Pergunta se as respostas estão corretas
@@ -17849,7 +17849,7 @@ done
 
 
 ## Mensagem de Passo
-echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO SUPABASE \e[33m[1/4]\e[0m"
+echo -e "\e[97m• INICIANDO A INSTALAÇÃO DO SUPABASE \e[36m[1/4]\e[0m"
 echo ""
 sleep 1
 
@@ -17886,7 +17886,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO DADOS DO MINIO \e[33m[2/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO DADOS DO MINIO \e[36m[2/4]\e[0m"
 echo ""
 sleep 1
 
@@ -17906,7 +17906,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• INSTALANDO SUPABASE \e[33m[3/4]\e[0m"
+echo -e "\e[97m• INSTALANDO SUPABASE \e[36m[3/4]\e[0m"
 echo ""
 sleep 1
 
@@ -18454,7 +18454,7 @@ else
 fi
 
 ## Mensagem de Passo
-echo -e "\e[97m• VERIFICANDO SERVIÇO \e[33m[4/4]\e[0m"
+echo -e "\e[97m• VERIFICANDO SERVIÇO \e[36m[4/4]\e[0m"
 echo ""
 sleep 1
 
@@ -18491,16 +18491,16 @@ guarde_os_dados_msg
 echo -e "\e[32m[ SUPABASE ]\e[0m"
 echo ""
 
-echo -e "\e[33mDominio:\e[97m https://$url_supabase\e[0m"
+echo -e "\e[36mDominio:\e[97m https://$url_supabase\e[0m"
 echo ""
 
-echo -e "\e[33mUsuario:\e[97m $user_supabase\e[0m"
+echo -e "\e[36mUsuario:\e[97m $user_supabase\e[0m"
 echo ""
 
-echo -e "\e[33mSenha:\e[97m $pass_supabase\e[0m"
+echo -e "\e[36mSenha:\e[97m $pass_supabase\e[0m"
 echo ""
 
-echo -e "\e[33mApi key:\e[97m $ANON_KEY\e[0m"
+echo -e "\e[36mApi key:\e[97m $ANON_KEY\e[0m"
 echo ""
 
 ## Creditos do instalador
@@ -18924,10 +18924,10 @@ portainer.reset() {
     echo -e "\e[32m[ PORTAINER ]\e[0m"
     echo ""
     
-    echo -e "\e[97mUsuario:\e[33m $USER\e[0m"
+    echo -e "\e[97mUsuario:\e[36m $USER\e[0m"
     echo ""
     
-    echo -e "\e[97mNova Senha:\e[33m $PASSWORD\e[0m"
+    echo -e "\e[97mNova Senha:\e[36m $PASSWORD\e[0m"
     echo ""
     
     ## Creditos do instalador
