@@ -38,7 +38,7 @@ if [ -e "SetupAstro" ]; then
 fi
 
 # Baixa o script
-curl -sSL https://raw.githubusercontent.com/oriondesign2015/SetupAstro/main/SetupAstro -o SetupAstro
+curl -sSL https://raw.githubusercontent.com/astroinova/SetupAstro/main/SetupAstro -o SetupAstro
 
 # Verifica se o download foi bem-sucedido
 if [ $? -eq 0 ]; then
