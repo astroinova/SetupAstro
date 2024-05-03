@@ -14,6 +14,7 @@ echo -e "\e[97mComunidade: \e[32mhttps://chat.whatsapp.com/EmmgJiSlpeFJd1PAFOS7x
 
 ## Cores do Setup
 
+azul="\e[34m"
 amarelo="\e[33m"
 verde="\e[32m"
 branco="\e[97m"
@@ -42,31 +43,31 @@ dados() {
 
 ## copia
 direitos_setup() {
-    echo -e "$amarelo===================================================================================================\e[0m"
-    echo -e "$amarelo=                                                                                                 =\e[0m"
-    echo -e "$amarelo=  $branco Este auto instalador foi desenvolvido para auxiliar na instalação das principais aplicações $amarelo  =\e[0m"
-    echo -e "$amarelo=  $branco  disponíveis no mercado open source. Já deixo todos os créditos aos desenvolvedores de cada $amarelo  =\e[0m"
-    echo -e "$amarelo=  $branco aplicação disponíveis aqui. Este Setup é licenciado sob a Licença MIT (MIT). Você pode usar, $amarelo =\e[0m"
-    echo -e "$amarelo=  $branco  copiar, modificar, integrar, publicar, distribuir e/ou vender cópias dos produtos finais,  $amarelo  =\e[0m"
-    echo -e "$amarelo=  $branco   mas deve sempre declarar que OrionDesign (contato@oriondesign.art.br) é o autor original  $amarelo  =\e[0m"
-    echo -e "$amarelo=  $branco           destes códigos e atribuir um link para https://oriondesign.art.br/setup           $amarelo  =\e[0m"
-    echo -e "$amarelo=                                                                                                 =\e[0m"
-    echo -e "$amarelo===================================================================================================\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
+    echo -e "$azul=                                                                                                 =\e[0m"
+    echo -e "$azul=  $branco Este auto instalador foi desenvolvido para auxiliar na instalação das principais aplicações $azul  =\e[0m"
+    echo -e "$azul=  $branco  disponíveis no mercado open source. Já deixo todos os créditos aos desenvolvedores de cada $azul  =\e[0m"
+    echo -e "$azul=  $branco aplicação disponíveis aqui. Este Setup é licenciado sob a Licença MIT (MIT). Você pode usar, $azul =\e[0m"
+    echo -e "$azul=  $branco  copiar, modificar, integrar, publicar, distribuir e/ou vender cópias dos produtos finais,  $azul  =\e[0m"
+    echo -e "$azul=  $branco   mas deve sempre declarar que OrionDesign (contato@oriondesign.art.br) é o autor original  $azul  =\e[0m"
+    echo -e "$azul=  $branco           destes códigos e atribuir um link para https://oriondesign.art.br/setup           $azul  =\e[0m"
+    echo -e "$azul=                                                                                                 =\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
     echo ""
     echo ""
 }
 
 direitos_instalador() {
-    echo -e "$amarelo===================================================================================================\e[0m"
-    echo -e "$amarelo=                                                                                                 =\e[0m"
-    echo -e "$amarelo=  $branco Este auto instalador foi desenvolvido para auxiliar na instalação das principais aplicações $amarelo  =\e[0m"
-    echo -e "$amarelo=  $branco  disponíveis no mercado open source. Já deixo todos os créditos aos desenvolvedores de cada $amarelo  =\e[0m"
-    echo -e "$amarelo=  $branco aplicação disponíveis aqui. Este Setup é licenciado sob a Licença MIT (MIT). Você pode usar,$amarelo =\e[0m"
-    echo -e "$amarelo=  $branco  copiar, modificar, integrar, publicar, distribuir e/ou vender cópias dos produtos finais,  $amarelo  =\e[0m"
-    echo -e "$amarelo=  $branco   mas deve sempre declarar que OrionDesign (contato@oriondesign.art.br) é o autor original  $amarelo  =\e[0m"
-    echo -e "$amarelo=  $branco           destes códigos e atribuir um link para https://oriondesign.art.br/setup           $amarelo  =\e[0m"
-    echo -e "$amarelo=                                                                                                 =\e[0m"
-    echo -e "$amarelo===================================================================================================\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
+    echo -e "$azul=                                                                                                 =\e[0m"
+    echo -e "$azul=  $branco Este auto instalador foi desenvolvido para auxiliar na instalação das principais aplicações $azul  =\e[0m"
+    echo -e "$azul=  $branco  disponíveis no mercado open source. Já deixo todos os créditos aos desenvolvedores de cada $azul  =\e[0m"
+    echo -e "$azul=  $branco aplicação disponíveis aqui. Este Setup é licenciado sob a Licença MIT (MIT). Você pode usar,$azul =\e[0m"
+    echo -e "$azul=  $branco  copiar, modificar, integrar, publicar, distribuir e/ou vender cópias dos produtos finais,  $azul  =\e[0m"
+    echo -e "$azul=  $branco   mas deve sempre declarar que OrionDesign (contato@oriondesign.art.br) é o autor original  $azul  =\e[0m"
+    echo -e "$azul=  $branco           destes códigos e atribuir um link para https://oriondesign.art.br/setup           $azul  =\e[0m"
+    echo -e "$azul=                                                                                                 =\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
     echo ""
     echo ""
     read -p "Ao digitar Y você aceita e concorda com as orientações passadas acima (Y/N): " choice
@@ -101,13 +102,13 @@ direitos_instalador() {
 
 ## Credenciais Portainerv2.5.0+
 info_credenciais(){ 
-    echo -e "$amarelo===================================================================================================\e[0m"
-    echo -e "$amarelo=                                                                                                 =\e[0m"
-    echo -e "$amarelo=  $branco A partir da versão 2.5.0 deste Setup foi implementado uma função para realizar deploy dentro $amarelo =\e[0m"
-    echo -e "$amarelo=  $branco   do proprio portainer através de uma requsição api. Para que esta nova função funcione em   $amarelo =\e[0m"
-    echo -e "$amarelo=  $branco suas proximas instalações, você precisará informar às credenciais de acesso do seu portainer $amarelo =\e[0m"
-    echo -e "$amarelo=                                                                                                 =\e[0m"
-    echo -e "$amarelo===================================================================================================\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
+    echo -e "$azul=                                                                                                 =\e[0m"
+    echo -e "$azul=  $branco A partir da versão 2.5.0 deste Setup foi implementado uma função para realizar deploy dentro $azul =\e[0m"
+    echo -e "$azul=  $branco   do proprio portainer através de uma requsição api. Para que esta nova função funcione em   $azul =\e[0m"
+    echo -e "$azul=  $branco suas proximas instalações, você precisará informar às credenciais de acesso do seu portainer $azul =\e[0m"
+    echo -e "$azul=                                                                                                 =\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
     echo ""
     echo ""
     
@@ -118,20 +119,20 @@ info_credenciais(){
 creditos_msg() {
     echo ""
     echo ""
-    echo -e "$amarelo===================================================================================================\e[0m"
-    echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
-    echo -e "$amarelo=          $branco  Gostaria de contribuir para continuarmos o desenvolvimento deste projeto?            $amarelo=\e[0m"
-    echo -e "$amarelo=          $branco                    Você pode fazer uma doação via PIX:                                $amarelo=\e[0m"
-    echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
-    echo -e "$amarelo=                                      pix@oriondesign.art.br                                     $amarelo=\e[0m"
-    echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
-    echo -e "$amarelo=          $branco         Se precisar de ajuda/mentoria ou quiser deixar seu feedback                   $amarelo=\e[0m"
-    echo -e "$amarelo=          $branco               Nossa comunidade:$amarelo https://discord.gg/MD5dgNR8My                         $amarelo=\e[0m"
-    echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
-    echo -e "$amarelo=          $branco                    ou via WhatsApp (comunidade SetupAstro)                            $amarelo=\e[0m"
-    echo -e "$amarelo=          $amarelo               https://chat.whatsapp.com/Ky7uW2hUIf7DfPbIDugKS5                        $amarelo=\e[0m"
-    echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
-    echo -e "$amarelo===================================================================================================\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
+    echo -e "$azul=                                                                                                 $azul=\e[0m"
+    echo -e "$azul=          $branco  Gostaria de contribuir para continuarmos o desenvolvimento deste projeto?            $azul=\e[0m"
+    echo -e "$azul=          $branco                    Você pode fazer uma doação via PIX:                                $azul=\e[0m"
+    echo -e "$azul=                                                                                                 $azul=\e[0m"
+    echo -e "$azul=                                      pix@oriondesign.art.br                                     $azul=\e[0m"
+    echo -e "$azul=                                                                                                 $azul=\e[0m"
+    echo -e "$azul=          $branco         Se precisar de ajuda/mentoria ou quiser deixar seu feedback                   $azul=\e[0m"
+    echo -e "$azul=          $branco               Nossa comunidade:$azul https://discord.gg/MD5dgNR8My                         $azul=\e[0m"
+    echo -e "$azul=                                                                                                 $azul=\e[0m"
+    echo -e "$azul=          $branco                    ou via WhatsApp (comunidade SetupAstro)                            $azul=\e[0m"
+    echo -e "$azul=          $azul               https://chat.whatsapp.com/Ky7uW2hUIf7DfPbIDugKS5                        $azul=\e[0m"
+    echo -e "$azul=                                                                                                 $azul=\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
     echo ""
     echo ""
 }
@@ -146,11 +147,11 @@ creditos_msg() {
 ## Mensagem pedindo para preencher as informações
 
 preencha_as_info() {
-    echo -e "$amarelo===================================================================================================\e[0m"
-    echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
-    echo -e "$amarelo=                          $branco Preencha as informações solicitadas abaixo                            $amarelo=\e[0m"
-    echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
-    echo -e "$amarelo===================================================================================================\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
+    echo -e "$azul=                                                                                                 $azul=\e[0m"
+    echo -e "$azul=                          $branco Preencha as informações solicitadas abaixo                            $azul=\e[0m"
+    echo -e "$azul=                                                                                                 $azul=\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
     echo ""
     echo ""
 }
@@ -158,11 +159,11 @@ preencha_as_info() {
 ## Mensagem pedindo para verificar se as informações estão certas
 
 conferindo_as_info() {
-    echo -e "$amarelo===================================================================================================\e[0m"
-    echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
-    echo -e "$amarelo=                          $branco Verifique se os dados abaixos estão certos                            $amarelo=\e[0m"
-    echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
-    echo -e "$amarelo===================================================================================================\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
+    echo -e "$azul=                                                                                                 $azul=\e[0m"
+    echo -e "$azul=                          $branco Verifique se os dados abaixos estão certos                            $azul=\e[0m"
+    echo -e "$azul=                                                                                                 $azul=\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
     echo ""
     echo ""
 }
@@ -170,11 +171,11 @@ conferindo_as_info() {
 ## Mensagem de Guarde os dados
 
 guarde_os_dados_msg() {
-    echo -e "$amarelo===================================================================================================\e[0m"
-    echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
-    echo -e "$amarelo=                 $branco Guarde todos os dados abaixo para evitar futuros transtornos                   $amarelo=\e[0m"
-    echo -e "$amarelo=                                                                                                 $amarelo=\e[0m"
-    echo -e "$amarelo===================================================================================================\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
+    echo -e "$azul=                                                                                                 $azul=\e[0m"
+    echo -e "$azul=                 $branco Guarde todos os dados abaixo para evitar futuros transtornos                   $azul=\e[0m"
+    echo -e "$azul=                                                                                                 $azul=\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
     echo ""
     echo ""
 }
@@ -183,16 +184,16 @@ guarde_os_dados_msg() {
 
 instalando_msg() {
   echo""
-  echo -e "$amarelo===================================================================================================\e[0m"
-  echo -e "$amarelo=                                                                                                 =\e[0m"
-  echo -e "$amarelo=      $branco  ██╗███╗   ██╗███████╗████████╗ █████╗ ██╗      █████╗ ███╗   ██╗██████╗  ██████╗   $amarelo      = \e[0m" 
-  echo -e "$amarelo=      $branco  ██║████╗  ██║██╔════╝╚══██╔══╝██╔══██╗██║     ██╔══██╗████╗  ██║██╔══██╗██╔═══██╗  $amarelo      =\e[0m"
-  echo -e "$amarelo=      $branco  ██║██╔██╗ ██║███████╗   ██║   ███████║██║     ███████║██╔██╗ ██║██║  ██║██║   ██║  $amarelo      =\e[0m"
-  echo -e "$amarelo=      $branco  ██║██║╚██╗██║╚════██║   ██║   ██╔══██║██║     ██╔══██║██║╚██╗██║██║  ██║██║   ██║  $amarelo      =\e[0m"
-  echo -e "$amarelo=      $branco  ██║██║ ╚████║███████║   ██║   ██║  ██║███████╗██║  ██║██║ ╚████║██████╔╝╚██████╔╝  $amarelo      =\e[0m"
-  echo -e "$amarelo=      $branco  ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝   $amarelo      =\e[0m"
-  echo -e "$amarelo=                                                                                                 =\e[0m"
-  echo -e "$amarelo===================================================================================================\e[0m"
+  echo -e "$azul===================================================================================================\e[0m"
+  echo -e "$azul=                                                                                                 =\e[0m"
+  echo -e "$azul=      $branco  ██╗███╗   ██╗███████╗████████╗ █████╗ ██╗      █████╗ ███╗   ██╗██████╗  ██████╗   $azul      = \e[0m" 
+  echo -e "$azul=      $branco  ██║████╗  ██║██╔════╝╚══██╔══╝██╔══██╗██║     ██╔══██╗████╗  ██║██╔══██╗██╔═══██╗  $azul      =\e[0m"
+  echo -e "$azul=      $branco  ██║██╔██╗ ██║███████╗   ██║   ███████║██║     ███████║██╔██╗ ██║██║  ██║██║   ██║  $azul      =\e[0m"
+  echo -e "$azul=      $branco  ██║██║╚██╗██║╚════██║   ██║   ██╔══██║██║     ██╔══██║██║╚██╗██║██║  ██║██║   ██║  $azul      =\e[0m"
+  echo -e "$azul=      $branco  ██║██║ ╚████║███████║   ██║   ██║  ██║███████╗██║  ██║██║ ╚████║██████╔╝╚██████╔╝  $azul      =\e[0m"
+  echo -e "$azul=      $branco  ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝   $azul      =\e[0m"
+  echo -e "$azul=                                                                                                 =\e[0m"
+  echo -e "$azul===================================================================================================\e[0m"
   echo ""
   echo ""
 }
@@ -200,16 +201,16 @@ instalando_msg() {
 ## Mensagem de Erro
 
 erro_msg() {
-   echo -e "$amarelo===================================================================================================\e[0m"
-   echo -e "$amarelo=                                                                                                 =\e[0m"
-   echo -e "$amarelo=                                 $branco███████╗██████╗ ██████╗  ██████╗                                $amarelo=\e[0m"
-   echo -e "$amarelo=                                 $branco██╔════╝██╔══██╗██╔══██╗██╔═══██╗                               $amarelo=\e[0m"
-   echo -e "$amarelo=                                 $branco█████╗  ██████╔╝██████╔╝██║   ██║                               $amarelo=\e[0m"
-   echo -e "$amarelo=                                 $branco██╔══╝  ██╔══██╗██╔══██╗██║   ██║                               $amarelo=\e[0m"
-   echo -e "$amarelo=                                 $branco███████╗██║  ██║██║  ██║╚██████╔╝                               $amarelo=\e[0m"
-   echo -e "$amarelo=                                 $branco╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝                                $amarelo=\e[0m"
-   echo -e "$amarelo=                                                                                                 =\e[0m"
-   echo -e "$amarelo===================================================================================================\e[0m"
+   echo -e "$azul===================================================================================================\e[0m"
+   echo -e "$azul=                                                                                                 =\e[0m"
+   echo -e "$azul=                                 $branco███████╗██████╗ ██████╗  ██████╗                                $azul=\e[0m"
+   echo -e "$azul=                                 $branco██╔════╝██╔══██╗██╔══██╗██╔═══██╗                               $azul=\e[0m"
+   echo -e "$azul=                                 $branco█████╗  ██████╔╝██████╔╝██║   ██║                               $azul=\e[0m"
+   echo -e "$azul=                                 $branco██╔══╝  ██╔══██╗██╔══██╗██║   ██║                               $azul=\e[0m"
+   echo -e "$azul=                                 $branco███████╗██║  ██║██║  ██║╚██████╔╝                               $azul=\e[0m"
+   echo -e "$azul=                                 $branco╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝                                $azul=\e[0m"
+   echo -e "$azul=                                                                                                 =\e[0m"
+   echo -e "$azul===================================================================================================\e[0m"
 }
 
 ## Mensagem de Instalado
@@ -217,7 +218,7 @@ erro_msg() {
 instalado_msg() {
     clear
     echo ""
-    echo -e "$amarelo===================================================================================================\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
     echo ""
     echo -e "$branco     ██╗      ██╗███╗   ██╗███████╗████████╗ █████╗ ██╗      █████╗ ██████╗  ██████╗       ██╗\e[0m"
     echo -e "$branco     ╚██╗     ██║████╗  ██║██╔════╝╚══██╔══╝██╔══██╗██║     ██╔══██╗██╔══██╗██╔═══██╗     ██╔╝\e[0m"
@@ -226,7 +227,7 @@ instalado_msg() {
     echo -e "$branco     ██╔╝     ██║██║ ╚████║███████║   ██║   ██║  ██║███████╗██║  ██║██████╔╝╚██████╔╝     ╚██╗\e[0m"
     echo -e "$branco     ╚═╝      ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝  ╚═════╝       ╚═╝\e[0m"
     echo ""
-    echo -e "$amarelo===================================================================================================\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
     echo ""
     echo ""
 }
@@ -298,7 +299,7 @@ nome_instalador() {
 nome_menu() {
     clear
     echo ""
-    echo -e "$amarelo===================================================================================================\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
     echo ""
     echo -e "$branco                    ███╗   ███╗███████╗███╗   ██╗██╗   ██╗    ██████╗ ███████╗                \e[0m"
     echo -e "$branco                    ████╗ ████║██╔════╝████╗  ██║██║   ██║    ██╔══██╗██╔════╝                \e[0m"
@@ -314,7 +315,7 @@ nome_menu() {
     echo -e "$branco  ██║     ███████╗██║  ██║██║  ██║██║  ██║██║ ╚═╝ ██║███████╗██║ ╚████║   ██║   ██║  ██║███████║\e[0m"
     echo -e "$branco  ╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝╚══════╝\e[0m"
     echo ""
-    echo -e "$amarelo===================================================================================================\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
     versao
     echo ""
 }
@@ -968,7 +969,7 @@ nome_saindo() {
 
 nome_remover_stack() {
     clear
-    echo -e "$amarelo===================================================================================================\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
     echo ""
     echo ""
     echo -e "$branco                  ██████╗ ███████╗███╗   ███╗ ██████╗ ██╗   ██╗███████╗██████╗ \e[0m"
@@ -986,7 +987,7 @@ nome_remover_stack() {
     echo -e "$branco                           ╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝            \e[0m"
     echo ""
     echo ""
-    echo -e "$amarelo===================================================================================================\e[0m"
+    echo -e "$azul===================================================================================================\e[0m"
     echo""                                                                                             
 }
 nome_portainer.reset() {
@@ -1133,15 +1134,15 @@ criar_arquivo() {
 
     ## Caso não exista o arquivo ele vai pedir os dados para criar.
     nome_credenciais
-    echo -e "\e[97mPasso$amarelo 1/3\e[0m"
+    echo -e "\e[97mPasso$azul 1/3\e[0m"
     read -p "Digite a Url do Portainer (ex: https://portainer.oriondesign.art.br): " PORTAINER_URL
     echo ""
 
-    echo -e "\e[97mPasso$amarelo 2/3\e[0m"
+    echo -e "\e[97mPasso$azul 2/3\e[0m"
     read -p "Digite seu Usuario (ex: admin): " USUARIO
     echo ""
 
-    echo -e "\e[97mPasso$amarelo 3/3\e[0m"
+    echo -e "\e[97mPasso$azul 3/3\e[0m"
     read -s -p "Digite a Senha (ex: @Senha123_): " SENHA
     echo -e "[ PORTAINER ]\n\nDominio do portainer: $PORTAINER_URL\n\nUsuario: $USUARIO\n\nSenha: $SENHA" > "/root/dados_vps/dados_portainer"
     echo ""
@@ -1160,11 +1161,11 @@ verificar_campos() {
     if [ -z "$USUARIO" ] || [ -z "$SENHA" ]; then
         
         nome_credenciais
-        echo -e "\e[97mPasso$amarelo 1/2\e[0m"
+        echo -e "\e[97mPasso$azul 1/2\e[0m"
         read -p "Digite seu Usuario do Portainer  (ex: admin): " USUARIO
         echo ""
 
-        echo -e "\e[97mPasso$amarelo 2/2\e[0m"
+        echo -e "\e[97mPasso$azul 2/2\e[0m"
         read -s -p "Digite a Senha do Portainer (ex: @Senha123_): " SENHA
         echo ""
 
@@ -1174,11 +1175,11 @@ verificar_campos() {
     elif [ "$USUARIO" == "Precisa criar dentro do portainer" ] || [ "$SENHA" == "Precisa criar dentro do portainer" ]; then
         
         nome_credenciais
-        echo -e "\e[97mPasso$amarelo 1/2\e[0m"
+        echo -e "\e[97mPasso$azul 1/2\e[0m"
         read -p "Digite seu Usuario do Portainer  (ex: admin): " NOVO_USUARIO
         echo ""
 
-        echo -e "\e[97mPasso$amarelo 2/2\e[0m"
+        echo -e "\e[97mPasso$azul 2/2\e[0m"
         read -s -p "Digite a Senha do Portainer (ex: @Senha123_): " NOVA_SENHA
         echo ""
         verificar_token "$PORTAINER_URL" "$NOVO_USUARIO" "$NOVA_SENHA" true
@@ -1236,11 +1237,11 @@ verificar_token() {
             if [ $TENTATIVAS -lt $MAX_TENTATIVAS ]; then
                 
                 nome_credenciais
-                echo -e "\e[97mPasso$amarelo 1/2\e[0m"
+                echo -e "\e[97mPasso$azul 1/2\e[0m"
                 read -p "Digite seu Usuario do Portainer  (ex: admin): " USUARIO
                 echo ""
 
-                echo -e "\e[97mPasso$amarelo 2/2\e[0m"
+                echo -e "\e[97mPasso$azul 2/2\e[0m"
                 read -s -p "Digite a Senha do Portainer (ex: @Senha123_): " SENHA
                 echo ""
                 ATUALIZAR="true"
@@ -3240,25 +3241,25 @@ preencha_as_info
 
 while true; do
 
-echo -e "\e[97mPasso$amarelo 1/5\e[0m"
+echo -e "\e[97mPasso$azul 1/5\e[0m"
 echo -en "\e[33mDigite o endereço de Email (ex: contato@oriondesign.art.br): \e[0m" && read -r email_teste
 echo ""
 
-echo -e "\e[97mPasso$amarelo 2/5\e[0m"
-echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
+echo -e "\e[97mPasso$azul 2/5\e[0m"
+echo -e "$azul--> Caso não tiver um usuario do email, use o proprio email abaixo"
 echo -en "\e[33mDigite o usuário de Email (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r user_teste
 echo ""
 
-echo -e "\e[97mPasso$amarelo 3/5\e[0m"
-echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+echo -e "\e[97mPasso$azul 3/5\e[0m"
+echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
 echo -en "\e[33mDigite a Senha do email (ex: @Senha123_): \e[0m" && read -r senha_teste
 echo ""
 
-echo -e "\e[97mPasso$amarelo 4/5\e[0m"
+echo -e "\e[97mPasso$azul 4/5\e[0m"
 echo -en "\e[33mDigite o Host Smtp (ex: smtp.hostinger.com): \e[0m" && read -r host_teste
 echo ""
 
-echo -e "\e[97mPasso$amarelo 5/5\e[0m"
+echo -e "\e[97mPasso$azul 5/5\e[0m"
 echo -en "\e[33mDigite a Porta Smtp (ex: 465): \e[0m" && read -r porta_teste
 echo ""
 
@@ -3361,24 +3362,24 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para aplicação
-    echo -e "\e[97mPasso$amarelo 1/4\e[0m"
+    echo -e "\e[97mPasso$azul 1/4\e[0m"
     echo -en "\e[33mDigite o Dominio para o Portainer (ex: portainer.oriondesign.art.br): \e[0m" && read -r url_portainer
     echo ""
 
     ## Pergunta o Nome do Servidor
-    echo -e "\e[97mPasso$amarelo 2/4\e[0m"
-    echo -e "$amarelo--> Não pode conter Espaços e/ou cartacteres especiais, exceto Underline_"
+    echo -e "\e[97mPasso$azul 2/4\e[0m"
+    echo -e "$azul--> Não pode conter Espaços e/ou cartacteres especiais, exceto Underline_"
     echo -en "\e[33mEscolha um nome para o seu servidor (ex: OrionDesign): \e[0m" && read -r nome_servidor
     echo ""
     
     ## Pergunta o nome da Rede Interna
-    echo -e "\e[97mPasso$amarelo 3/4\e[0m"
-    echo -e "$amarelo--> Não pode conter Espaços e/ou cartacteres especiais, exceto Underline_"
+    echo -e "\e[97mPasso$azul 3/4\e[0m"
+    echo -e "$azul--> Não pode conter Espaços e/ou cartacteres especiais, exceto Underline_"
     echo -en "\e[33mDigite um nome para sua rede interna (ex: OrionNet): \e[0m" && read -r nome_rede_interna
     echo ""
     
     ## Pergunta o Email para informações sobre o certificado
-    echo -e "\e[97mPasso$amarelo 4/4\e[0m"
+    echo -e "\e[97mPasso$azul 4/4\e[0m"
     echo -en "\e[33mDigite um endereço de Email válido (ex: contato@oriondesign.art.br): \e[0m" && read -r email_ssl
     echo ""
 
@@ -4187,7 +4188,7 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para aplicação
-    echo -e "\e[97mPasso$amarelo 1/5\e[0m"
+    echo -e "\e[97mPasso$azul 1/5\e[0m"
     echo -en "\e[33mDigite o Dominio para o Chatwoot (ex: chatwoot.oriondesign.art.br): \e[0m" && read -r url_chatwoot
     echo ""
     
@@ -4195,7 +4196,7 @@ while true; do
     nome_empresa_chatwoot="$nome_servidor"
     
     ## Pergunta o email SMTP
-    echo -e "\e[97mPasso$amarelo 2/5\e[0m"
+    echo -e "\e[97mPasso$azul 2/5\e[0m"
     echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_admin_chatwoot
     echo ""
     
@@ -4203,18 +4204,18 @@ while true; do
     dominio_smtp_chatwoot=$(echo "$email_admin_chatwoot" | cut -d "@" -f 2)
     
     ## Pergunta a senha do SMTP
-    echo -e "\e[97mPasso$amarelo 3/5\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+    echo -e "\e[97mPasso$azul 3/5\e[0m"
+    echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_chatwoot
     echo ""
     
     ## Pergunta o Host SMTP do email
-    echo -e "\e[97mPasso$amarelo 4/5\e[0m"
+    echo -e "\e[97mPasso$azul 4/5\e[0m"
     echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_chatwoot
     echo ""
     
     ## Pergunta a porta SMTP do email
-    echo -e "\e[97mPasso$amarelo 5/5\e[0m"
+    echo -e "\e[97mPasso$azul 5/5\e[0m"
     echo -en "\e[33mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_chatwoot
     
     
@@ -4729,7 +4730,7 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para aplicação
-    echo -e "\e[97mPasso$amarelo 1/5\e[0m"
+    echo -e "\e[97mPasso$azul 1/5\e[0m"
     echo -en "\e[33mDigite o Dominio para o Chatwoot (ex: chatwoot.oriondesign.art.br): \e[0m" && read -r url_chatwoot
     echo ""
     
@@ -4737,7 +4738,7 @@ while true; do
     nome_empresa_chatwoot="$nome_servidor"
     
     ## Pergunta o email SMTP
-    echo -e "\e[97mPasso$amarelo 2/5\e[0m"
+    echo -e "\e[97mPasso$azul 2/5\e[0m"
     echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_admin_chatwoot
     echo ""
     
@@ -4745,18 +4746,18 @@ while true; do
     dominio_smtp_chatwoot=$(echo "$email_admin_chatwoot" | cut -d "@" -f 2)
     
     ## Pergunta a senha do SMTP
-    echo -e "\e[97mPasso$amarelo 3/5\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+    echo -e "\e[97mPasso$azul 3/5\e[0m"
+    echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_chatwoot
     echo ""
     
     ## Pergunta o Host SMTP do email
-    echo -e "\e[97mPasso$amarelo 4/5\e[0m"
+    echo -e "\e[97mPasso$azul 4/5\e[0m"
     echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_chatwoot
     echo ""
     
     ## Pergunta a porta SMTP do email
-    echo -e "\e[97mPasso$amarelo 5/5\e[0m"
+    echo -e "\e[97mPasso$azul 5/5\e[0m"
     echo -en "\e[33mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_chatwoot
     
     
@@ -5264,7 +5265,7 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para aplicação
-    echo -e "\e[97mPasso$amarelo 1/1\e[0m"
+    echo -e "\e[97mPasso$azul 1/1\e[0m"
     echo -en "\e[33mDigite o Dominio para a Evolution API (ex: api.oriondesign.art.br): \e[0m" && read -r url_evolution
     echo ""
 
@@ -5578,7 +5579,7 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para aplicação
-    echo -e "\e[97mPasso$amarelo 1/1\e[0m"
+    echo -e "\e[97mPasso$azul 1/1\e[0m"
     echo -en "\e[33mDigite o Dominio para a Evolution API (ex: api.oriondesign.art.br): \e[0m" && read -r url_evolution
     echo ""
 
@@ -5890,25 +5891,25 @@ preencha_as_info
 while true; do
     
     ##Pergunta o Dominio do Minio
-    echo -e "\e[97mPasso$amarelo 1/4\e[0m"
+    echo -e "\e[97mPasso$azul 1/4\e[0m"
     echo -en "\e[33mDigite o Dominio para o MinIO (ex: minio.oriondesign.art.br): \e[0m" && read -r url_minio
     echo ""
     
     ##Pergunta o Dominio para o S3 do Minio
-    echo -e "\e[97mPasso$amarelo 2/4\e[0m"
+    echo -e "\e[97mPasso$azul 2/4\e[0m"
     echo -en "\e[33mDigite o Dominio para o Minio S3 (ex: s3.oriondesign.art.br): \e[0m" && read -r url_s3
     echo ""
     
     ##Pergunta o Usuario para o Minio
-    echo -e "\e[97mPasso$amarelo 3/4\e[0m"
-    echo -e "$amarelo--> Evite os caracteres especiais: \!#$ e/ou espaço"
+    echo -e "\e[97mPasso$azul 3/4\e[0m"
+    echo -e "$azul--> Evite os caracteres especiais: \!#$ e/ou espaço"
     echo -en "\e[33mDigite um usuario para o MinIO (ex: OrionDesign): \e[0m" && read -r user_minio
     echo ""
     
     ##Pergunta a Senha para o Minio
-    echo -e "\e[97mPasso$amarelo 4/4\e[0m"
-    echo -e "$amarelo--> Minimo 8 caracteres. Use Letras MAIUSCULAS e minusculas, numero e um caractere especial @ ou _"
-    echo -e "$amarelo--> Evite os caracteres especiais: \!#$"
+    echo -e "\e[97mPasso$azul 4/4\e[0m"
+    echo -e "$azul--> Minimo 8 caracteres. Use Letras MAIUSCULAS e minusculas, numero e um caractere especial @ ou _"
+    echo -e "$azul--> Evite os caracteres especiais: \!#$"
     echo -en "\e[33mDigite uma senha para o MinIO (ex: @Senha123_): \e[0m" && read -r senha_minio
     echo ""
     
@@ -6147,44 +6148,44 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio do Builder
-    echo -e "\e[97mPasso$amarelo 1/10\e[0m"
+    echo -e "\e[97mPasso$azul 1/10\e[0m"
     echo -en "\e[33mDigite o Dominio para o Builder do Typebot (ex: typebot.oriondesign.art.br): \e[0m" && read -r url_typebot
     echo ""
 
     ##Pergunta o Dominio do Viewer
-    echo -e "\e[97mPasso$amarelo 2/10\e[0m"
+    echo -e "\e[97mPasso$azul 2/10\e[0m"
     echo -en "\e[33mDigite o Dominio para o Viewer do Typebot (ex: bot.oriondesign.art.br): \e[0m" && read -r url_viewer
     echo ""
 
     ##Pergunta a versão da ferramenta
-    echo -e "\e[97mPasso$amarelo 3/10\e[0m"
+    echo -e "\e[97mPasso$azul 3/10\e[0m"
     echo -en "\e[33mDigite a versão que deseja do Typebot (ex: 2.21.3 ou latest): \e[0m" && read -r versao_typebot
     echo ""
 
     ##Pergunta o Email SMTP
-    echo -e "\e[97mPasso$amarelo 4/109\e[0m"
+    echo -e "\e[97mPasso$azul 4/109\e[0m"
     echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_typebot
     echo ""
 
     ##Pergunta o usuário do Email SMTP
-    echo -e "\e[97mPasso$amarelo 5/10\e[0m"
-    echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
+    echo -e "\e[97mPasso$azul 5/10\e[0m"
+    echo -e "$azul--> Caso não tiver um usuario do email, use o proprio email abaixo"
     echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r usuario_email_typebot
     echo ""
     
     ## Pergunta a senha do SMTP
-    echo -e "\e[97mPasso$amarelo 6/10\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+    echo -e "\e[97mPasso$azul 6/10\e[0m"
+    echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_typebot
     echo ""
 
     ## Pergunta o Host SMTP do email
-    echo -e "\e[97mPasso$amarelo 7/10\e[0m"
+    echo -e "\e[97mPasso$azul 7/10\e[0m"
     echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_typebot
     echo ""
 
     ## Pergunta a porta SMTP do email
-    echo -e "\e[97mPasso$amarelo 8/10\e[0m"
+    echo -e "\e[97mPasso$azul 8/10\e[0m"
     echo -en "\e[33mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_typebot
     echo ""
 
@@ -6196,12 +6197,12 @@ while true; do
     fi
 
     ## Pergunta qual é o Access Key do minio
-    echo -e "\e[97mPasso$amarelo 9/10\e[0m"
+    echo -e "\e[97mPasso$azul 9/10\e[0m"
     echo -en "\e[33mAccess Key Minio: \e[0m" && read -r S3_ACCESS_KEY
     echo ""
 
     ## Pergunta qual é a Secret Key do minio
-    echo -e "\e[97mPasso$amarelo 10/10\e[0m"
+    echo -e "\e[97mPasso$azul 10/10\e[0m"
     echo -en "\e[33mSecret Key Minio: \e[0m" && read -r S3_SECRET_KEY
     echo ""
 
@@ -6586,12 +6587,12 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio do N8N
-    echo -e "\e[97mPasso$amarelo 1/2\e[0m"
+    echo -e "\e[97mPasso$azul 1/2\e[0m"
     echo -en "\e[33mDigite o dominio para o N8N (ex: n8n.oriondesign.art.br): \e[0m" && read -r url_editorn8n
     echo ""
     
     ##Pergunta o Dominio do Webhook
-    echo -e "\e[97mPasso$amarelo 2/2\e[0m"
+    echo -e "\e[97mPasso$azul 2/2\e[0m"
     echo -en "\e[33mDigite o dominio para o Webhook do N8N (ex: webhook.oriondesign.art.br): \e[0m" && read -r url_webhookn8n
     echo ""
         
@@ -6995,20 +6996,20 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 1/3\e[0m"
+    echo -e "\e[97mPasso$azul 1/3\e[0m"
     echo -en "\e[33mDigite o dominio para o Flowise (ex: flowise.oriondesign.art.br): \e[0m" && read -r url_flowise
     echo ""
     
     ##Pergunta o Usuario para a ferramenta
-    echo -e "\e[97mPasso$amarelo 2/3\e[0m"
-    echo -e "$amarelo--> Minimo 5 caracteres. Evite os caracteres especiais: \!#$ e/ou espaço"
+    echo -e "\e[97mPasso$azul 2/3\e[0m"
+    echo -e "$azul--> Minimo 5 caracteres. Evite os caracteres especiais: \!#$ e/ou espaço"
     echo -en "\e[33mDigite um usuario para o Flowise (ex: admin): \e[0m" && read -r user_flowise
     echo ""
     
     ##Pergunta a Senha para a ferramenta
-    echo -e "\e[97mPasso$amarelo 3/3\e[0m"
-    echo -e "$amarelo--> Minimo 8 caracteres. Use Letras MAIUSCULAS e minusculas, numero e um caractere especial @ ou _"
-    echo -e "$amarelo--> Evite os caracteres especiais: \!#$"
+    echo -e "\e[97mPasso$azul 3/3\e[0m"
+    echo -e "$azul--> Minimo 8 caracteres. Use Letras MAIUSCULAS e minusculas, numero e um caractere especial @ ou _"
+    echo -e "$azul--> Evite os caracteres especiais: \!#$"
     echo -en "\e[33mDigite uma senha para o usuario (ex: @Senha123_): \e[0m" && read -r pass_flowise
     echo ""
     
@@ -7255,19 +7256,19 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 1/3\e[0m"
+    echo -e "\e[97mPasso$azul 1/3\e[0m"
     echo -en "\e[33mDigite o dominio para o PgAdmin 4 (ex: pgadmin.oriondesign.art.br): \e[0m" && read -r url_PgAdmin_4
     echo ""
     
     ##Pergunta o Email para a ferramenta
-    echo -e "\e[97mPasso$amarelo 2/3\e[0m"
+    echo -e "\e[97mPasso$azul 2/3\e[0m"
     echo -en "\e[33mDigite um email para o PgAdmin 4 (ex: contato@oriondesign.art.br): \e[0m" && read -r user_PgAdmin_4
     echo ""
     
     ##Pergunta a Senha para a ferramenta
-    echo -e "\e[97mPasso$amarelo 3/3\e[0m"
-    echo -e "$amarelo--> Minimo 8 caracteres. Use Letras MAIUSCULAS e minusculas, numero e um caractere especial @ ou _"
-    echo -e "$amarelo--> Evite os caracteres especiais: \!#$"
+    echo -e "\e[97mPasso$azul 3/3\e[0m"
+    echo -e "$azul--> Minimo 8 caracteres. Use Letras MAIUSCULAS e minusculas, numero e um caractere especial @ ou _"
+    echo -e "$azul--> Evite os caracteres especiais: \!#$"
     echo -en "\e[33mDigite uma senha para o usuario (ex: @Senha123_): \e[0m" && read -r pass_PgAdmin_4
     echo ""
     
@@ -7486,24 +7487,24 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 1/4\e[0m"
+    echo -e "\e[97mPasso$azul 1/4\e[0m"
     echo -en "\e[33mDigite o dominio para o Nocobase (ex: nocobase.oriondesign.art.br): \e[0m" && read -r url_nocobase
     echo ""
     
     ##Pergunta o Email para a ferramenta
-    echo -e "\e[97mPasso$amarelo 2/4\e[0m"
+    echo -e "\e[97mPasso$azul 2/4\e[0m"
     echo -en "\e[33mDigite um email para o Nocobase (ex: contato@oriondesign.art.br): \e[0m" && read -r mail_nocobase
     echo ""
     
     ##Pergunta um Usuario para a ferramenta
-    echo -e "\e[97mPasso$amarelo 3/4\e[0m"
+    echo -e "\e[97mPasso$azul 3/4\e[0m"
     echo -en "\e[33mDigite um nome de usuario para o Nocobase (ex: OrionDesign): \e[0m" && read -r user_nocobase
     echo ""
     
     ##Pergunta a Senha para a ferramenta
-    echo -e "\e[97mPasso$amarelo 4/4\e[0m"
-    echo -e "$amarelo--> Minimo 8 caracteres. Use Letras MAIUSCULAS e minusculas, numero e um caractere especial @ ou _"
-    echo -e "$amarelo--> Evite os caracteres especiais: \!#$"
+    echo -e "\e[97mPasso$azul 4/4\e[0m"
+    echo -e "$azul--> Minimo 8 caracteres. Use Letras MAIUSCULAS e minusculas, numero e um caractere especial @ ou _"
+    echo -e "$azul--> Evite os caracteres especiais: \!#$"
     echo -en "\e[33mDigite uma senha para o usuario (ex: @Senha123_): \e[0m" && read -r pass_nocobase
     echo ""
     
@@ -7769,7 +7770,7 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 1/1\e[0m"
+    echo -e "\e[97mPasso$azul 1/1\e[0m"
     echo -en "\e[33mDigite o dominio para o Botpress (ex: botpress.oriondesign.art.br): \e[0m" && read -r url_botpress
     echo ""
     
@@ -8016,13 +8017,13 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 1/2\e[0m"
+    echo -e "\e[97mPasso$azul 1/2\e[0m"
     echo -en "\e[33mDigite o dominio para o Wordpress (ex: oriondesign.art.br ou loja.oriondesign.art.br): \e[0m" && read -r url_wordpress
     echo ""
     
     ##Pergunta o nome do site
-    echo -e "\e[97mPasso$amarelo 2/2\e[0m"
-    echo -e "$amarelo--> Use apenas letras minusculas, sem espaço ou caracteres especiais"
+    echo -e "\e[97mPasso$azul 2/2\e[0m"
+    echo -e "$azul--> Use apenas letras minusculas, sem espaço ou caracteres especiais"
     echo -en "\e[33mDigite o nome do Site (ex: lojaorion): \e[0m" && read -r nome_site_wordpress
     echo ""
     
@@ -8327,34 +8328,34 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 1/6\e[0m"
+    echo -e "\e[97mPasso$azul 1/6\e[0m"
     echo -en "\e[33mDigite o dominio para o Baserow (ex: baserow.oriondesign.art.br): \e[0m" && read -r url_baserow
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 2/6\e[0m"
+    echo -e "\e[97mPasso$azul 2/6\e[0m"
     echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r mail_baserow
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 3/6\e[0m"
+    echo -e "\e[97mPasso$azul 3/6\e[0m"
     echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r user_baserow
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 4/6\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+    echo -e "\e[97mPasso$azul 4/6\e[0m"
+    echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r pass_baserow
     echo ""
 
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 5/6\e[0m"
+    echo -e "\e[97mPasso$azul 5/6\e[0m"
     echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r host_baserow
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 6/6\e[0m"
+    echo -e "\e[97mPasso$azul 6/6\e[0m"
     echo -en "\e[33mDigite a Porta SMTP do Email (ex: 465): \e[0m" && read -r porta_baserow
     echo ""
 
@@ -8645,8 +8646,8 @@ preencha_as_info
 while true; do
 
     ## Pergunta o nome de usuario
-    echo -e "\e[97mPasso$amarelo 1/1\e[0m"
-    echo -e "$amarelo--> Evite os caracteres especiais: @\!#$ e/ou espaço"
+    echo -e "\e[97mPasso$azul 1/1\e[0m"
+    echo -e "$azul--> Evite os caracteres especiais: @\!#$ e/ou espaço"
     echo -en "\e[33mDigite o nome de usuario (ex: oriondesign): \e[0m" && read -r user_mongo
     echo ""
     
@@ -8871,12 +8872,12 @@ preencha_as_info
 while true; do
 
     ## Pergunta o Dominio do RabbitMq
-    echo -e "\e[97mPasso$amarelo 1/2\e[0m"
+    echo -e "\e[97mPasso$azul 1/2\e[0m"
     echo -en "\e[33mDigite o dominio para o RabbitMQ (ex: rabbitmq.oriondesign.art.br): \e[0m" && read -r url_rabbitmq
     echo ""
     
-    echo -e "\e[97mPasso$amarelo 2/2\e[0m"
-    echo -e "$amarelo--> Evite os caracteres especiais: @\!#$ e/ou espaço"
+    echo -e "\e[97mPasso$azul 2/2\e[0m"
+    echo -e "$azul--> Evite os caracteres especiais: @\!#$ e/ou espaço"
     echo -en "\e[33mDigite o nome de usuario (ex: OrionDesign): \e[0m" && read -r user_rabbitmq
     echo ""
     
@@ -9109,7 +9110,7 @@ preencha_as_info
 while true; do
 
     ## Pergunta o Dominio do uptime kuma
-    echo -e "\e[97mPasso$amarelo 1/1\e[0m"
+    echo -e "\e[97mPasso$azul 1/1\e[0m"
     echo -en "\e[33mDigite o dominio para o Uptime Kuma (ex: uptimekuma.oriondesign.art.br): \e[0m" && read -r url_uptimekuma
     echo ""
     
@@ -9318,28 +9319,28 @@ preencha_as_info
 while true; do
 
     ## Pergunta o Dominio da ferramenta
-    echo -e "\e[97mPasso$amarelo 1/5\e[0m"
+    echo -e "\e[97mPasso$azul 1/5\e[0m"
     echo -en "\e[33mDigite o dominio para o Cal (ex: calcom.oriondesign.art.br): \e[0m" && read -r url_calcom
     echo ""
     
     ## Pergunta o email SMTP
-    echo -e "\e[97mPasso$amarelo 2/5\e[0m"
+    echo -e "\e[97mPasso$azul 2/5\e[0m"
     echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_calcom
     echo ""
     
     ## Pergunta a senha do SMTP
-    echo -e "\e[97mPasso$amarelo 3/5\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+    echo -e "\e[97mPasso$azul 3/5\e[0m"
+    echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_calcom
     echo ""
     
     ## Pergunta o Host SMTP do email
-    echo -e "\e[97mPasso$amarelo 4/5\e[0m"
+    echo -e "\e[97mPasso$azul 4/5\e[0m"
     echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_calcom
     echo ""
     
     ## Pergunta a porta SMTP do email
-    echo -e "\e[97mPasso$amarelo 5/5\e[0m"
+    echo -e "\e[97mPasso$azul 5/5\e[0m"
     echo -en "\e[33mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_calcom
     echo ""
     
@@ -9618,24 +9619,24 @@ preencha_as_info
 while true; do
 
     ## Pergunta o Dominio da ferramenta
-    echo -e "\e[97mPasso$amarelo 1/4\e[0m"
+    echo -e "\e[97mPasso$azul 1/4\e[0m"
     echo -en "\e[33mDigite o Dominio para o Mautic (ex: mautic.oriondesign.art.br): \e[0m" && read -r url_mautic
     echo ""
 
     ## Pergunta o usuario da ferramenta
-    echo -e "\e[97mPasso$amarelo 2/4\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ e/ou espaços"
+    echo -e "\e[97mPasso$azul 2/4\e[0m"
+    echo -e "$azul--> Sem caracteres especiais: \!#$ e/ou espaços"
     echo -en "\e[33mDigite um usuario (ex: OrionDesign): \e[0m" && read -r user_mautic
     echo ""
 
     ## Pergunta o email da ferramenta
-    echo -e "\e[97mPasso$amarelo 3/4\e[0m"
+    echo -e "\e[97mPasso$azul 3/4\e[0m"
     echo -en "\e[33mDigite o Email de admin: (ex: contato@oriondesign.art.br): \e[0m" && read -r email_mautic
     echo ""
     
     ## Pergunta o senha da ferramenta
-    echo -e "\e[97mPasso$amarelo 4/4\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$"
+    echo -e "\e[97mPasso$azul 4/4\e[0m"
+    echo -e "$azul--> Sem caracteres especiais: \!#$"
     echo -en "\e[33mDigite uma Senha (ex: @Senha123_): \e[0m" && read -r senha_email_mautic
     echo ""
     
@@ -10008,7 +10009,7 @@ preencha_as_info
 while true; do
 
     ## Pergunta o Dominio da ferramenta
-    echo -e "\e[97mPasso$amarelo 1/3\e[0m"
+    echo -e "\e[97mPasso$azul 1/3\e[0m"
     echo -en "\e[33mDigite o dominio para o Appsmith (ex: appsmith.oriondesign.art.br): \e[0m" && read -r url_appsmith
     echo ""
     
@@ -10227,12 +10228,12 @@ preencha_as_info
 while true; do
 
     ## Pergunta o Dominio da ferramenta
-    echo -e "\e[97mPasso$amarelo 1/2\e[0m"
+    echo -e "\e[97mPasso$azul 1/2\e[0m"
     echo -en "\e[33mDigite o ip da vps (ex: 123.45.678.99) ou dominio para Qdrant (ex: qdrant.oriondesign.art.br): \e[0m" && read -r ip_vps
     echo ""
     
     ## Pergunta quandos nodes deseja
-    echo -e "\e[97mPasso$amarelo 2/2\e[0m"
+    echo -e "\e[97mPasso$azul 2/2\e[0m"
     echo -en "\e[33mDigite quantos Nodes você deseja (recomendado: 5): \e[0m" && read -r nodes_qdrant
     echo ""
     
@@ -10460,25 +10461,25 @@ preencha_as_info
 while true; do
 
     ## Pergunta o Dominio da ferramenta
-    echo -e "\e[97mPasso$amarelo 1/4\e[0m"
+    echo -e "\e[97mPasso$azul 1/4\e[0m"
     echo -en "\e[33mDigite o Dominio para o WoofedCRM (ex: woofedcrm.oriondesign.art.br): \e[0m" && read -r url_woofed
     echo ""
 
     ## Pergunta a versão do WoofedCRM
-    echo -e "\e[97mPasso$amarelo 2/4\e[0m"
-    echo -e "\e[97mEncontre a versão em:$amarelo https://hub.docker.com/r/douglara/woofedcrm/tags\e[0m"
+    echo -e "\e[97mPasso$azul 2/4\e[0m"
+    echo -e "\e[97mEncontre a versão em:$azul https://hub.docker.com/r/douglara/woofedcrm/tags\e[0m"
     echo -en "\e[33mDigite a versão desejada: \e[0m" && read -r v_woofed
     echo ""
 
     ## Pergunta o nome do Usuario do Motor
-    echo -e "\e[97mPasso$amarelo 3/4\e[0m"
-    echo -e "$amarelo--> Evite os caracteres especiais: @\!#$ e/ou espaço"
+    echo -e "\e[97mPasso$azul 3/4\e[0m"
+    echo -e "$azul--> Evite os caracteres especiais: @\!#$ e/ou espaço"
     echo -en "\e[33mDigite o User do MOTOR (ex: oriondesign): \e[0m" && read -r email_admin_woofed
     echo ""
 
     ## Pergunta o nome do Senha do Motor
-    echo -e "\e[97mPasso$amarelo 4/4\e[0m"
-    echo -e "$amarelo--> Evite os caracteres especiais: \!#$ e/ou espaço"
+    echo -e "\e[97mPasso$azul 4/4\e[0m"
+    echo -e "$azul--> Evite os caracteres especiais: \!#$ e/ou espaço"
     echo -en "\e[33mDigite a Senha do MOTOR (ex: @Senha123_): \e[0m" && read -r senha_email_woofed
     echo ""
     
@@ -10943,28 +10944,28 @@ preencha_as_info
 while true; do
 
     ## Pergunta o Dominio da ferramenta
-    echo -e "\e[97mPasso$amarelo 1/5\e[0m"
+    echo -e "\e[97mPasso$azul 1/5\e[0m"
     echo -en "\e[33mDigite o Dominio para o Formbricks (ex: formbricks.oriondesign.art.br): \e[0m" && read -r url_formbricks
     echo ""
     
     ## Pergunta o Email SMTP
-    echo -e "\e[97mPasso$amarelo 2/5\e[0m"
+    echo -e "\e[97mPasso$azul 2/5\e[0m"
     echo -en "\e[33mDigite um Email para o SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_formbricks
     echo ""
     
     ## Pergunta a Senha SMTP
-    echo -e "\e[97mPasso$amarelo 3/5\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+    echo -e "\e[97mPasso$azul 3/5\e[0m"
+    echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do email (ex: @Senha123_): \e[0m" && read -r senha_formbricks
     echo ""
     
     ## Pergunta o Host SMTP
-    echo -e "\e[97mPasso$amarelo 4/5\e[0m"
+    echo -e "\e[97mPasso$azul 4/5\e[0m"
     echo -en "\e[33mDigite o Host SMTP do email (ex: smtp.hostinger.com): \e[0m" && read -r host_formbricks
     echo ""
     
     ## Pergunta a Porta SMTP 
-    echo -e "\e[97mPasso$amarelo 5/5\e[0m"
+    echo -e "\e[97mPasso$azul 5/5\e[0m"
     echo -en "\e[33mDigite a Porta SMTP do email (ex: 465): \e[0m" && read -r porta_formbricks
     echo ""
     
@@ -11278,7 +11279,7 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 1/1\e[0m"
+    echo -e "\e[97mPasso$azul 1/1\e[0m"
     echo -en "\e[33mDigite o dominio para o NocoDB (ex: nocodb.oriondesign.art.br): \e[0m" && read -r url_nocodb
     echo ""
     
@@ -11515,7 +11516,7 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 1/1\e[0m"
+    echo -e "\e[97mPasso$azul 1/1\e[0m"
     echo -en "\e[33mDigite o dominio para o Langfuse (ex: langfuse.oriondesign.art.br): \e[0m" && read -r url_langfuse
     echo ""
     
@@ -11763,7 +11764,7 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 1/1\e[0m"
+    echo -e "\e[97mPasso$azul 1/1\e[0m"
     echo -en "\e[33mDigite o dominio para o Metabase (ex: metabase.oriondesign.art.br): \e[0m" && read -r url_metabase
     echo ""
     
@@ -12009,7 +12010,7 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 1/1\e[0m"
+    echo -e "\e[97mPasso$azul 1/1\e[0m"
     echo -en "\e[33mDigite o dominio para o Odoo (ex: odoo.oriondesign.art.br): \e[0m" && read -r url_odoo
     echo ""
     
@@ -12263,7 +12264,7 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para aplicação
-    echo -e "\e[97mPasso$amarelo 1/5\e[0m"
+    echo -e "\e[97mPasso$azul 1/5\e[0m"
     echo -en "\e[33mDigite o Dominio para o Chatwoot (ex: chatwoot.oriondesign.art.br): \e[0m" && read -r url_chatwoot
     echo ""
     
@@ -12271,7 +12272,7 @@ while true; do
     nome_empresa_chatwoot="$nome_servidor"
     
     ## Pergunta o email SMTP
-    echo -e "\e[97mPasso$amarelo 2/5\e[0m"
+    echo -e "\e[97mPasso$azul 2/5\e[0m"
     echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_admin_chatwoot
     echo ""
     
@@ -12279,18 +12280,18 @@ while true; do
     dominio_smtp_chatwoot=$(echo "$email_admin_chatwoot" | cut -d "@" -f 2)
     
     ## Pergunta a senha do SMTP
-    echo -e "\e[97mPasso$amarelo 3/5\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+    echo -e "\e[97mPasso$azul 3/5\e[0m"
+    echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_chatwoot
     echo ""
     
     ## Pergunta o Host SMTP do email
-    echo -e "\e[97mPasso$amarelo 4/5\e[0m"
+    echo -e "\e[97mPasso$azul 4/5\e[0m"
     echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_chatwoot
     echo ""
     
     ## Pergunta a porta SMTP do email
-    echo -e "\e[97mPasso$amarelo 5/5\e[0m"
+    echo -e "\e[97mPasso$azul 5/5\e[0m"
     echo -en "\e[33mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_chatwoot
     
     
@@ -12721,7 +12722,7 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para aplicação
-    echo -e "\e[97mPasso$amarelo 1/5\e[0m"
+    echo -e "\e[97mPasso$azul 1/5\e[0m"
     echo -en "\e[33mDigite o Dominio para o Chatwoot (ex: chatwoot.oriondesign.art.br): \e[0m" && read -r url_chatwoot
     echo ""
     
@@ -12729,7 +12730,7 @@ while true; do
     nome_empresa_chatwoot="$nome_servidor"
     
     ## Pergunta o email SMTP
-    echo -e "\e[97mPasso$amarelo 2/5\e[0m"
+    echo -e "\e[97mPasso$azul 2/5\e[0m"
     echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_admin_chatwoot
     echo ""
     
@@ -12737,18 +12738,18 @@ while true; do
     dominio_smtp_chatwoot=$(echo "$email_admin_chatwoot" | cut -d "@" -f 2)
     
     ## Pergunta a senha do SMTP
-    echo -e "\e[97mPasso$amarelo 3/5\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+    echo -e "\e[97mPasso$azul 3/5\e[0m"
+    echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_chatwoot
     echo ""
     
     ## Pergunta o Host SMTP do email
-    echo -e "\e[97mPasso$amarelo 4/5\e[0m"
+    echo -e "\e[97mPasso$azul 4/5\e[0m"
     echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_chatwoot
     echo ""
     
     ## Pergunta a porta SMTP do email
-    echo -e "\e[97mPasso$amarelo 5/5\e[0m"
+    echo -e "\e[97mPasso$azul 5/5\e[0m"
     echo -en "\e[33mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_chatwoot
     
     
@@ -13237,57 +13238,57 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio da UnoApi
-    echo -e "\e[97mPasso$amarelo 1/11\e[0m"
+    echo -e "\e[97mPasso$azul 1/11\e[0m"
     echo -en "\e[33mDigite o Dominio para a Uno API (ex: unoapi.oriondesign.art.br): \e[0m" && read -r url_unoapi
     echo ""
 
     ##Pergunta o Dominio do Chatwoot
-    echo -e "\e[97mPasso$amarelo 2/11\e[0m"
+    echo -e "\e[97mPasso$azul 2/11\e[0m"
     echo -en "\e[33mDigite o Dominio do Chatwoot já instalado (ex: chatwoot.oriondesign.art.br): \e[0m" && read -r url_chatwoot_uno
     echo ""
 
     ##Pergunta o o token do usuario
-    echo -e "\e[97mPasso$amarelo 3/11\e[0m"
+    echo -e "\e[97mPasso$azul 3/11\e[0m"
     echo -en "\e[33mDigite o token de usuario administrador do Chatwoot: \e[0m" && read -r token_chatwoot_uno
     echo ""
 
     ##Pergunta se quer ignorar mensagens de grupos
-    echo -e "\e[97mPasso$amarelo 4/11\e[0m"
+    echo -e "\e[97mPasso$azul 4/11\e[0m"
     echo -en "\e[33mIgnorar mensagens de grupos (true ou false): \e[0m" && read -r op_1
     echo ""
     
     ## Pergunta se quer ignorar o stauts de transmissão
-    echo -e "\e[97mPasso$amarelo 5/11\e[0m"
+    echo -e "\e[97mPasso$azul 5/11\e[0m"
     echo -en "\e[33mIgnorar Status de Transmissão (true ou false): \e[0m" && read -r op_2
     echo ""
 
     ## Pergunta se quer ignorar mensagens de trasmissão
-    echo -e "\e[97mPasso$amarelo 6/11\e[0m"
+    echo -e "\e[97mPasso$azul 6/11\e[0m"
     echo -en "\e[33mIgnorar Mensagens de Trasmissão (true ou false): \e[0m" && read -r op_3
     echo ""
 
     ## Pergunta se quer ignorar mensagem de status
-    echo -e "\e[97mPasso$amarelo 7/11\e[0m"
+    echo -e "\e[97mPasso$azul 7/11\e[0m"
     echo -en "\e[33mIgnorar Mensagem de Status (true ou false): \e[0m" && read -r op_4
     echo ""
 
     ## Pergunta se quer ignorar as próprias mensagens
-    echo -e "\e[97mPasso$amarelo 8/11\e[0m"
+    echo -e "\e[97mPasso$azul 8/11\e[0m"
     echo -en "\e[33mIgnorar Proprias Mensagens (true ou false): \e[0m" && read -r op_5
     echo ""
 
     ## Pergunta a porta SMTP do email
-    echo -e "\e[97mPasso$amarelo 9/11\e[0m"
+    echo -e "\e[97mPasso$azul 9/11\e[0m"
     echo -en "\e[33mEnviar status de conexão (true ou false): \e[0m" && read -r op_6
     echo ""
 
     ## Pergunta qual é o Access Key do minio
-    echo -e "\e[97mPasso$amarelo 10/11\e[0m"
+    echo -e "\e[97mPasso$azul 10/11\e[0m"
     echo -en "\e[33mAccess Key Minio: \e[0m" && read -r S3_ACCESS_KEY
     echo ""
 
     ## Pergunta qual é a Secret Key do minio
-    echo -e "\e[97mPasso$amarelo 11/11\e[0m"
+    echo -e "\e[97mPasso$azul 11/11\e[0m"
     echo -en "\e[33mSecret Key Minio: \e[0m" && read -r S3_SECRET_KEY
     echo ""
 
@@ -13600,27 +13601,27 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio do N8N
-    echo -e "\e[97mPasso$amarelo 1/5\e[0m"
+    echo -e "\e[97mPasso$azul 1/5\e[0m"
     echo -en "\e[33mDigite o dominio para o N8N (ex: n8n.oriondesign.art.br): \e[0m" && read -r url_editorn8n
     echo ""
     
     ##Pergunta o Dominio do Webhook
-    echo -e "\e[97mPasso$amarelo 2/5\e[0m"
+    echo -e "\e[97mPasso$azul 2/5\e[0m"
     echo -en "\e[33mDigite o dominio para o Webhook do N8N (ex: webhook.oriondesign.art.br): \e[0m" && read -r url_webhookn8n
     echo ""
 
     ##Pergunta Dominio do Chatwoot
-    echo -e "\e[97mPasso$amarelo 3/5\e[0m"
+    echo -e "\e[97mPasso$azul 3/5\e[0m"
     echo -en "\e[33mDigite o dominio do Chatwoot (ex: chatwoot.oriondesign.art.br): \e[0m" && read -r dominio_chatwoot
     echo ""
 
     ##Pergunta Dominio do Quepasa
-    echo -e "\e[97mPasso$amarelo 4/5\e[0m"
+    echo -e "\e[97mPasso$azul 4/5\e[0m"
     echo -en "\e[33mDigite o dominio do Quepasa (ex: quepasa.oriondesign.art.br): \e[0m" && read -r dominio_quepasa
     echo ""
 
     ##Pergunta Email do Quepasa
-    echo -e "\e[97mPasso$amarelo 5/5\e[0m"
+    echo -e "\e[97mPasso$azul 5/5\e[0m"
     echo -en "\e[33mDigite o email do Quepasa (ex: contato@oriondesign.art.br): \e[0m" && read -r email_quepasa
     echo ""
     
@@ -14068,12 +14069,12 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 1/2\e[0m"
+    echo -e "\e[97mPasso$azul 1/2\e[0m"
     echo -en "\e[33mDigite o dominio para o Quepasa (ex: quepasa.oriondesign.art.br): \e[0m" && read -r url_quepasa
     echo ""
 
     ##Pergunta o email para a ferramenta
-    echo -e "\e[97mPasso$amarelo 2/2\e[0m"
+    echo -e "\e[97mPasso$azul 2/2\e[0m"
     echo -en "\e[33mDigite o email para o Quepasa (ex: contato@oriondesign.art.br): \e[0m" && read -r email_quepasa
     echo ""
     
@@ -14322,48 +14323,48 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio do Dify AI
-    echo -e "\e[97mPasso$amarelo 1/9\e[0m"
+    echo -e "\e[97mPasso$azul 1/9\e[0m"
     echo -en "\e[33mDigite o dominio para o Dify AI (ex: dify.oriondesign.art.br): \e[0m" && read -r url_dify
     echo ""
 
     ##Pergunta o Dominio do Qdrant
-    echo -e "\e[97mPasso$amarelo 2/9\e[0m"
+    echo -e "\e[97mPasso$azul 2/9\e[0m"
     echo -en "\e[33mDigite o dominio do Qdrant (ex: http://123.456.789.123:6333): \e[0m" && read -r url_quedrant
     echo ""
 
     ##Pergunta a Api Key do Qdrant
-    echo -e "\e[97mPasso$amarelo 3/9\e[0m"
+    echo -e "\e[97mPasso$azul 3/9\e[0m"
     echo -en "\e[33mDigite a Api Key do Qdrant (ex: 1234-5678-9123-4567-8912): \e[0m" && read -r apikey_qdrant
     echo ""
 
     ##Pergunta o Email SMTP
-    echo -e "\e[97mPasso$amarelo 4/9\e[0m"
+    echo -e "\e[97mPasso$azul 4/9\e[0m"
     echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_dify
     echo ""
     
     ## Pergunta a senha do SMTP
-    echo -e "\e[97mPasso$amarelo 5/9\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+    echo -e "\e[97mPasso$azul 5/9\e[0m"
+    echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_dify
     echo ""
 
     ## Pergunta o Host SMTP do email
-    echo -e "\e[97mPasso$amarelo 6/9\e[0m"
+    echo -e "\e[97mPasso$azul 6/9\e[0m"
     echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_dify
     echo ""
 
     ## Pergunta a porta SMTP do email
-    echo -e "\e[97mPasso$amarelo 7/9\e[0m"
+    echo -e "\e[97mPasso$azul 7/9\e[0m"
     echo -en "\e[33mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_dify
     echo ""
 
     ## Pergunta qual é o Access Key do minio
-    echo -e "\e[97mPasso$amarelo 8/9\e[0m"
+    echo -e "\e[97mPasso$azul 8/9\e[0m"
     echo -en "\e[33mAccess Key Minio: \e[0m" && read -r S3_ACCESS_KEY
     echo ""
 
     ## Pergunta qual é a Secret Key do minio
-    echo -e "\e[97mPasso$amarelo 9/9\e[0m"
+    echo -e "\e[97mPasso$azul 9/9\e[0m"
     echo -en "\e[33mSecret Key Minio: \e[0m" && read -r S3_SECRET_KEY
     echo ""
 
@@ -14879,12 +14880,12 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 1/2\e[0m"
+    echo -e "\e[97mPasso$azul 1/2\e[0m"
     echo -en "\e[33mDigite o dominio para o WebUI Ollama (ex: ollama.oriondesign.art.br): \e[0m" && read -r url_ollama
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 2/2\e[0m"
+    echo -e "\e[97mPasso$azul 2/2\e[0m"
     echo -en "\e[33mDigite o dominio para a API Ollama (ex: apiollama.oriondesign.art.br): \e[0m" && read -r url_apiollama
     echo ""
     
@@ -15166,39 +15167,39 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 1/7\e[0m"
+    echo -e "\e[97mPasso$azul 1/7\e[0m"
     echo -en "\e[33mDigite o dominio para o Affine (ex: affine.oriondesign.art.br): \e[0m" && read -r url_affine
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 2/7\e[0m"
+    echo -e "\e[97mPasso$azul 2/7\e[0m"
     echo -en "\e[33mDigite o Email de Admin (ex: contato@oriondesign.art.br): \e[0m" && read -r email_affine
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 3/7\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$"
+    echo -e "\e[97mPasso$azul 3/7\e[0m"
+    echo -e "$azul--> Sem caracteres especiais: \!#$"
     echo -en "\e[33mDigite a Senha de Admin (ex: @Senha123_): \e[0m" && read -r senha_affine
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 4/7\e[0m"
+    echo -e "\e[97mPasso$azul 4/7\e[0m"
     echo -en "\e[33mDigite a Email SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_affine
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 5/7\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+    echo -e "\e[97mPasso$azul 5/7\e[0m"
+    echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP (ex: @Senha123_): \e[0m" && read -r senha_smtp_affine
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 6/7\e[0m"
+    echo -e "\e[97mPasso$azul 6/7\e[0m"
     echo -en "\e[33mDigite o Host SMTP (ex: smtp.hostinger.com): \e[0m" && read -r host_smtp_affine
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 7/7\e[0m"
+    echo -e "\e[97mPasso$azul 7/7\e[0m"
     echo -en "\e[33mDigite a Porta SMTP (ex: 465): \e[0m" && read -r porta_smtp_affine
     echo ""
     
@@ -15495,28 +15496,28 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 1/5\e[0m"
+    echo -e "\e[97mPasso$azul 1/5\e[0m"
     echo -en "\e[33mDigite o dominio para o Docuseal (ex: docuseal.oriondesign.art.br): \e[0m" && read -r url_docuseal
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 2/5\e[0m"
+    echo -e "\e[97mPasso$azul 2/5\e[0m"
     echo -en "\e[33mDigite a Email SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_docuseal
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 3/5\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+    echo -e "\e[97mPasso$azul 3/5\e[0m"
+    echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP (ex: @Senha123_): \e[0m" && read -r senha_smtp_docuseal
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 4/5\e[0m"
+    echo -e "\e[97mPasso$azul 4/5\e[0m"
     echo -en "\e[33mDigite o Host SMTP (ex: smtp.hostinger.com): \e[0m" && read -r host_smtp_docuseal
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 5/5\e[0m"
+    echo -e "\e[97mPasso$azul 5/5\e[0m"
     echo -en "\e[33mDigite a Porta SMTP (ex: 465): \e[0m" && read -r porta_smtp_docuseal
     echo ""
     
@@ -15786,49 +15787,49 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 1/9\e[0m"
+    echo -e "\e[97mPasso$azul 1/9\e[0m"
     echo -en "\e[33mDigite o dominio para o Directus (ex: directus.oriondesign.art.br): \e[0m" && read -r url_directus
     echo ""
 
      ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 2/9\e[0m"
+    echo -e "\e[97mPasso$azul 2/9\e[0m"
     echo -en "\e[33mDigite a Email de Admin (ex: contato@oriondesign.art.br): \e[0m" && read -r email_directus
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 3/9\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$"
+    echo -e "\e[97mPasso$azul 3/9\e[0m"
+    echo -e "$azul--> Sem caracteres especiais: \!#$"
     echo -en "\e[33mDigite a Senha SMTP (ex: @Senha123_): \e[0m" && read -r senha_directus
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 4/9\e[0m"
+    echo -e "\e[97mPasso$azul 4/9\e[0m"
     echo -en "\e[33mDigite a Email SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_smtp_directus
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 5/9\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+    echo -e "\e[97mPasso$azul 5/9\e[0m"
+    echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP (ex: @Senha123_): \e[0m" && read -r senha_smtp_directus
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 6/9\e[0m"
+    echo -e "\e[97mPasso$azul 6/9\e[0m"
     echo -en "\e[33mDigite o Host SMTP (ex: smtp.hostinger.com): \e[0m" && read -r host_smtp_directus
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 7/9\e[0m"
+    echo -e "\e[97mPasso$azul 7/9\e[0m"
     echo -en "\e[33mDigite a Porta SMTP (ex: 465): \e[0m" && read -r porta_smtp_directus
     echo ""
 
     ## Pergunta qual é o Access Key do minio
-    echo -e "\e[97mPasso$amarelo 8/9\e[0m"
+    echo -e "\e[97mPasso$azul 8/9\e[0m"
     echo -en "\e[33mAccess Key Minio: \e[0m" && read -r S3_ACCESS_KEY
     echo ""
 
     ## Pergunta qual é a Secret Key do minio
-    echo -e "\e[97mPasso$amarelo 9/9\e[0m"
+    echo -e "\e[97mPasso$azul 9/9\e[0m"
     echo -en "\e[33mSecret Key Minio: \e[0m" && read -r S3_SECRET_KEY
     echo ""
 
@@ -16169,28 +16170,28 @@ preencha_as_info
 while true; do
 
     ## Pergunta o Dominio da ferramenta
-    echo -e "\e[97mPasso$amarelo 1/5\e[0m"
+    echo -e "\e[97mPasso$azul 1/5\e[0m"
     echo -en "\e[33mDigite o Dominio para o VaultWarden (ex: vaultwarden.oriondesign.art.br): \e[0m" && read -r url_vaultwarden
     echo ""
     
     ## Pergunta o Email SMTP
-    echo -e "\e[97mPasso$amarelo 2/5\e[0m"
+    echo -e "\e[97mPasso$azul 2/5\e[0m"
     echo -en "\e[33mDigite um Email para o SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_vaultwarden
     echo ""
     
     ## Pergunta a Senha SMTP
-    echo -e "\e[97mPasso$amarelo 3/5\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+    echo -e "\e[97mPasso$azul 3/5\e[0m"
+    echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do email (ex: @Senha123_): \e[0m" && read -r senha_vaultwarden
     echo ""
     
     ## Pergunta o Host SMTP
-    echo -e "\e[97mPasso$amarelo 4/5\e[0m"
+    echo -e "\e[97mPasso$azul 4/5\e[0m"
     echo -en "\e[33mDigite o Host SMTP do email (ex: smtp.hostinger.com): \e[0m" && read -r host_vaultwarden
     echo ""
     
     ## Pergunta a Porta SMTP 
-    echo -e "\e[97mPasso$amarelo 5/5\e[0m"
+    echo -e "\e[97mPasso$azul 5/5\e[0m"
     echo -en "\e[33mDigite a Porta SMTP do email (ex: 465): \e[0m" && read -r porta_vaultwarden
     echo ""
     
@@ -16441,22 +16442,22 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para aplicação
-    echo -e "\e[97mPasso$amarelo 1/4\e[0m"
+    echo -e "\e[97mPasso$azul 1/4\e[0m"
     echo -en "\e[33mDigite o Dominio para o Grafana (ex: grafana.oriondesign.art.br): \e[0m" && read -r url_grafana
     echo ""
 
     ##Pergunta o Dominio para aplicação
-    echo -e "\e[97mPasso$amarelo 2/4\e[0m"
+    echo -e "\e[97mPasso$azul 2/4\e[0m"
     echo -en "\e[33mDigite o Dominio para o Prometheus (ex: prometheus.oriondesign.art.br): \e[0m" && read -r url_prometheus
     echo ""
 
     ##Pergunta o Dominio para aplicação
-    echo -e "\e[97mPasso$amarelo 3/4\e[0m"
+    echo -e "\e[97mPasso$azul 3/4\e[0m"
     echo -en "\e[33mDigite o Dominio para o cAdvisor (ex: cadvisor.oriondesign.art.br): \e[0m" && read -r url_cadvisor
     echo ""
 
     ##Pergunta o Dominio para aplicação
-    echo -e "\e[97mPasso$amarelo 4/4\e[0m"
+    echo -e "\e[97mPasso$azul 4/4\e[0m"
     echo -en "\e[33mDigite o Dominio para o NodeExporter (ex: node.oriondesign.art.br): \e[0m" && read -r url_nodeexporter
     echo ""
 
@@ -16891,18 +16892,18 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 1/3\e[0m"
+    echo -e "\e[97mPasso$azul 1/3\e[0m"
     echo -en "\e[33mDigite o dominio para o NextCloud (ex: nextcloud.oriondesign.art.br): \e[0m" && read -r url_nextcloud
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 2/3\e[0m"
+    echo -e "\e[97mPasso$azul 2/3\e[0m"
     echo -en "\e[33mDigite o Usuario para o NextCloud (ex: orion): \e[0m" && read -r user_nextcloud
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 3/3\e[0m"
-    echo -e "$amarelo--> Minimo 8 caracteres. Use Letras MAIUSCULAS e minusculas, numero e um caractere especial @ ou _"
+    echo -e "\e[97mPasso$azul 3/3\e[0m"
+    echo -e "$azul--> Minimo 8 caracteres. Use Letras MAIUSCULAS e minusculas, numero e um caractere especial @ ou _"
     echo -en "\e[33mDigite o Senha o Usuario (ex: @Senha123_): \e[0m" && read -r pass_nextcloud
     echo ""
 
@@ -17178,7 +17179,7 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 1/1\e[0m"
+    echo -e "\e[97mPasso$azul 1/1\e[0m"
     echo -en "\e[33mDigite o dominio para o Strapi (ex: strapi.oriondesign.art.br): \e[0m" && read -r url_strapi
     echo ""
     
@@ -17431,23 +17432,23 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 1/2\e[0m"
+    echo -e "\e[97mPasso$azul 1/2\e[0m"
     echo -en "\e[33mDigite o dominio para o PhpMyAdmin (ex: phpmyadmin.oriondesign.art.br): \e[0m" && read -r url_phpmyadmin
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    echo -e "\e[97mPasso$amarelo 2/2\e[0m"
+    echo -e "\e[97mPasso$azul 2/2\e[0m"
     echo -en "\e[33mDigite o Host MySQL (ex: mysql ou 1.111.111.11:3306): \e[0m" && read -r host_phpmyadmin
     echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    #echo -e "\e[97mPasso$amarelo 4/4\e[0m"
+    #echo -e "\e[97mPasso$azul 4/4\e[0m"
     #echo -en "\e[33mDigite o Usuario MySQL  (ex: oriondesign): \e[0m" && read -r user_phpmyadmin
     #echo ""
 
     ##Pergunta o Dominio para a ferramenta
-    #echo -e "\e[97mPasso$amarelo 4/4\e[0m"
-    #echo -e "$amarelo--> Sem caracteres especiais: \!#$"
+    #echo -e "\e[97mPasso$azul 4/4\e[0m"
+    #echo -e "$azul--> Sem caracteres especiais: \!#$"
     #echo -en "\e[33mDigite a Senha MySQL (ex: @Senha123_): \e[0m" && read -r pass_phpmyadmin
     #echo ""
     
@@ -17673,45 +17674,45 @@ preencha_as_info
 while true; do
 
     ##Pergunta o Dominio do Builder
-    echo -e "\e[97mPasso$amarelo 1/13\e[0m"
+    echo -e "\e[97mPasso$azul 1/13\e[0m"
     echo -en "\e[33mDigite o Dominio para o Supabase (ex: supabase.oriondesign.art.br): \e[0m" && read -r url_supabase
     echo ""
 
     ##Pergunta o Dominio do Viewer
-    echo -e "\e[97mPasso$amarelo 2/13\e[0m"
+    echo -e "\e[97mPasso$azul 2/13\e[0m"
     echo -en "\e[33mDigite o Usuario para o Supabase (ex: OrionDesign): \e[0m" && read -r user_supabase
     echo ""
 
     ##Pergunta a versão da ferramenta
-    echo -e "\e[97mPasso$amarelo 3/13\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: @\!#$"
+    echo -e "\e[97mPasso$azul 3/13\e[0m"
+    echo -e "$azul--> Sem caracteres especiais: @\!#$"
     echo -en "\e[33mDigite a Senha do usuario para o Supabase (ex: Senha123_): \e[0m" && read -r pass_supabase
     echo ""
 
     ##Pergunta o Email SMTP
-    echo -e "\e[97mPasso$amarelo 4/13\e[0m"
+    echo -e "\e[97mPasso$azul 4/13\e[0m"
     echo -en "\e[33mDigite o Email para SMTP (ex: contato@oriondesign.art.br): \e[0m" && read -r email_supabase
     echo ""
 
     ##Pergunta o usuário do Email SMTP
-    echo -e "\e[97mPasso$amarelo 5/13\e[0m"
-    echo -e "$amarelo--> Caso não tiver um usuario do email, use o proprio email abaixo"
+    echo -e "\e[97mPasso$azul 5/13\e[0m"
+    echo -e "$azul--> Caso não tiver um usuario do email, use o proprio email abaixo"
     echo -en "\e[33mDigite o Usuário para SMTP (ex: oriondesign ou contato@oriondesign.art.br): \e[0m" && read -r usuario_email_supabase
     echo ""
     
     ## Pergunta a senha do SMTP
-    echo -e "\e[97mPasso$amarelo 6/13\e[0m"
-    echo -e "$amarelo--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
+    echo -e "\e[97mPasso$azul 6/13\e[0m"
+    echo -e "$azul--> Sem caracteres especiais: \!#$ | Se estiver usando gmail use a senha de app"
     echo -en "\e[33mDigite a Senha SMTP do Email (ex: @Senha123_): \e[0m" && read -r senha_email_supabase
     echo ""
 
     ## Pergunta o Host SMTP do email
-    echo -e "\e[97mPasso$amarelo 7/13\e[0m"
+    echo -e "\e[97mPasso$azul 7/13\e[0m"
     echo -en "\e[33mDigite o Host SMTP do Email (ex: smtp.hostinger.com): \e[0m" && read -r smtp_email_supabase
     echo ""
 
     ## Pergunta a porta SMTP do email
-    echo -e "\e[97mPasso$amarelo 8/13\e[0m"
+    echo -e "\e[97mPasso$azul 8/13\e[0m"
     echo -en "\e[33mDigite a porta SMTP do Email (ex: 465): \e[0m" && read -r porta_smtp_supabase
     echo ""
 
@@ -17723,30 +17724,30 @@ while true; do
     fi
 
     ## Pergunta qual é o JWT_Key
-    echo -e "\e[97mPasso$amarelo 9/13\e[0m"
-    echo -e "$amarelo--> Pegue em: https://supabase.com/docs/guides/self-hosting/docker"
+    echo -e "\e[97mPasso$azul 9/13\e[0m"
+    echo -e "$azul--> Pegue em: https://supabase.com/docs/guides/self-hosting/docker"
     echo -en "\e[33mDigite o JWT_Key do Supabase: \e[0m" && read -r JWT_Key
     echo ""
 
     ## Pergunta qual é o ANON_KEY
-    echo -e "\e[97mPasso$amarelo 10/13\e[0m"
-    echo -e "$amarelo--> Gere em: https://supabase.com/docs/guides/self-hosting/docker"
+    echo -e "\e[97mPasso$azul 10/13\e[0m"
+    echo -e "$azul--> Gere em: https://supabase.com/docs/guides/self-hosting/docker"
     echo -en "\e[33mDigite o ANON_KEY do Supabase: \e[0m" && read -r ANON_KEY
     echo ""
 
     ## Pergunta qual é o SERVICE_KEY
-    echo -e "\e[97mPasso$amarelo 11/13\e[0m"    
-    echo -e "$amarelo--> Gere em: https://supabase.com/docs/guides/self-hosting/docker"
+    echo -e "\e[97mPasso$azul 11/13\e[0m"    
+    echo -e "$azul--> Gere em: https://supabase.com/docs/guides/self-hosting/docker"
     echo -en "\e[33mDigite o SERVICE_KEY do Supabase: \e[0m" && read -r SERVICE_KEY
     echo ""
 
     ## Pergunta qual é o Access Key do minio
-    echo -e "\e[97mPasso$amarelo 12/13\e[0m"
+    echo -e "\e[97mPasso$azul 12/13\e[0m"
     echo -en "\e[33mAccess Key Minio: \e[0m" && read -r S3_ACCESS_KEY
     echo ""
 
     ## Pergunta qual é a Secret Key do minio
-    echo -e "\e[97mPasso$amarelo 13/13\e[0m"
+    echo -e "\e[97mPasso$azul 13/13\e[0m"
     echo -en "\e[33mSecret Key Minio: \e[0m" && read -r S3_SECRET_KEY
     echo ""
 
