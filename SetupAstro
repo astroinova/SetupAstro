@@ -5,7 +5,7 @@
 ## // ## // ## // ## // ## // ## // ## // ## //## // ## // ## // ## // ## // ## // ## // ## // ##
 
 versao() {
-echo -e "\e[97mComunidade: \e[32mhttps://chat.whatsapp.com/EmmgJiSlpeFJd1PAFOS7xz               \e[97mVersão do Setup: \e[32mv.2.5.0\e[0m"
+echo -e "\e[97mMentoria: \e[32mhttps://api.whatsapp.com/send?phone=5588996228075               \e[97mVersão do Setup: \e[32mv.2.5.0\e[0m"
 }
 
 ## // ## // ## // ## // ## // ## // ## // ## //## // ## // ## // ## // ## // ## // ## // ## // ##
@@ -62,10 +62,7 @@ direitos_instalador() {
     echo -e "$azul=                                                                                                 =\e[0m"
     echo -e "$azul=  $branco Este auto instalador foi desenvolvido para auxiliar na instalação das principais aplicações $azul  =\e[0m"
     echo -e "$azul=  $branco  disponíveis no mercado open source. Já deixo todos os créditos aos desenvolvedores de cada $azul  =\e[0m"
-    echo -e "$azul=  $branco aplicação disponíveis aqui. Este Setup é licenciado sob a Licença MIT (MIT). Você pode usar,$azul =\e[0m"
-    echo -e "$azul=  $branco  copiar, modificar, integrar, publicar, distribuir e/ou vender cópias dos produtos finais,  $azul  =\e[0m"
-    echo -e "$azul=  $branco   mas deve sempre declarar que OrionDesign (contato@edduzsolucoes.com) é o autor original  $azul  =\e[0m"
-    echo -e "$azul=  $branco           destes códigos e atribuir um link para https://edduzsolucoes.com/setup           $azul  =\e[0m"
+    echo -e "$azul=  $branco aplicação disponíveis aqui(OrionDesign).=\e[0m"
     echo -e "$azul=                                                                                                 =\e[0m"
     echo -e "$azul===================================================================================================\e[0m"
     echo ""
@@ -127,10 +124,10 @@ creditos_msg() {
     echo -e "$azul=                                      pix@edduzsolucoes.com                                     $azul=\e[0m"
     echo -e "$azul=                                                                                                 $azul=\e[0m"
     echo -e "$azul=          $branco         Se precisar de ajuda/mentoria ou quiser deixar seu feedback                   $azul=\e[0m"
-    echo -e "$azul=          $branco               Nossa comunidade:$azul https://discord.gg/MD5dgNR8My                         $azul=\e[0m"
+    echo -e "$azul=          $branco               Nossa comunidade:$azul https://discord.gg/6ZzHCKsp                         $azul=\e[0m"
     echo -e "$azul=                                                                                                 $azul=\e[0m"
-    echo -e "$azul=          $branco                    ou via WhatsApp (comunidade SetupAstro)                            $azul=\e[0m"
-    echo -e "$azul=          $azul               https://chat.whatsapp.com/Ky7uW2hUIf7DfPbIDugKS5                        $azul=\e[0m"
+    echo -e "$azul=          $branco                    ou via WhatsApp (Criador do Setup)                            $azul=\e[0m"
+    echo -e "$azul=          $azul               https://api.whatsapp.com/send?phone=5588996228075                        $azul=\e[0m"
     echo -e "$azul=                                                                                                 $azul=\e[0m"
     echo -e "$azul===================================================================================================\e[0m"
     echo ""
