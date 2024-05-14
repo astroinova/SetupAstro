@@ -31,26 +31,26 @@ sudo apt update
 
 sudo apt upgrade -y
 
-# Verifica se o arquivo SetupAstro já existe
-if [ -e "SetupAstro" ]; then
-    echo "O arquivo SetupAstro já existe. Removendo..."
-    rm SetupAstro
+# Verifica se o arquivo Setup-Automatiza-Ai já existe
+if [ -e "Setup-Automatiza-Ai" ]; then
+    echo "O arquivo Setup-Automatiza-Ai já existe. Removendo..."
+    rm Setup-Automatiza-Ai
 fi
 
 # Baixa o script
-curl -sSL https://raw.githubusercontent.com/astroinova/SetupAstro/main/SetupAstro -o SetupAstro
+curl -sSL https://raw.githubusercontent.com/automatizai/Setup-Automatiza-AI/main/Setup-Automatiza-Ai -o Setup-Automatiza-Ai
 
 # Verifica se o download foi bem-sucedido
 if [ $? -eq 0 ]; then
     # Executa o script baixado
-    chmod +x SetupAstro
-    ./SetupAstro
+    chmod +x Setup-Automatiza-Ai
+    ./Setup-Automatiza-Ai
 else
-    echo "Falha ao baixar o script SetupAstro"
+    echo "Falha ao baixar o script Setup-Automatiza-Ai"
 fi
 
 sudo apt update
 sudo apt upgrade -y
 
 clear
-rm SetupAstro
+rm Setup-Automatiza-Ai

@@ -16,7 +16,7 @@
 <p>Copie e cole no Terminal da sua VPS:</p>
 
 ```
-bash <(curl -sSL https://raw.githubusercontent.com/astroinova/SetupAstro/main/Setup)
+bash <(curl -sSL https://raw.githubusercontent.com/automatizai/Setup-Automatiza-AI/main/Setup)
 ```
 <h3 align="center"><b></b></h3>
 <p align="center">

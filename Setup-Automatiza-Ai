@@ -3465,7 +3465,7 @@ cat > dados_vps << EOL
 [DADOS DA VPS]
 
 Estes dados foram preenchidos na hora que você foi instalar o Traefik e Portainer e
-serão utilizados para realizar as instalações no do SetupAstro v.2
+serão utilizados para realizar as instalações no do Setup-Automatiza-Ai v.2
 
 Nome do Servidor: $nome_servidor
 
@@ -16530,9 +16530,9 @@ sleep 1
 mkdir blablabla
 cd blablabla
 
-git clone https://github.com/astroinova/SetupAstro.git > /dev/null 2>&1
+git clone https://github.com/automatizai/Setup-Automatiza-AI.git > /dev/null 2>&1
 
-sudo mv /root/blablabla/SetupAstro/Extras/Grafana/monitor-orion /opt
+sudo mv /root/blablabla/Setup-Automatiza-Ai/Extras/Grafana/monitor-orion /opt
 
 cd
 
@@ -17967,7 +17967,7 @@ services:
 
       ## Branding
       - DEFAULT_ORGANIZATION_NAME=OrionDesign ## Nome da Empresa
-      - DEFAULT_PROJECT_NAME=SetupAstro ## Nome do Projeto
+      - DEFAULT_PROJECT_NAME=Setup-Automatiza-Ai ## Nome do Projeto
 
       ## Urls
       - SUPABASE_PUBLIC_URL=https://$url_supabase ## Link do supabase
@@ -18640,28 +18640,28 @@ chatwoot.mail() {
     fi
     
     # Baixa os novos arquivos
-    wget -O confirmation_instructions.html.erb https://github.com/astroinova/SetupAstro/raw/main/Extras/Chatwoot/emails/confirmation_instructions.html.erb > /dev/null 2>&1
+    wget -O confirmation_instructions.html.erb https://github.com/automatizai/Setup-Automatiza-AI/raw/main/Extras/Chatwoot/emails/confirmation_instructions.html.erb > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         echo "5/9 - [ OK ]"
     else
         echo "5/9 - [ OFF ]"
         echo "Não foi possivel baixar email."
     fi
-    wget -O password_change.html.erb https://github.com/astroinova/SetupAstro/raw/main/Extras/Chatwoot/emails/password_change.html.erb > /dev/null 2>&1
+    wget -O password_change.html.erb https://github.com/automatizai/Setup-Automatiza-AI/raw/main/Extras/Chatwoot/emails/password_change.html.erb > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         echo "6/9 - [ OK ]"
     else
         echo "6/9 - [ OFF ]"
         echo "Não foi possivel baixar email."
     fi
-    wget -O reset_password_instructions.html.erb https://github.com/astroinova/SetupAstro/raw/main/Extras/Chatwoot/emails/reset_password_instructions.html.erb > /dev/null 2>&1
+    wget -O reset_password_instructions.html.erb https://github.com/automatizai/Setup-Automatiza-AI/raw/main/Extras/Chatwoot/emails/reset_password_instructions.html.erb > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         echo "7/9 - [ OK ]"
     else
         echo "7/9 - [ OFF ]"
         echo "Não foi possivel baixar email."
     fi
-    wget -O unlock_instructions.html.erb https://github.com/astroinova/SetupAstro/raw/main/Extras/Chatwoot/emails/unlock_instructions.html.erb > /dev/null 2>&1
+    wget -O unlock_instructions.html.erb https://github.com/automatizai/Setup-Automatiza-AI/raw/main/Extras/Chatwoot/emails/unlock_instructions.html.erb > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         echo "8/9 - [ OK ]"
     else
@@ -18731,28 +18731,28 @@ chatwoot.n.mail() {
     fi
     
     # Baixa os novos arquivos
-    wget -O confirmation_instructions.html.erb https://github.com/astroinova/SetupAstro/raw/main/Extras/Chatwoot/emails/confirmation_instructions.html.erb > /dev/null 2>&1
+    wget -O confirmation_instructions.html.erb https://github.com/automatizai/Setup-Automatiza-AI/raw/main/Extras/Chatwoot/emails/confirmation_instructions.html.erb > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         echo "5/9 - [ OK ]"
     else
         echo "5/9 - [ OFF ]"
         echo "Não foi possivel baixar email."
     fi
-    wget -O password_change.html.erb https://github.com/astroinova/SetupAstro/raw/main/Extras/Chatwoot/emails/password_change.html.erb > /dev/null 2>&1
+    wget -O password_change.html.erb https://github.com/automatizai/Setup-Automatiza-AI/raw/main/Extras/Chatwoot/emails/password_change.html.erb > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         echo "6/9 - [ OK ]"
     else
         echo "6/9 - [ OFF ]"
         echo "Não foi possivel baixar email."
     fi
-    wget -O reset_password_instructions.html.erb https://github.com/astroinova/SetupAstro/raw/main/Extras/Chatwoot/emails/reset_password_instructions.html.erb > /dev/null 2>&1
+    wget -O reset_password_instructions.html.erb https://github.com/automatizai/Setup-Automatiza-AI/raw/main/Extras/Chatwoot/emails/reset_password_instructions.html.erb > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         echo "7/9 - [ OK ]"
     else
         echo "7/9 - [ OFF ]"
         echo "Não foi possivel baixar email."
     fi
-    wget -O unlock_instructions.html.erb https://github.com/astroinova/SetupAstro/raw/main/Extras/Chatwoot/emails/unlock_instructions.html.erb > /dev/null 2>&1
+    wget -O unlock_instructions.html.erb https://github.com/automatizai/Setup-Automatiza-AI/raw/main/Extras/Chatwoot/emails/unlock_instructions.html.erb > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         echo "8/9 - [ OK ]"
     else
@@ -18804,13 +18804,13 @@ while true; do
 
             # Baixando workflows
             wget "https://raw.githubusercontent.com/nocodeleaks/quepasa/main/extra/n8n%2Bchatwoot/ChatwootProfileUpdate.json"
-            wget "https://raw.githubusercontent.com/astroinova/SetupAstro/main/Extras/Quepasa/workflows_n8n/ChatwootToQuepasa.json"
+            wget "https://raw.githubusercontent.com/automatizai/Setup-Automatiza-AI/main/Extras/Quepasa/workflows_n8n/ChatwootToQuepasa.json"
             wget "https://raw.githubusercontent.com/nocodeleaks/quepasa/main/extra/n8n%2Bchatwoot/ChatwootToQuepasaGreetings.json"
-            wget "https://raw.githubusercontent.com/astroinova/SetupAstro/main/Extras/Quepasa/workflows_n8n/PostToChatwoot.json"
-            wget "https://raw.githubusercontent.com/astroinova/SetupAstro/main/Extras/Quepasa/workflows_n8n/QuepasaAutomatic.json"
+            wget "https://raw.githubusercontent.com/automatizai/Setup-Automatiza-AI/main/Extras/Quepasa/workflows_n8n/PostToChatwoot.json"
+            wget "https://raw.githubusercontent.com/automatizai/Setup-Automatiza-AI/main/Extras/Quepasa/workflows_n8n/QuepasaAutomatic.json"
             wget "https://raw.githubusercontent.com/nocodeleaks/quepasa/main/extra/n8n%2Bchatwoot/QuepasaChatControl.json"
             wget "https://raw.githubusercontent.com/nocodeleaks/quepasa/main/extra/n8n%2Bchatwoot/QuepasaInboxControl.json"
-            wget "https://raw.githubusercontent.com/astroinova/SetupAstro/main/Extras/Quepasa/workflows_n8n/QuepasaQrcode.json"
+            wget "https://raw.githubusercontent.com/automatizai/Setup-Automatiza-AI/main/Extras/Quepasa/workflows_n8n/QuepasaQrcode.json"
             wget "https://raw.githubusercontent.com/nocodeleaks/quepasa/main/extra/n8n%2Bchatwoot/QuepasaToChatwoot.json"
             wget "https://raw.githubusercontent.com/nocodeleaks/quepasa/main/extra/n8n%2Bchatwoot/GetChatwootContacts.json"
             wget "https://raw.githubusercontent.com/nocodeleaks/quepasa/main/extra/n8n%2Bchatwoot/PostToWebCallBack.json"
